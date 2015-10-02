@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    min-width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.aguarde{
+    display: none;
+}
+
+#aguardarConfirmacao {
+    position: relative;
+    float: right;
+    width: 367px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#fundoAzul {
+    position: relative;
+    width: 100%;
+    height: 275px;
+    background-color: #004c98;
+    margin-top: 15%;
+    z-index: 1;
+}
+
+#login {
+    position: relative;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    z-index: 10;
+}
+
+#areaLogin {
+    position: relative;
+    float: right;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    position: relative;
+    width: 355px;
+    height: 28px;
+    border: 1px solid #cdcdcd ;
+    margin-bottom: 10px;
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6a6a6a;
+}
+
+#box{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 15px;
+    margin-left: -10px;
+}
+
+#id {
+    position: relative;
+    padding-left: 5px;
+    //background-image: url("../imagens/login.png");
+    background-repeat: no-repeat;
+}
+
+#pass {
+    position: relative;
+    padding-left: 5px;
+    //background-image: url("../imagens/senha.png");
+    background-repeat: no-repeat;
+}
+
+#button{
+    position: relative;
+    padding: 5px 20px 5px 20px ;
+    background-color: #5ea4ea;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#button:hover {
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 15px 10px 10px 0 ;
+}
+
+h3 {
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px 10px 10px 0 ;
+}
+
+p {
+    position: relative;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+p#checkbox {
+    position: relative;
+    margin-left: 10px;
+}
+
+p#esqueceuSenha {
+    margin-top: 10px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    position: relative;
+    color: #000;
+    text-decoration: underline;
+}
+
+#info {
+    position: relative;
+    font-weight: bold;
+    width: 350px;
+}
+
+.erro {
+    position: relative;
+    padding: 5px;
+    width: 350px;
+    background-color: #c9493f;
+    border: 1px solid #cdcdcd ;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info {
+    position: relative;
+    padding: 5px;
+    width: 343px;
+    background-color: #5fb3d3;
+    border: 1px solid #cdcdcd ;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.processando {
+    position: relative;
+    padding: 5px;
+    width: 350px;
+    background-color: #5fb3d3;
+    border: 1px solid #cdcdcd ;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.logado {
+    position: relative;
+    padding: 5px;
+    width: 350px;
+    background-color: #5fb3d3;
+    border: 1px solid #cdcdcd ;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p#txt-esqueceu-senha {
+    position: relative;
+    margin-left: 3px;
+    font-size: 13pt;
+    color: #6a6a6a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a#link-esqueceu-senha {
+    position: relative;
+    color: #000000;
+    text-decoration: underline;
+}
+
+a#link-esqueceu-senha:hover {
+    position: relative;
+    color: #6a6a6a;
+    text-decoration: underline;
+}
+
+#imagens {
+    position: relative;
+    width: 600px;
+    height: 276px;
+    float: left;
+    z-index: 100;
+}
+
+#computador {
+    position: relative;
+    margin-top: -28px;
+    margin-bottom: -50px;
+}
+
+a#bola {
+    position: relative;
+    margin-left: 280px;
+    margin-right: 8px;
+}
