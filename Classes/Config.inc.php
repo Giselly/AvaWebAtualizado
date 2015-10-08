@@ -16,7 +16,7 @@ define('USER', 'root');
 define('PASS', 'vertrigo');
 define('DBSA', 'avaweb');
 
-define('RAIZ', "http://{$host}/AvaWeb/");
+define('RAIZ', "http://{$host}/AvaWebAtualizado/");
 
 // AUTO LOAD DE CLASSES ########################################################
 function __autoload($Class) {
@@ -33,7 +33,7 @@ function __autoload($Class) {
     }
 
     if (!$iDir) {
-        trigger_error("NÃ£o foi possÃ­vel incluir {$Class}.class.php", E_USER_ERROR);
+        trigger_error("Não foi poddível incluir {$Class}.class.php", E_USER_ERROR);
         die;
     }
 }

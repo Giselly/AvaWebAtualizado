@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `itens` (
   `valor` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_itens_questoes_idx` (`idQuestoes`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=81 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=163 ;
 
 --
 -- Extraindo dados da tabela `itens`
@@ -177,7 +177,89 @@ INSERT INTO `itens` (`id`, `idQuestoes`, `item`, `valor`) VALUES
 (77, 20, 'Contraste', 0),
 (78, 20, 'Repetição', 0),
 (79, 20, 'Alinhamento', 0),
-(80, 20, 'Proximidade', 1);
+(80, 20, 'Proximidade', 1),
+(81, 21, 'Que indica movimento.', 0),
+(82, 21, 'Que indica uma ordem de leitura.', 0),
+(83, 21, 'Que indica desorganização.', 1),
+(84, 21, 'Que indica uma aproximação.', 0),
+(85, 22, 'Que há uma organização na página e nas informações.', 0),
+(86, 22, 'Que há uma desordem de informações.', 0),
+(87, 22, 'Que há uma repetição entre as informações.', 0),
+(88, 22, 'Que itens relacionados entre si estão próximos.', 0),
+(89, 22, 'Apenas as alternativas a e d estão corretas.', 1),
+(90, 23, 'Evitar elementos meramente similares em uma página.', 0),
+(91, 23, 'Alinhar os elementos em uma determinada direção.', 0),
+(92, 23, 'Criar uma aparência desorganizada e bagunçada.', 0),
+(93, 23, 'Organizar as informações, reduzir ou eliminar a desordem e oferecer uma estrutura de leitura mais clara.', 1),
+(94, 24, 'Tamanho, peso, posicionamento de texto ou de figuras.', 1),
+(95, 24, 'O peso e altura das demais informações devem ser iguais a do título.', 0),
+(96, 24, 'Esquecer o princípio de contraste.', 0),
+(97, 24, 'Desorganizar e enfraquecer a página. ', 0),
+(98, 25, 'Sempre', 0),
+(99, 25, 'Logicamente', 1),
+(100, 25, 'Nunca', 0),
+(101, 25, 'Nenhuma das alternativas', 0),
+(102, 26, 'Organizar', 1),
+(103, 26, 'Desorganizar', 0),
+(104, 26, 'Repetir', 0),
+(105, 26, 'Desorganizar', 0),
+(106, 27, 'Verdes', 0),
+(107, 27, 'Amarelos', 0),
+(108, 27, 'Brancos', 1),
+(109, 27, 'Limpos', 0),
+(110, 28, 'Mais de 3 - 5', 0),
+(111, 28, 'Menos de 3 ', 0),
+(112, 28, 'Mais de 5', 0),
+(113, 28, 'As alternativas A e B estão corretas', 1),
+(114, 29, 'Organização', 1),
+(115, 29, 'Desordem', 0),
+(116, 29, 'Bagunça', 0),
+(117, 29, 'Nenhuma das alternativas', 0),
+(118, 30, 'Evitar muitos elementos', 0),
+(119, 30, 'Não colocar os elementos somente nos cantos e no meio da página. ', 0),
+(120, 30, 'Não relacionar elementos que não devam estar agrupados! Se eles não estiverem relacionados, separe-os.', 0),
+(121, 30, 'Todas as alternativas estão corretas.', 1),
+(122, 31, 'Cada item deve ter uma conexão visual com algo na página. ', 1),
+(123, 31, 'Qualquer elemento pode ser colocado arbitrariamente numa página.', 0),
+(124, 31, 'Os elementos podem simplesmente ir ocupando espaços vazios na página. ', 0),
+(125, 31, 'Nenhuma das alternativas é verdadeira. ', 0),
+(126, 32, 'A esquerda.', 0),
+(127, 32, 'A direita.', 0),
+(128, 32, 'Canto inferior esquerdo.', 0),
+(129, 32, 'Centralizado.', 1),
+(130, 32, 'Canto superior direito.', 0),
+(131, 33, 'Utilizar apenas um alinhamento de texto por página. ', 1),
+(132, 33, 'Utilizar sempre os textos centralizados.', 0),
+(133, 33, 'Utilizar mais de um alinhamento numa página.', 0),
+(134, 33, 'Utilizar sem medo o justificado.', 0),
+(135, 34, 'Passa a sensação de tensão e medo.', 0),
+(136, 34, 'Cria a sensação de calma e segurança.', 1),
+(137, 34, 'Bagunça e desorganização.', 0),
+(138, 34, 'A ordem não nos agrada. ', 0),
+(139, 35, 'Um eme “M”', 1),
+(140, 35, 'Oito espaços', 0),
+(141, 35, 'Um “H”', 0),
+(142, 35, 'Nenhuma das alternativas', 0),
+(143, 36, 'Cores', 0),
+(144, 36, 'Pregnancia', 0),
+(145, 36, 'Unidade', 1),
+(146, 36, 'Formas', 0),
+(147, 37, 'Unificar e organizar', 1),
+(148, 37, 'Desorganizar', 0),
+(149, 37, 'Centralizar', 0),
+(150, 37, 'Nenhuma das alternativas', 0),
+(151, 38, 'Fraca em qualquer material ', 0),
+(152, 38, 'Arcaica', 0),
+(153, 38, 'Sofisticada formal, engraçada ou séria dependendo do assunto', 1),
+(154, 38, 'Nenhuma das alternativas', 0),
+(155, 39, 'Separados', 1),
+(156, 39, 'Agrupados', 0),
+(157, 39, 'Sobrepostos', 0),
+(158, 39, 'Nenhuma das alternativas', 0),
+(159, 40, 'Alinhamento centralizado', 1),
+(160, 40, 'Alinhamento a esquerda', 0),
+(161, 40, 'Alinhamento à direita', 0),
+(162, 40, 'Todas as alternativas estão corretas.', 0);
 
 -- --------------------------------------------------------
 
@@ -191,7 +273,7 @@ CREATE TABLE IF NOT EXISTS `questoes` (
   `questao` mediumtext,
   PRIMARY KEY (`id`),
   KEY `fk_questoes_capitulos_idx` (`idCapitulo`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
 
 --
 -- Extraindo dados da tabela `questoes`
@@ -217,7 +299,27 @@ INSERT INTO `questoes` (`id`, `idCapitulo`, `questao`) VALUES
 (17, 2, 'Aplicando o princípio da Proximidade em um material o que podemos ganhar com ele?'),
 (18, 2, '“Se os elementos (tipo, cor, tamanho, espessura da linha, forma, espaço etc.) não forem os mesmos, diferencie-os completamente. ” Essa afirmação refere-se a qual princípio? '),
 (19, 2, '“...com cada elemento conectado se cria uma aparência limpa, sofisticada e suave. ” Tal afirmação refere-se a qual princípio de design?'),
-(20, 2, 'Quando vários itens estão próximos, tornam-se uma unidade visual integrada, e não várias unidades individualizadas. Essa afirmação é referente ao qual princípio?');
+(20, 2, 'Quando vários itens estão próximos, tornam-se uma unidade visual integrada, e não várias unidades individualizadas. Essa afirmação é referente ao qual princípio?'),
+(21, 3, 'Quando as partes que compõem uma página são espalhadas, essa página assume uma aparência:'),
+(22, 3, 'Um dos princípios básicos do design é a proximidade. Quando usada podemos notar que?'),
+(23, 3, 'Qual o objetivo da PROXIMIDADE?'),
+(24, 3, '“Ao agrupar itens relacionados, torna-se necessário fazer algumas alterações...” Quais alterações abaixo são citadas no livro?'),
+(25, 3, 'O conceito da proximidade não significa que tudo precise estar próximo; significa que os elementos devem estar _______________ conectados. Qual item abaixo preenche de forma correta a lacuna?'),
+(26, 3, 'Qual o proposito básico da Proximidade?'),
+(27, 3, 'Com tudo organizado se cria espaços vazios, porem atrativos, segundo a autora qual é o nome dado para esses espaços?'),
+(28, 3, '“Pisque os olhos e conte o número de elementos visuais da página pelo número de paradas dos seus olhos. ” Segundo a autora com qual quantidade se dever ter cuidado para que o material não fique bagunçado?'),
+(29, 3, 'Com o simples agrupamento dos elementos em proximidade, automaticamente criamos?'),
+(30, 3, 'Segundo a autora o que podemos evitar para que nosso material comece a ser mais correto?'),
+(31, 4, 'Segundo o princípio do alinhamento, qual a alternativa correta.'),
+(32, 4, 'Qual o alinhamento mais utilizado pelos iniciantes, ao diagramar uma página? '),
+(33, 4, 'Ao trabalhar com textos devemos nos atentar ao alinhamento, segundo a autora qual regra devemos sempre ter em mente?'),
+(34, 4, '“Nossos olhos gostam de ver tudo em ordem”. Tal afirmação se justifica, por quê?'),
+(35, 4, '...Em uma máquina de escrever a endentação comum é de cinco espaços. No caso das letras proporcionais utilizadas no computador, a endentação tipográfica padrão é?'),
+(36, 4, 'Para que todos os elementos da página tenham uma estética unificada, conectada e inter-relacionada, é preciso que haja “amarras” visuais entre os elementos separados. Este é um conceito importante no design, qual o nome dele?'),
+(37, 4, 'O proposito básico do alinhamento é?'),
+(38, 4, 'Normalmente ao se combinar um alinhamento marcante e uma fonte apropriada, criamos uma estética?'),
+(39, 4, 'Para atingir o alinhamento numa pagina devemos fazer o uso consciente do posicionamento dos elementos, mesmo que os elementos estejam_________.'),
+(40, 4, 'Segundo a autora o que devemos evitar em nossos materiais?');
 
 -- --------------------------------------------------------
 
@@ -283,7 +385,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `primeiroLogin` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `login_UNIQUE` (`login`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=44 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=46 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -306,11 +408,12 @@ INSERT INTO `usuarios` (`id`, `nome`, `apelido`, `login`, `senha`, `cpf`, `rg`, 
 (32, 'Nicolas matos10', 'Nicolau MAtos10', 'matos10', '*069034EC4F613585D1DAC2E7A497777D572B8EFD', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'matos1@email.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
 (36, 'Nicolas matos10', 'Nicolau MAtos10', 'matos1010', '*15B4A9F089BEC4C84A24C5148B14A80C14651492', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'matos1@email.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
 (37, 'Josinaldo da Silva Btista', 'Josinaldo da Silva Batista', 'josinaldo', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'josinaldo@gmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(38, 'Josinaldo da Silva Btista', 'Josinaldo da Silva Batista', 'joserlanaldo', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'josinaldo@gmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
+(38, 'Josinaldo da Silva Btista', 'Josinaldo da Silva Batista', 'joserlanaldo', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'fd10de89fc1b2cd204902f8bb7b87cf9.png', NULL, 'josinaldo@gmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
 (39, 'gerlyel', 'wertyuiop', 'leleo', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gerlyel@email', NULL, 1, NULL, NULL, NULL, 0, 0, 0),
 (40, 'Maria DB', 'mariadb', 'mariaChata', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'mariadb@foca.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0),
 (41, 'qwegrtyhryu', 'tryerytetrye', 'rtt', '*BC23E64C74AAC6B855ED13C3B329BAEC003E92A2', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0),
-(43, 'qwegrtyhryu', 'tryerytetrye', 'hgddf', '*8FB72276FA10B3C11620BEA882D64670561C7AE9', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0);
+(44, 'fulano de tal', 'qwertzyui', 'login', '*531E182E2F72080AB0740FE2F2D689DBE0146E04', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'asfdsafgasd@email.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
+(45, 'Maria Giselly Rebouças Azevedo', 'Giselly Rebouças', 'loginGiselly', '*00A51F3F48415C7D4E8908980D443C29C69B60C9', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1);
 
 --
 -- Restrições para as tabelas dumpadas

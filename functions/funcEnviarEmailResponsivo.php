@@ -46,13 +46,13 @@ $nomeDestinatario  = 'Giselly Rebouças';
 $host = 'smtp.office365.com';
 $assunto = 'Novos Resumos!';
 $mensagem = "
-        <div style='padding-left: 25%; padding-right: 25%; width: 100%; '>
-        <div id='content' style='background-color: #005a98; display: block; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin: auto; width: 550px; height:685px; border: 10px solid #012138;'>
-            <div style='padding-left: 160px; padding-right: 160px;'>
-                <img alt='' src='http://iteva.org.br/ava/imagens/logo_vertical.jpg' style='display: block; position: relative; /*margin: auto;*/'/>
+        <div style='display: block; position: block; padding-left: 25%; padding-right: 25%; width: 100%;'>
+        <div id='content' style='background-color: #005a98; display: block; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin: auto; width: 28.6458%; height:69.8979%; border: 10px solid #012138;'>
+            <div style='padding-left: 29.0909%; padding-right:  29.0909%; width: 41.8181%;'>
+                <img alt='' src='http://iteva.org.br/ava/imagens/logo_vertical.jpg' style='display: block; position: relative; width: 100%;/*margin: auto;*/'/>
             </div>
             
-            <div  id='texto' style='display: block; position: absolute; padding: 25px 25px 0px 25px;/*top: 0px; bottom: 0px; left: 0px; right: 0px; margin: auto;*/ width: 500px; height: 225px;'>
+            <div  id='texto' style='display: block; position: absolute; padding: 11.1111% 4.5455% 0px 4.5455%;/*top: 0px; bottom: 0px; left: 0px; right: 0px; margin: auto;*/ width: 90.9090%; height: 32.8467%;'>
                 <h1 style='font-family: Arial,sans-serif; text-align: center; color: #fff; font-size: 22pt; font-weight: bold;'>AVAWEB | NOVOS RESUMOS</h1>
                 <p style='font-family: Arial,sans-serif; text-align: center; font-size: 20pt; color: #fff;'>Você tem ".$visualizarResumo." resumo(s) para visualizar <br/>
                     E ".$aprovacao." resumo(s) para analisar <br/></br>
@@ -63,11 +63,11 @@ $mensagem = "
                 a:hover { text-decoration: underline;}
             </style>
 
-            <img id='gif' alt='' src='http://iteva.org.br/ava/imagens/email.gif' style='display: block; position: absolute; top: 450px; padding: 0px 180px;/*bottom: 0px; left: 0px; right: 0px; margin: auto;*/ width: 193px;  height: 237px;'/>      
+            <img id='gif' alt='' src='http://iteva.org.br/ava/imagens/email.gif' style='display: block; position: absolute; top: 65.6934%; padding: 0px 32.4545%;/*bottom: 0px; left: 0px; right: 0px; margin: auto;*/ width: 35.0909%;  height:34.5985%;'/>      
         </div>
         </div>";
 /* Configura os destinatários */
-$mail->AddAddress($destinatario, $nomeDestinatario);
+$mail->AddAddress(utf8_decode($destinatario), utf8_decode($nomeDestinatario));
  
 /* 
  * CONFIGURAÇÕES AVANÇADAS 
@@ -85,13 +85,13 @@ $mail->SMTPSecure = "tls";
 /* Porta da conexão */
 $mail->Port = "587";
 /* Email ou usu�rio para autenticação */
-$mail->Username = $remetente;
+$mail->Username = utf8_decode($remetente);
 /* Senha do usu�rio */
 $mail->Password = $senha;
  
 /* Configura os dados do remetente do email */
-$mail->From = $remetente; // Seu e-mail
-$mail->FromName = $nomeRemetente; // Seu nome
+$mail->From = utf8_decode($remetente); // Seu e-mail
+$mail->FromName = utf8_decode($nomeRemetente); // Seu nome
  
 /* Configura a mensagem */
 $mail->IsHTML(true); // Configura um e-mail em HTML
@@ -100,7 +100,7 @@ $mail->CharSet = 'UTF-8'; // Charset da mensagem (opcional)
  
 /* Configura o texto e assunto */
 $mail->Subject  = $assunto; // Assunto da mensagem
-$mail->Body = $mensagem; // A mensagem em HTML
+$mail->Body = utf8_encode($mensagem); // A mensagem em HTML
 
 //$mail->AddAttachment('http://iteva.org.br/ava/imagens/', 'backgroundEmail.jpg');
 //$mail->AddAttachment('http://iteva.org.br/ava/imagens/','email.gif');
