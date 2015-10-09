@@ -82,7 +82,7 @@ if ($url->getURL(0) == 'recuperaSenha') {
             include_once('includes/incconteudo.php');
             include_once('includes/incrodape.php');
         } else {
-            include_once ('pages/pgaguarde.php');
+            /*include_once ('pages/pgaguarde.php');*/
         }
     } else {
         

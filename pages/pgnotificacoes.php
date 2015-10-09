@@ -17,30 +17,38 @@
             if(isset($dadosResumo)){
                 if (count($dadosResumo)) {
                     foreach ($dadosResumo as $resumo) {
-                        echo "
-                        <tr>
-                            <td class='align-left'>{$resumo['dataNotificacao']}</td>
-                            <td class='align-left'>{$resumo['assunto']}</a></td>";
-                            if(isset($resumo['notificacao'])){
-                                if(strlen($resumo['notificacao']) > 28) {
-                                    $notificacao = substr($resumo['notificacao'],0, 28). "...";
+                       if(($resumo["notificacao"] !=  '' || $resumo["notificacao"] !=  NULL) && $resumo["excluidoNotificacao"] == 0 && $resumo["idUsuario"] == $idUsuario){
+                            echo "
+                            <tr>
+                                <td class='align-left'>{$resumo['dataNotificacao']}</td>";
+                                if(isset($resumo['notificacao'])){
+                                    if(strlen($resumo['notificacao']) > 28) {
+                                        $notificacao = substr($resumo['notificacao'],0, 28). "...";
+                                    } else {
+                                        $notificacao = $resumo['notificacao'];
+                                    }
+                                   if($resumo['notificacaoVisualizada'] == 1){
+                                        $style = "color: #000305;";
+                                    } else {
+                                        $style = '';
+                                    }
+                                    
+                                   echo "<td class='align-left'><a style='{$style}' href='{$url->getURL(0)}/lerNotificacao/{$resumo["id"]}'>{$notificacao}</a></td>";  
                                 } else {
-                                    $notificacao = $resumo['notificacao'];
+                                   echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
                                 }
-                               echo "<td class='align-left'><a href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacao}</a></td>";  
-                            } else {
-                               echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
-                            }
-                        echo "
-                            <td id='excluir'><a class='exluirFuncionario' href='{$resumo['id']}'>Excluir</a></td>
-                        </tr>
-                    ";
+                            echo "
+                                <td id='excluir'><a class='exluirFuncionario' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'>Excluir</a></td>
+                            </tr>
+                        ";
+                        }                   
                     }
                 } else {
                     echo "<tr><td colspan='6'>Nenhum resumo encontrado.</td></tr>";
                 }
             }
             ?>
+
 
         </table>
     </div>

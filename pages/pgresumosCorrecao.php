@@ -19,36 +19,51 @@
             if(isset($dadosResumo)){
                 if (count($dadosResumo)) {
                     foreach ($dadosResumo as $resumo) {
-                        echo "
-                        <tr id='dados'>
-                            <td class='align-left'>{$resumo['nome']}</td>
-                            <td>{$resumo['dataAtual']}</td>
-                            <td>Capitulo {$resumo['capitulo']}</a></td>";
-                            $notificacaoTxt = '';
-                                if(isset($resumo['notificacao'])){
-                                    $notificacaoTxt = $resumo['notificacao'];
+                       if($resumo["excluidoResumo"] == 0) {
+                            echo "
+                            <tr>
+                                <td class='align-left'>{$resumo['nome']}</td>
+                                <td class='align-left'>{$resumo['dataAtual']}</td>
+                                <td class='align-left'>Capitulo {$resumo['capitulo']}</a></td>";
+                                $notificacaoTxt = '';
+                                    if(isset($resumo['notificacao'])){
+                                        $notificacaoTxt = $resumo['notificacao'];
+                                    }
+                                if($notificacaoTxt != ''){
+                                    if(strlen($notificacaoTxt) > 28) {
+                                        $notificacaoTxt = substr($notificacaoTxt,0, 28). "...";
+                                    }
+                                    
+                                    if($resumo['resumoVisualizado'] == 1){
+                                        $style = "color: #000305;";
+                                    } else {
+                                        $style = '';
+                                    }
+                                    
+                                    echo "<td id='ler' class='align-left'><a id='ler' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacaoTxt}</a></td>";  
+                                } else {
+                                    echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
                                 }
-                            if($notificacaoTxt != ''){
-                                if(strlen($notificacaoTxt) > 28) {
-                                    $notificacaoTxt = substr($notificacaoTxt,0, 28). "...";
-                                }                             
-                                echo "<td class='align-left'><a href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacaoTxt}</a></td>";  
-                            } else {
-                                echo "<td>Nenhuma notificação enviada!</td>"; 
-                            }
-                            
-                        echo "
-                            <td id='ler'><a href='{$url->getURL(0)}/lerResumos/{$resumo['id']}'><img id='imgL' src='imagens/ler.png' title='Ler'/></a></td>
-                            <td id='excluir'><a class='exluirFuncionario' href='{$resumo['id']}'><img id='imgE' src='imagens/lixeira.gif' title='Excluir'/></a></td>
-                        </tr>
-                    ";
+
+                            echo "
+                                <td id='ler'><a  style='{$style}' href='{$url->getURL(0)}/lerResumos/{$resumo['id']}'>Ler</a></td>";
+                                if($resumo['aprovacao'] == '1'){
+                                    echo "<td>Aprovado</td>";
+                                } else if ($resumo['aprovacao'] == '2'){
+                                    echo "<td>Reprovado</td>";
+                                } else {
+                                    echo "<td>Não avaliado!</td>";
+                                }
+                            echo "<td id='excluir'><a class='exluirFuncionario' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'>Excluir</a></td>
+                            </tr>
+                        ";
+                        }
                     }
                 } else {
-                    echo "<tr><td colspan='6'>Nenhum resumo encontrado.</td></tr>";
+                    echo "<tr><td colspan='7'>Nenhum resumo encontrado.</td></tr>";
                 }
             }
             ?>
-
         </table>
     </div>
     <a href='#frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'></a>

@@ -33,7 +33,7 @@ function __autoload($Class) {
     }
 
     if (!$iDir) {
-        trigger_error("Não foi poddível incluir {$Class}.class.php", E_USER_ERROR);
+        trigger_error("NÃ£o foi possÃ­vel incluir {$Class}.class.php", E_USER_ERROR);
         die;
     }
 }
