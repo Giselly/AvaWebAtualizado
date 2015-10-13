@@ -63,7 +63,7 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
                 $form['foto'] = $nome_imagem;
             }
         }
-            $form['senha'] = base64_encode($form['senha']);
+            //$form['senha'] = base64_encode($form['senha']);
         /** Verifica se o form é de cadastro ou atualização */
         if ($form['tipo'] == 'novo') {
             /** Remove o indice tipo da array */
