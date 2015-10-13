@@ -14,7 +14,6 @@ body{
 .aguarde{
     display: none;
 }
-
 #aguardarConfirmacao {
     position: relative;
     float: right;
@@ -25,19 +24,19 @@ body{
     text-align: center;
     margin-top: 10%;
 }
-
 #fundoAzul {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 275px;
     background-color: #004c98;
-    margin-top: 15%;
+    top: 30%;
     z-index: 1;
 }
 
 #login {
     position: relative;
-    width: 980px;
+    width: 72.6464047443%;
+    height: 275px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -47,6 +46,8 @@ body{
 #areaLogin {
     position: relative;
     float: right;
+    width: 36.9387755102%;
+    height: 82.9090909091%;
 }
 
 input[type=text], input[type=password], input[type=email] {
@@ -110,7 +111,11 @@ h3 {
     font-size: 18px;
     margin: 15px 10px 10px 0 ;
 }
-
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px 10px 10px 0 ;
+}
 p {
     position: relative;
     font-size: 17px;
@@ -135,8 +140,7 @@ a {
 a:hover {
     position: relative;
     color: #000;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 #info {
     position: relative;
@@ -206,7 +210,7 @@ a#link-esqueceu-senha:hover {
 
 #imagens {
     position: relative;
-    width: 600px;
+    width: 61.2244897959%;
     height: 276px;
     float: left;
     z-index: 100;
@@ -214,6 +218,8 @@ a#link-esqueceu-senha:hover {
 
 #computador {
     position: relative;
+    max-width: 100%;
+    height: auto;
     margin-top: -28px;
     margin-bottom: -50px;
 }
@@ -223,3 +229,148 @@ a#bola {
     margin-left: 280px;
     margin-right: 8px;
 }
+
+a#bola:hover {
+    text-decoration: none;
+}
+
+/*Media Queries*/
+@media all and (max-width:1349px){
+    #login {
+        margin-left: 65px;
+    }
+    
+    #areaLogin {
+        margin-left: 10px;
+    }
+    
+    #computador {
+        margin: auto;
+    }
+    
+    a#bola,a#bolaSelecionada {
+      display: none;
+    }
+}
+
+@media all and (max-width:1345px){
+    
+     #imagens {
+        margin-top: -28px;
+    }
+}
+
+@media all and (max-width:1235px){
+    
+     #imagens {
+        margin-top: -18px;
+    }
+}
+
+@media all and (max-width:1168px){
+    
+    #imagens {
+        margin-top: 3px;
+    }
+}
+
+@media all and (max-width:1046px){
+    
+    #imagens {
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width:1030px){
+    
+    #imagens {
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width:992px){
+    
+    #imagens {
+        float: left;
+        margin-left: -35px;
+        margin-top: 15px;
+    }
+    
+    #areaLogin {
+        float: right;
+        margin-right:-15px;
+        width: 272px;
+    }
+}
+
+@media all and (max-width:939px){
+    #imagens {
+        display: none;
+    }
+    
+    body {
+        background-color: #004C98;
+        overflow: hidden;
+    }
+    
+    #fundoAzul {
+        margin-top: -80px;
+    }
+    
+    #login {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    #areaLogin {
+        width: 365px;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+@media all and (max-width:568px){
+    body {
+        background-color: #004C98;
+    }
+    
+    #fundoAzul {
+        margin: 20px auto;
+    }
+    
+    #login {
+        display: block;
+        width:auto;
+        height: 275px;
+        margin-left: 0px;
+    }
+    
+    #areaLogin {
+        width: 85%;
+        position: relative;
+        margin: -60px auto;
+        float: none;
+    }
+    
+    p#info {
+        width: 93%;
+    }
+    
+    h1 {
+        font-size: 15pt;
+    }
+    
+    p#esqueceuSenha {
+        font-size: 12pt;
+    }
+    
+    input[type=text], input[type=password], input[type=email] {
+        width: 95%;
+    }
+    
+}
+

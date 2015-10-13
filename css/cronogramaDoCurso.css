@@ -1,0 +1,46 @@
+table {
+    text-align: left;
+    margin: 0 auto;
+    width: 1000px;
+    font-size: 15pt;
+
+}
+tr#tr1 th{
+    background-color: #797979;
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: white;
+    padding: 10px;
+    border: solid thin black;
+    text-align: center;
+}
+.panel, .flip {
+    padding: 5px;
+    text-align: left;
+    background-color: white;
+    border: solid thin black;
+    color: black;
+    position: relative;
+    width: 98.5%;
+    cursor: pointer;
+    font-size: 14pt;
+    font-weight: normal;
+    display: block;
+}
+.panel {
+    padding: 10px;
+    display: none;
+    border: 1px solid white;
+    color: white;
+    font-style: italic;
+    width: 97.2%;
+    float: left;
+    clear: both;
+    position: relative;
+    background-color: black;
+}
+
+table td:hover {
+    background: #797979;
+    color: white;
+}

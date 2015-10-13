@@ -1,0 +1,42 @@
+
+section#resumo {
+    display: block;
+    position: relative;
+    float:none;
+    width: 95%;
+    height: 100%;
+    //min-width: 560px;
+    min-height: 500px;
+    margin: 15px;
+}
+
+textarea.textArea {
+    display: block;
+    position: relative;
+    resize: none;
+    //min-width: 530px;
+    width: 100%;
+    min-height: 450px;
+    height: 90%;
+    border: 2px solid #000;
+}
+
+.novo {
+    display: block;
+    margin-top: 10px;
+    float: left;
+}
+
+.titulo {
+    display: block;
+    position: relative;
+    font-size: 14pt;
+    text-align: center;
+    margin: 5px;
+}
+
+.informacoesGerais {
+    font-size: 12pt;
+    margin: 10px 10px 10px 0;;
+   // margin-left: 0px;
+}

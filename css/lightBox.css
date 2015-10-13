@@ -1,0 +1,817 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.modal_close {
+    background: url("../imagens/fechar.png");
+    background-repeat: no-repeat;
+    background-position: top -10px;
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    right: 12px;
+    top: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/**
+ * Enviar Notificação
+ */
+
+div#Notificacao {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 504px;
+    z-index: 0;
+}
+
+div#cabecalhoNotificacao {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalhoNotificacao p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#Notificacao div.txt-notificacao {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#Notificacao div.txt-notificacao label {
+    color: #222222;
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    padding-top: 8px;
+    text-align: left;
+    width: 90px;
+}
+
+div#Notificacao div.txt-notificacao textarea {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-color: #CCCCCC #E7E6E6 #E7E6E6 #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #222222;
+    font-size: 1.2em;
+    outline: medium none;
+    padding: 8px;
+    width: 427px;
+    min-height: 100px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    resize: vertical;
+}
+
+button#salvar-notificacao {
+    background: none repeat scroll 0 0 #004c98;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    float: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/**
+ * Comentario-positivo
+
+
+div#lightbox-positivo {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 504px;
+}
+
+div#cabecalho-positivo {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalho-positivo p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightbox-positivo div.txt-comentario-positivo {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightbox-positivo div.txt-comentario-positivo label {
+    color: #222222;
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    padding-top: 8px;
+    text-align: left;
+    width: 90px;
+}
+
+div#lightbox-positivo div.txt-comentario-positivo textarea {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-color: #CCCCCC #E7E6E6 #E7E6E6 #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #222222;
+    font-size: 1.2em;
+    outline: medium none;
+    padding: 8px;
+    width: 427px;
+    min-height: 100px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    resize: vertical;
+}
+
+button#salvar-positivo {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    float: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+*/
+/**
+ * Auto-Avaliação
+
+
+div#lightbox-autoava {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 754px;
+}
+
+div#cabecalho-autoava {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalho-autoava p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightbox-autoava div.txt-cabecalho-autoava {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightbox-autoava div.txt-cabecalho-autoava label {
+    color: #222222;
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    padding-top: 8px;
+    text-align: left;
+    width: 90px;
+}
+
+div#lightbox-autoava div.txt-cabecalho-autoava textarea {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-color: #CCCCCC #E7E6E6 #E7E6E6 #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #222222;
+    font-size: 1.2em;
+    outline: medium none;
+    padding: 8px;
+    width: 427px;
+    min-height: 100px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    resize: vertical;
+}
+
+button#salvar-autoava {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    float: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/**
+ * Avaliacao Passada
+
+
+div#lightboxAvaliacaoPassada {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 754px;
+}
+
+div#cabecalhoAvaliacaoPassada {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalhoAvaliacaoPassada p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightboxAvaliacaoPassada div.txt-cabecalhoAvaliacaoPassada {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxAvaliacaoPassada div.txt-cabecalhoAvaliacaoPassada label {
+    color: #222222;
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    padding-top: 8px;
+    text-align: left;
+    width: 90px;
+}
+
+div#lightboxAvaliacaoPassada div.txt-cabecalhoAvaliacaoPassada textarea {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-color: #CCCCCC #E7E6E6 #E7E6E6 #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #222222;
+    font-size: 1.2em;
+    outline: medium none;
+    padding: 8px;
+    width: 427px;
+    min-height: 100px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    resize: vertical;
+}
+
+input#salvarAvaliacaoPassada {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    float: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/**
+ * Excluir comentario
+ */
+
+div#frmExcluir {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 504px;
+    z-index: 0;
+}
+
+div#cabecalho-excluir {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalho-excluir p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#frmExcluir div.txt-excluir {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#frmExcluir div.txt-excluir p {
+    margin-bottom: 20px;
+}
+
+input#confirmarExcluir {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input#cancelar {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    float: right;
+    height: 28px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+/**
+ * Ponto entrarSair
+
+
+div#lightboxPontoEntrarSair {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 960px;
+    z-index: 0;
+}
+
+div#cabecalhoPontoEntrarSair {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalhoPontoEntrarSair p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightboxPontoEntrarSair div.txtPontoEntrarSair {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoEntrarSair div.txtPontoEntrarSair p {
+    margin-bottom: 20px;
+}
+
+div#lightboxPontoEntrarSair div.enviarCancelarPontoEntrarSair {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoEntrarSair  input#confirmarSalvar {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: left;
+}
+
+div#lightboxPontoEntrarSair  input#cancelar {
+    position: relative;
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    height: 28px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 15px;
+    float: left;
+}
+
+div#lightboxPontoEntrarSair input[type=text] {
+    width: 142px;
+    height: 25px;
+    margin: 5px 15px 15px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+    color: #282829;
+}
+
+div#lightboxPontoEntrarSair  div#erro {
+    position: relative;
+    margin-top: 50px;
+}
+
+/**
+ * Ponto corrigir
+
+div#lightboxPontoCorrigir {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 960px;
+    z-index: 0;
+}
+
+div#cabecalhoPontoCorrigir {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalhoPontoCorrigir p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightboxPontoCorrigir div.txtPontoCorrigir {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoCorrigir div.txtPontoCorrigir p {
+    margin-bottom: 20px;
+}
+
+div#lightboxPontoCorrigir div.enviarCancelarPontoCorrigir {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoCorrigir  input#confirmarSalvar {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: left;
+}
+
+div#lightboxPontoCorrigir  input#cancelar {
+    position: relative;
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    height: 28px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 15px;
+    float: left;
+}
+
+div#lightboxPontoCorrigir input[type=text], div#lightboxPontoCorrigir select {
+    width: 142px;
+    height: 25px;
+    margin: 5px 15px 15px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+    color: #282829;
+}
+
+div#lightboxPontoCorrigir input[type=text].data {
+    width: 50px;
+    height: 25px;
+    margin: 5px 15px 15px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+    color: #282829;
+}
+
+div#lightboxPontoCorrigir  div#erro {
+    position: relative;
+    margin-top: 70px;
+}
+
+label#obrigatorio {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/**
+ * Ponto editar
+
+div#lightboxPontoEditar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 960px;
+    z-index: 0;
+}
+
+div#cabecalhoPontoEditar {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalhoPontoEditar p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightboxPontoEditar div.txtPontoEditar {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoCorrigir div.txtPontoEditar p {
+    margin-bottom: 20px;
+}
+
+div#lightboxPontoEditar div.enviarCancelarPontoEditar {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoEditar  input#confirmarSalvar {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: left;
+}
+
+div#lightboxPontoEditar  input#cancelar {
+    position: relative;
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    height: 28px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 15px;
+    float: left;
+}
+
+div#lightboxPontoEditar input[type=text], div#lightboxPontoEditar select {
+    width: 142px;
+    height: 25px;
+    margin: 5px 15px 15px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+    color: #282829;
+}
+
+div#lightboxPontoEditar input[type=text].data {
+    width: 50px;
+    height: 25px;
+    margin: 5px 15px 15px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+    color: #282829;
+}
+
+div#lightboxPontoEditar  div#erro {
+    position: relative;
+    margin-top: 60px;
+}
+
+div#lightboxPontoEditar p {
+    margin-bottom: 10px;
+}
+
+div#lightboxPontoEditar label#dataAtual {
+    position: relative;
+    margin-right: 10px;
+}
+
+div#lightboxPontoEditar input[type=checkbox]#dataAtual {
+    position: relative;
+    margin-left: -10px;
+}
+
+/**
+ * Ponto ecluir
+
+
+div#lightboxPontoExcluir {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    padding-bottom: 2px;
+    width: 504px;
+    z-index: 0;
+}
+
+div#cabecalhoPontoExcluir {
+    border-bottom: 2px solid #CCCCCC;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+div#cabecalhoPontoExcluir p {
+    color: #222222;
+    font-size: 18pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div#lightboxPontoExcluir div.txtPontoExcluir {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#lightboxPontoExcluir div.txtPontoExcluir p {
+    margin-bottom: 20px;
+}
+
+div#lightboxPontoExcluir input#confirmarExcluir {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+div#lightboxPontoExcluir input#cancelar {
+    background: none repeat scroll 0 0 #c36539;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    height: 28px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    overflow: visible;
+    padding: 4px 10px 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: auto;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 15px;
+    float: left;
+}
+*/

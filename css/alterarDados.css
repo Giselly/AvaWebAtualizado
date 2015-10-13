@@ -1,0 +1,110 @@
+div#botao{
+    max-width: 73px;
+}
+div#botao input{
+    max-width: 73px;
+}
+form#simples {
+    /*width: 433px;*/
+    padding: 0px;
+    margin:auto;
+    width: 55%;
+}
+
+div.camposFormularioSimples {
+    width: 347px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+div.camposFormularioSimples div.inputs{
+    padding: 0px;
+    margin:0 auto;
+}
+
+p#tituloPrincipal{
+    text-align: center;
+    text-indent: -0.8em;
+}
+
+@media all and (max-width:1495px){
+    div.camposFormularioSimples div.inputs {
+      width: 400px;
+    }
+    
+    p#tituloPrincipal{
+        text-align: left;
+        text-indent: 2.5em;
+    }
+}
+
+@media all and (max-width:875px){
+    label {
+        margin-left: 0px;
+    }
+}
+
+@media all and (max-width: 870px){
+    div#botao{
+        width: 73px;
+    }
+    
+    form#simples {
+        width: 500px;
+       
+    }    
+    div.camposFormularioSimples {
+        width: 80%; 
+        
+    }
+
+    div.camposFormularioSimples div.inputs {
+        width: 240px;
+        margin: 0 auto;   
+        padding: 3px;
+    } 
+       
+    div.camposFormularioSimples div.inputs div{
+        width: 240px;
+        margin-top: 20px;
+        
+    }
+
+    div.camposFormularioSimples div.inputs div input{
+        width: 240px;
+        margin: 0 auto; 
+    }
+    
+    p#tituloPrincipal {
+        text-align: left;
+        text-indent: 0.8em;
+    }
+}    
+
+@media all and (max-width: 670px) {
+    form#simples {
+        width: 371px;
+    }
+    div#botao{
+        width: 73px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    p#tituloPrincipal {
+        text-align: center;
+        text-indent: -1.8em;
+    }
+    
+    form#simples {
+        width: 280px;
+    }
+    div#botao{
+        width: 73px;
+    }
+     div.camposFormularioSimples div.inputs div input{
+        width: 220px;
+     }
+    
+}
