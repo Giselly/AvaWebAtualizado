@@ -14,8 +14,9 @@
 
         <div id="fundoAzul">
             <div id="login">
+                <div id="login">
                     <div id="imagens">
-                        <img id="computador" src="imagens/computador1.png">
+                        <img id="computador" src="imagens/computador1.jpg">
                         <a id="bola" href="">
                             <img id="bola1" src="imagens/bolaSelecionada.png">
                         </a>
@@ -38,6 +39,7 @@
                             <input value="Enviar" type="submit" id="button" name="enviar"> ou  <a href="login">Voltar a tela de login</a></p>
                         </div>
                     </form>
+                </div>
             </div>
         </div>
     </body>

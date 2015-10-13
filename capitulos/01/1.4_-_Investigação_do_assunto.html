@@ -1,0 +1,861 @@
+﻿<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento sem título</title>
+    </head>
+<!--Estilização da Página-->
+    <style type="text/css">
+	/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+	}
+	/*Media Queries SCREEN >= 620px AND <= 674px*/
+	@media all and (min-width:620px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 619px*/
+	@media all and (min-width:535px) and (max-width:619px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+    </style>
+    </head>
+    <!--HTML-->
+    <body>
+    <p id="title"><strong>1.4 - Investigação do  assunto</strong></p>
+    <p>&nbsp;</p>
+        <p><img src="imagens/capitulo01/07.jpeg" id="img"></p>
+        <p id="corpo">É  comum que o ilustrador comece um projeto depois de receber um e-mail ou texto  do cliente. Isso acontece principalmente em trabalhos para jornais, revistas ou  livros. Um jornal pode precisar de ilustrações para uma seção de TI ou saúde,  ou uma revista pode chamar ilustradores para produzir imagens que acompanhem os  textos de seus colunistas fixos.    </p>
+    <p><br>
+    <p id="corpo"> Qualquer  que seja o tipo de trabalho, é recomendável investigar o assunto do texto com a  maior profundidade possível. Pesquisas na Internet, em livrarias e em  bibliotecas permitem que você obtenha mais informações do que o texto da  matéria de revista ou jornal pode tratar. Coletar mais dados sobre o assunto  pode iluminar novos caminhos de pensamento possíveis.
+    <p>
+    <p id="corpo"><br>
+    É  útil construir uma visão mais abrangente, mas não perca de vista o texto  original. Obtenha o máximo de informação possível – obviamente, o mais  importante no início de um projeto é que você compreenda o assunto que está  ilustrando. No entanto, tome cuidado; lembre que você está sendo contratado  para criar uma ilustração que deve complementar o texto que será publicado.
+    <p>
+    <p id="corpo"><br>
+    Quando  um ilustrador está ocupado com inúmeros trabalhos, a maior tentação é mandar  qualquer projeto novo para o &ldquo;fim da fila&rdquo;, e ignorá-lo até que o prazo esteja  tão próximo que seja impossível continuar adiando. Para muitos ilustradores  freelancers, existe uma aversão intrínseca em completar um trabalho antes do  prazo especificado, não por preguiça, mas por medo de ficar sem trabalho. Ser  freelancer significa que há momentos em que se está ocupado e outros em que se  está sem trabalho, ou &ldquo;entre projetos&rdquo;, como os atores gostam de chamar sua  falta de emprego. O acúmulo de trabalho ajuda a manter um senso de que se está  empregado. Porém, esse processo de abandonar os projetos até o último momento  não conduz ao pensamento criativo.
+    <p>
+    <p id="corpo"><br>
+    O  melhor a fazer é assumir o projeto o mais rápido possível. É comum que as  melhores ideias surjam quando menos se espera – no banho, no ônibus, enquanto  se está cozinhando – mas isso só acontece se o projeto foi investigado, ou se  pelo menos o texto foi digerido, já no estágio inicial. A forma ideal de  iniciar o processo criativo é ler o texto minuciosamente algumas vezes, em um  local tranquilo, com uma xícara de café, um bloco e uma caneta. É muito útil  imprimir uma segunda cópia do texto e deixá-la sempre à mão, na mochila, junto  com o bloco de notas e a caneta, para que possa servir como material de  consulta ou referência sempre que você tiver momento livre. Lembre que uma boa  ideia pode tomar forma em qualquer lugar.
+    <p>
+    <p id="corpo"><br>
+    Começar  o processo já no primeiro estágio e coletar o máximo possível de informações  relacionadas ao assunto vai impulsionar o processo de geração de ideias. Tente  ficar relaxado e tenha segurança para reconhecer que as boas ideias criativas  podem levar tempo para tomarem forma. Treinar a mente para não entrar em pânico  quando o desenvolvimento estiver lento é um aspecto-chave no processo criativo.  Em essência, não enfrente a folha de papel ou a tela em branco despreparado –  leia o briefing, entenda seu público-alvo, e esteja munido de suas anotações.
+    <p>
+    <p id="corpo"><br>
+    <strong>Como fazer anotações</strong>
+    <p id="corpo"><br>
+    Cada  um tem uma abordagem diferente para fazer anotações. Alguns gostam de rabiscar  palavras ou frases soltas, outros preferem escrever suas ideias por extenso,  enquanto outros ainda criam uma combinação de esboços pensamentos e explicações  escritos à mão. Encontre o método que melhor se adapta aos seus propósitos –  use um caderno de esboços, folhas A4, escreva na cópia do próprio briefing,  qualquer método que pareça adequado.
+    <p><br>
+    <p id="corpo">Comece pela leitura  completa do briefing ou do texto, bem como das anotações que você fez durante a  reunião de briefing, caso tenha havido uma, sem escrever notas. Claro que, se  ideias ou pensamentos vierem à mente durante essa primeira leitura, vale a pena  fazer anotações breves no papel, mas use essa primeira leitura simplesmente  como uma oportunidade de ganhar um entendimento da matéria ou artigo. É  improvável que você não saiba coisa alguma sobre o conteúdo do texto; o diretor  de arte que contratou a ilustração terá mencionado algo sobre o conteúdo por  telefone ou e-mail quando perguntou se você gostaria de assumir o projeto.
+    <p><br>
+    <p id="corpo"><strong>Metodologias de pesquisa</strong>
+    <p><br>
+    <ul id="corpo2">
+      <li>Internet</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p id="corpo">A apenas um clique de distância, a  Internet já é considerada por muitos ilustradores melhor do que uma visita a  uma biblioteca ou a um sebo. As páginas disponíveis podem gerar referências  visuais em um instante e fornecer informações fatuais em poucos cliques. O  tempo de download está bem mais rápido, graças à popularização da banda larga,  e a pesquisa visual na tela nunca foi tão acessível ou tão requisitada.  Certifique-se de adicionar suas páginas favoritas aos favoritos do navegador.</p>
+    <p>&nbsp;</p>
+    <ul id="corpo2">
+      <li>Dicionário  de sinônimos</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p id="corpo">Palavras e jogos de palavras podem  oferecer pontos de partida e até soluções para ilustradores que querem criar  uma linha visual fundamentada na linguagem. O bom e velho dicionário de  sinônimos na prateleira pode funcionar tão bem quanto sua versão online. O  simples ato de passar algum tempo investigando as palavras e seus significados  pode levar a resultados interessantes e desafiadores.</p>
+    <p>&nbsp;</p>
+    <ul id="corpo2">
+      <li>Google</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p id="corpo">É a ferramenta de pesquisa mais  importante da Web, tanto para encontrar páginas quanto para saber onde e  quantas vezes um assunto é mencionado. A facilidade de busca de imagens do  Google é perfeita para encontrar e descobrir uma ampla gama de imagens  fotográficas e desenhos relacionados à palavra-chave que você está pesquisando.</p>
+    <p><br>
+    </p>
+    <ul id="corpo2">
+      <li>Diagramas  teia de aranha</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p id="corpo">Diagramas em forma de teia de aranha são  especialmente úteis quando se trabalha com um conjunto de problemas complexo ou  com informações mais difíceis de serem definidas visualmente. Comece anotando  toda a gama de assuntos ou títulos que você quer investigar, e então acrescente  anotações e pesquisa à medida que você passa por cada um dos tópicos. Onde  enxergar relações entre assuntos ou ideias em potencial, crie ligações visuais  que irão ajudá-lo a definir e esclarecer seus pensamentos, transformando-os em  conceitos mais conclusivos.</p>
+    
+    <p>&nbsp;</p>
+    <p id="corpo"><strong>Painéis  de inspiração</strong></p>
+    <p>&nbsp;</p>
+    <ul id="corpo2">
+      <p><img id="img" src="imagens/capitulo01/08.jpg" width="50%" height="50%"></p>
+      <li>Alguns  ilustradores gostam de começar seus projetos criando um painel de inspiração a  partir de esboços e de uma reunião de imagens ou objetos &ldquo;achados&rdquo;. Essa  abordagem é determinada pelo tipo de projeto que foi contratado. Se o trabalho  envolve produzir um conjunto de imagens, os painéis de inspiração podem refletir  o visual geral do trabalho.</li><br>
+      <li>Os  painéis de inspiração podem representar cores, formas, tonalidades e texturas,  mas também são usados para agrupar objetos visuais e para &ldquo;dar o tom&rdquo; das  ilustrações. Além disso, podem ser pontos de referência úteis para o ilustrador,  e também funcionam como ótimos guias visuais para os clientes.</li><br>
+      <li>Para  começar seu painel de inspiração, reúna e visualize aspectos em potencial,  colocando-os com fita ou alfinetes em folhas de papel ou em um quadro – placas  de espuma sintética são ótimas para isso, por serem leves e rígidas. Trabalhar  em frente ao seu painel de inspiração também pode ajudar no processo, pois  assim você tem um ponto de referência constante.</li><br>
+    </ul>
+    <p id="corpo"><strong>Folhas  de pesquisa e de ideias</strong></p>
+    <p>&nbsp;</p>
+    <ul id="corpo2">
+      <li>Colecione  palavras – use uma lista escrita para organizar em itens tudo o que você  consegue pensar que seja conectado ao projeto. Use uma caneta marca-texto para  sinalizar as palavras que parecem ter mais força e que podem acrescentar algo  ao seu modo de pensar.</li><br>
+      <li>Recorte  suas listas e posicione as palavras escolhidas em uma folha de papel nova –  cole-as com fita adesiva e comece a traçar linhas entre as palavras onde você  enxergar possíveis ligações. Procure por temáticas – tanto em termos de  pensamento quanto em termos visuais. Novas palavras e novos visuais vão começar  a tomar forma; crie-os, anote-os e adicione-os ao seu diagrama. Siga rotas não  exploradas e veja o que acontece – seja espontâneo.</li><br>
+    </ul>
+    <p id="corpo"><strong>Conexões</strong></p>
+    <p>&nbsp;</p>
+    <ul id="corpo2">
+      <li>Permita-se  explorar as conexões – pode ser que aquelas palavras e referências visuais  aparentemente não conectadas assumam um novo significado ou iniciem uma nova  cadeia de conexões, depois de combinadas. A simples justaposição de dois ou  três elementos pode levar uma ideia a uma nova direção – não tenha medo de  experimentar.</li><br>
+    </ul>
+    <p id="corpo"><strong>Metáforas</strong></p>
+    <p>&nbsp;</p>
+    <ul id="corpo2">
+      <li>Muitos  ilustradores bem-sucedidos utilizam metáforas com sucesso em seu trabalho. Uma  metáfora pode ser uma palavra ou uma imagem que não deve ser lida ou vista  literalmente, mas fazendo uma comparação. O uso de simbolismo ou de figuras de  linguagem que não representam as coisas como são pode ser descrito como  metáfora. O dinheiro não dá em árvores, na realidade, mas como metáfora,  entendemos o sentido da expressão. É essencial compreender seu público-alvo  nesse contexto; nem todas as metáforas atingem seu destino. Uma metáfora comum  na Europa, por exemplo, pode não ser bem traduzida para um público asiático e  vice-versa. Se não tiver certeza, use a esperteza.</li><br>
+    </ul>
+    <p id="corpo">Certifique-se  de que sua interpretação do texto está clara – ela pode divergir do que você  pensou originalmente sobre o projeto – antes de ter uma oportunidade de ler o  texto. Isso é absolutamente normal, então, é sempre melhor adiar a tomada de  quaisquer decisões sobre sua ilustração, por melhores que sejam, até que você  tenha lido minuciosamente o texto.</p>
+    <p id="corpo"><br>
+      Durante  a segunda ou a terceira leitura, comece a fazer anotações. Não se preocupe com  a forma que elas terão – essas anotações não são para um público externo, mas  serão úteis como lembretes e sinalizadores quando você olhar para elas de novo.  Verifique se entende e é capaz de compreender suas próprias anotações – você  pode demorar alguns dias para voltar a elas, e elas precisam ser de fácil  consulta e uso. Use uma caneta marca-texto para sublinhar áreas-chave do texto  – é comum haver seções úteis que resumem os pontos gerais do que o autor está  dizendo. Alguns ilustradores acham útil grampear folhas de papel em branco  entre as páginas do texto para registrar suas anotações e ideias.</p>
+    <p id="corpo"><br>
+      O  estágio de anotações serve puramente para estabelecer os pensamentos iniciais e  conexões e ideias rudimentares. Não entre em pânico se, durante a primeira  sessão, você descobrir que nada de concreto surgiu. Você vai ter absorvido  muitas informações contidas no texto, e sua mente as usará ao longo das  próximas horas ou, idealmente, dos próximos dias.</p>
+    <p id="corpo"><br>
+      <strong>Primeira representação visual</strong></p>
+    <p>&nbsp;</p>
+    <p id="corpo">  As  anotações que você criou provavelmente não passam de um monte de palavras ou  expressões soltas, ou talvez uma ou outra frase-chave. Você pode também ter  produzido uma linha visual bastante simples. É improvável que essa linha visual  seja algo além de simples rabiscos, uma forma visual de anotação caracterizada  pela simplicidade da linha – uma figura humana representada por um boneco de  palitos, um prédio representado pelo desenho infantil de uma casinha, etc.  Reconheça esses desenhos como primeiros estágios para visualizar a linguagem  escrita – eles podem não conter a chave para a produção da ilustração final,  mas funcionam como degraus ou tijolos para a construção das ilustrações finais.  Adquira o hábito de trabalhar desse modo – para alguns, é mais fácil do que  fazer anotações – mas assim como na escrita, certifique-se de incluir detalhes  o suficiente para lembrar exatamente qual era o objetivo do desenho.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer Icon-->
+    <div id="footer_icon">
+    	<div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" alt="" title="Voltar Capítulo"></a>
+    </div>
+    <div id="b_next"><a href="#"> <img src="imagens/b_next.png" alt="" title="Próximo Capítulo"></a>
+    </div>
+</body>
+</html>

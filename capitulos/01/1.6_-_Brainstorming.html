@@ -1,0 +1,577 @@
+﻿<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento sem título</title>
+    <head>
+     <!--Estilização da Página-->
+    <style type="text/css">
+	/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+	}
+	/*Media Queries SCREEN >= 620px AND <= 674px*/
+	@media all and (min-width:620px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 619px*/
+	@media all and (min-width:535px) and (max-width:619px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+		
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+    </style>
+    <!--HTML-->
+    <body>
+    <p id="title"><strong>1.6 - Brainstorming</strong></p>
+    <p>&nbsp;</p>
+    <p id="corpo"><img id="img" src="imagens/capitulo01/10.jpg" width="50%" height="50%">Agora  você já deve ter totalmente estruturados um briefing de projeto, suas anotações  e interpretações da reunião de briefing, um caderno de esboços com inspirações  e ideias iniciais, sua pesquisa nas áreas de interesse, uma pasta de projeto e  um ambiente criativo totalmente funcional para trabalhar.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Brainstorming  é uma palavra que tem significados distintos para diferentes pessoas. De  maneira simplificada, é a ação de reunir toda a pesquisa, anotações, rabiscos e  ideias para criar uma série de ideias e caminhos mais claramente definidos que  deverão ser seguidos. Os ilustradores, diferentemente dos designers, muitas  vezes fazem seu brainstorming sozinhos – a ilustração pode ser um empreendimento  solitário, e por ser uma atividade solo, apenas uma pessoa é responsável pelo  resultado final. É claro que trabalhar com um diretor de arte ou designer em um  projeto pode ajudar, e discutir ideias deve fazer parte do processo. No  entanto, em última instância, há apenas uma pessoa criando as ideias iniciais:  você, o ilustrador.</p>
+    <p>&nbsp;</p>
+    <p id="corpo">Uma enxurrada de  ideias e pensamentos é a melhor forma de descrever como um brainstorming deve  funcionar. Capture todas as ideias e pensamentos no papel ou na tela. Mantenha  as ideias fluindo – boas, más, sensacionais, chatas; deixe que tudo venha à  tona. Assim como uma tempestade com muita chuva e vento, seu cérebro deve fazer  hora extra para produzir o maior número de ideias possível. Examine  possibilidades, explore ligações, distorça significados e subverta pensamentos  – qualquer coisa vale. Para que o brainstorming funcione, você deve germinar  ideias em grande quantidade.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"><strong>A investigação das ideias</strong></p>
+    <p>&nbsp;</p>
+    <p id="corpo">  Depois  do exercício inicial de brainstorming, as ideias podem tomar forma de diversas  maneiras. A próxima etapa no processo é reconhecer como utilizar as  matérias-primas do pensamento criativo. A avaliação e a edição de suas ideias  podem ser tão difíceis quanto sua concepção. Reconhecer uma ideia forte e trabalhar  nela até a conclusão ou acompanhar o &ldquo;fio da meada&rdquo; do pensamento criativo até  a próxima etapa lógica são aspectos do processo, e melhoram com a prática.</p>
+    <p id="corpo"><br>
+      Para  ajudar a traduzir os resultados do brainstorming em conceitos plenamente  desenvolvidos, assuma tanto um senso de realismo – a imagem deve comunicar a  mensagem, no fim das contas – e mantenha um alto nível de criatividade. Ser  realista significa manter as ideias mais loucas, bizarras e ilegíveis longe de  sua produção. Lembrar que o trabalho deve comunicar algo tem tudo a ver com ser  realista. Por outro lado, ser criativo significa que o trabalho deve continuar  moderno, correr riscos e ter um quê de ousadia – afinal, você é um artista. O  objetivo é atingir a medida certa de realismo e criatividade.</p>
+    <p id="corpo"><br>
+      Investigar  suas ideias e concretizá-las depende de uma série de métodos. Procurar conexões,  combinar imagens e palavras ou justapor diversos elementos pode levar as ideias  a tomar novas direções. Visualizar seus conceitos por um outro lado também pode  ajudar – uma nova perspectiva sobre o problema pode trazer um recomeço. O uso  de cor pode afetar a atmosfera da imagem, enquanto o uso de metáforas pode  mudar a ênfase de uma ideia ou conceito.</p>
+    <p id="corpo"><br>
+      <strong>Lidando com os riscos em ilustração</strong></p>
+    <p>&nbsp;</p>
+    <p id="corpo">  O  termo &ldquo;risco&rdquo; implica perigo. No entanto, temos que admitir que, para o mundo  exterior, a simples ideia de que os ilustradores enfrentam riscos em sua vida  diária é um tanto absurda. O momento em que os riscos têm efeito sobre a  ilustração é aquele ponto em que as ideias e rotas seguras para um projeto são  abandonadas em favor de uma rota menos garantida.</p>
+    <p id="corpo"><br>
+      Abrir  novas portas para o desconhecido e encarar problemas criativos de frete, sem a  rede de segurança da familiaridade, requer coragem. Voar em face à conformidade  e solucionar problemas dentro de projetos com ideias novas e, às vezes, novas  formas de fazer imagens pode ser a essência daquilo que propulsiona a obra de  um ilustrador – aniquilar a monotonia da repetição.</p>
+    <p id="corpo"><br>
+      Assumir  riscos é um aspecto necessário do pensamento criativo, assim como a própria  criação de imagens. O futuro da carreira de um ilustrador e o futuro da  disciplina dependem da constante evolução e exploração de novos caminhos do  pensamento.</p>
+    <p id="corpo"><br>
+    <strong>Como as imagens funcionam</strong></p>
+    <p>&nbsp;</p>
+    <p id="corpo">  As  imagens ajudam um público a perceber uma ideia, e o papel da ilustração é  trazer significado visual a um dado texto. As imagens podem ser simples,  complexas, emocionais, diagramáticas ou documentais. O mais importante é que  elas tenham como objetivo apresentar um ponto de vista e fazer com que o espectador  pense. No contexto da ilustração, as imagens devem ser únicas – fazendo com que  o espectador veja algo de uma forma que ele não veria normalmente. Além disso,  devem ser emotivas e dar ao espectador um certo senso de humanidade, além de  serem adequadas e compreensíveis.</p>
+    <p id="corpo"><br>
+      A  comunicação visual depende de uma mistura de signos e símbolos – a forma como  &ldquo;lemos&rdquo; as imagens e como decodificamos seu significado ocorre de maneira  subconsciente. A &ldquo;voz&rdquo; inerente dentro de uma imagem é traduzida pelo público  que aprendeu a entender e compreender imagens visuais por meio de associações  construídas ao longo dos anos.<br>
+    Para  um ilustrador, reunir esses elementos não é uma conquista pequena – e é claro  que tudo isso também está intimamente ligado à ideia criativa.</p>
+    <p id="corpo"><br>
+    Um  ilustrador monótono irá produzir imagens monótonas. Em geral, o maior inimigo  do pensamento original e inovador não é o cliente, mas sim o ilustrador. Depois  de cair em uma &ldquo;fórmula&rdquo; de estilo, sua abordagem à criação de ideias e  raciocínios depende demais de clichês, sem se arriscar em áreas mais  provocantes e desafiadoras. É recomendável reconhecer os sintomas disso e  trabalhar para garantir – por meio de constante exposição a novos materiais,  referências e pesquisas – que criar ilustrações continue sendo um desafio.</p>
+    <p id="corpo"><br>
+      Apenas  por meio da exploração de territórios desconhecidos você fará as novas  descobertas que propulsionarão seu trabalho. Às vezes, assumir riscos pode  levar a frustações, e nem toda tentativa será bem-sucedida. No entanto, o  primeiro passo é aprender a reconhecer as armadilhas e as recompensas.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> <strong>Ideias sobre linhas visuais e esboços</strong></p>
+    <p id="corpo"><br>
+      Resolver  o briefing do projeto é passar pelas etapas de geração de ideias intacto e  encontrar um nível de representação mental e visual com o qual você esteja satisfeito.  Garantir que seu cliente, e muitas vezes o cliente de seu cliente, esteja tão  satisfeito com sua abordagem e tenha tanta confiança em seu trabalho quanto  você é outra etapa do processo.<br>
+    É  extremamente raro que você tenha liberdade completa em um projeto, ou possa  partir direto para a criação da ilustração final sem precisar fornecer ou  apresentar uma linha visual que descreva suas ideias e as vias que você tomará  para construir a ilustração final.</p>
+    <p id="corpo"><br>
+      Uma  linha visual ou rafe*, como às vezes é chamado, deve idealmente ser um esboço  que demonstra de maneira bem abrangente os elementos que aparecerão no  trabalho, embora nessa etapa nada tenha sido finalizado ou detalhado ainda.  Infelizmente, o ideal está agora ameaçado à medida que mais clientes começaram  a esperar que a linha visual apresente um nível de detalhe cada vez mais  explorado. Essa atitude pode ser uma reação ao número de ilustradores que criam  imagens em tela de computador atualmente. Os clientes detêm e exercem o direito  de solicitar alterações, pois acreditam que o trabalho pode ser facilmente  modificado pelo ilustrador no computador. As expectativas de uma linha visual  mais lapidada e com maior grau de conclusão vêm sendo incentivadas pelo  crescimento do software e hardware digital – o equipamento criou uma cultura na  qual a perfeição tornou-se uma dádiva.<br>
+      -----<br>
+    *N.  de R.T.: Termo popularmente utilizado para &ldquo;esboço&rdquo;. Origina-se da palavra em  inglês rough.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer Icon-->
+    <div id="footer_icon">
+    	<div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" alt="" title="Voltar Capítulo"></a>
+    </div>
+    <div id="b_next"><a href="#"> <img src="imagens/b_next.png" alt="" title="Próximo Capítulo"></a>
+    </div>
+</body>
+</html>

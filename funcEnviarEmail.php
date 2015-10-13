@@ -40,7 +40,7 @@ $remetente = 'avaweb@iteva.org.br';
 $nomeRemetente = 'AVAWEB';
 $senha = 'Iteva100';
 
-$destinatario = 'gisellyazevedo@hotmail.com' ;
+$destinatario = 'giselly.reboucas@iteva.org.br' ;
 $nomeDestinatario  = 'Giselly Rebouças';
 /* Servidor */
 $host = 'smtp.office365.com';
@@ -67,7 +67,7 @@ $mensagem = "
         </div>
         </div>";
 /* Configura os destinatários */
-$mail->AddAddress($destinatario, $nomeDestinatario);
+$mail->AddAddress(utf8_decode($destinatario), utf8_decode($nomeDestinatario));
  
 /* 
  * CONFIGURAÇÕES AVANÇADAS 
@@ -85,13 +85,13 @@ $mail->SMTPSecure = "tls";
 /* Porta da conexão */
 $mail->Port = "587";
 /* Email ou usu�rio para autenticação */
-$mail->Username = $remetente;
+$mail->Username = utf8_decode($remetente);
 /* Senha do usu�rio */
 $mail->Password = $senha;
  
 /* Configura os dados do remetente do email */
-$mail->From = $remetente; // Seu e-mail
-$mail->FromName = $nomeRemetente; // Seu nome
+$mail->From = utf8_decode($remetente); // Seu e-mail
+$mail->FromName = utf8_decode($nomeRemetente); // Seu nome
  
 /* Configura a mensagem */
 $mail->IsHTML(true); // Configura um e-mail em HTML
@@ -100,7 +100,7 @@ $mail->CharSet = 'UTF-8'; // Charset da mensagem (opcional)
  
 /* Configura o texto e assunto */
 $mail->Subject  = $assunto; // Assunto da mensagem
-$mail->Body = $mensagem; // A mensagem em HTML
+$mail->Body = utf8_encode($mensagem); // A mensagem em HTML
 
 //$mail->AddAttachment('http://iteva.org.br/ava/imagens/', 'backgroundEmail.jpg');
 //$mail->AddAttachment('http://iteva.org.br/ava/imagens/','email.gif');

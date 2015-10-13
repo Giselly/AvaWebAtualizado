@@ -1,0 +1,929 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+<style type="text/css">
+	body {overflow-x:hidden;}
+	#posicao {
+		display:inline-block;
+		position:relative; 
+		float:left; 
+		width: 50%;		
+	}
+	
+	#img-2 {
+		width:83.75%;	
+	}
+	
+	/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width: 52%;
+			height: 52%;
+			margin-left: 5%;
+			margin-bottom: 3%;
+			float: left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:30%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:30%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:30%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:30%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:30%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 709px*/
+	@media all and (min-width:535px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2{
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+		#legenda {
+			float:left;
+			margin-left:5%;
+			position:relative;
+			width:30%;	
+		}
+		
+		#legenda p {font-size:11pt;}
+		
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:80%;	
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:80%;
+			height:80%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+		#legenda {
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:85%;	
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+		#legenda {
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:85%;	
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-2 {
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+		#legenda {
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:85%;	
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			overflow-x:hidden;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#posicao {
+			display:block;
+			float:none;
+			width:100%;
+			margin-left:5%;
+		}
+		#img-2 {
+			width:84%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+		#legenda {
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:85%;	
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			overflow-x:hidden;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#posicao {
+			display:block;
+			float:none;
+			width:100%;
+			margin-left:5%;
+		}
+		#img-2 {
+			width:84%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+		#legenda {
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			margin-left:5%;
+			width:85%;	
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			overflow-x:hidden;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#posicao {
+			display:block;
+			float:none;
+			width:100%;
+			margin-left:5%;
+		}
+		
+		#img-2 {
+			width:84%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+		#legenda {
+			margin-left:5%;
+			position:relative;
+			width:80%;	
+		}
+		#legenda p {font-size:11pt;}
+		#fonte {
+			font-style:italic;
+			clear:both;
+			width:90%;	
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			overflow-x:hidden;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#posicao {
+			display:block;
+			float:none;
+			width:100%;
+		}
+		
+		#img-2 {
+			width:84%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			/* [disabled]-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5); */
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+    </style>
+</head>
+    
+    <body>
+    <div id="conteudoTopico">
+   	  <p id="title"><strong>04 – PRINCÍPIOS DE DESIGN – Alinhamento</strong></p><br>
+    <p id="corpo">Os iniciantes em design tendem a  colocar o texto e a imagem em qualquer lugar da pagina que tenha espaço, e o  fazem, geralmente, sem consciencia dos outros intens existentes naquela pagina.  Isso resulta no efeito tao desorganizado que voce já conhece, que é como uma  cozinha desarrumada: uma xícara aqui, um prato lá, um guardanapo no chão, um  pote na pia, água no chão. Não é muito dificel arrumar tudo nessa cozinha um  pouco bagunçada, assim como não é muito dificel arrumar uma pagina confusamente  diagramada, com alinhamentos mal-determinados.</p>
+   	  <p id="corpo">Segundo o principio do  alinhamento, <strong>nada deve ser colocado  arbitrariamente em uma pagina. Cada item deve ter uma conexão visual com algo  na pagina. </strong>O principio do alinhamento obriga a pessoa a ser consciente: já  não se pode simplesmente jogar as coisas na pagina nos lugares onde houver  espaço</p>
+   	  <p id="corpo">Quando os itens são alinhados na  pagina, há uma unidade coesa, mais forte. Mesmo quando os elementos alinhados  estiverem fisicamente separados uns dos outros, se estiverem alinhados, haverá  uma linha invisível conectando-os, tanto em relaçao aos seus olhos quanto à sua  mente. Apesar de posicionar alguns elementos separadamente, indicando suas  ligaçoes de acordo com o princípio da proximidade, é o princípio do  alinhamentos que avisará ao leitor que, mesmo não estando proximos, os itens  fazem parte do mesmo material. As paginas a seguir ilustram essa idéia</p>
+        <p id="corpo">Dê uma olhada neste cartáo de  visita (o mesmo que você já viu no ultimo capitulo). Parte do seu problema é  que nada esta alinhado nada. Nesse pequeno espaço existem elementos com três  alinhamentos diferentes: à esquerda, à direita e centralizado. Os dois grupos  de textos estao alinhados nos cantos esquerdo ou direito, com os dois blocos na  parte inferior do cartão (estes, por sua vez, tambem não estao alinhadas por  suas linhas de base)</p>
+    </div><br/>
+    
+    <img src="imagens/1.jpg" id="img" style="border: solid 2px #fff;"/>
+    <div id="legenda"><p style="font-style:italic;">Para que os elementos deste cartâo foram simplesmente jogados em qualquer lugar e colados. Nenhum dos elementos tem nenhuma conexão com qualquer outro elemento do cartão.</p></div><br/>
+    
+    <p id="corpo" style="clear:both;font-style:italic;">Decida quais itens devem ser agrupados de acordo com o principio de proximidade e quais devem ficar separados.</p>
+    
+    <img src="imagens/2.jpg" id="img" style="border: solid 2px #fff;"/>
+    <div id="legenda"><p style="font-style:italic;">Movendo todos os elementos para a direita e alinhando-os de maneira igual, as informações ficam mais organizadas. (È claro: você deve ter percebido que além disso, eu agrupei elementos interligados em proximidade entre si, o que tambem ajudou.)</p></div><br/>
+    
+    <p id="corpo" style="clear:both;">No exemplo (repetido a seguir) que você viu na seção sob proximidade, o texto tambem estava alinhado pela marte central. Mas se ele ficar alinhado pela esquerda ou pela direita, a linha invisível que o conecta ficará mais forte, pois terá um limite vertical a seguir. Isso faz que os textos alinhados à esquerda e à direita fiquem com aspecto mais limpo e mais forte. Compare os dois exemplos a seguir. Falaremos sobre eles nas proximas páginas. </p><br/>
+    
+    <img src="imagens/3.jpg" id="img" style="border: solid 2px #fff;"/>
+    <div id="legenda"><p style="font-style:italic;"> Este exemplo mostra uma boa disposição, com blocos de textos agrupados em uma proximidade lógica. O texto está centralizado pelas suas linhas e centralizado na pagina. Apesar de ser um alinhamento válido, os cantos estão “flutuantes”; o peso da linha não fica visível.</p></div>
+    
+     <img src="imagens/4.jpg" id="img" style="border: solid 2px #fff;clear:both;"/>
+     <div id="legenda"><p style="font-style:italic;">Este exemplo apresenta a mesma organização visual, mas está alinhado à direita. Agora o canto bem delimitado à direita ficou visível. A “linha invisìvel” que conecta as extremidades dos dois conjutos de texto é mais forte.<strong>A força deste canto é o que da peso ao layout.</strong></p>		     </div><br/>
+     
+     <p id="corpo" style="clear:both">Você costuma centralizar tudo automaticamente? O alinhamento centralizado é o mais usado pelos iniciantes: é muito seguro e a sensação de usa-lo é de conforto. O alinhamento centralizado cria uma aparencia mais formal, mais comum e sem brilho. Dê uma olhada nas diagramações de que você mais gosta. Aposto que a maioria dos materiais com uma estética sofisticada não esta centralizada. Sei que é difícel para um iniciante libertar-se do alinhamento pelo centro; você precisará forçar-se a fazê-lo uma primeira vez. Mas experimente combinar o alinhamento à esquerda ou à direita com um bom uso da proximidade e ficará surpreso com as mudanças que ocorrerão em seu trabalho.</p><br/>
+     
+    <div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/5.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Esta é uma tipica capa de relatorio, certo? Este formato padrao tem uma aparencia sem brilho, quase amadora,capaz de influenciar a reaçâo inicial de uma pessoa em relaçâo ao relatorio.</p>
+ 	</div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/6.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Esta é uma tipica capa de relatorio, certo? Este formato padrao tem uma aparencia sem brilho, quase amadora,capaz de influenciar a reaçâo inicial de uma pessoa em relaçâo ao relatorio.</p>
+    </div><br/>
+    
+    <p id="corpo" style="clear:both">Há muitas opções para criar o papel de carta, muitas vezes o layout usado é aquele com alinhamento centralizado. Sinta-se livre para mudar a disposição dos elementos, mas lembre-se do alinhamento.</p><br/>
+    
+    <div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/7.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Esta opçao não é ruim, mas o layout centralizao é um pouco monotono e a moldura cria um espaço muito hermético, confinando os elementos.</p>
+ 	</div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/8.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Um alinhamento á esquerda deixa a pagina mais sofisticada. A limitação da linha pontilhada à esquerda abre a página e reforça o alinhamento.</p>
+    </div>
+
+	<div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/9.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Esta opção está com alinhamento à direita, os elementos posicionados do lado esquerdo. Fiz algumas modificações na fonte.</p>
+ 	</div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/10.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte"> Seja ousado</p>
+    </div><br/>
+	
+    <p id="corpo" style="clear:both;">Não estou sugerindo que você nunca centralize nada! Bastar estar consciente do efeito do alinhamento pelo centro. Será que é realmente esta a aparencia que você deseja criar? As vezes é. Por exemplo: os casamentos costumam ser eventos formais, portanto, se você quiser centralizar o texto do seu convite de casamento, poderá faze-lo.</p><br/>
+    
+    <div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/11.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Centralizado. <br>Realmente monótono</p>
+ 	</div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/12.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Se você quiser centralizar o texto, pelo menos faça que ele fique centralizado de maneira obvía.</p>
+    </div>
+
+	<div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/13.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Experimente descentralizar o bloco com o texto centralizado</p>
+ 	</div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/14.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte"> Se você centralizar o texto, tente faze-lo ficar mais expressivo de alguma maneira.</p>
+    </div><br/>
+	
+	<p id="corpo" style="clear:both;">Às vezes é possivel dar uma pitada de graça à opção centralizada, como por exemplo, centralizar o texto e colocar o proprio bloco de texto fora de centro. Outra opção é colocar as letras mais acima da página, para criar mais “tensao”; voce tambem pode usar uma fonte muito casual e engraçada, com um alinhamento muito formal, centralizado. O que você não vai querer fazer: usar a fonte Times 12pontos com retornos de carro duplos!</p><br/>
+    
+    <div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/15.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Este é o tipo de layout que não mostra bons exemplos de planejamento visual: fonte comum, letras muito grandes, emaranhado de texto, duplos retornos de carro, moldura inadequada. </p>
+ 	</div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/16.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">O alinhamento centralizado demanda cuidado dobrado para funcionar. Este layout tem uma fonte tradicional, com um tamanho relativamente pequeno, mais espaço entre as linhas, muito espaço em branco ao redor do texto, sem moldura.</p>
+    </div>
+
+    <div id="posicao" style="margin-left:5%;"> 
+    <img src="imagens/17.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte">Destaque um layout mais vertical, esguio, centralizado, com um formato vertical, delgado.</p>
+    </div>
+    
+    <div id="posicao" style="margin-right:-5%;"> 
+    <img src="imagens/18.jpg" id="img-2" style="border: solid 2px #fff;"/>
+    <p id="fonte"> Destaque um layout largo, centrazlizado, com um formato horizontal.Tente fazer seu proximo folheto assim.</p>
+    </div><br/>
+    
+     <p id="corpo" style="clear:both;">Você está habituado a trabalhar com alinhamentos texto. Até adquirir mais experiencia, lembre-se de uma regra: utilize apenas um alinhamento de texto por página, ou seja, o texto deve ser todo alinhado à esquerda, à direita ou centralizado.</p><br/>
+     
+
+     <img src="imagens/19.jpg" style="border: solid 2px #fff; display:inline-block; float: left;margin-left:5%;width:30%;"/>
+     <img src="imagens/20.jpg" style="border: solid 2px #fff; display:inline-block; float: right;margin-right:5%;width:30%;"/>
+     <img src="imagens/21.jpg" style="border: solid 2px #fff; display: block; position: relative; float: none; margin: auto;width:30%;"/><br/>
+     
+     <p id="corpo" style="clear:both;">Este texto está justificado. Algumas pessoas o classificam como alinhado à direita e à esquerda e algumas como blocado. As linhas de texto ficam alinhadas dos dois lados. Só utilize este alinhamento se suas linhas puderem ter uma largura tal que evite a formação de “vazios” horrivéis entre as palavras.</p>
+     
+     <p id="corpo">Às vezes é possível utilizar os alinhamentos à esquerda na mesma página, mas é importante que você se certifique de alinhar os elementos de alguma maneira.</p><br/>
+    
+     <img src="imagens/22.jpg" id="img" style="border: solid 2px #fff;"/>
+     <div id="legenda"><p style="font-style: italic;">Apesar de esses dois elementos permanecerem com dois alinhamentos diferentes (o texto de cima está alinhado à esquerda e o de baixo, a direita), a lateral do texto descrito de baixo está alinhado com a lateral direita do título de cima, conectando os elementos através de uma linha invisível. Isso não foi feito por acaso!</p></div>
+    
+      <img src="imagens/23.jpg" id="img" style="border: solid 2px #fff;clear: both;"/>
+      <div id="legenda"><p style="font-style: italic;"> Neste exemplo, o título e subtítulo estão alinhados à esquerda, mas a descrição está centralizada; não existe um alinhamento em comum entre os dois elementos do texto. Eles não estão conectados entre si.</p></div><br/>
+    
+      <p id="corpo" style="clear: both;">Quando colocar outros itens na página, é importante que cada um deles tenha um alinhamento visual com outro item da página. Se as linhas de texto estiverem nas horizontais, alinhe suas laterais direita ou esquerdas. Se houver figuras, alinhe suas laterais direitas ou esquerdas. Se houver figuras, alinhe suas laterais com outras laterais existentes na página. Nada deve ser posicionado arbitrariamente na página.</p><br/>
+      
+      <img src="imagens/24.jpg" id="img" style="border: solid 2px #fff; display: block; position: relative; float: none; margin: auto;"/>
+      <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;">Nesse caso, há dois problemas, certo? Falta de proximidade e falta de alinhamento. Mesmo que esse seja uma planilha bastante comum e sem atrativos, não há motivos para não fazer que a pagina fique com uma aparência melhor e apresentar as informações com a máxima de clareza possível. Quando as informações são difíceis de entender, é <strong> muito </strong> importante apresenta-las com clareza e organização.</p></div><br/>
+    
+      <p id="corpo" style="clear: both;">Provavelmente a falta de alinhamento seja maior por causa de materiais com uma aparência antiestética. Seus olhos gostam de ver tudo em ordem, pois isso cria uma sensação de calma e segurança.</p>
+      <p id="corpo" style="clear: both;">Em qualquer material com um bom design é possível desenhar linhas sobre os objetos alinhados, mesmo que a apresentação do material seja composta por muitos itens diferentes.</p><br/>
+      
+      <img src="imagens/25.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+      <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;">Nesse caso, o simples alinhamento dos itens muda tudo. Observe que nenhum item está colocado arbitrariamente na página; todo item possui alguma conexão visual com outro.</p>
+<p style="font-style: italic;">Se eu soubesse do que trata esse quadro, talvez optasse por passar o quadro da direita mais ainda para a direita, distante do quadro maior, mantendo suas partes superiores alinhados, ou eu distanciaria mais o quadro inferior. Ajustaria o espaçamento entre os três quadros, segundo suas interligações logicas.
+</p></div><br/>
+
+	<p id="corpo" style="clear:both;">Um inconveniente com os materiais criados por pessoas que não conhecem design é a sutil falta de alinhamento, como títulos centralizados e subtítulos com paragrafo de endentação. À primeira vista, qual dos exemplos destas duas páginas tem um visual mais limpo e preciso?</p><br/>
+    
+     <img src="imagens/26.jpg" id="img" style="border: solid 2px #fff;"/>
+     <div id="legenda"><p style="font-style:italic;">Essa é uma diagramação muito comum; os títulos estão centralizados, os textos estão centralizados, o texto está alinhado à esquerda, as endentações de parágrafos têm a largura das da máquina de escrever (ou seja, cinco espaços ou meia polegada como se aprende nos cursos de datilografia) e a ilustração está centralizada em uma das colunas.</p>
+<p style="font-style:italic;">Nunca centralize os títulos se o texto for alinhado à esquerda ou se ele tiver endentações. Se o texto não tiver laterais bem delimitadas à esquerda e à direita, não é possível observar se o título está realmente centralizado.</p>
+<p style="font-style:italic;">Todos esses pontos desalinhados criam uma página desorganizada: endentações muito grandes, laterais irregulares de texto, títulos centralizados com espaços em branco dos dois lados, ilustração centralizada.</p></div><br/>
+
+	<p id="corpo" style="clear:both;">Esses pequenos desalinhamentos contribuem para que a pagina fique visualmente desorganizada. Encontre uma linha e guie-se através dela. Mesmo que a diferença seja sutil e seu chefe não consiga dizer qual é diferença entre o exemplo a seguir e o anterior, a estética mais sofisticada é obviamente a melhor.</p><br/>
+
+	<img src="imagens/27.jpg" id="img" style="border: solid 2px #fff;"/>
+    <div id="legenda"><p style="font-style:italic;"><strong>Encontre um alinhamento e use-o como guia.</strong></p>
+<p style="font-style:italic;">Se o texto for alinhado à esquerda, deixe os títulos e subtítulos alinhados à esquerda. </p>
+<p style="font-style:italic;">Os primeiros parágrafos costumam ser deixados sem endentação. O objetivo de endentar um parágrafo, mas sempre se sabe que o primeiro também é um parágrafo.</p>
+<p style="font-style:italic;">Em uma máquina de escrever, a endentação comum é de cinco espaços. No caso das letras proporcionadas utilizadas no computador, a endentação tipográfica padrão e a de um <strong>eme</strong> (um eme é tão largo quanto o tamanho da sua letra), que mais se assemelha a dois espaços.</p>
+<p style="font-style:italic;">Se houver fotos ou ilustrações, alinhe-as com uma das laterais e/ou com as linhas de base.</p></div><br/>
+
+	<p id="corpo" style="clear:both;">Mesmo um material que tenha uma abertura bem diagramada e um bom design pode ser beneficiado por sutis ajustes de alinhamento. O alinhamento forte c0stuma ser a chave que falta para um layout mais profissional. Olhe todos os elementos para ter certeza de que eles estão relacionados a outros elementos da pagina.</p><br/>
+
+	<img src="imagens/28.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+    <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;"> Você consegue visualizar todos os lugares nos quais os itens poderiam estar alinhados, mas não estão? Se este livro for seu, marque todas as incidências de falta de alinhamentos desta página. Há pelo menos nove!</p></div><br/><br/>
+    
+    <p id="corpo" style="clear:both;">Preste atenção no caso de ilustrações que ficarem um pouco desalinhadas para fora da margem, de legendas quando estiverem centralizadas sob as fotos, de títulos que na0 estiverem alinhados com o texto, ou de uma combinação de texto centralizado com texto alinhado à esquerda.</p><br/>
+    
+    <img src="imagens/29.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+    <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;">Você consegue ver o que mudou, comparando esse exemplo e o da página anterior? Se este livro for seu, desenhe linhas paralelas ao alinhamento.</p></div><br/>
+    
+    <p id="corpo" style="clear:both;">Repito: encontre uma linha-guia e utilize-a. Se você tiver uma foto ou uma margem com uma lateral mais marcante, alinhe essa lateral do texto com a margem reta da foto, como mostra o exemplo abaixo. </p> <br/>
+    
+    <img src="imagens/30.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+    <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;">Existe uma linha-guia multo boa abaixo do texto. Existe uma linha-guia muito boa na margem da figura. Porém, entre o texto e a figura, existe um espaço em branco distribuído, só que com uma forma estranha. Quando o espaço em branco está com essa forma, ele separa os dois elementos.</p></div>
+    
+     <img src="imagens/31.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+    <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;">“Encontre uma linha-guia e utilize-a”. Agora a linha-guia do lado direito de texto e do lado esquerdo da figura estão próximas entre si, fortalecendo-se. O espaço também foi colocado contra a mesma linha-guia da margem da figura. </p></div><br/>
+    
+    <p id="corpo" style="clear:both;">Se os alinhamentos estiverem bem definidos, você poderá interromper conscientemente os alinhamentos e essa interrupção terá uma aparência intencional. O segredo é não ser tímido ao quebrar o alinhamento. Faça com firmeza, ou é melhor não fazer. Não seja tímido.</p>
+    
+    <img src="imagens/31.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+    <div id="legenda" style="display: block; position: relative; float: none; margin: auto;"><p style="font-style: italic;">Mesmo com o texto de interrupção invadindo o bloco de texto, você consegue ver o alinhamento à esquerda? Ás vezes é possível fazer uma quebra completamente livre de alinhamento,<strong> se você não fizer de maneira consciente.</strong></p></div>
+    </body>
+</html>

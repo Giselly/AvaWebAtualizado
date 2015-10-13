@@ -93,7 +93,7 @@ function sliderManual(n){
 /** Substituir imagem que esta sendo exibida */
 function sliderFunc() {
     num = (num % 2) + 1;
-    $('img#computador').attr('src', 'imagens/computador' + num + '.png');
+    $('img#computador').attr('src', 'imagens/computador' + num + '.jpg');
     $('img#bola' + num).attr('src', 'imagens/bolaSelecionada.png');
     $('img#bola' + ((num % 2) + 1)).attr('src', 'imagens/bola.png');
 }

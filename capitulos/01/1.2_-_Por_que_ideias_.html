@@ -1,0 +1,808 @@
+﻿<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Documento sem título</title>
+    </head>
+    <!--Estilização da Página-->
+    <style type="text/css">
+	/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+	}
+	
+	/*Media Queries SCREEN >= 620px AND <= 709px*/
+	@media all and (min-width:620px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 619px*/
+	@media all and (min-width:535px) and (max-width:619px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+    </style>
+    </head>
+    <!--HTML-->
+    <body>
+    <p id="title"><strong>1.2 - Por que ideias?</strong></p>
+    <p>&nbsp;</p>
+    <img src="imagens/capitulo01/03.jpg" id="img"  style="border: solid 2px #fff;" />
+    <p id="corpo">
+  Um  equívoco comum entre estudantes de ilustração é achar que, uma vez que se chega  a um &ldquo;estilo&rdquo; ou método de trabalho, não há muito mais a aprender sobre o  ofício da ilustração. É claro que técnica e habilidades são absolutamente  inestimáveis, assim como ter uma abordagem que poderia ser considerada única.  Mas tão importante quanto isso é a capacidade de criar imagens fundamentadas em  um pensamento criativo sólido, com soluções visuais construídas a partir de  ideias coerentes.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Ilustrações  ruins são apenas um &ldquo;enchimento&rdquo; para as páginas. Podem ser bonitas, mas não  conseguem transmitir qualquer conhecimento sobre o assunto que ilustram. Boas  ilustrações, por outro lado, incentivam o espectador a pensar, a tirar mais do  texto do que a mensagem que salta à vista e a alcançar um entendimento maior e  mais profundo do assunto. Grandes ilustrações são como grandes histórias e  narrativas – exigem que o espectador se envolva ativamente para que possa  compreendê-las plenamente. O conceito pode parecer oculto em um primeiro  momento, mas é transmitido quando o expectador permeia a imagem. A grande  ilustração é um casamento com a excelência no ofício, a habilidade e o  pensamento criativo.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> No  entanto, tão importante quanto a técnica e a habilidade é a capacidade de criar  imagens fundamentadas em um pensamento criativo sólido, com soluções visuais  construídas a partir de ideias coerentes.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Os  estilos na ilustração, assim como as tendências na moda ou na música, se  alternam entre altos e baixos. Um ilustrador que seja reconhecido por um tipo  de trabalho específico, por exemplo, pode ser muito requisitado durante um ano  e de uma hora para outra passar a receber poucas propostas de trabalho à medida  que seu estilo sai de moda. Manter-se atualizado em relação às mudanças de  estilo pode ajudar um ilustrador a estar sempre um passo à frente da  concorrência. Porém, criar imagens que ecoem ideias criativas ajuda a produzir  um corpo de trabalho atemporal e a não ficar à mercê dos caprichos das  tendências na moda e na ilustração.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Planejar  uma carreira em ilustração não é de modo algum uma ciência exata, e não há  garantia de longevidade. Porém, muitos dos ilustradores que sobreviveram ao  teste do tempo, trabalhando por várias décadas, em vez de apenas alguns anos,  produziram imagens que exigem do espectador mais do que um simples olhar de  relance. A combinação de ideias fortes com uma execução excelente pode garantir  que o público continue a apreciar o trabalho de um ilustrador muito depois de  os modismos e as tendências já terem passado.</p>
+    <p>&nbsp;</p>
+    
+    <p id="corpo"><strong>A investigação das  ideias</strong></p>
+    <p>&nbsp;</p>
+    <div id="corpo2">
+      <p>&nbsp;</p>
+      <p><img id="img2" src="imagens/capitulo01/04.jpg" /></p>
+      <ul>
+        <li>Use  um caderno de esboços para registrar ideias e pensamentos de modo intuitivo e  automático – não se preocupe com a aparência das ideias durante esse estágio.</li>
+        <br />
+        <li>Tenha  sempre consigo um caderno de esboços e uma caneta ou um lápis – a inspiração  pode vir nos lugares mais improváveis, por isso, compensa estar preparado.</li>
+        <br />
+        <li>Anote  prontamente seus pensamentos utilizando tanto linguagem escrita quanto visual,  o que se adaptar melhor ao pensamento.</li>
+        <br />
+        <li>Inclua  informação suficiente para que você lembre as ideias mesmo de meses ou anos.</li>
+        <br />
+        <li>Coloque  data e hora em suas notas – isso irá ajudá-lo a lembrar o contexto do que você  estava pensando naquele momento.</li>
+        <br />
+        <li>Tome  nota dos locais, materiais de referência e títulos de livros, além de citações  importantes que possam ser úteis.</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer Icon-->
+    <div id="footer_icon">
+    	<div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" alt="" title="Voltar Capítulo"></a>
+    </div>
+    <div id="b_next"><a href="#"> <img src="imagens/b_next.png" alt="" title="Próximo Capítulo"></a>
+    </div>
+</body>
+</html>

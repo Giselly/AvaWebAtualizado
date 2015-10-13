@@ -1,0 +1,746 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+<style type="text/css">
+/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		
+		#img-png {
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#legenda{
+			width:11%;
+			float:left;
+			margin-left:-53%;
+			margin-top:28%;	
+		}
+		#leg-topicos {
+			width:16.1875%;
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 709px*/
+	@media all and (min-width:535px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+		#leg-topicos {
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+		#leg-topicos {
+			width:72.5625%;
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+		#leg-topicos {
+			width:72.5625%;
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img-png {
+			width:75%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:left;
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+		#legenda{
+			width:16.225%;	
+		}
+		#leg-topicos {
+			width:16.5625%;
+			float:left;
+			margin-left:5%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+</style>
+</head>
+
+<body>
+<div id="conteudoTopico">
+        <p id="title"><strong>05 – PRINCÍPIOS DE DESIGN – Repetição</strong></p><br>
+  
+         <p id="corpo"> O  princípio da repetição afirma que <strong>algum  aspecto do design deve repetir-se no material inteiro</strong>. O elemento  repetitivo pode ser uma fonte em bold (negrito), um fio (linha) grosso, algum  sinal de tópico, um elemento do design, algum formato específico, relações  espaciais etc. Pode ser qualquer item que o leitor reconheça visualmente.</p>
+         
+  <p id="corpo">Você  já utiliza a repetição no seu trabalho: quando cria títulos com mesmo tamanho e  mesmo peso, quando coloca um fio a meia polegada do final de cada página,  quando usa o mesmo sinal de tópico em cada listagem referente ao mesmo  trabalho. Estes são todos exemplos de repetição. O que os iniciantes precisam  fazer é ir mais além, seguindo essa mesma ideia, ou seja, precisam transformar  a repetição imperceptível em um elemento-chave visual que unifica o material.</p>
+  
+  <p id="corpo">A  repetição pode ser considerada como &ldquo;consistência&rdquo;. Ao olhar para um newsletter  (jornal) de oito páginas, é justamente a repetição de alguns elementos – sua  consistência – que faz que cada uma dessas oito páginas pareça pertencer ao  mesmo newsletter. Se a página 7 não contiver elementos repetitivos trazidos da  página 6, o newsletter inteiro perderá sua aparência coesa.</p>
+  
+    <p id="corpo">A  repetição, porém, vai além da simples consistência: é um esforço consciente  para unificar todos os elementos do design.</p>
+    
+    <p id="corpo">	Aqui  está o mesmo cartão de visita com o qual trabalhamos anteriormente. No segundo  exemplo acrescentei um elemento repetitivo: a fonte forte em bold (negrito). Dê  uma olhada nele e observe para onde seus olhos se movem. Depois de ler o número  telefônico, o que você lê? Você volta ao outro tipo em bold do início do texto?  Este é um truque visual que os designers sempre utilizam para controlar o fluxo  do olho dos leitores, para manter sua atenção sobre a página o máximo de tempo  possível.</p>
+    
+    <img src="imagens/1.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;clear:both;margin-left:5%;">Ao atingir o final das informações, seu olho fica <br> vagando pelo cartão?</p>
+    
+    <img src="imagens/2.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;clear:both;margin-left:5%;">Agora, ao atingir o final das informações, para onde <br> seu olho é direcionado? Ele fica oscilando entre os elementos em bold? <br> É provável que fique, e este é o segredo da repetição: ela unifica o material.</p>
+    
+    <p id="corpo">Aproveite os elementos que você já estiver utilizando para fazer que um projeto fique consistente transformando esses elementos em símbolos gráficos repetitivos. Todos os títulos do seu newsletter estão na fonte Times, com 14 pontos? O que você acha de arriscar, usando uma fonte em bold, sem serifa, como a Antique Olive Black, com 16 pontos? Você estará reaplicando a repetição que já foi montada no projeto e ampliando-a, de maneira que esse projeto fique mais forte e dinâmico. Além de sua página ficar mais interessante visualmente, você ampliará a organização visual e a consistência, deixando-a mais óbvia.</p>
+    
+    <img src="imagens/3.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%;">Os títulos e subtítulos são um ótimo <br> lugar para começar quando queremos <br> criar elementos repetitivos, já que, provavelmente, <br> você tem de manter a consistência com eles.</p>
+    
+    <img src="imagens/4.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%">Escolha um elemento consistente, como <br> uma fonte para os títulos e <br> subtítulos, e reforce-o.</p>
+    
+    <p id="corpo" style="clear:both;">Você costuma criar publicações com muitas páginas? A repetição é um fator de grande importância na unidade dessas páginas. Quando os leitores abrirem o material, deverá ser imediatamente óbvio que as páginas 7 e 12 fazem parte da mesma publicação. Você seria capaz de apontar todos os elementos de repetição?</p>
+    
+    <img src="imagens/5.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%">O texto tem um ponto de “alinhamento final” (na parte inferior da página), mas <br> nem todos os textos devem, necessariamente, <br> alinhar-se nesse ponto se houver um ponto <br> inicial consistente e repetitivo na parte superior da página.</p>
+ <p style="font-style:italic;float:left;margin-left:5%">Em algumas publicações, pode-se optar por fazer o <br> alinhamento repetidamente na parte <br> inferior das páginas (ou fazer o alinhamento por baixo, deixando <br> da parte de cima irregular), e não pelo alinhamento a <br> partir da parte superior da página. <br> Mas qualquer uma dessas técnicas deve criar consistência.</p>
+ 
+ 	<p id="corpo" style="clear:both;">Se não houver consistência entre todos os elementos, como é possível detectar visualmente que algum deles é especial? Se você estiver trabalhando com um material forte, consistente, poderá utilizar alguns elementos-surpresa. Guarde essas surpresas para o uso em itens sobre os quais você queira atrair muito a atenção do leitor.</p>
+    
+    <img src="imagens/6.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%;">Todos os textos, fotos ou ilustrações <br> começam na mesma linha-guia da parte superior de <br> todas as páginas (veja também a observação na página anterior).</p>
+    
+    <p id="corpo" style="clear:both">Para criar uma boa papelaria (conjunto impresso de materiais de uma empresa ou pessoa, com logotipo e endereço) comercial, contendo cartão de visita, papel de carta e envelope, utilize um elemento de repetição forte, não somente em cada peça, mas entre todas elas. Você deseja que o destinatário de sua carta saiba que você é a mesma pessoa que apresentou a ele, na semana anterior, um cartão de visita. Crie um layout que permita alinhar a carta impressa com algum elemento de design da papelaria impressa.</p>
+    
+    <img src="imagens/7-8.png" id="img-png" style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%;">Você pode notar que um texto digitado <br> com um alinhamento sólido à esquerda <br> causa uma forte impressão neste material.</p>
+    
+    <img src="imagens/9.jpg" id="img" style="border: solid 2px #fff;"/>
+    
+    <p id="corpo" style="clear:both;">A repetição ajuda a organizar as informações. Ela ajuda a guiar o leitor pelas páginas e a unificar partes distintas do design (da diagramação) do material. Mesmo que o documento tenha apenas uma página, a repetição dos elementos estabelece uma continuidade sofisticada e pode “unificar” o material. Se você estiver criando vários documentos de uma única página que façam parte de um pacote unificado, é extremamente importante usar a repetição.</p>
+    
+    <img src="imagens/10.jpg" id="img" style="border: solid 2px #fff;"/>
+    <div id="leg-topicos">
+     <strong style="float:left;">Repetições:</strong><p style="font-style:italic;"> <br> Fonte bold <br> Fonte light <br> Sinais de tópico quadrados <br> Endentações <br>Espaçamento <br> Alinhamentos
+	</p>
+    </div>
+    <p id="corpo" style="font-style:italic;clear:both;">Além dos elementos repetitivos bem delimitados, que deixam bem claro exatamente o que está acontecendo<br> nesse caso, essa pessoa também pode querer incorporar um ou mais desses  elementos no design da sua <br> carta de apresentação.</p>
+    
+    <p id="corpo" style="clear:both;">Se houver um elemento que o agrade, trabalhe com ele! Talvez seja um clip art ou uma fonte mais desenhada. Sinta-se livre para acrescentar um item completamente novo apenas para criar a repetição ou, ainda, escolha um simples elemento e utilize-o de várias maneiras: em diferentes tamanhos, cores e ângulos.</p>
+<p id="corpo">Às vezes os elementos repetidos não são exatamente os mesmos objetos, mas são tão interligados e relacionados que sua conexão se torna óbvia.</p>
+	 <img src="imagens/11.jpg" id="img" style="border: solid 2px #fff;"/>
+     <p style="font-style:italic;float:left;margin-left:5%;">A escolha e a repetição de um elemento de uma <br> imagem são técnicas engraçadas e eficazes. <br> Este pequeno símbolo triangular poderia ser aplicado <br> em outros materiais pertencentes ao mesmo conjunto, <br> como envelopes, cartões-respostas, balões etc., <br> e todas as peças formariam uma unidade coesa, <br> mesmo que não repetíssemos a xícara inteira.</p>
+     
+     <p id="corpo" style="clear:both;">Em geral podemos usar elementos repetitivos que nada têm a ver com o objetivo da página criada. Por exemplo, coloque alguns petróglifos ou alguns pássaros estranhos em um relatório. Escolha caracteres particularmente bonitos da fonte que estiver utilizando e coloque-os em tamanhos maiores, em cinza ou em uma segunda cor mais luminosa. Aplique-os em vários ângulos no seu material. É ótimo divertir-se.</p>
+     
+     <img src="imagens/12.jpg" id="img" style="border: solid 2px #fff;"/>
+     <p style="font-style:italic;float:left;margin-left:5%;">Retirar um dos elementos de design dos limites <br> da página unifica duas ou mais peças, o primeiro e o <br> segundo plano, ou materiais separados com um tema em comum. <br> Observe como o “pôster” e esta página parecem <br> estar conectados pela repetição dos caracteres primitivos.</p>
+     
+     <p id="corpo" style="clear:both">Aplicando o princípio da repetição, às vezes é possível usar um elemento do design, criando um novo, tendo o mesmo elemento como base.</p>
+     
+     <img src="imagens/13.jpg" id="img" style="border: solid 2px #fff;"/>
+     <p style="font-style:italic;float:left;margin-left:5%;">Você se lembra daquele papel de carta com <br> a linha cheia de pontinhos do Capítulo 3? <br> Como elemento repetitivo, dois dos pontos foram <br> ampliados e as figuras da Mamis e do Papis colocados dentro deles. <br> Basta começar e pode ter certeza de que você <br> vai gostar de criar tantas opções.</p>
+     
+     <p id="corpo" style="clear:both;">Aqui está outro exemplo de como é possível usar a repetição para criar a sua página. Isso pode ser divertido – encontre um elemento de que você goste e brinque com ele!</p>
+     
+     <img src="imagens/14.jpg" id="img" style="border: solid 2px #fff;"/>
+     <p style="font-style:italic;float:left;margin-left:5%;">Neste teste, um dos pontos foi repetido, consideravelmente ampliado e <br> a figura da Mamis foi colocada dentro dele.</p>
+<p style="font-style:italic;float:left;margin-left:5%;">Não vamos deixar o Papis de fora, mas vamos tentar <br> criar “unidade com variedade”, ou seja, se <br> um elemento repetitivo tiver peso, como um círculo, ele <br> pode ser reproduzido de várias formas, <br> exatamente da mesma maneira.</p>
+
+	<p id="corpo" style="clear:both;">Às vezes a simples sugestão de um elemento repetido pode gerar os mesmos resultados de seu uso integral. Experimente colocar só uma parte de um elemento conhecido, ou utilize-o de outra maneira.</p>
+    
+    <img src="imagens/15.jpg" id="img" style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%;">Se uma imagem for familiar para o leitor, basta <br> que ele veja um pedaço dela para relacionar os elementos.</p>
+    
+     <img src="imagens/16.jpg" id="img" style="border: solid 2px #fff;"/>
+    <p style="font-style:italic;float:left;margin-left:5%;">É claro que essa imagem da pimenta foi utilizada <br> em todas as peças promocionais da Festa do Chilli. <br> Neste caso, mais uma vez, podemos notar as vantagens de <br> aproveitar apenas uma parte de uma imagem já utilizada:<br> na verdade, o leitor visualiza a pimenta “inteira”. <br> Isto quer dizer que teoricamente, seu anúncio <br> ocupa o dobro do tamanho pelo mesmo preço.</p>
+    
+    <p id="corpo" style="clear:both;">A repetição também cria um visual mais profissional e dá personalidade às suas peças. Dá ao leitor a sensação de que alguém é responsável pelo material, porque, obviamente, a repetição é uma decisão importante e séria no design de uma peça.</p>
+    
+    <img src="imagens/17-18.png" id="img-png" style="border: solid 2px #fff;"/>
+    <div id="legenda">
+    <p style="font-style:italic;text-align:right;">Um dia você pode ser chamado para organizar um chá de bebê. Quando isso acontecer, você saberá repetir elementos no convite, no envelope, nos cartazes da festa, nos cartões de agradecimento, a fim de unificá-los. Seus convidados ficarão muito impressionados e pensarão que você contratou um profissional para fazer o trabalho de design.</p>
+    </div>
+</div>
+</body>
+</html>

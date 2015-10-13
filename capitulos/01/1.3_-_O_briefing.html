@@ -1,0 +1,811 @@
+﻿<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento sem título</title>
+    </head>
+    <!--Estilização da Página-->
+    <style type="text/css">
+	/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+	}
+	/*Media Queries SCREEN >= 620px AND <= 709px*/
+	@media all and (min-width:620px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 619px*/
+	@media all and (min-width:535px) and (max-width:619px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:80%;
+			height:80%;
+			margin-left:6%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#corpo2{
+        text-align:justify;
+        margin-left:7%;
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#img2{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+    </style>
+    </head>
+    <!--HTML-->
+    <body>
+    <p id="title"><strong>1.3 - O briefing</strong></p>
+    <p>&nbsp;</p>
+    
+    <p id="corpo">
+    <img id="img" src="imagens/capitulo01/05.jpg" width="50%" height="50%" />
+    Saber  pensar de maneira criativa não deve ser um mistério. Com algumas dicas  práticas, a maior parte das pessoas criativas consegue lançar os alicerces para  garantir que estejam aptas a pensar criativamente e a começar a ter ideias interessantes.  Para o ilustrador, o aspecto mais importante do pensamento criativo começa com  o briefing de um novo projeto.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> O  briefing inicial é o momento em que as informações básicas sobre o projeto  devem ser reunidas. É essencial conhecer e entender o projeto. Dizer que é  preciso estar equipado com todas as informações relevantes necessárias pode  parecer uma obviedade, mas muita gente não compreende plenamente a importância  de alinhar os fatos corretamente no início.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Saber  onde a ilustração impressa vai aparecer, em que tamanho, e se será colorida ou  em preto-e-branco devem ser aspectos básicos do briefing – em caso de dúvida,  não hesite em perguntar. Também é essencial que se esteja plenamente ciente do  prazo para a apresentação da linha visual e quanto tempo disponível se tem para  finalizar a arte. Se o trabalho for para um cliente novo, procure entender o  público-alvo e pesquisar as cópias anteriores da publicação; esse procedimento  pode ajudá-lo a construir um quadro geral de como seu trabalho pode se encaixar  e a gama de estilos de ilustração que a publicação já utilizou antes.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Sempre  que possível, é recomendável encontrar-se pessoalmente com o cliente para  receber o briefing do projeto, embora nem sempre isso seja realista. A maioria  dos briefings é passada por telefone, e-mail ou por meio de agentes. A não ser  em projetos de tamanho substancial, uma reunião com pessoas reais em tempo real  é pouco provável. Nessas raras reuniões face a face, é indispensável garantir  que todos os aspectos do projeto sejam explicados em detalhes. É justamente  nesses estágios embrionários do projeto que as ideias iniciais começam a tomar  forma.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> A  possível reunião e conversa relacionada devem agir como catalisadores para a  exploração de ideias. Para garantir o sucesso desses catalisadores, esteja  consciente da necessidade de ouvir. Ouvir o cliente falando sobre o projeto vai  moldar a direção de suas soluções visuais. Não tenha medo de fazer perguntas,  mas certifique-se de escutar as respostas. Nenhuma pergunta que você fizer será  inadequada – informação nunca é demais.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Se  você perceber que o cliente está falando sobre o projeto em uma linguagem que  você não compreende, ou usando jargões que não fazem sentido, faça questão de  pedir que ele reformule o que está dizendo. Anote os pontos-chave, mas não  deixe sua atenção à escrita impedir que você ouça. Esclareça pontos necessários  mais tarde, mas nesse estágio simplesmente entenda de maneira geral como o  projeto é delineado.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Ao  sair da reunião ou desligar o telefone, comece anotando em um papel o máximo  possível de informações que você obteve. Escreva cada detalhe, cada pensamento,  ideia e conceito – não importa o quão aleatório, rudimentares ou malucos eles  possam parecer no momento. Você vai ver que essas anotações serão de grande  valor mais tarde, pois terão sido criadas a partir dos pensamentos ainda  frescos e de suas reações instintivas na primeira etapa do projeto.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"> Armar-se  com fatos pode fazer uma grande diferença – é recomendável começar a criação de  ideias com o maior número possível de informações.<br />
+      A  possível reunião e conversa relacionada devem agir como catalisadores para a  exploração de ideias. Para garantir o sucesso desses catalisadores, esteja  consciente da necessidade de escutar.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"><strong>Entendendo o contexto</strong></p>
+    <p>&nbsp;</p>
+    <div id="corpo2">
+      <p><img id="img" src="imagens/capitulo01/06.jpg" width="50%" height="50%" /></p>
+      <ul>
+        <li>Descubra  todos os detalhes do contexto prático; tamanho, posição, texto e imagens  adjacentes e esquema de cores.</li>
+        <br />
+        <li>Jamais  comece uma ilustração sem saber quem estará olhando para o resultado. É  essencial entender o público leitor.</li>
+        <br />
+        <li>Leia  exemplares anteriores da publicação para a qual você está ilustrando e perceba  suas reações ao fazê-lo.</li>
+        <br />
+        <li>Se  você foi contratado para criar uma imagem para uma capa de livro, conhecer os  livros anteriores do autor e como eles foram ilustrados pode ser útil.</li>
+        <br />
+        <li>Se  estiver trabalhando para a indústria fonográfica, examine os outros lançamentos  da gravadora, escute as músicas que seu trabalho deverá representar e descubra  do que o músico gosta ou não gosta.</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer Icon-->
+    <div id="footer_icon">
+    	<div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" alt="" title="Voltar Capítulo"></a>
+    </div>
+    <div id="b_next"><a href="#"> <img src="imagens/b_next.png" alt="" title="Próximo Capítulo"></a>
+    </div>
+</body>
+</html>

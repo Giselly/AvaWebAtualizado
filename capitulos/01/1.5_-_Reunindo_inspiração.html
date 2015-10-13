@@ -1,0 +1,576 @@
+﻿<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento sem título</title>
+    <head>
+    <!--Estilização da Página-->
+    <style type="text/css">
+	/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+	@media all and (min-width:995px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (min-width:918px) and (max-width:994px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:65%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:61%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:60%;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:57%;
+		}
+	}
+	/*Media Queries SCREEN >= 710px AND <= 730px*/
+	@media all and (min-width:710px) and (max-width:730px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:54%;
+		}
+	}
+	/*Media Queries SCREEN >= 620px AND <= 709px*/
+	@media all and (min-width:620px) and (max-width:709px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 619px*/
+	@media all and (min-width:535px) and (max-width:619px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:95%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:460px;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:52%;
+			height:52%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:98%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:100%;
+			margin-right:5%;
+		}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:85%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:97%;
+			margin-right:3%;
+		}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:9%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+		}
+		#conteudoTopico{
+			min-width:99%;
+			margin-right:1%;
+		}
+	}
+	/*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
+	@media all and (min-width:710px){
+		#footer_icon{
+			display:none;
+		}
+	}
+	/*Media Queries SCREEN >=370px AND <=674px - MOVEL SCREEN*/	
+	@media all and (min-width:370px) and (max-width:709px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+	/*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
+	@media all and (max-width:369px){
+		/*footer icon*/
+		#footer_icon{
+			position: fixed !important; 
+			bottom: 70px; 	
+			background:#FFF;
+			z-index:10;
+			height:60px;
+			width:100%;
+			margin-right:18px;
+		}
+		/*Icon B_PREV and B_NEXT*/
+		#b_prev{
+			position:fixed !important;
+			bottom:80px;
+			left:35%;
+		}
+		#b_next{
+			position:fixed !important;
+			bottom:80px;
+			left:55%;
+		}
+		#b_prev:hover{
+			 background-image: url('imagens/b_prev_blue.gif');
+		}
+		#b_next:hover{
+			 background-image: url('imagens/b_next_blue.gif');
+		}
+	}
+    </style>
+    </head>
+    <!--HTML-->
+    <body>
+    <p id="title"><strong>1.5 - Reunindo inspiração</strong></p>
+    <p>&nbsp;</p>
+    <p id="corpo">
+    <img id="img" src="imagens/capitulo01/09.jpg" width="50%" height="50%">    
+    <p id="corpo">A  inspiração para os projetos e para as ideias que movem os projetos não vem  apenas a partir da pesquisa do assunto em questão. O ilustrador deve estar  constantemente em busca de inspiração e de materiais e recursos de referência.  A maioria dos ilustradores cria seus próprios arquivos de imagens e objetos,  organizando suas coleções em pastas, gavetas e caixas. Essas coleções podem ser  fontes incríveis de inspiração.</p>
+    <p id="corpo"><br>
+      O  ato de constante observação e registro é uma parte importante do estilo de vida  do ilustrador. A inspiração está em toda parte – pode até ser clichê, mas é a  mais pura verdade. Encontrar tempo para mergulhar em um sebo ou em uma barraca  de livros na rua, fotografar um momento ou uma atmosfera, capturar uma frase  dita por um estranho que você ouviu no supermercado – tudo isso pode ser  inspirador e merece seu espaço nos arquivos de um ilustrador.</p>
+    <p id="corpo"><br>
+      A  inspiração pode ser uma simples combinação de cores usadas em um pedaço de  embalagem, a forma como uma figura é capturada em uma fotografia ou a textura  de um bilhete de trem que você guardou desde a infância – existe um sexto  sentido que os ilustradores desenvolvem ao colecionar e fazer colagens de  matérias de referência.</p>
+    <p id="corpo"><br>
+      Fazer  um arquivo de referências é um processo agradável e, embora possa tomar  bastante tempo, é um aspecto extremamente gratificante e útil do processo  criativo. Ter consciência de suas influências e de estética visual à qual você  reage bem o ensina a obter inspiração e a ter ideias a partir de seu dia-a-dia.</p>
+    <p id="corpo"><br>
+      <strong>O caderno de esboços</strong></p>
+    <p id="corpo"><br>
+      O  caderno de esboços é o melhor amigo do ilustrador. Ele não serve apenas para  fazer esboços e desenhos, mas também como companheiro constante e como o único  item no qual o ilustrador registra e documenta suas anotações, imagens  encontradas e todo o tipo de material de inspiração. Adquira o hábito de levá-lo  com você o tempo todo; compre um que caiba no seu bolso ou em uma bolsa que  você use sempre. Não cometa o erro de usar uma agenda ou um organizador para  substituir o caderno de esboços – não é a mesma coisa. Não se deve marcar hora  para ser criativo, pois isso é algo que deve ocorrer naturalmente, e quando  ocorrer, você precisa estar preparado.</p>
+    <p id="corpo"><br>
+      Use  seu caderno de esboços para guardar tudo o que você registra e não se preocupe  em mantê-lo especificamente para trabalhos pessoais ou profissionais – jogue  tudo ali dentro e você verá como as duas áreas se misturam e se combinam.  Desenhe, rabisque, escreva e faça anotações em qualquer lugar, a qualquer hora.  Recorte achados de jornais e revistas e os cole com fita, grampeie canhotos de  ingressos e quaisquer outros objetos que você encontrar ou colecionar. Inclua  fotos, pedaços de fotocópias resgatados, estênceis, adesivos, panfletos,  cartões... a lista é infinita.</p>
+    <p id="corpo"><br>
+      <strong>A pasta do projeto</strong></p>
+    <p id="corpo"><br>
+      Criar  uma pasta para cada projeto é outro método de armazenar todos os materiais  relacionados, ideias e inspirações, bem como a papelada formal ligada a um  projeto, como briefing, contrato e materiais de referência fornecidos pelo  cliente. É útil criar tanto uma pasta digital quanto uma pasta física para o  projeto. Crie uma nova pasta em seu disco rígido para toda a correspondência.  Cópias de e-mails e material de referência digital são tão importantes quanto a  versão física do projeto. A pasta do projeto é como uma versão expandida e mais  focada do caderno de esboços, e abrange tudo que se relaciona ou poderia se  relacionar ao projeto em questão.<br>
+      A  pasta de projeto útil é aquela que inclui todos os aspectos do projeto – desde  páginas relevantes que você arranca dos cadernos de esboços até uma série de  fotos de referência e fotocópias de livros usados ou impressões de buscas do  Google. Esse é o material que vai ajudá-lo a gerar ideias inspiradoras – tenha  todos os seus materiais de referência, anotações e pesquisa escrita e visual  espalhados à sua frente enquanto trabalha. A folha de papel ou a tela em branco  vai parecer menos intimidante quando cercada do material visual que alimentou  seu pensamento.</p>
+    <p id="corpo"><br>
+      <strong>O ambiente criativo</strong></p>
+    <p id="corpo"><br>
+      Trabalhar  em um ambiente positivo pode fazer maravilhas pela geração de ideias criativas.  Para a maioria das pessoas, encontrar um espaço calmo e tranquilo para se  recolher e trabalhar é de grande ajuda. Desligue o telefone, coloque o celular  no modo silencioso e saia do e-mail para garantir que seu tempo não seja  interrompido por um fluxo de comunicação constante com o mundo exterior.  Desligue o rádio, o CD player e a TV, e se prepare para pensar de forma  criativa.</p>
+    <p id="corpo"><br>
+      Organizar  o espaço de trabalho, limpar o desktop do seu computador e sua mesa também  ajudam a liberar metaforicamente um espaço limpo no qual você poderá pensar.  Esvazie a lixeira do estúdio, abra uma janela e deixe entrar ar fresco. Torne  seu ambiente mais agradável: isso vai ajudá-lo a colher os frutos.</p>
+    <p id="corpo"><br>
+      Algumas  pessoas não apenas limpam e arrumam, mas também reorganizam seus espaços de  trabalho antes de começar um novo projeto. Elas reposicionam sua tela,  organizam o emaranhado caótico dos cabos de computador e reorganizam as  prateleiras. Arquivar projetos anteriores em CD ou DVD, ou organizar os papéis  em suas pastas relevantes, também pode ser muito bom para ajudá-lo a produzir  mentalmente uma ideia de conclusão antes de iniciar um projeto novo em folha.</p>
+    <p id="corpo"><br>
+      Enquanto  muitas pessoas gostam de relaxar com uma bebida quente na hora de começar a  pensar em um novo projeto, outras acham que a realização criativa pode ser o  resultado de sair fisicamente do ambiente do estúdio e tomar uma bebida em uma  cafeteria próxima. Há algo especial em sentar-se com um novo projeto na mesa, a  caneta em uma mão e um cappuccino cheio de espuma na outra. Manter distância  das distrações normais e concentrar sua mente no trabalho em questão pode ser  incrivelmente benéfico.</p>
+    <p id="corpo"><br>
+      Quanto  mais tempo você passar trabalhando como ilustrador, mais você pode começar a  reconhecer e se concentrar nas formas específicas que melhor se adaptem ao  pensamento criativo. Aprenda a capitalizar os cenários e locais que funcionam  com maior eficácia para você. Se suas melhores ideias acontecem à tarde,  aprenda com isso e use suas manhãs para trabalhar em outros aspectos da  ilustração – arquivamento, e-mails, emissão de notas fiscais, divulgação, etc.</p>
+    <p id="corpo"><br>
+      Saiba  reconhecer o momento de se afastar do processo de criação de ideias – aprenda a  aceitar quando sua veia criativa não estiver fluindo. Encontrar um buraco negro  – chame do que você quiser o bloqueio criativo – não é divertido, mas acontece  com todos nós regularmente. Bater com a cabeça na parede não vai ajudar –  talvez tudo o que você precise para clarear a mente e preparar-se para outra  tentativa seja dar uma volta para respirar ar fresco, ver uma exposição ou  pegar um cineminha. Saber quando parar é tão essencial quanto saber como  começar.</p>
+    <p id="corpo"><br>
+      A  maioria dos ilustradores cria seus próprios arquivos de imagens e objetos,  organizando suas coleções em pastas, gavetas e caixas. Essas coleções podem ser  fontes incríveis de inspiração.</p>
+    <p>&nbsp;</p>
+    <p id="corpo"><strong>Pesquisa histórica</strong></p>
+    <p id="corpo"><br>
+      Precisão  histórica pode não ser um fator na maioria das ilustrações, mas, sempre que um  projeto requer informações visuais detalhadas sobre um assunto, é recomendável  realizar uma pesquisa mais profunda. Como um assistente de cenário e figurino  no teatro, o ilustrador deve garantir que todos os aspectos da imagem sejam  cuidadosamente considerados e estejam de acordo com o tempo e o local. As  imagens nesta página mostram como o ilustrador usou referências de tipografia e  cartazes Vitorianos. Usar informações de especialistas garante que erros não  sejam cometidos. </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer Icon-->
+    <div id="footer_icon">
+    	<div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" alt="" title="Voltar Capítulo"></a>
+    </div>
+    <div id="b_next"><a href="#"> <img src="imagens/b_next.png" alt="" title="Próximo Capítulo"></a>
+    </div>
+</body>
+</html>

@@ -47,7 +47,7 @@
             <!--Button Back_To_Top Super Movel Screen-->
             <div id="voltarTopo"></div>
             <!--Button Altern Full Screen-->
-            <div id="alternFullScreen"  class="alternFullScreen" onclick="toggleFullScreen()" data-tooltip="Ampliar Tela / Desampliar Tela"></div>
+            <div id="tooltip-left"  class="alternFullScreen" onclick="toggleFullScreen()" data-tooltip="Ampliar Tela / Desampliar Tela"></div>
              
             <div id="tituloSistema">
                 Ambiente Virtual de Aprendizagem
@@ -289,7 +289,7 @@
 			
 			<!--JQUERY - Changes image by clicking/	Expand - Demagnifying - FULL SCREEN--> 
 			$(document).ready(function(){
-				$('#alternFullScreen').click(function(){
+				$('.alternFullScreen').click(function(){
 					if($(this).hasClass('alternFullScreen'))
 						$(this).addClass('alternFullScreen_b').removeClass('alternFullScreen');
 				

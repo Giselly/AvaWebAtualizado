@@ -1,0 +1,593 @@
+﻿<!doctype html>
+<html lang="pt-br">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento sem título</title>
+    </head>
+    <!--Estilização da Página-->
+    <style type="text/css">
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:22%;
+			height:22%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#t1{
+			margin-left:5%;
+			position:relative;
+			}
+		#t2{
+			margin-left:30%;
+			margin-top:-338px;
+			position:relative;
+			}
+		#t3{
+			margin-left:45%;
+			margin-top:-375px;
+			position:relative;
+			}
+		
+	/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+	@media all and (max-width:1130px){
+		#t2{
+			margin-left:35%;
+			}
+		#t3{
+			margin-left:51%;
+			}
+		}
+	@media all and (max-width:960px){
+		#t2{
+			margin-left:45%;
+			}
+		#t3{
+			margin-left:67%;
+			}
+	}
+	@media all and (max-width:905px){
+		#t1{
+			font-size:10pt;
+			}
+		#t2{
+			font-size:10pt;
+			margin-top:-283px;
+			}
+		#t3{
+			font-size:10pt;
+			margin-top:-312px;
+			}
+	}
+	@media all and (max-width:740px){
+		#t2{
+			margin-left:42%;
+			}
+		#t3{
+			margin-left:60%;
+			}
+	}
+	
+	@media all and (min-width:918px) and (max-width:994px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:60%;
+		}
+	}
+	/*Media Queries SCREEN >= 851px AND <= 917px*/
+	@media all and (min-width:851px) and (max-width:917px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:40%;
+			height:40%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:53%;
+		}
+	}
+	/*Media Queries SCREEN >= 785px AND <= 850px*/
+	@media all and (min-width:785px) and (max-width:850px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:455px;
+		}
+	}
+	/*Media Queries SCREEN >= 731px AND <= 784px*/
+	@media all and (min-width:731px) and (max-width:784px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 691px AND <= 730px*/
+	@media all and (min-width:691px) and (max-width:730px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 675px AND <= 690px*/
+	@media all and (min-width:675px) and (max-width:690px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:300px;
+		}
+	}
+	/*Media Queries SCREEN >= 620px AND <= 674px*/
+	@media all and (min-width:620px) and (max-width:674px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:61%;
+		}
+	}
+	/*Media Queries SCREEN >= 535px AND <= 619px*/
+	@media all and (min-width:535px) and (max-width:619px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:52%;
+		}
+	}
+	/*Media Queries SCREEN >= 483px AND <= 534px*/
+	@media all and (min-width:483px) and (max-width:534px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:50%;
+			height:50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:460px;
+		}
+	}
+	/*Media Queries SCREEN >= 424px AND <= 484px*/
+	@media all and (min-width:424px) and (max-width:484px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:5%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:400px;
+		}
+	}
+	/*Media Queries SCREEN >= 390px AND <= 423px*/
+	@media all and (min-width:390px) and (max-width:423px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:350px;
+		}
+	}
+	/*Media Queries SCREEN >= 365px AND <= 389px*/
+	@media all and (min-width:365px) and (max-width:389px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:5%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:45%;
+			height:45%;
+			margin-left:5%;
+			margin-bottom:3%;
+			float:right;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:150px;
+		}
+	}
+	/*Media Queries SCREEN >= 350px AND <= 364px*/
+	@media all and (min-width:350px) and (max-width:364px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:3%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:85%;
+			height:85%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+	}
+	/*Media Queries SCREEN >= 320px AND <= 349px*/
+	@media all and (min-width:320px) and (max-width:349px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:8%;
+			margin-right:12%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:80%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+	}
+	/*Media Queries SCREEN <= 319px*/
+	@media all and (max-width:319px){
+		 body{
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#title{
+			margin-left:3%;
+			font-size:17px;
+		}
+		#corpo{
+			text-align:justify;
+			margin-left:3%;
+			margin-right:18%;
+			font-size:17px;
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		#img{
+			width:75%;
+			height:75%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		#conteudoTopico{
+			min-width:50px;
+		}
+	}
+	@media all and (max-width:350px){
+		#img{
+			height:85%;
+			width:85%;
+			margin-right:25px;
+			}
+		#corpo{
+			margin-left:5%;
+			margin-right:5%;
+			}
+		}
+	@media all and (max-width:620px){
+		#t2{
+			margin-left:45%;
+			}
+	    #t3{
+			margin-left:65%;
+			font-size:9pt;
+			}
+	}
+    </style>
+    </head>
+    <!--HTML-->
+    <body>
+    <p id="title"><strong>11.4  - Índice</strong></p>
+    <p>&nbsp;</p>
+    <img src="semiótica/04.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
+    <p id="corpo">A mulher fotografada por Cindy Sherman parece estar morta.<br><br>
+	Fotografias realistas [representacionais] nos oferecem um desafio porque geralmente parecem ter sido causadas por fatos reais, mesmo que sejam 		representações [falsas]. A fotografia acima realça a diferença muito real e perturbadora entre nossos sentimentos diante da imagem de uma morte verdadeira, em oposição ao modo como nos sentimos quando nos deparamos com a imagem falsa de uma morte. A fotografia também levanta a questão de como podemos ser capazes, em determinadas ocasiões, de dizer a diferença entre as duas situações. Quando há uma relação física ou casual não arbitrária entre o significante (i.e., a fotografia) e o significado (i.e., o que a fotografia retrata), dizemos que essa relação chama-se índice.<br><br>
+
+	Abaixo indicamos outros exemplos deste tipo de relação.<br><br>
+
+	É importante podermos detectar a relação causal entre o significante e o que está sendo representado, senão pelo menos para efeitos de sobrevivência. Por exemplo, precisamos saber que a fumaça significa fogo (e que geralmente é causada por ele), ou que a alteração de um termômetro significa uma queda ou um aumento da temperatura. Podemos perceber quão importante é a falha em detectar tais situações quando descobrimos que tal falha pode resultar em perigo mortal.<br><br>
+.</p>
+    <div id="t1">
+    	<p><strong>Significante</strong>
+        <p>Um olho roxo</p>
+    	<p>Uma mudança no termômetro</p>
+    	<p>Fumaça</p>
+    	<p>Uma erupção na pele</p>
+    	<p>Barulho na porta</p>
+        <p>O movimento de um galo dos ventos</p>
+        <p>Tic-tac</p>
+	  	<p>Uma fotografia</p>
+    	<p>Uma postura defensiva</p>
+		<p>Escrita manuscrita</p>
+
+    </div>
+    <div id="t2">
+    	<p>É causado por</p>
+    	<p>É causado por</p>
+    	<p>É causado por</p>
+    	<p>É causado por</p>
+    	<p>É causado por</p>
+        <p>É causado por</p>
+        <p>É causado por</p>
+        <p>É causado por</p>
+        <p>É causado por</p>
+        <p>É causado por</p>
+
+
+    </div>
+    <div id="t3">
+    	<p><strong>Significado</strong>
+    	<p>um soco</p>
+    	<p>um argumento ou queda de temperatura</p>
+    	<p>fogo</p>
+    	<p>uma infecção</p>
+    	<p>alguém que bate</p>
+        <p>vento</p>
+    	<p>relógio</p>
+        <p>um local real</p>
+        <p>discurso de alguém</p>
+        <p>alguém escrevendo</p>
+
+    </div>
+</body>
+</html>
