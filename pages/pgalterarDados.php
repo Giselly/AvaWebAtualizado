@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <form class="cadastro" id="completo" name="formUsuario" method="POST">
         <div class="inputs">
             <p id="tituloPrincipal">Alterar Dados</p>
