@@ -51,7 +51,9 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
 
                 /** Faz o upload da imagem para seu respectivo caminho */
                 move_uploaded_file($foto["tmp_name"], $caminho_imagem);
-
+                if ($url->getURL(1) == 'novo') {
+                    $dadosUsuarios = $usuarioBusiness->buscar();
+                }
                 if ($url->getURL(1) == 'editar') {
                     $dadosUsuario = $usuarioBusiness->buscarPorID($form['id']);
 
