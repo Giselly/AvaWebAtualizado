@@ -1179,7 +1179,7 @@
 		transition: right 0.4s linear;
 		color:#FFF;
 		z-index:10000;
-		height:260px;
+		height:210px;
 	}
         
 	#nav-slide-super-movel p a:hover {
@@ -1189,7 +1189,7 @@
         
 	#nav-slide-super-movel div#tcns {
 		background-image: url('../imagens/backgroundMenuUsuario.jpg');
-		height:145px;
+		height:130px;
 	}
         
 	#nav-slide-super-movel div#tcns p a:hover {
