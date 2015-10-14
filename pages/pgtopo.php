@@ -51,7 +51,7 @@
             </div>
             
             <?php if(!$professor) {?>
-            <div id="notificacao" style="display: inline-block; position: relative; float: right; margin: 2px 27px 2px 0px;">
+            <div id="notificacao" style="display: inline-block; position: relative; float: right; margin: 2px 29px 2px 0px;">
                 <?php
                 if(isset($visualizar) && $visualizar == 0){
                 ?>
