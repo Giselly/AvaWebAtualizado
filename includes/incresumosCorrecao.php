@@ -4,22 +4,31 @@
 isProfessor($professor);
 
 /**@var Resumo */
-//$resumoBusiness = Resumo::getInstance();
+$resumoBusiness = Resumo::getInstance();
 
 /** @var Usuario */
 $usuarioBusiness = Usuario::getInstance();
 
 /** busca dados da tabela resumo no banco*/
-//$dadosResumo = $resumoBusiness->buscar();
+$dadosResumo = $resumoBusiness->buscar();
 
 /** Recebe o formulario */
 $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-if($url->posicaoExiste( 1) && $url->getURL(1) == 'lerResumos'){ 
+if($url->posicaoExiste(1) && $url->getURL(1) == 'lerResumos'){ 
     /** Include da pagina do resumo */   
     include_once("pages/pg{$url->getURL(1)}.php");
         
-} else if($url->posicaoExiste( 1) && $url->getURL(1) == 'Excluir') {
+} if($url->posicaoExiste(1) && $url->getURL(1) == 'lerNotificacao'){ 
+
+    /** Busca uma notificação específica */
+        if($url->posicaoExiste(2)){
+        $resumoBuscarPorId = $resumoBusiness->buscarPorID($url->getURL(2)); 
+        }
+        /** Include notificacao */   
+        include_once("pages/pg{$url->getURL(1)}.php");
+        
+}else if($url->posicaoExiste( 1) && $url->getURL(1) == 'Excluir') {
     $dados = array (
         "id" => $url->getURL(2),
         "excluidoResumo" => 1

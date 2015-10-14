@@ -13,6 +13,7 @@
                 <th><span>Capítulo</span><img src="imagens/cap-b.png" title="Capítulo" /></th>
                 <th><span>Notificação</span><img src="imagens/notificacao-b.png" title="Notificação" /></th>
                 <th><span>Ler</span><img src="imagens/ler-b.png" title="Ler" /></th>
+                <th><span>Aprovação</span></th>
                 <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
             <?php

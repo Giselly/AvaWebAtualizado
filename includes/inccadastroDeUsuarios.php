@@ -51,9 +51,6 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
 
                 /** Faz o upload da imagem para seu respectivo caminho */
                 move_uploaded_file($foto["tmp_name"], $caminho_imagem);
-                if ($url->getURL(1) == 'novo') {
-                    $dadosUsuarios = $usuarioBusiness->buscar();
-                }
                 if ($url->getURL(1) == 'editar') {
                     $dadosUsuario = $usuarioBusiness->buscarPorID($form['id']);
 
@@ -73,12 +70,14 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
 
             /** Executa o cadastro do usuario */
             $usuarioBusiness->cadastrar($form);
+            echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
         } else {
             /** Remove o indice tipo da array */
             unset($form['tipo']);
 
             /** Executa a atualização de um usuario */
             $usuarioBusiness->editar($form);
+            
         }
 
         /** Redireciona para a listagem */
