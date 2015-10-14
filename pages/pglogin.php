@@ -39,10 +39,10 @@
                     <input  value="Entrar" type="submit" id="button" name="button"> ou <a href="cadastro">Cadastre-se</a></p>
                     <p id="esqueceuSenha">Esqueceu sua senha? <a href="recuperaSenha">Clique aqui</a></p>
                 </form>
-               <!-- <div class="aguarde" id="aguardarConfirmacao">
+                <div class="aguarde" id="aguardarConfirmacao">
                     <p> Aguarde a confirmação do seu cadastro para logar-se. Um email será enviado!</p></br>
                     <a href="login">Voltar a tela de login</a>
-                </div>     -->       
+                </div>      
             </div>
         </div>
     </body>
