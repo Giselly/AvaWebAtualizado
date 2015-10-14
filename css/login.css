@@ -149,7 +149,7 @@ a:hover {
 #info {
     position: relative;
     font-weight: bold;
-    width: 350px;
+    width: 82%;
 }
 
 .erro {
@@ -361,7 +361,7 @@ a#bola:hover {
     }
     
     p#info {
-        width: 93%;
+        width: 94%;
     }
     
     h1 {
