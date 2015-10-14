@@ -280,7 +280,7 @@ form.cadastro{
     padding: 20px;
     /*min-width: 430px;*/
     width: 76.8229%;
-    min-height: 500px;
+    height: auto;
     margin: 0 auto;
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #F7F7F7;

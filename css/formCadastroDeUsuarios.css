@@ -15,6 +15,10 @@ td#editar, td#excluir, td#status {
 }
 
 /** CADASTRO COMPLETO */
+div#sexo {
+    color: #000;
+}
+
 div.inputs{
     width: 85%;
 }
