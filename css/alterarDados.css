@@ -1,110 +1,228 @@
-div#botao{
-    max-width: 73px;
-}
-div#botao input{
-    max-width: 73px;
-}
-form#simples {
-    /*width: 433px;*/
-    padding: 0px;
-    margin:auto;
-    width: 55%;
+/** FORMULÁRIO */
+
+form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
+    width: 100%;
 }
 
-div.camposFormularioSimples {
-    width: 347px;
-    margin: 0 auto;
-    float: none;
-    position: relative;
-}
+/*form.cadastro input[name=apelido], form.cadastro div.media {
+    width: 184px;
+    padding-right: 0px;
+    margin-right: 0px;
+}*/
 
-div.camposFormularioSimples div.inputs{
-    padding: 0px;
-    margin:0 auto;
-}
-
-p#tituloPrincipal{
+td#editar, td#excluir, td#status {
     text-align: center;
-    text-indent: -0.8em;
 }
 
-@media all and (max-width:1495px){
-    div.camposFormularioSimples div.inputs {
-      width: 400px;
-    }
-    
-    p#tituloPrincipal{
-        text-align: left;
-        text-indent: 2.5em;
-    }
+/** CADASTRO COMPLETO */
+div.inputs{
+    width: 85%;
 }
 
-@media all and (max-width:875px){
-    label {
-        margin-left: 0px;
-    }
+div.inputs div:not(#fotoPerfil){
+    display: inline-block;
+    padding: 3px 10px 10px 10px;
+    width: 180px;
+    margin: auto;
+
 }
 
-@media all and (max-width: 870px){
-    div#botao{
-        width: 73px;
-    }
-    
-    form#simples {
-        width: 500px;
-       
-    }    
-    div.camposFormularioSimples {
-        width: 80%; 
-        
-    }
-
-    div.camposFormularioSimples div.inputs {
-        width: 240px;
-        margin: 0 auto;   
-        padding: 3px;
-    } 
-       
-    div.camposFormularioSimples div.inputs div{
-        width: 240px;
-        margin-top: 20px;
-        
-    }
-
-    div.camposFormularioSimples div.inputs div input{
-        width: 240px;
-        margin: 0 auto; 
-    }
-    
-    p#tituloPrincipal {
-        text-align: left;
-        text-indent: 0.8em;
-    }
-}    
-
-@media all and (max-width: 670px) {
-    form#simples {
-        width: 371px;
-    }
-    div#botao{
-        width: 73px;
-    }
+div.inputs div#dadosGerais, div.inputs div#Endereco {
+    width: 85%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
 }
 
-@media all and (max-width: 430px) {
-    p#tituloPrincipal {
-        text-align: center;
-        text-indent: -1.8em;
-    }
-    
-    form#simples {
-        width: 280px;
-    }
-    div#botao{
-        width: 73px;
-    }
-     div.camposFormularioSimples div.inputs div input{
+p#tituloPrincipal {
+    text-align: center;
+}
+
+form.cadastro p.subtitulo {
+    position: relative;
+    display: block;
+    font-size: 14pt;
+    color: #fff;
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: #004c98;
+    text-align: left;
+    text-indent: 3.6em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+
+}
+
+/** UPLOAD DE FOTO DO PERFIL */
+
+div.inputs div#dadosGerais div#fotoPerfil {
+    display: block;
+    position: relative;
+    float:left;
+    margin: auto;
+    margin-left:20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 180px;
+    padding: 0px;
+    top: 10px;
+    border: none;
+}
+
+@media all and (min-width:1525px){
+    div.inputs div#dadosGerais div#sexo {
         width: 220px;
-     }
-    
+    }
+}
+
+@media all and (min-width:765px) and (max-width:1525px){
+    div.inputs div#dadosGerais div#sexo {
+        width: 220px;
+    }
+}
+
+@media all and (max-width: 1099px){
+    div.inputs div#dadosGerais div#fotoPerfil{
+        margin-right: 37px;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width:765px) and (min-width:530px){
+
+    div.inputs div#dadosGerais {
+        position: relative;
+        display: block;
+        margin-left: 5px;
+    }
+
+    div.inputs div#Endereco {
+        width: 70%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    div.inputs div#dadosGerais div:not(#fotoPerfil){
+        width: 70%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    div.inputs div#dadosGerais div#fotoPerfil {
+        display: block;
+        position: relative;
+        float: none;
+        margin: 0 auto 20px ;
+        margin-left: 85px;
+    }
+
+    div#salvar input[type=submit] {
+        font-size: 10pt;
+        width: 20%;
+        margin-left: 20%;
+    }
+
+    div#salvar a {
+        color: #004c98;
+        font-size: 10pt;
+    }
+
+    form.cadastro p.subtitulo {
+        text-indent: 0.9em;
+    }
+
+    div.inputs div#dadosGerais div#sexo, div#status {
+        font-size: 10pt;
+    }
+}
+
+@media all and (max-width:530px){
+    body {
+        overflow-y: scroll;
+    }
+
+    div.inputs {
+        margin-left: -8px;
+    }
+
+    div#dadosGerais {
+        margin-left: 5px;
+    }
+
+    div.inputs div#dadosGerais div#sexo{
+        width: 230px;
+    }
+
+    div.inputs div#dadosGerais div#fotoPerfil {
+        display: block;
+        position: relative;
+        float: none;
+        margin: 0 auto 20px ;
+        margin-left: 40px;
+    }
+
+    div.inputs div#dadosGerais div#sexo, div#status {
+        font-size: 11pt;
+    }
+
+    div#salvar input[type=submit] {
+        font-size: 8pt;
+        width: 60px;
+        margin-left: 15%;
+    }
+
+    div#salvar a {
+        color: #004c98;
+        font-size: 8pt;
+    }
+
+    form.cadastro p.subtitulo {
+        text-indent: 0.9em;
+        font-size: 10pt;
+    }
+
+    form.cadastro div.inputs p.subtitulo {
+        width: 200px;
+        margin-left: 10%;
+    }
+
+    p#tituloPrincipal {
+        width: 220px;
+        text-indent: 1.1em;
+    }
+
+}
+
+div.inputs div#fotoPerfil img {
+    width: 148px;
+    height: 180px;
+    margin: auto;
+}
+
+div#button, input#foto {
+    display: none;
+    overflow: none;
+}
+
+div.inputs input#editar{
+    background-color: rgba(0,0,0,.2);
+    display: block;
+    float: left;
+    position: absolute;
+    padding: 0px;
+    margin-top: 0px;
+    z-index: 9999;
+    width: 100%;
+    height: 20px;
+}
+
+/** SALVAR */
+
+div.inputs div#salvar {
+    display: block;
+    position:relative;
+    width: 100%;
 }
