@@ -28,7 +28,6 @@
         
         <input type="hidden" value="<?php echo RAIZ; ?>" id="raiz" />
         <header id="principal">
-        
             <!--logo Full Scren-->
             <div id="logo"> <a href="treinamento/1/conteudo"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial"></a>
             </div>
@@ -46,15 +45,13 @@
             </div>
             <!--Button Back_To_Top Super Movel Screen-->
             <div id="voltarTopo"></div>
-            <!--Button Altern Full Screen-->
-            <div id="tooltip-left"  class="alternFullScreen" onclick="toggleFullScreen()" data-tooltip="Ampliar Tela / Desampliar Tela"></div>
              
             <div id="tituloSistema">
                 Ambiente Virtual de Aprendizagem
             </div>
             
             <?php if(!$professor) {?>
-            <div id="notificacao" style="display: inline-block; position: relative; float: right; margin: 2px 25px 2px 0px; ">
+            <div id="notificacao" style="display: inline-block; position: relative; float: right; margin: 2px 27px 2px 0px;">
                 <?php
                 if(isset($visualizar) && $visualizar == 0){
                 ?>
@@ -70,12 +67,13 @@
                  <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                 <?php }  else {?>
                  <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
-                <?php } } }?>            
-                <div id="menuUsuario">
+                <?php } } }?>
+            </div>            
+            <div id="menuUsuario">
                 <span id="boasVindas">Olá, <?php echo $apelido; ?>  |  </span>Comunicação Digital
                 <a href="logout" id="logout">Sair</a>
+                <!--<a href="logout" id="logout2">Sair</a>-->
             </div>
-            <a href="logout" id="logout2">Sair</a>
         </header>
         	
         <section id="menuSistema">
@@ -84,11 +82,6 @@
             <ul>
                 <li><a href="treinamento">Treinamento</a></li>
                 <li><a href="cronogramaDoCurso">Cronograma do curso</a></li>
-                <?php
-                    if(!$professor){
-                        echo '<li><a href="notificacoes">Notificações</a></li>';
-                    }
-                ?>
             </ul>
         </section>   
         <!--MENU SCREEN MEDIUM-->
@@ -137,25 +130,13 @@
             <p><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></p><br>
             <div id="tcns">
                 <br>
-                <p><a id="menu_slider-right">Capítulos</a></p><br>
                 <p><a href="treinamento" id="menu_slider" class="treinamento">Treinamento</a></p><br>
                 <p><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso">Cronograma do curso</a></p><br>                
-                <?php
-                    if(!$professor){
-                        echo '<li><a href="notificacoes" id="menu_slider">Notificações</a></li>';
-                    }
-                ?>
+               
                 <p><a href="logout" id="menu_slider_logout">Sair</a></p><br>
             </div>
         </section>
-        <!--Menu Slider Lateral SCREEN MOVEL-->
-        <section id="nav-slide-movel-right">
-            <h3 id="tituloCapitulo-movel"><?php echo isset($topicoAtual[0]['capitulo']) ? $topicoAtual[0]['capitulo'] : 'Não há capítulos listados!'; ?></h2>
-            <h3 id="subtituloCapitulo-movel"><?php echo isset($topicoAtual[0]['titulo']) ? ($topicoAtual[0]['titulo']) . ": " . $topicoAtual[0]['subtitulo'] : ''; ?></h3>
-            <p id="conteudoTopico-movel"><?php echo isset($topicoAtual[0]['conteudo']) ? $topicoAtual[0]['conteudo'] : 'Não há conteúdo!';  ?></p>
-            <p ><a id="button-back-menu_right">«Voltar</a></p>
-        </section>
-        
+                
         <div id="mascara"></div>
 
 		<!--JAVASCRIPT Back_To_Top - MEDIUM, MOVEL, SUPER-MOVEL SCREEN-->
@@ -216,18 +197,6 @@
                 });
             </script>
             
-            <!--JAVA SCRIPT Menu Slider Right - MOVEL SCREEN--> 
-            <script>
-                $(document).ready(function(){
-                   $("#nav-slide-movel-right").hide(); 
-
-                   $("#menu_slider-right").click(function(){
-                       $("#nav-slide-movel-right").slideToggle("fast");
-                       $("#nav-slide-medium").css({"display":"none"});
-                    });
-                });
-            </script>
-            
         <!-- Mascara da página -->
         <script>
             $(document).ready(function(){
@@ -248,12 +217,7 @@
                 $(id).css({'top':top});
                 $(id).show();   
             });
-			
-			<!--JAVA SCRIPT Button - Menu Slider Right - MOVEL SCREEN-->
-			$('#button-back-menu_right').click(function(){
-				$('#nav-slide-movel-right').slideToggle("fast");
-			});
-			
+						
                 $("#mascara").click( function(){
                     $(this).hide();
                     $("#nav-slide-medium").slideUp();
@@ -263,39 +227,3 @@
                 });
             });
         </script>
-        
-        <!--JAVA SCRIPT Button - Altern Full Screen - FULL SCREEN-->
-        <script>
-			function toggleFullScreen() {
-			  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
-			   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-				if (document.documentElement.requestFullScreen) {  
-				  document.documentElement.requestFullScreen();  
-				} else if (document.documentElement.mozRequestFullScreen) {  
-				  document.documentElement.mozRequestFullScreen();  
-				} else if (document.documentElement.webkitRequestFullScreen) {  
-				  document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-				}  
-			  } else {  
-				if (document.cancelFullScreen) {  
-				  document.cancelFullScreen();  
-				} else if (document.mozCancelFullScreen) {  
-				  document.mozCancelFullScreen();  
-				} else if (document.webkitCancelFullScreen) {  
-				  document.webkitCancelFullScreen();  
-				}  
-			  }  
-			} 
-			
-			<!--JQUERY - Changes image by clicking/	Expand - Demagnifying - FULL SCREEN--> 
-			$(document).ready(function(){
-				$('.alternFullScreen').click(function(){
-					if($(this).hasClass('alternFullScreen'))
-						$(this).addClass('alternFullScreen_b').removeClass('alternFullScreen');
-				
-					else
-						$(this).addClass('alternFullScreen').removeClass('alternFullScreen_b');
-					});
-			});
-			
-	   </script>

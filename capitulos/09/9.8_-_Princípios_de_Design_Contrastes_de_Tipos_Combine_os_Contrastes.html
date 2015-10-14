@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sem título</title>
-<style type="text/css">
-body{
+    <meta charset="utf-8">
+    <title>Documento sem título</title>
+    <!--Estilização da Página-->
+    <style type="text/css">
+		body{
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#title{
@@ -16,13 +17,394 @@ body{
 			font-size:17px;
 			font-family:Arial, Helvetica, sans-serif;
 		}
-</style>
+		/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+		@media all and (min-width:995px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		}
+		/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+		@media all and (min-width:918px) and (max-width:994px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:65%;
+			}
+		}
+		/*Media Queries SCREEN >= 851px AND <= 917px*/
+		@media all and (min-width:851px) and (max-width:917px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:61%;
+			}
+		}
+		/*Media Queries SCREEN >= 785px AND <= 850px*/
+		@media all and (min-width:785px) and (max-width:850px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:60%;
+				height:60%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:60%;
+			}
+		}
+		/*Media Queries SCREEN >= 731px AND <= 784px*/
+		@media all and (min-width:731px) and (max-width:784px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:55%;
+			}
+		}
+		/*Media Queries SCREEN >= 710px AND <= 730px*/
+		@media all and (min-width:710px) and (max-width:730px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:55%;
+			}
+		}
+		/*Media Queries SCREEN >= 535px AND <= 709px*/
+		@media all and (min-width:535px) and (max-width:709px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 483px AND <= 534px*/
+		@media all and (min-width:483px) and (max-width:534px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 424px AND <= 484px*/
+		@media all and (min-width:424px) and (max-width:484px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 390px AND <= 423px*/
+		@media all and (min-width:390px) and (max-width:423px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 365px AND <= 389px*/
+		@media all and (min-width:365px) and (max-width:389px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 350px AND <= 364px*/
+		@media all and (min-width:350px) and (max-width:364px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 320px AND <= 349px*/
+		@media all and (min-width:320px) and (max-width:349px){
+			 body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:3%;
+				font-size:17px;
+			}
+			#corpo{
+				text-align:justify;
+				margin-right:3%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:75%;
+				margin-left:5%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:97%;
+				margin-right:3%;
+			}
+		}
+		/*Media Queries SCREEN <= 319px*/
+		@media all and (max-width:319px){
+			 body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:3%;
+				font-size:17px;
+			}
+			#corpo{
+				text-align:justify;
+				margin-right:5%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:95%;
+				height:95%;
+				margin-left:4%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:99%;
+				margin-right:1%;
+			}
+		}
+	</style>
 </head>
 
 <body>
 <p id="title"><strong>9.8  - Combine os Contrastes </strong></p>
 <p>&nbsp;</p>
-<p id="corpo">Não tenha medo. Os bons layouts fazem uso de mais de uma das ferramentas de contraste. Por exemplo, se você estiver combinando duas fontes serifadas, cada uma delas com uma estrutura diferente, enfatize suas diferenças contrastando também sua forma. Se um elemento estiver em letras tipo roman, caixa-alta, coloque o outro em itálico, caixa-baixa. Contraste os tamanhos e peso também: contraste, talvez, até a direção. Dê uma olhada novamente nos exemplos desta seção. Cada um deles contém mais de um princípio de contraste.<br /><br />
+<p id="corpo" style="margin-bottom:140px;">Não tenha medo. Os bons layouts fazem uso de mais de uma das ferramentas de contraste. Por exemplo, se você estiver combinando duas fontes serifadas, cada uma delas com uma estrutura diferente, enfatize suas diferenças contrastando também sua forma. Se um elemento estiver em letras tipo roman, caixa-alta, coloque o outro em itálico, caixa-baixa. Contraste os tamanhos e peso também: contraste, talvez, até a direção. Dê uma olhada novamente nos exemplos desta seção. Cada um deles contém mais de um princípio de contraste.<br /><br />
 Para conhecer uma ampla variedade de exemplos e ideias, procure em qualquer revista de boa qualidade. Observe que cada um dos layouts interessantes depende dos contrastes aplicados aos tipos. Os subtítulos ou capitulares iniciais enfatizam o contraste de tamanho e o peso; em geral, costuma haver um contraste de estrutura (serifa versus sem serifa) e também de forma (caixa-alta versus caixa-baixa).<br /><br />
 Tente verbalizar o que você visualiza. Se você puder transmitir em palavras e dinâmica da relação, já a dominará. Quando você olhar para uma combinação de tipos que o faz piscar porque você possui uma noção instintiva de que as fontes e os estilos não combinam, ponha sua conclusão em palavras.<br /><br />
 Antes de tentar encontrar uma solução melhor, é preciso descobrir o problema. Qual é a eficácia do contraste de peso, de tamanho, de estrutura? Para descobrir o problema, tente classificar as similaridades e não as diferenças. O que existe entre as duas fontes faz que elas criem uma estética de “disputa” na página? Ambas estão em caixa-alta? Ambas possuem um forte contraste grosso-fino em seus traços?<br /><br />
@@ -30,5 +412,6 @@ Será que os conflitos de foco (por exemplo, o tipo maior está com um peso mais
 <strong>Dê nome ao problema para depois criar a solução</strong>
 <br /><br />
 </p>
+
 </body>
 </html>

@@ -21,64 +21,6 @@
 		text-decoration: none;
 	}
 		
-	/*Altern Full Screen Expand*/
-	.alternFullScreen{
-		background-image: url('../imagens/tela_ampliar.png');
-		width: 50px;
-		height: 50px;
-		position:absolute !important;
-		right:6px;
-		display: block;
-		top:120px;
-		text-transform: uppercase;
-		opacity: 0.2;
-   		filter: alpha(opacity=40);
-		cursor:pointer;
-		z-index:9999;
-	}
-	
-	.alternFullScreen:hover{
-		background-image: url('../imagens/tela_ampliar.png');
-		position:absolute !important;
-		right:6px;
-		display: block;
-		top:120px;
-		text-transform: uppercase;
-		opacity: 0.6;
-   		filter: alpha(opacity=40);
-		cursor:pointer;
-		z-index:9999;
-	}
-	
-	/*Altern Full Screen Demagnifying*/
-	.alternFullScreen_b{
-		background-image: url('../imagens/tela_desampliar.png');
-		width: 50px;
-		height: 50px;
-		position:absolute !important;
-		right:6px;
-		display: block;
-		top:120px;
-		text-transform: uppercase;
-		opacity: 0.2;
-   		filter: alpha(opacity=40);
-		cursor:pointer;
-		z-index:9999;
-	}
-	
-	.alternFullScreen_b:hover{
-		background-image: url('../imagens/tela_desampliar.png');
-		position:absolute !important;
-		right:6px;
-		display: block;
-		top:120px;
-		text-transform: uppercase;
-		opacity: 0.6;
-   		filter: alpha(opacity=40);
-		cursor:pointer;
-		z-index:9999;
-	}
-	   
 	body {
 		background-color: #ffffff;
 		font-family: 'Trebuchet MS', sans-serif;
@@ -152,10 +94,11 @@
 		margin: 0 10px;
 		display:none;
 	}
+	
 	#menuCapitulos{	
 		margin-bottom:100px;
 	}
-        
+	        
 	section#menuSistema{
 		min-width: 980px;
 		padding: 15px 0 25px 0;
@@ -225,16 +168,6 @@
         
 	a {
 		text-decoration: none;
-	}
-	
-	/*Altern Full Screen Expand*/
-	.alternFullScreen{
-		display:none;
-	}
-	
-	/*Altern Full Screen Demagnifying*/
-	.alternFullScreen_b{
-		display:none;
 	}
         
 	body {
@@ -519,16 +452,6 @@
 		text-decoration: none;
 	}
 	
-	/*Altern Full Screen Expand*/
-	.alternFullScreen{
-		display:none;
-	}
-	
-	/*Altern Full Screen Demagnifying*/
-	.alternFullScreen_b{
-		display:none;
-	}
-        
 	body {
 		background-color: #ffffff;
 		font-family: 'Trebuchet MS', sans-serif;
@@ -820,17 +743,7 @@
 	a {
 		text-decoration: none;
 	}
-	
-	/*Altern Full Screen Expand*/
-	.alternFullScreen{
-		display:none;
-	}
-	
-	/*Altern Full Screen Demagnifying*/
-	.alternFullScreen_b{
-		display:none;
-	}
-        
+	        
 	body {
 		background-color: #ffffff;
 		font-family: 'Trebuchet MS', sans-serif;
@@ -1122,16 +1035,6 @@
 	a{ 
 		color:#FFF;
 	}
-	
-	/*Altern Full Screen Expand*/
-	.alternFullScreen{
-		display:none;
-	}
-	
-	/*Altern Full Screen Demagnifying*/
-	.alternFullScreen_b{
-		display:none;
-	}
         
 	#capitulos{
 		display:none;
@@ -1286,7 +1189,7 @@
         
 	#nav-slide-super-movel div#tcns {
 		background-image: url('../imagens/backgroundMenuUsuario.jpg');
-		height:192px;
+		height:145px;
 	}
         
 	#nav-slide-super-movel div#tcns p a:hover {
@@ -1366,58 +1269,7 @@
 		font-size:16px;
 		padding: 4px 50px 4px 50px;
 	}
-		
-	/*Menu Slider MOVEL Lateral - CAPÍTULOS*/
-	a#menu_slider-right{
-		cursor:pointer;
-		padding: 4px 65px 4px 65px;
-		margin: 2px 8px;
-		height:380px;
-		color:#FFFFFF;
-		margin-left:2px;
-		position:relative;
-		text-decoration:none;
-		font-size:16px;
-	}
-        
-	a#menu_slider_logout-right:hover{
-		text-decoration:none;
-	}
-        
-	#button-back-menu_right{
-		position: absolute;
-		top: 3px;
-		right: 2px;
-		padding: 1px 6px;
-		cursor: pointer;
-		background-color: #003A75;
-		transition: all 0.0s linear;
-        z-index: 9999;
-		margin-right:5px;
-	}
-        
-	#nav-btn-movel-right div{
-		width: 18px;
-		height: 3px;
-		background: #FFFFFF;
-		margin: 4px 0px;
-		transition: all 0.0s linear;
-	}
-        
-	#nav-slide-movel-right{
-		position: absolute;
-		right: 5px;
-		overflow-y:auto;
-		margin-top:10px;
-		top: 35px;
-		width: 280px;
-		background: #003A75;
-		transition: right 0.4s linear;
-		color:#FFF;
-		z-index:10000;
-		height:360px;
-	}
-	
+
 	#nav-slide-movel-right p a:hover {
     	background-image: url('../imagens/backgroundMenuUsuario.jpg');
 	}
@@ -1467,7 +1319,7 @@
 		right:10px;
 		display: block;
 		font-weight: bold;
-		bottom:130px;
+		bottom:90px;
 		text-transform: uppercase;
 		opacity: 0.2;
    		filter: alpha(opacity=40);
@@ -1481,7 +1333,7 @@
 		right:10px;
 		display: block;
 		font-weight: bold;
-		bottom:130px;
+		bottom:90px;
 		text-transform: uppercase;
 		opacity: 0.6;
    		filter: alpha(opacity=40);

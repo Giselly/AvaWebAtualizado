@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sem título</title>
-<style type="text/css">
+    <meta charset="utf-8">
+    <title>Documento sem título</title>
+    <!--Estilização da Página-->
+    <style type="text/css">
 		body{
 			font-family:Arial, Helvetica, sans-serif;
 		}
@@ -17,16 +18,397 @@
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#img{
-			width:40%;
-			height:40%;
+			width:80%;
+			height:80%;
 			margin-left:5%;
 			margin-bottom:3%;
 			/* Sombra da Imagem */
 			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
 			-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
 			-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
-		}	
-</style>
+		}
+		/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+		@media all and (min-width:995px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:60%;
+				height:60%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		}
+				/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+		@media all and (min-width:918px) and (max-width:994px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:65%;
+			}
+		}
+		/*Media Queries SCREEN >= 851px AND <= 917px*/
+		@media all and (min-width:851px) and (max-width:917px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:61%;
+			}
+		}
+		/*Media Queries SCREEN >= 785px AND <= 850px*/
+		@media all and (min-width:785px) and (max-width:850px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:60%;
+				height:60%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:60%;
+			}
+		}
+		/*Media Queries SCREEN >= 731px AND <= 784px*/
+		@media all and (min-width:731px) and (max-width:784px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:55%;
+			}
+		}
+		/*Media Queries SCREEN >= 710px AND <= 730px*/
+		@media all and (min-width:710px) and (max-width:730px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:55%;
+			}
+		}
+		/*Media Queries SCREEN >= 535px AND <= 709px*/
+		@media all and (min-width:535px) and (max-width:709px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 483px AND <= 534px*/
+		@media all and (min-width:483px) and (max-width:534px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 424px AND <= 484px*/
+		@media all and (min-width:424px) and (max-width:484px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 390px AND <= 423px*/
+		@media all and (min-width:390px) and (max-width:423px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 365px AND <= 389px*/
+		@media all and (min-width:365px) and (max-width:389px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 350px AND <= 364px*/
+		@media all and (min-width:350px) and (max-width:364px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 320px AND <= 349px*/
+		@media all and (min-width:320px) and (max-width:349px){
+			 body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:3%;
+				font-size:17px;
+			}
+			#corpo{
+				text-align:justify;
+				margin-right:3%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:75%;
+				margin-left:5%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:97%;
+				margin-right:3%;
+			}
+		}
+		/*Media Queries SCREEN <= 319px*/
+		@media all and (max-width:319px){
+			 body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:3%;
+				font-size:17px;
+			}
+			#corpo{
+				text-align:justify;
+				margin-right:5%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:95%;
+				height:95%;
+				margin-left:4%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:99%;
+				margin-right:1%;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -36,45 +418,44 @@
     
 <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Escolha o item tipográfico que você deseja destacar.<br /><br /> Enfatize-o por meio de contrastes. </p><br><br>
 
-    <img src="imagens/pag144.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag144.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Se você precisar inserir outros elementos tipográficos e eles não forem realmente importantes para o público em geral, deixe-os em tamanhos pequenos. Quem se importa com o número do volume? Se alguém quiser saber, esse número ainda poderá ser lido.
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Se você precisar inserir outros elementos tipográficos e eles não forem realmente importantes para o público em geral, deixe-os em tamanhos pequenos. Quem se importa com o número do volume? Se alguém quiser saber, esse número ainda poderá ser lido.
 </p><br><br>
 
-    <img src="imagens/pag144_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag144_2.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Não é preciso colocar essas informações em 12 pontos! </p><br><br>
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Não é preciso colocar essas informações em 12 pontos! </p><br><br>
 
 <p id="corpo">Um contraste de tamanho nem sempre significa que você deva fazer que o tipo fique grande; significa apenas que você deve haver um contraste. Por exemplo, quando você vê uma pequena linha isolada em uma página grande de jornal, fica com vontade de lê-la, certo? Grande parte do que o convida a fazê-lo é o contraste do tipo muito pequeno colocado em uma página grande.<br /><br /><br />
 
-    <img src="imagens/pag145_1.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag145_1.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Se você visse uma página assim em um jornal, leria o que está escrito em letras pequenas? O que o faria ler? O contraste. </p><br><br>
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Se você visse uma página assim em um jornal, leria o que está escrito em letras pequenas? O que o faria ler? O contraste. </p><br><br>
 
-    <img src="imagens/pag145.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag145.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Às vezes o contraste do grande com o pequeno pode ser opressivo, abafando o tipo pequeno. Utiliza esse recurso como uma vantagem. Quem realmente quer ler a palavra “incorporated”? Apesar de pequena, com certeza ela não é invisível; portanto, se alguém quiser lê-la, ela estará aí.</p><br><br>
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Às vezes o contraste do grande com o pequeno pode ser opressivo, abafando o tipo pequeno. Utiliza esse recurso como uma vantagem. Quem realmente quer ler a palavra “incorporated”? Apesar de pequena, com certeza ela não é invisível; portanto, se alguém quiser lê-la, ela estará aí.</p><br><br>
 
 <p id="corpo">Recomendo repetitivamente que não se utilizem letras em caixa-alta. Provavelmente elas só devam ser utilizadas para que o tipo fique maior certo? Ironicamente, quando o tipo é colocado em caixa-alta, ele fica duas vezes maior do que em caixa-baixa; então quando se usa o tipo em caixa-alta, geralmente diminui-se o tamanho das letras. Se o texto for colocado em caixa-baixa você poderá realmente estabelecer tamanhos maiores, além de ser um estilo mais legível.<br /><br /><br />
 
-    <img src="imagens/pag146.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag146.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Este título está com 18 pontos. É o maior tamanho que posso utilizar em caixa-alta nesse espaço.</p><br><br>
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Este título está com 18 pontos. É o maior tamanho que posso utilizar em caixa-alta nesse espaço.</p><br><br>
 
-    <img src="imagens/pag146_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag146_2.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Colocando o título em caixa-alta e baixa pude aumentá-lo para 24 pontos, e ainda há espaço para deixar a letra mais pesada.</p><br><br>
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Colocando o título em caixa-alta e baixa pude aumentá-lo para 24 pontos, e ainda há espaço para deixar a letra mais pesada.</p><br><br>
 
 <p id="corpo">Utilize o contraste diferente de tamanho de maneiras inesperadas e provocativas. Muitos de nossos símbolos tipográficos, como números, o “e” comercial ou as aspas são muito bonitos quando colocados em tamanhos muito grandes. Utilize-os como elementos decorativos em um título ou menção ou como elementos repetitivos na publicação inteira.<br /><br /><br />
 
-    <img src="imagens/pag147_1.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag147_1.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Um contraste diferente de tamanho pode se tornar um elemento gráfico em si, o que será muito útil se você estiver com limitações quanto às figuras disponíveis para inserção em um projeto.</p><br><br>
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;"><br>Um contraste diferente de tamanho pode se tornar um elemento gráfico em si, o que será muito útil se você estiver com limitações quanto às figuras disponíveis para inserção em um projeto.</p><br><br>
 
-    <img src="imagens/pag147.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo09/pag147.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Se você usar um item com um tamanho não usual, avalie se poderá reaproveitar essa estética em outros pontos do mesmo material para criar uma repetição interessante e útil.</p><br><br>
-
+<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px; margin-bottom:100px;"><br>Se você usar um item com um tamanho não usual, avalie se poderá reaproveitar essa estética em outros pontos do mesmo material para criar uma repetição interessante e útil.</p><br><br>
 
 </body>
 </html>

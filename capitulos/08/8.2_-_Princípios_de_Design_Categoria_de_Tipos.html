@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sem título</title>
-<style type="text/css">
+    <meta charset="utf-8">
+    <title>Documento sem título</title>
+    <!--Estilização da Página-->
+    <style type="text/css">
 		body{
 			font-family:Arial, Helvetica, sans-serif;
 		}
@@ -17,9 +18,9 @@
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#img{
-			width:40%;
-			height:40%;
-			margin-left:5%;
+			width:60%;
+			height:60%;
+			margin-left:30%;
 			margin-bottom:3%;
 			/* Sombra da Imagem */
 			box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
@@ -30,108 +31,488 @@
 			margin-left:5%;
 			margin-top:-15px;
 			position:relative;
-			}
+		}
 		#t2{
 			margin-left:25%;
 			margin-top:-405px;
 			position:relative;
-			}
+		}
 		#texto{
 			margin-left:50%;
 			margin-top:-593px;
 			position:relative;
+		}
+		/*Media Queries SCREEN >= 995px - FULL SCREEN*/
+		@media all and (min-width:995px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
 			}
-</style>
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+		}
+		/*Media Queries SCREEN >= 918px AND <= 994px - MEDIUM SCREEN*/
+		@media all and (min-width:918px) and (max-width:994px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:60%;
+				height:60%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:65%;
+			}
+		}
+		/*Media Queries SCREEN >= 851px AND <= 917px*/
+		@media all and (min-width:851px) and (max-width:917px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:60%;
+				height:60%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:61%;
+			}
+		}
+		/*Media Queries SCREEN >= 785px AND <= 850px*/
+		@media all and (min-width:785px) and (max-width:850px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:60%;
+				height:60%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:60%;
+			}
+		}
+		/*Media Queries SCREEN >= 731px AND <= 784px*/
+		@media all and (min-width:731px) and (max-width:784px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:55%;
+			}
+		}
+		/*Media Queries SCREEN >= 710px AND <= 730px*/
+		@media all and (min-width:710px) and (max-width:730px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:55%;
+			}
+		}
+		/*Media Queries SCREEN >= 535px AND <= 709px*/
+		@media all and (min-width:535px) and (max-width:709px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 483px AND <= 534px*/
+		@media all and (min-width:483px) and (max-width:534px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 424px AND <= 484px*/
+		@media all and (min-width:424px) and (max-width:484px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:70%;
+				height:70%;
+				margin-left:20%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 390px AND <= 423px*/
+		@media all and (min-width:390px) and (max-width:423px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:95%;
+			}
+		}
+		/*Media Queries SCREEN >= 365px AND <= 389px*/
+		@media all and (min-width:365px) and (max-width:389px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 350px AND <= 364px*/
+		@media all and (min-width:350px) and (max-width:364px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+			}
+			#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 320px AND <= 349px*/
+		@media all and (min-width:320px) and (max-width:349px){
+			 body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:3%;
+				font-size:17px;
+			}
+			#corpo{
+				text-align:justify;
+				margin-right:3%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:85%;
+				height:75%;
+				margin-left:5%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+	
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:97%;
+				margin-right:3%;
+			}
+		}
+		/*Media Queries SCREEN <= 319px*/
+		@media all and (max-width:319px){
+			 body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:3%;
+				font-size:17px;
+			}
+			#corpo{
+				text-align:justify;
+				margin-right:5%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:95%;
+				height:95%;
+				margin-left:4%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 0px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.5);
+			}
+			#conteudoTopico{
+				min-width:99%;
+				margin-right:1%;
+			}
+		}
+    </style>
 </head>
 
 <body>
- <p id="title"><strong>8.2  - Categoria de Tipos</strong></p>
-    <p>&nbsp;</p>
-    <p id="corpo"><strong>Estilo Antigo</strong></p>
-    <p id="corpo">Os tipos criados no <strong>estilo antigo</strong> baseiam-se na escrita manual dos escribas, que trabalhavam com uma pena na mão. Os estilos antigos sempre têm serifas (leia a definição a seguir) e as serifas das letras em caixa-baixa sempre têm um ângulo (o da caneta). Por isso, todos os traços curvos das letras passam de grossos para finos, o que chamamos tecnicamente de “transição grosso-fino”. Esse contraste no traço é relativamente moderado, o que significa que ele passa de levemente fino a levemente mais grosso. Se você desenhar uma linha nas partes mais finas dos traços curvos, essa linha será diagonal. Isso se chama ênfase. Um tipo em estilo antigo tem uma ênfase diagonal.</p><br><br>
+<p id="title"><strong>8.2  - Categoria de Tipos</strong></p>
+<p>&nbsp;</p>
+<p id="corpo"><strong>Estilo Antigo</strong></p><br>
+<p id="corpo">Os tipos criados no <strong>estilo antigo</strong> baseiam-se na escrita manual dos escribas, que trabalhavam com uma pena na mão. Os estilos antigos sempre têm serifas (leia a definição a seguir) e as serifas das letras em caixa-baixa sempre têm um ângulo (o da caneta). Por isso, todos os traços curvos das letras passam de grossos para finos, o que chamamos tecnicamente de “transição grosso-fino”. Esse contraste no traço é relativamente moderado, o que significa que ele passa de levemente fino a levemente mais grosso. Se você desenhar uma linha nas partes mais finas dos traços curvos, essa linha será diagonal. Isso se chama ênfase. Um tipo em estilo antigo tem uma ênfase diagonal.</p><br>
     
-    <img src="imagens/pag132.jpg" id="img"  style="border: solid 2px #fff;"/>
-    <img src="imagens/pag132_2.jpg" id="img"  style="border: solid 2px #fff;"/>
-
-    
-    <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Na sua opinião, esses tipos parecem iguais? Não se preocupe: eles parecem iguais para qualquer pessoa que não tenha estudado tipografia. Sua “invisibilidade” é exatamente o que faz que os tipos em estilo antigo formem o melhor grupo para grandes extensões de texto corrido. É raro haver características diferenciadas que apareçam na leitura; essas características não chamam atenção. Se você tiver trabalhando com um texto muito longo e deseja realmente que as pessoas o leiam, coloque-o no estilo antigo.
+<img src="imagens/capitulo08/pag132.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
+<img src="imagens/capitulo08/pag132_2.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>    
+<p id="corpo" style="font-size:10pt; margin-left:10%; ">Na sua opinião, esses tipos parecem iguais? Não se preocupe: eles parecem iguais para qualquer pessoa que não tenha estudado tipografia. Sua “invisibilidade” é exatamente o que faz que os tipos em estilo antigo formem o melhor grupo para grandes extensões de texto corrido. É raro haver características diferenciadas que apareçam na leitura; essas características não chamam atenção. Se você tiver trabalhando com um texto muito longo e deseja realmente que as pessoas o leiam, coloque-o no estilo antigo.
 </p><br><br>
 
-    <p id="corpo"><strong>Moderno</strong></p>
-    <p id="corpo">Com o progresso da história, a estrutura do tipo mudou. O tipo em suas próprias tendências e também sucumbe ao estilo de vida e às mudanças culturais, assim como os penteados, a moda, a arquitetura ou a linguagem. Em 1700, o aperfeiçoamento do papel, as técnicas mais sofisticadas de impressão e um aumento genérico dos dispositivos mecânicos foram fatores que fizeram que o tipo se tornasse mais mecânico. Novos tipos já não seguem mais o estilo da escrita com a pena. Os tipos modernos têm serifas, mas agora elas são horizontais e não inclinadas, e são muito finas. Como uma ponte de aço, a estrutura é forte, com uma transição grosso-fino radical – ou contraste nos traços. Não há evidências da inclinação da pena; a ênfase é perfeitamente vertical. Os tipos modernos têm uma estética fria e elegante.</p><br><br>
+<p id="corpo"><strong>Moderno</strong></p><br>
+<p id="corpo">Com o progresso da história, a estrutura do tipo mudou. O tipo em suas próprias tendências e também sucumbe ao estilo de vida e às mudanças culturais, assim como os penteados, a moda, a arquitetura ou a linguagem. Em 1700, o aperfeiçoamento do papel, as técnicas mais sofisticadas de impressão e um aumento genérico dos dispositivos mecânicos foram fatores que fizeram que o tipo se tornasse mais mecânico. Novos tipos já não seguem mais o estilo da escrita com a pena. Os tipos modernos têm serifas, mas agora elas são horizontais e não inclinadas, e são muito finas. Como uma ponte de aço, a estrutura é forte, com uma transição grosso-fino radical – ou contraste nos traços. Não há evidências da inclinação da pena; a ênfase é perfeitamente vertical. Os tipos modernos têm uma estética fria e elegante.</p><br><br>
     
-    <img src="imagens/pag133.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag133.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-    <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Os tipos modernos têm uma aparência forte, principalmente quando são muito grandes. Por suas fortes transições grosso fino, a maioria dos tipos modernos não é uma boa opção no caso de grandes extensões de texto corrido. As linhas finas quase desaparecem, as grossas são salientes demais e o efeito sobre a página é classificado como “ofuscante”.<br><br>
+<p id="corpo" style="font-size:10pt; margin-left:10%; "><br>Os tipos modernos têm uma aparência forte, principalmente quando são muito grandes. Por suas fortes transições grosso fino, a maioria dos tipos modernos não é uma boa opção no caso de grandes extensões de texto corrido. As linhas finas quase desaparecem, as grossas são salientes demais e o efeito sobre a página é classificado como “ofuscante”.<br><br><br>
 </p>
 
-  <p id="corpo"><strong>Serifa Grosa</strong></p>
-    <p id="corpo">Um novo conceito surgiu junto com a Revolução industrial: o da propaganda. Primeiramente, os profissionais selecionavam os tipos modernos e faziam que os pontos grossos ficassem ainda mais espessos. Você deve ter visto pôsteres com tipos assim: à distância, tudo o que se pode ver são linhas verticais. A solução óbvia para esse problema foi fazer que a letra inteira ficasse mais grossa. As letras com serifa grossa têm pouca ou nenhuma transição grosso-fino.<br><br>
+<p id="corpo"><strong>Serifa Grosa</strong></p><br>
+<p id="corpo">Um novo conceito surgiu junto com a Revolução industrial: o da propaganda. Primeiramente, os profissionais selecionavam os tipos modernos e faziam que os pontos grossos ficassem ainda mais espessos. Você deve ter visto pôsteres com tipos assim: à distância, tudo o que se pode ver são linhas verticais. A solução óbvia para esse problema foi fazer que a letra inteira ficasse mais grossa. As letras com serifa grossa têm pouca ou nenhuma transição grosso-fino.<br><br>
 Às vezes, essa categoria de tipos é chamada de Clarendon, porque a fonte Clarendon (mostrada a seguir) é a síntese desse estilo. Esses tipos também são chamados de Egípcios, porque tornaram-se conhecidos durante a fase egiptomaníaca da civilização ocidental; muitos tipos pertencentes a essa categoria foram classificados com nomes egípcios para que pudessem ser facilmente vendidos (Memphis, Cairo, Scarab).
 </p><br><br>
     
-    <img src="imagens/pag134.jpg" id="img"  style="border: solid 2px #fff;"/>
-    <img src="imagens/pag134_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag134.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
+<img src="imagens/capitulo08/pag134_2.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-    <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Muitos dos tipos com serifa grossa, que têm contraste grosso-fino suave (como a Clarendon ou a New Century Schoolbook), têm um grau muito elevado de legibilidade, o que significa que podem ser facilmente utilizados em textos extensos. Entretanto, esses tipos criam uma página mais escura do que aqueles em estilo antigo, pois seus traços são mais grossos e o peso de cada letra é relativamente igual. Tipos com serifa grossa costumam ser utilizados em livros infantis, por sua estética clara e direta.<br><br>
-*O termo serifa grossa não é usado em português. Entretanto, a autora distingue três tipos de serifa – inclinada, horizontal e grossa – que achamos por bem manter. No Brasil vemos apenas os termos com serifa e sem serifa. (N. do E.)<br><br>
+<p id="corpo" style="font-size:10pt; margin-left:10%;"><br>Muitos dos tipos com serifa grossa, que têm contraste grosso-fino suave (como a Clarendon ou a New Century Schoolbook), têm um grau muito elevado de legibilidade, o que significa que podem ser facilmente utilizados em textos extensos. Entretanto, esses tipos criam uma página mais escura do que aqueles em estilo antigo, pois seus traços são mais grossos e o peso de cada letra é relativamente igual. Tipos com serifa grossa costumam ser utilizados em livros infantis, por sua estética clara e direta.<br><br>
+*O termo serifa grossa não é usado em português. Entretanto, a autora distingue três tipos de serifa – inclinada, horizontal e grossa – que achamos por bem manter. No Brasil vemos apenas os termos com serifa e sem serifa. (N. do E.)<br><br><br>
 </p>
 
-<p id="corpo"><strong>Sem Serifa</strong></p>
-    <p id="corpo">Em francês (e em inglês também), esse estilo de tipo é chamado sans serif, o que significa sem serifa. Portanto, as fontes sem serifa não possuem serifas nos finais de seus traços. A ideia de remover as serifas foi um progresso mais tardio na evolução da tipologia e não obteve muito sucesso até o início do século XX.<br><br>
+<p id="corpo"><strong>Sem Serifa</strong></p><br>
+<p id="corpo">Em francês (e em inglês também), esse estilo de tipo é chamado sans serif, o que significa sem serifa. Portanto, as fontes sem serifa não possuem serifas nos finais de seus traços. A ideia de remover as serifas foi um progresso mais tardio na evolução da tipologia e não obteve muito sucesso até o início do século XX.<br><br>
 Os tipos sem serifa são quase sempre de peso igual, o que significa que – virtualmente -  não há uma transição grosso-fino visível nos traços, as letras têm sempre a mesma espessura.<br><br>
 Veja também a próxima página para conhecer informações importantes sobre os tipos sem serifa.
 </p><br><br>
     
-    <img src="imagens/pag135.jpg" id="img"  style="border: solid 2px #fff;"/>
-    <img src="imagens/pag135_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag135.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
+<img src="imagens/capitulo08/pag135_2.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
 
-    <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Se as únicas fontes sem serifa que você possui em sua biblioteca de fontes forem a Helvetica e a Avant Gard, a melhor coisa a fazer para aperfeiçoar a diagramação de suas páginas seria investir em uma família de tipos sem serifa que incluísse uma fonte forte, pesada, bem marcante. Cada uma das famílias acima tem uma ampla variedade de pesos, que vão light (bem suave) ao extra black (negrito bem forte). Depois desse investimento você ficará surpreso com o aumento das opções para criação de páginas interessantes, que irão atrair a atenção dos leitores.<br><br>
+<p id="corpo" style="font-size:10pt; margin-left:10%; ">Se as únicas fontes sem serifa que você possui em sua biblioteca de fontes forem a Helvetica e a Avant Gard, a melhor coisa a fazer para aperfeiçoar a diagramação de suas páginas seria investir em uma família de tipos sem serifa que incluísse uma fonte forte, pesada, bem marcante. Cada uma das famílias acima tem uma ampla variedade de pesos, que vão light (bem suave) ao extra black (negrito bem forte). Depois desse investimento você ficará surpreso com o aumento das opções para criação de páginas interessantes, que irão atrair a atenção dos leitores.<br><br><br>
 </p>
 
 <p id="corpo">A maioria das fontes sem serifa tem peso igual, como mostramos anteriormente. Entretanto, algumas poucas têm uma transição grosso-fino suave. A seguir um exemplo de uma fonte sem serifa com ênfase; seu nome é Optima. Fontes como essas são muito difíceis de se combinar com outros estilos na diagramação de uma página. Elas são similares às fontes serifadas em seu traços grossos-finos, e são similares às fontes serifadas em seu traços grossos-finos, e são similares às fontes sem serifa justamente na inexistência de serifas. É preciso ser muito cuidadoso ao trabalhar com uma fonte sem serifa como essa.
 </p><br><br>
 
-    <img src="imagens/pag136.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag136.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
  
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">A Optima é uma fonte excepcionalmente bonita, mas é preciso ser muito cuidadoso na combinação dessa com outras fontes. Observe com os traços grossos-finos. Ela tem a elegância clássica de uma fonte em estilo antigo, mas sem serifas.<br><br>
+<p id="corpo" style="font-size:10pt; margin-left:10%; ">A Optima é uma fonte excepcionalmente bonita, mas é preciso ser muito cuidadoso na combinação dessa com outras fontes. Observe com os traços grossos-finos. Ela tem a elegância clássica de uma fonte em estilo antigo, mas sem serifas.<br><br><br>
 </p>
 
-    <img src="imagens/pag136_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag136_2.jpg" id="img"  style="border: solid 2px #fff;"/><br><br>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Aqui você está vendo a combinação da Optima com a Spumoni. A informalidade da Spumoni cria um bom contraste com a elegância clássica da Optima.<br><br>
+<p id="corpo" style="font-size:10pt; margin-left:10%; ">Aqui você está vendo a combinação da Optima com a Spumoni. A informalidade da Spumoni cria um bom contraste com a elegância clássica da Optima.<br><br><br>
 </p>
 
-<p id="corpo"><strong>Manuscrito</strong></p>
-    <p id="corpo">A categoria de tipos manuscritos inclui todos os tipos que parecem ter sido escritos à mão, com uma caneta tinteiro, com um pincel ou, às vezes, com um lápis ou caneta profissional. Essa categoria poderia facilmente ser segmentada, formando manuscritos que se conectam, manuscritos que não se conectam, manuscritos que parecem impressos por processo manual, manuscritos que imitam estilos caligráficos tradicionais etc. Mas para atingirmos nossos propósitos, colocaremos todos em um único pacote.
-</p><br><br>
+<p id="corpo"><strong>Manuscrito</strong></p><br>
+<p id="corpo">A categoria de tipos manuscritos inclui todos os tipos que parecem ter sido escritos à mão, com uma caneta tinteiro, com um pincel ou, às vezes, com um lápis ou caneta profissional. Essa categoria poderia facilmente ser segmentada, formando manuscritos que se conectam, manuscritos que não se conectam, manuscritos que parecem impressos por processo manual, manuscritos que imitam estilos caligráficos tradicionais etc. Mas para atingirmos nossos propósitos, colocaremos todos em um único pacote.
+</p><br>
     
-    <img src="imagens/pag137_1.jpg" id="img"  style="border: solid 2px #fff;"/>
-
-    <p id="corpo">Os tipos manuscritos são como uma torta de queijo: deveriam ser “comidos” (utilizados) pouco a pouco, para que ninguém ficasse indisposto. É claro: os mais elaborados nunca deveriam ser colocados na forma de longos blocos de texto e nunca com todas as letras em caixa-alta. Mas esses tipos podem assumir características particularmente surpreendentes quando utilizados em tamanhos muito grandes. Não tenha medo!<br><br>
+<img src="imagens/capitulo08/pag137_1.jpg" id="img"  style="border: solid 2px #fff;"/>
+<br><br><br>
+<p id="corpo">Os tipos manuscritos são como uma torta de queijo: deveriam ser “comidos” (utilizados) pouco a pouco, para que ninguém ficasse indisposto. É claro: os mais elaborados nunca deveriam ser colocados na forma de longos blocos de texto e nunca com todas as letras em caixa-alta. Mas esses tipos podem assumir características particularmente surpreendentes quando utilizados em tamanhos muito grandes. Não tenha medo!<br><br>
 </p>
 
-    <img src="imagens/pag137.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag137.jpg" id="img"  style="border: solid 2px #fff;"/><br><br><br>
 
-<p id="corpo"><strong>Decorativo</strong></p>
-    <p id="corpo">Os tipos decorativos são fáceis de identificar: se a simples ideia de ler um livro inteiro em um determinado tipo o fizer enlouquecer, é provável que você possa incluí-lo no nosso “pacote” de tipos decorativos. Eles são ótimos, engraçados, diferentes, fáceis de usar, costumam ser baratos e sempre existe uma fonte para cada capricho que você queira expressar. É lógico: por serem tão diferenciados, seu uso dever ser limitado.
-</p><br><br>
+<p id="corpo"><strong>Decorativo</strong></p><br>
+<p id="corpo">Os tipos decorativos são fáceis de identificar: se a simples ideia de ler um livro inteiro em um determinado tipo o fizer enlouquecer, é provável que você possa incluí-lo no nosso “pacote” de tipos decorativos. Eles são ótimos, engraçados, diferentes, fáceis de usar, costumam ser baratos e sempre existe uma fonte para cada capricho que você queira expressar. É lógico: por serem tão diferenciados, seu uso dever ser limitado.
+</p><br>
     
-    <img src="imagens/pag138_1.jpg" id="img"  style="border: solid 2px #fff;"/>
+<img src="imagens/capitulo08/pag138_1.jpg" id="img"  style="border: solid 2px #fff;"/><br><br><br>
     
-    <p id="corpo">Quando você utilizar uma fonte decorativa, vá além da impressão inicial. Por exemplo, se a Improv parece informal para você, tente utilizá-la em uma situação mais formal e observe o que acontece. Se você achar que a Juniper lembra filmes de bang-bang, experimente usá-las em um projeto de empresa ou em uma floricultura e veja o que acontece. Dependendo de como você utilizá-las, as fontes decorativas podem trazer de maneira espalhafatosa emoções óbvias, ou você poderá manipulá-las para que suas conotações sejam muito diferentes da primeira impressão. Mas esse é um assunto para outro livro.<br><br>
+<p id="corpo">Quando você utilizar uma fonte decorativa, vá além da impressão inicial. Por exemplo, se a Improv parece informal para você, tente utilizá-la em uma situação mais formal e observe o que acontece. Se você achar que a Juniper lembra filmes de bang-bang, experimente usá-las em um projeto de empresa ou em uma floricultura e veja o que acontece. Dependendo de como você utilizá-las, as fontes decorativas podem trazer de maneira espalhafatosa emoções óbvias, ou você poderá manipulá-las para que suas conotações sejam muito diferentes da primeira impressão. Mas esse é um assunto para outro livro.<br><br>
 </p>
 
-    <img src="imagens/pag138_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+    <img src="imagens/capitulo08/pag138_2.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:10.5pt; margin-right:18px;">Às vezes a sabedoria é beneficiada com o uso de fontes decorativas.<br><br>
+<p id="corpo" style="font-size:10pt; margin-left:10%; "><br>Às vezes a sabedoria é beneficiada com o uso de fontes decorativas.<br><br><br>
 </p>
 
-<p id="corpo"><strong>Seja Consciente</strong></p>
-    <p id="corpo">Para fazer uso dos tipos de maneira eficiente, você deve estar consciente. Com isso quero dizer que você deve manter seus olhos aberto, deve observar os detalhes. Deve tentar transformar o problema em palavras. Quando você vir algo que chame muita atenção, verbalize o motivo desse interesse.<br><br>
+<p id="corpo"><strong>Seja Consciente</strong></p><br>
+<p id="corpo" style="margin-bottom:160px;">Para fazer uso dos tipos de maneira eficiente, você deve estar consciente. Com isso quero dizer que você deve manter seus olhos aberto, deve observar os detalhes. Deve tentar transformar o problema em palavras. Quando você vir algo que chame muita atenção, verbalize o motivo desse interesse.<br><br>
 Passe alguns minutos olhando uma revista. Tente categorizar as fontes que aparecerem. Muitas delas não se encaixarão completamente em nenhuma das alternativas, mas não faz mal: escolha a categoria que parecer a mais apropriada. O que interessa é você observar atentamente a forma das letras, o que é imprescindível para que você seja capaz de combiná-las de maneira eficaz.
-
-</p><br><br>
+</p>
 
 </body>
 </html>
