@@ -52,7 +52,7 @@ body{
 
 input[type=text], input[type=password], input[type=email] {
     position: relative;
-    width: 355px;
+    width: 83%;
     height: 28px;
     border: 1px solid #cdcdcd ;
     margin-bottom: 10px;
@@ -81,6 +81,14 @@ input[type=text], input[type=password], input[type=email] {
     padding-left: 5px;
     //background-image: url("../imagens/senha.png");
     background-repeat: no-repeat;
+}
+
+#log {
+    position: relative;
+    padding-left: 5px;
+    //background-image: url("../imagens/senha.png");
+    background-repeat: no-repeat;
+    width: 40.11%;
 }
 
 #button{
@@ -250,7 +258,7 @@ a#bola:hover {
 }
 
 @media all and (max-width:1345px){
-    
+  
      #imagens {
         margin-top: -28px;
     }
@@ -264,7 +272,7 @@ a#bola:hover {
 }
 
 @media all and (max-width:1168px){
-    
+  
     #imagens {
         margin-top: 3px;
     }
@@ -364,7 +372,7 @@ a#bola:hover {
         font-size: 12pt;
     }
     
-    input[type=text], input[type=password], input[type=email] {
+    input[type=text], input[type=password], input[type=email], #log {
         width: 95%;
     }
     

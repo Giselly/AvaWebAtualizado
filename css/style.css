@@ -13,30 +13,6 @@ body{
     height: 100%;
 }
 
-/* Largura da barra de rolagem */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Fundo da barra de rolagem */
-::-webkit-scrollbar-track-piece {
-    background-color: #EEE;
-    border-radius: 10px;
-}
-
-/* Cor do indicador de rolagem */
-::-webkit-scrollbar-thumb:vertical,
-::-webkit-scrollbar-thumb:horizontal {
-    background-color: #A3A3A3;
-    border-radius: 10px;
-}
-
-/* Cor do indicador de rolagem - ao passar o mouse */
-::-webkit-scrollbar-thumb:vertical:hover,
-::-webkit-scrollbar-thumb:horizontal:hover {
-    background-color: #AAAAAB;   
-}
-
 /** CONFIGURAÇÃO DO MENU LATERAL */
 aside#paginas{
     width: 320px;

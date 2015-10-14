@@ -14,7 +14,6 @@
 
         <div id="fundoAzul">
             <div id="login">
-                <div id="login">
                     <div id="imagens">
                         <img id="computador" src="imagens/computador1.png">
                         <a id="bola" href="">
@@ -33,13 +32,12 @@
                             <br />
                             <input type="text" name="apelido" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
                             <br />
-                            <input type="text" name="login" class="log" id="pass" required="required" placeholder="Login" style="width: 172.5px;">                       
-                            <input type="password" name="senha" class="log" id="pass" required="required" placeholder="Senha" style="width: 172.5px;">
+                            <input type="text" name="login" class="pass" id="log" required="required" placeholder="Login">                       
+                            <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />
                             <input value="Enviar" type="submit" id="button" name="enviar"> ou  <a href="login">Voltar a tela de login</a></p>
                         </div>
                     </form>
-                </div>
             </div>
         </div>
     </body>
