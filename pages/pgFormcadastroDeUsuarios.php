@@ -20,7 +20,7 @@
                     <input type="hidden" name="tipo" value="<?php echo $url->getURL(1); ?>" />
 
                     <?php
-                        echo (isset($dadosUsuario[0]['id'])) ?  "<input type='hidden' name='id' value='{$dadosUsuario[0]['id']}'>" : "" ;
+                        echo (isset($dadosUsuario[0]['id']) && $url->getURL(1) == 'editar') ?  "<input type='hidden' name='id' value='{$dadosUsuario[0]['id']}'>" : "" ;
                     ?>
 
                     <input type="hidden" name="senha" value="*23AE809DDACAF96AF0FD78ED04B6A265E05AA257" />
