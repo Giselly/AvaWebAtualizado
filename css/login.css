@@ -14,6 +14,7 @@ body{
 .aguarde{
     display: none;
 }
+
 #aguardarConfirmacao {
     position: relative;
     float: right;
@@ -155,7 +156,7 @@ a:hover {
 .erro {
     position: relative;
     padding: 5px;
-    width: 350px;
+    width: 82%;
     background-color: #c9493f;
     border: 1px solid #cdcdcd ;
     color: white;
@@ -165,7 +166,7 @@ a:hover {
 .info {
     position: relative;
     padding: 5px;
-    width: 343px;
+    width: 82%;
     background-color: #5fb3d3;
     border: 1px solid #cdcdcd ;
     color: white;
@@ -175,7 +176,7 @@ a:hover {
 .processando {
     position: relative;
     padding: 5px;
-    width: 350px;
+    width: 82%;
     background-color: #5fb3d3;
     border: 1px solid #cdcdcd ;
     color: white;
@@ -185,7 +186,7 @@ a:hover {
 .logado {
     position: relative;
     padding: 5px;
-    width: 350px;
+    width: 82%;
     background-color: #5fb3d3;
     border: 1px solid #cdcdcd ;
     color: white;
@@ -360,8 +361,8 @@ a#bola:hover {
         float: none;
     }
     
-    p#info {
-        width: 94%;
+    p#info,.erro,.info,.processando,.logado {
+        width: 93.5%;
     }
     
     h1 {
