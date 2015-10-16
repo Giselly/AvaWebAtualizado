@@ -239,7 +239,7 @@
                     $("#nav-btn-medium").click(function(){
                         $("#nav-slide-medium").slideToggle("fast");
                         $("#nav-slide-movel").css({"display":"none"});
-						$("#nav-slide-super-movel").css({"display":"none"});
+                        $("#nav-slide-super-movel").css({"display":"none"});
                     });   
                  });
             </script>
@@ -252,7 +252,7 @@
                    $("#nav-btn-movel").click(function(){
                        $("#nav-slide-super-movel").slideToggle("fast");
                        $("#nav-slide-medium").css({"display":"none"});
-					   $("#nav-slide-movel").css({"display":"none"});
+                       $("#nav-slide-movel").css({"display":"none"});
                     });
                 });
             </script>
@@ -260,30 +260,21 @@
         <!-- Mascara da página -->
         <script>
             $(document).ready(function(){
-             $("a[rel=modal]").click( function(ev){
-                ev.preventDefault();
+                $("a[rel=modal]").click( function(ev){
+                   ev.preventDefault();
 
-                var id = $(this).attr("href");
+                   var id = $(this).attr("href");
 
-                var alturaTela = $(document).height();
+                   var alturaTela = $(document).height();
 
-                //colocando o fundo preto
-                $('#mascara').css({'height':alturaTela});
-                $('#mascara').fadeToggle(); 
-                $('#mascara').fadeTo("fast",0.8);
+                   //colocando o fundo preto
+                   $('#mascara').css({'height':alturaTela});
+                   $('#mascara').fadeToggle(); 
 
-                var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+                   var top = ($(window).height() / 2) - ( $(id).height() / 2 );
 
-                $(id).css({'top':top});
-                $(id).show();   
-            });
-						
-                $("#mascara").click( function(){
-                    $(this).hide();
-                    $("#nav-slide-medium").slideUp();
-                    $("#nav-slide-movel").slideUp();
-					$("#nav-slide-super-movel").slideUp();
-					$("#nav-slide-movel-right").slideUp();
-                });
+                   $(id).css({'top':top});
+                   $(id).show();   
+               });
             });
         </script>

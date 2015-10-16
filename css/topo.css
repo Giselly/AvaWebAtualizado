@@ -382,19 +382,19 @@
 		background-image:linear-gradient(to bottom, #FFF, #FFF);
 	}
         
-    #nav-slide-medium a#menu_slider_logout:hover {
-        background-image:linear-gradient(to bottom, #FFF, #FFF);
-    }
+        #nav-slide-medium a#menu_slider_logout:hover {
+            background-image:linear-gradient(to bottom, #FFF, #FFF);
+        }
         
 	#nav-btn-medium{
 		position: absolute;
 		top: 16px;
-		right: 2px;
+                right: 2px;
 		padding: 4.2px 9px;
 		cursor: pointer;
 		background-color: #004c98;
 		transition: all 0.0s linear;
-        z-index: 9999;
+                z-index: 9999;
 	}
         
 	#nav-btn-medium div{
@@ -408,7 +408,7 @@
 	#nav-slide-medium{
 		max-height: 250px;
 		position: absolute;
-        right: 5px;
+                right: 5px;
 		margin-top:2px;
 		top: 75px;
 		width: 200px;
@@ -418,9 +418,9 @@
 		z-index:10000;
 	}
         
-    #nav-slide-medium p a:hover {
-        background-image: url('../imagens/backgroundMenuUsuario.jpg');
-    }
+        #nav-slide-medium p a:hover {
+            background-image: url('../imagens/backgroundMenuUsuario.jpg');
+        }
     
 	#nav-slide-movel{
 		display:none;
@@ -1212,8 +1212,8 @@
 		margin-left:2px;
 		position:relative;
 		font-size:16px;
-        text-decoration: none;
-        background-color: #FFFFFF;
+                text-decoration: none;
+                background-color: #FFFFFF;
 	}
         
 	a#menu_slider_logout:hover{
@@ -1228,7 +1228,7 @@
 		cursor: pointer;
 		background-color: #004c98;/*#003A75*/
 		transition: all 0.0s linear;
-        z-index: 9999;
+                z-index: 9999;
 	}
         
 	#nav-btn-movel div{
@@ -1344,60 +1344,60 @@
 	}
 	
 	.alterar_senha:hover{
-		font-size:16px;
-		padding: 4px 50px 4px 50px;
+            font-size:16px;
+            padding: 4px 50px 4px 50px;
 	}
 
 	#nav-slide-movel-right p a:hover {
-    	background-image: url('../imagens/backgroundMenuUsuario.jpg');
+            background-image: url('../imagens/backgroundMenuUsuario.jpg');
 	}
 	
 	#button-back-menu_right p a:hover {
-    	background-image: url('../imagens/backgroundMenuUsuario.jpg');
+            background-image: url('../imagens/backgroundMenuUsuario.jpg');
 	}
         
 	#nav-slide-movel-right div#tcns {
-		background-image: url('../imagens/backgroundMenuUsuario.jpg');
-		height:170px;
+            background-image: url('../imagens/backgroundMenuUsuario.jpg');
+            height:170px;
 	}
         
 	#nav-slide-movel-right div#tcns p a:hover {
-		background-image: linear-gradient(to bottom, #FFF, #FFF);
-		color: #000000;
+            background-image: linear-gradient(to bottom, #FFF, #FFF);
+            color: #000000;
 	}
 	
 	#notificacao{
-		display:none;
+            display:none;
 	}
 	
 	#notificacao-medium{
-		display:none;
+            display:none;
 	}
 	
 	#notificacao-movel{
-		display:none;
+            display:none;
 	}
 		
 	/*Menu Slider MOVEL Lateral - LISTAGEM CAPÍTULOS*/
 	#tituloCapitulo-movel{
-		color: #FFFFFF;
-		text-decoration:underline;
-		margin-top:55px;
-		margin-left:10%;
+            color: #FFFFFF;
+            text-decoration:underline;
+            margin-top:55px;
+            margin-left:10%;
 	}
 	
 	#subtituloCapitulo-movel{
-		color: #FFFFFF;
-		text-decoration:underline;
-		margin-top:55px;
-		margin-left:10%;
+            color: #FFFFFF;
+            text-decoration:underline;
+            margin-top:55px;
+            margin-left:10%;
 	}
 	
 	#conteudoTopico-movel{
-		color: #FFFFFF;
-		text-decoration:underline;
-		margin-top:60px;
-		margin-left:10%;
+            color: #FFFFFF;
+            text-decoration:underline;
+            margin-top:60px;
+            margin-left:10%;
 	}
         
 	/*Button Back_To_Top*/
