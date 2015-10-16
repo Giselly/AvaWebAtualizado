@@ -94,7 +94,7 @@
                 </div>
                 
                 <!--MOVEL SCREEN -->
-                <div id="notificacao-movel" style="position: absolute; float: right;  right:14px; top:15px;">
+                <div id="notificacao-movel" style="position: absolute; float: right;  right:16px; top:15px;">
                     <?php
                     if(isset($visualizar) && $visualizar == 0){
                     ?>
@@ -108,27 +108,9 @@
                      <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                     <?php }  else {?>
                      <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
-                    <?php } }?>
-                </div>
-                
-                 <!-- SUPER MOVEL SCREEN -->
-                <div id="notificacao-supermovel" style="position: relative; float: right; margin: 2px 5px 2px 0px;">
-                    <?php
-                    if(isset($visualizar) && $visualizar == 0){
-                    ?>
-                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification-supermovel" src="imagens/notificacao-supermovel.png"></a>
-                    <?php } else {?>
-                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification-supermovel" src="imagens/notificacao-supermovel.png"></a>      
-                     <img src="imagens/balaoVermelho-supermovel.png" style="display: inline-block; position: relative; left: -10px; top: -14px;">
-    
-                     <?php
-                     if($visualizar >= 10){?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -26px; top: -18px; color: white; font-size: 6pt;"><?php echo $visualizar;?></h1>
-                    <?php }  else {?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -26px; top: -18px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                     <?php } } }?>
                 </div>
-                          
+                
             <div id="menuUsuario">
                 <span id="boasVindas">Olá, <?php echo $apelido; ?>  |  </span>Comunicação Digital
                 <a href="logout" id="logout">Sair</a>
@@ -188,11 +170,17 @@
             <p><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></p><br>
             <p><a <?php if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></p><br>
             <p><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></p><br>
+
             <div id="tcns">
                 <br>
                 <p><a href="treinamento" id="menu_slider" class="treinamento">Treinamento</a></p><br>
                 <p><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso">Cronograma do curso</a></p><br>                
-               
+				<?php
+            		if(!$professor){
+                		if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; echo '<p><a href="notificacoes" id="menu_slider" class="notificacoes">Notificações</a></p><br>';
+               		}
+           		?>
+
                 <p><a href="logout" id="menu_slider_logout">Sair</a></p><br>
             </div>
         </section>
