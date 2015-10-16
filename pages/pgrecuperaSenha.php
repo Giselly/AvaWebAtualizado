@@ -33,7 +33,7 @@
                             <br />
                             <?php echo $erro . $info; ?>
                             <input value="Enviar email" type="submit" id="button" name="enviar"><br/>
-                            <p id="esqueceuSenha"> <a href="login">&Lt;Voltar</a></p>
+                            <p id="esqueceuSenha"> <a href="login">Voltar a tela de login</a></p>
                         </div>
                     </form>
             </div>
