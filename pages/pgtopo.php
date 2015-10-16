@@ -38,10 +38,10 @@
             <div id="logo_res2"> <a href="treinamento/1/conteudo"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial"></a>
             </div>
             <!--logo Medium Movel Scren-->
-            <div id="logo_res3_1"> <a href="treinamento/1/conteudo"><img src="imagens/logo3_1.png" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo_res3_1"> <a href="treinamento/1/conteudo"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial"></a>
             </div>
             <!--logo Super Movel Scren-->
-            <div id="logo_res3"> <a href="treinamento/1/conteudo"><img src="imagens/logo4.gif" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo_res3"> <a href="treinamento/1/conteudo"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial"></a>
             </div>
             <!--Button Back_To_Top Super Movel Screen-->
             <div id="voltarTopo"></div>
@@ -50,25 +50,85 @@
                 Ambiente Virtual de Aprendizagem
             </div>
             
+            <div id="tituloSistema-supermovel">
+                Ambiente Virtual de Aprendizagem
+            </div>
+            
             <?php if(!$professor) {?>
-            <div id="notificacao" style="display: inline-block; position: relative; float: right; margin: 2px 29px 2px 0px;">
-                <?php
-                if(isset($visualizar) && $visualizar == 0){
-                ?>
-                <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>
-                <?php } else {?>
-                <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>      
-                 <img src="imagens/balaoVermelho.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
-
-                 <!--<embed src='imagens/notificação.mp3' width='0' height='0'>-->               
-                 <?php
-
-                 if($visualizar >= 10){?>
-                 <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
-                <?php }  else {?>
-                 <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
-                <?php } } }?>
-            </div>            
+            
+            	 <!-- FULL SCREEN-->
+                 <div id="notificacao" style="position: relative; float: right; margin: 2px 25px 2px 0px;">
+                    <?php
+                    if(isset($visualizar) && $visualizar == 0){
+                    ?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>
+                    <?php } else {?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>      
+                     <img src="imagens/balaoVermelho.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
+    
+                     <!--<embed src='imagens/notificação.mp3' width='0' height='0'>-->               
+                     <?php
+                     if($visualizar >= 10){?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                    <?php }  else {?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
+                    <?php } }?>
+                </div>
+            
+                 <!-- MEDIUM SCREEN /MEDIUM MOVEL SCREEN-->
+                 <div id="notificacao-medium">
+                    <?php
+                    if(isset($visualizar) && $visualizar == 0){
+                    ?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>
+                    <?php } else {?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>      
+                     <img src="imagens/balaoVermelho.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
+    
+                     <?php
+                     if($visualizar >= 10){?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                    <?php }  else {?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
+                    <?php } }?>
+                </div>
+                
+                <!--MOVEL SCREEN -->
+                <div id="notificacao-movel" style="position: absolute; float: right;  right:14px; top:15px;">
+                    <?php
+                    if(isset($visualizar) && $visualizar == 0){
+                    ?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao-movel.png" style="width: 40px; height: 40px;"></a>
+                    <?php } else {?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification-movel" src="imagens/notificacao-movel.png" style="width: 40px; height: 40px;"></a>      
+                     <img src="imagens/balaoVermelho-movel.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
+    
+                     <?php
+                     if($visualizar >= 10){?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                    <?php }  else {?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
+                    <?php } }?>
+                </div>
+                
+                 <!-- SUPER MOVEL SCREEN -->
+                <div id="notificacao-supermovel" style="position: relative; float: right; margin: 2px 5px 2px 0px;">
+                    <?php
+                    if(isset($visualizar) && $visualizar == 0){
+                    ?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification-supermovel" src="imagens/notificacao-supermovel.png"></a>
+                    <?php } else {?>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification-supermovel" src="imagens/notificacao-supermovel.png"></a>      
+                     <img src="imagens/balaoVermelho-supermovel.png" style="display: inline-block; position: relative; left: -10px; top: -14px;">
+    
+                     <?php
+                     if($visualizar >= 10){?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -26px; top: -18px; color: white; font-size: 6pt;"><?php echo $visualizar;?></h1>
+                    <?php }  else {?>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -26px; top: -18px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                    <?php } } }?>
+                </div>
+                          
             <div id="menuUsuario">
                 <span id="boasVindas">Olá, <?php echo $apelido; ?>  |  </span>Comunicação Digital
                 <a href="logout" id="logout">Sair</a>

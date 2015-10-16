@@ -9,6 +9,7 @@
     z-index:9000;
     background-color:rgba(0,0,0,.8);
 }
+
 /*Media Queries SCREEN >= 995px - FULL SCREEN*/
 @media all and (min-width:995px){
 	* {
@@ -60,10 +61,14 @@
 	}
         
 	header#principal div#tituloSistema{
-		padding: 10px 0 0 10px;
-		font-size: 17pt;
+		padding: 12px 0 0 10px;
+		font-size: 16pt;
 		color: white;
 		height: 100%;
+	}
+	
+	header#principal div#tituloSistema-supermovel{
+		display:none;
 	}
         
 	header#principal div#menuUsuario{
@@ -153,6 +158,19 @@
 		display:none;
 	}
 	
+	#notificacao-medium{
+		display:none;
+	}
+
+	
+	#notificacao-movel{
+		display:none;
+	}
+	
+	#notificacao-supermovel{
+		display:none;
+	}
+	
 	/*Button Back_To_Top*/
 	#voltarTopo{
 		display:none;
@@ -217,6 +235,10 @@
 		color: white;
 		height: 100%;
 	}
+	
+	header#principal div#tituloSistema-supermovel{
+		display:none;
+	}
         
 	header#principal div#menuUsuario{
 		display:none;
@@ -252,6 +274,14 @@
 		padding: 7px 7px;
 		display:none;
 		margin-top:35px;
+	}
+	
+	#notificacao-movel{
+		display:none;
+	}
+	
+	#notificacao-supermovel{
+		display:none;
 	}
         
 	section#menuSistema{
@@ -362,7 +392,7 @@
 		right: 2px;
 		padding: 4.2px 9px;
 		cursor: pointer;
-		background-color: #003A75;
+		background-color: #004c98;
 		transition: all 0.0s linear;
         z-index: 9999;
 	}
@@ -403,6 +433,17 @@
 	/*Menu Slider MOVEL Lateral*/
 	#nav-slide-movel-right{
 		display:none;
+	}
+	
+	#notificacao{
+		display:none;
+	}
+
+	#notificacao-medium{
+		position: absolute;
+		float: right;
+		right:13px;
+		top:15px;
 	}
 	    
 	#paginas{
@@ -510,6 +551,10 @@
 		color: white;
 		height: 100%;
 	}
+	
+	header#principal div#tituloSistema-supermovel{
+		display:none;
+	}
         
 	header#principal div#menuUsuario{
 		display:none;
@@ -597,7 +642,7 @@
 		right: 2px;
 		padding: 4.2px 9px;
 		cursor: pointer;
-		background-color: #003A75;
+		background-color: #004c98;
 		transition: all 0.0s linear;
         z-index: 9999;
 	}
@@ -626,6 +671,26 @@
     #nav-slide-medium p a:hover {
         background-image: url('../imagens/backgroundMenuUsuario.jpg');
     }
+	
+	#notificacao-medium{
+		position: absolute;
+		float: right;
+		right:13px;
+		top:15px;
+	}
+	
+	#notificacao{
+		display:none;
+	}
+	
+	#notificacao-movel{
+		display:none;
+	}
+	
+	#notificacao-supermovel{
+		display:none;
+	}
+
 	
 	/*Itens_Menu_Slider_MOVEL*/
 	.alterar_dados{
@@ -732,8 +797,8 @@
 		z-index:9999;
 	}
 }
-/*Media Queries SCREEN >=420px AND <=589px - MOVEL SCREEN*/	
-@media all and (min-width:420px) and (max-width:589px){
+/*Media Queries SCREEN >=433px AND <=589px - MOVEL SCREEN*/	
+@media all and (min-width:433px) and (max-width:589px){
 	* {
 		padding: 0;
 		margin: 0;
@@ -797,10 +862,16 @@
 	}
         
 	header#principal div#tituloSistema{
-		padding: 11px 0 0 0px;
-		font-size: 13pt;
+		padding: 12px 0 0 0px;
+		font-size: 11pt;
+		margin-left:10px;
+		font-weight:bold;
 		color: white;
 		height: 100%;
+	}
+	
+	header#principal div#tituloSistema-supermovel{
+		display:none;
 	}
         
 	header#principal div#menuUsuario{
@@ -812,12 +883,6 @@
 	}
         
 	a#logout2{
-		background-color: white;
-		border-radius: 7px;
-		padding: 3px 7px 3px 7px;
-		margin: 8px 8px;
-		height:50%;
-		float:right;
 		display:none;
 	}
         
@@ -833,7 +898,7 @@
         
 	section#menuSistema div#separador{
 		position: absolute;
-		display: inline-block;
+		/*display: inline-block;*/
 		float: right;
 		height: 5px;
 		width: 100%;
@@ -885,7 +950,7 @@
 		right: 1%;
 		padding: 4.2px 9px;
 		cursor: pointer;
-		background-color: #003A75;
+		background-color: #004c98;
 		transition: all 0.0s linear;
         z-index: 9999;
 	}
@@ -922,6 +987,18 @@
     #nav-slide-medium p a:hover {
         background-image: url('../imagens/backgroundMenuUsuario.jpg');
     }
+	
+	#notificacao{
+		display:none;
+	}
+	
+	#notificacao-medium{
+		display:none;
+	}
+	
+	#notificacao-supermovel{
+		display:none;
+	}
 	
 	/*Itens_Menu_Slider_MOVEL*/
 	.alterar_dados{
@@ -971,16 +1048,11 @@
 		text-decoration:none;
 		font-size:16px;
 	}
-	
-	/*Menu Slider MOVEL Lateral*/
-	#nav-slide-movel-right{
-		display:none;
-	}
-        
+	        
 	#paginas{
 		display:none;
 	}
-	
+		
 	/*Menu Slider MOVEL Lateral Listagem - CAPÍTULOS*/
 	#tituloCapitulo{
 		color: #FFFFFF;
@@ -1020,8 +1092,8 @@
 		z-index:9999;
 	}
 }
-/*Media Queries SCREEN <419px - SUPER MOVEL SCREEN*/	
-@media all and (max-width:419px){
+/*Media Queries SCREEN <432px - SUPER MOVEL SCREEN*/	
+@media all and (max-width:432px){
 	* {
 		padding: 0;
 		margin: 0;
@@ -1076,11 +1148,17 @@
 	}
         
 	header#principal div#tituloSistema{
+		display:none;
+	}
+	
+	header#principal div#tituloSistema-supermovel{
 		padding: 8px 0 0 0;
-		font-size: 8pt;
+		margin-left:47px;
+		font-size: 9pt;
 		color: white;
 		height: 100%;
-		font-family:"Arial Black", Gadget, sans-serif;
+		font-family: 'Trebuchet MS', sans-serif;
+		font-weight:bold;
 		position:absolute;
 	}
         
@@ -1148,7 +1226,7 @@
 		right: 2px;
 		padding: 1px 6px;
 		cursor: pointer;
-		background-color: #003A75;
+		background-color: #004c98;/*#003A75*/
 		transition: all 0.0s linear;
         z-index: 9999;
 	}
@@ -1189,7 +1267,7 @@
         
 	#nav-slide-super-movel div#tcns {
 		background-image: url('../imagens/backgroundMenuUsuario.jpg');
-		height:130px;
+		height:145px;
 	}
         
 	#nav-slide-super-movel div#tcns p a:hover {
@@ -1200,12 +1278,12 @@
 	/*Itens_Menu_Slider_SUPER_MOVEL*/
 	.alterar_dados{
 		padding: 4px 50px 4px 50px;
-		height:380px;
-		color:#FFFFFF;
-		margin-left:2px;
-		position:relative;
-		text-decoration:none;
-		font-size:16px;
+		height: 380px;
+		color: #FFFFFF;
+		margin-left: 2px;
+		position: relative;
+		text-decoration: none;
+		font-size: 16px;
 	}
 	.alterar_dados:active{
 		padding: 4px 50px 4px 50px;
@@ -1288,6 +1366,18 @@
 		color: #000000;
 	}
 	
+	#notificacao{
+		display:none;
+	}
+	
+	#notificacao-medium{
+		display:none;
+	}
+	
+	#notificacao-movel{
+		display:none;
+	}
+		
 	/*Menu Slider MOVEL Lateral - LISTAGEM CAPÍTULOS*/
 	#tituloCapitulo-movel{
 		color: #FFFFFF;
