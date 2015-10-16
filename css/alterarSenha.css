@@ -1,3 +1,103 @@
+div.inputs{
+    width:25%;
+}
+
+form#simples{
+    width: 50%;
+}
+
+@media all and (max-width: 1705px) {
+    div.inputs{
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 1425px) {
+    div.inputs{
+        width: 35%;
+    }
+}
+
+@media all and (max-width: 1220px) {
+    div.inputs{
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 1070px) {
+    div.inputs{
+        width: 45%;
+    }
+}
+
+@media all and (max-width: 950px) {
+    div.inputs{
+        width: 50%;
+    }
+
+    form#simples{
+        width: 55%;
+    }
+}
+
+@media all and (max-width: 775px) {
+    div.inputs{
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    div.inputs{
+        width: 65%;
+    }
+
+    form#simples{
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 530px) {
+    div.inputs{
+        width: 70%;
+    }
+
+    form#simples{
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 490px) {
+    div.inputs{
+        width: 75%;
+    }
+
+    form#simples{
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 395px) {
+    div.inputs{
+        width: 75%;
+    }
+
+    form#simples{
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    div.inputs{
+        width: 85%;
+        margin-left: -20px;
+    }
+
+    form#simples{
+        width: 85%;
+    }
+}
+
+
 @media all and (max-width:960px){
     p:not(#tituloPrincipal) p:not(#nav-slide-movel){
         font-size: 13pt;
