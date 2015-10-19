@@ -131,7 +131,7 @@ class Usuario {
                 /** Executa a ação no banco */
                 $this->conexao->Buscar($query, $dados);
                 $retorno = "true";
-            } elseif ($novaSenha != "") {
+            } elseif ($novaSenha == "") {
                 $retorno = "O campo senha não pode ser vazio.";
             } else {
                 $retorno = "Os campos \"nova senha\" e \"confirmar nova senha\" não conferem, por favor, preencha novamente.";

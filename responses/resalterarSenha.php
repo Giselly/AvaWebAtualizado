@@ -13,12 +13,16 @@ $usuario = Usuario::getInstance();
 
 /** Inicia a sessão */
 session_start();
- var_dump($form);
- var_dump($_SESSION);
+
 if (isset($_SESSION['login']) && is_string($_SESSION['login'])) {
-    //var_dump($usuario);
-    /** Edita a senha do usuario */
-    echo $usuario->editarSenha($url->getURL(0), $usuario->password($form['senhaAtual']), $usuario->password($form['novaSenha']), $usuario->password($form['confirmarSenha']));
+    if(isset($form)) {
+        unset($form['enviar']);
+        $idUsuario = $form['idUsuario'];
+
+        /** Edita a senha do usuario */
+       echo @$usuario->editarSenha($idUsuario, $form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
+       echo "<META http-equiv='refresh' content='0;URL=" . RAIZ . "login'> ";
+    }
 } else {
     
     /** Retorna a mensagem de erro caso o usuario não esteja logado */
