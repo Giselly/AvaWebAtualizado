@@ -20,7 +20,7 @@ if (isset($_SESSION['login']) && is_string($_SESSION['login'])) {
         $idUsuario = $form['idUsuario'];
 
         /** Edita a senha do usuario */
-       echo @$usuario->editarSenha($idUsuario, $form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
+       echo $usuario->editarSenha($idUsuario, $form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
        echo "<META http-equiv='refresh' content='0;URL=" . RAIZ . "login'> ";
     }
 } else {

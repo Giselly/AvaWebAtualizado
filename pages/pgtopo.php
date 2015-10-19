@@ -139,7 +139,7 @@
         <section id="nav-slide-medium">
             <br/>
             <p><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></p><br>
-            <p><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></p><br>
+            <p><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href=<?php echo "alterarSenha/{$idUsuario}";?> id="menu_slider" class="alterar_senha">Alterar senha</a></p><br>
             <p><a <?php if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"  id="menu_slider" class="cadastro_de_usuarios">Cadastro de usuários</a></p><br>
             <p><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></p><br>
             <p><a href="logout" id="menu_slider_logout">Sair</a></p><br>
