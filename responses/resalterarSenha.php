@@ -18,10 +18,18 @@ if (isset($_SESSION['login']) && is_string($_SESSION['login'])) {
     if(isset($form)) {
         unset($form['enviar']);
         $idUsuario = $form['idUsuario'];
-
-        /** Edita a senha do usuario */
-       echo $usuario->editarSenha($idUsuario, $form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
-       echo "<META http-equiv='refresh' content='0;URL=" . RAIZ . "login'> ";
+       /** Edita a senha do usuario */
+       $retorno =  $usuario->editarSenha($idUsuario, $form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
+       if($retorno == "true") {
+       ?>
+       
+       <script>
+           alert("Você será redirecionado para tela de login para logar-se com a nova senha!");
+       </script>
+       <?php echo "<META http-equiv='refresh' content='0;URL=" . RAIZ . "login'> ";
+    } else {
+        echo $retorno;
+    }
     }
 } else {
     

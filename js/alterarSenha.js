@@ -11,9 +11,9 @@ $(document).ready(function () {
             data: {idUsuario: iidUsuario, senhaAtual: iSenhaAtual, novaSenha: iNovaSenha, confirmarSenha: iConfirmarSenha}
         })
                 .done(function (resultado) {
-                    if (resultado == "true") {
-                        /*window.location = $('#raiz').val() + "treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco";*/
-                    } else {
+                    if (resultado === "true") {
+                        window.location = $('#raiz').val() + "login";
+                    } else if (resultado !== "true" ){
                         $('p#info').html(resultado);
                     }
                 });
