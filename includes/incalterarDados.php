@@ -16,5 +16,5 @@ if (isset($form)) {
 /** @var array */
 $dadosUsuario = $usuarioBusiness->buscarPorID($idUsuario);
 
-/** Include da pagina de alterarção de login */
+/** Include da pagina de alteração de login */
 include_once('pages/pgalterarDados.php');

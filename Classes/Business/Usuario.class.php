@@ -95,7 +95,7 @@ class Usuario {
      * @return array
      */
     public function buscarPorID($id) {
-        $query = "SELECT id, nome, login, foto, apelido, DATE_FORMAT(dataNascimento, '%d/%m/%Y') dataNascimento, telefone, email, capituloAtual, status, primeiroLogin FROM [tabela] WHERE id = ?";
+        $query = "SELECT id, nome, login, foto, apelido, DATE_FORMAT(dataNascimento, '%d/%m/%Y') dataNascimento, telefone, email, capituloAtual, status, cpf, rg, sexo, nomeMae, nomePai, estadoCivil, email, telefone, cep, endereco, bairro, primeiroLogin FROM [tabela] WHERE id = ?";
         $dados = array($id);
         return $this->conexao->Buscar($query, $dados);
     }
