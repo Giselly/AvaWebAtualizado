@@ -9,21 +9,21 @@
                 
                 <div>
                     <label for="senhaAtual">Senha atual:</label><br/>
-                    <input type="password" name="senhaAtual" required="required" />
+                    <input type="password" name="senhaAtual" required="required"/>
                 </div><br>
 
                 <div>
                     <label for="novaSenha">Nova senha:</label><br/>
-                    <input type="password" name="novaSenha" required="required" />
+                    <input type="password" name="novaSenha" required="required"/>
                 </div><br>
 
                 <div>
                     <label for="confirmarSenha">Confirmar senha:</label><br/>
-                    <input type="password" name="confirmarSenha" required="required" />
+                    <input type="password" name="confirmarSenha" required="required"/>
                 </div><br>
 
                 <div id="botao">
-                    <input name="enviar" class="alterar" type="submit" value="Alterar" />
+                    <input name="enviar" class="alterar" type="submit" value="Alterar"/>
                 </div>
             </div>
             <p id="info"></p>
