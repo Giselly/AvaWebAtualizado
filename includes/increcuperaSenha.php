@@ -30,11 +30,11 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
      * @var string $remetente
      * @var array $dados
      */
-    $nome = $_POST['usuario'];
+    $nome = $_POST['nome'];
     $email = $_POST['email'];
     $dados = validaUsuario($nome, $email);
     $nomeRemetente = 'Instituto Tecnológico e Vocacional Avançado';
-    $remetente = 'iteva@iteva.org.br';
+    $remetente = 'avaweb@iteva.org.br';
 
     /** Checa se a função de validar o usuario deu certo */
     if ($dados) {

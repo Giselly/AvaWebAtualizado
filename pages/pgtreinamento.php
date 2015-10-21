@@ -10,6 +10,7 @@
                         <h3>Capítulo <?php echo $capitulo; ?></h3>
                         <ul class="subItens">
                             <?php
+                            $i = 0;
                             foreach ($conteudoCapitulo as $topico) {
 
                                 /** Link para visualizar este capitulo */
@@ -20,8 +21,10 @@
 
                                 /** Estilo do link selecionado */
                                 $selecionado = ($refTopico == utf8_encode(inserirUnderline($topico)) &&  !($url->posicaoExiste(2) && $url->getURL(2) != "topico")) ? "id='clicado'" : "";
-
-                                echo "<li><a {$selecionado} href='{$link}'>{$exibir}</a></li>";
+                                $id = $i+1;
+                                echo "<li id='{$capitulo} {$id}'><a {$selecionado} href='{$link}'>{$exibir}</a></li>";
+                                $i++;
+                                
                             }
                             
                             /** @var string indica se o link selecionado é o de exercicios */

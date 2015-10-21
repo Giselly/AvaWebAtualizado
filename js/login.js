@@ -26,10 +26,10 @@ $(document).ready(function () {
                     $('#info').removeClass('processando');
                     /** Verifica se o usuario é válido */
                     if(resultado == '-1'){
-                        $('#areaLogin').addClass('aguarde');
-                        $('#aguardarConfirmacao').removeClass('aguarde');
-                         $('#info').html("Aguarde uma confirmação do seu cadastro.");
-                         
+                        /*$('#areaLogin').addClass('aguarde');
+                        $('#aguardarConfirmacao').removeClass('aguarde');*/
+                        $('#info').html("Aguarde uma confirmação do seu cadastro.")
+                                .addClass('erro');;
                     } else if (resultado !== '0') {
                         $('#info').html("Login efetuado com sucesso.")
                                 .addClass('logado');

@@ -27,7 +27,7 @@
                     <form id="areaLogin" method="post">
                         <h1>Redefinição de senha</h1>
                         <div id="inputs">
-                            <input type="text" name="usuario" class="id" id="id" required placeholder="Nome Completo" >
+                            <input type="text" name="nome" class="id" id="id" required placeholder="Nome Completo" >
                             <br />
                             <input type="email" name="email" class="log" id="pass" required placeholder="Email">
                             <br />

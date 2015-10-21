@@ -1,8 +1,8 @@
 <?php
-    define('MAILUSER','anderson@iteva.org.br');
-    define('MAILPASS','102030');
+    define('MAILUSER','avaweb@iteva.org.br');
+    define('MAILPASS','Iteva100');
     define('MAILPORT','587');
-    define('MAILHOST','smtp.iteva.org.br');
+    define('MAILHOST','smtp.office365.com');
 
     function sendMail($assunto,$mensagem,$remetente,$nomeRemetente,$destino,$nomeDestino, $reply = NULL, $replyNome = NULL){
 
@@ -13,10 +13,10 @@
         $mail->SMTPAuth = true; //Ativa email autenticado
         $mail->IsHTML(true);
 
-        $mail->Host = 'mail.projetomidiacom.org.br'; //Servidor de envio
+        $mail->Host = 'smtp.office365.com'; //Servidor de envio
         $mail->Port = 587; //Porta de envio
-        $mail->Username = 'anderson@projetomidiacom.org.br'; //email para smtp autenticado
-        $mail->Password = '102030'; //seleciona a porta de envio
+        $mail->Username = 'avaweb@iteva.org.br'; //email para smtp autenticado
+        $mail->Password = 'Iteva100'; //seleciona a porta de envio
 
         $mail->From = utf8_decode($remetente); //remtente
         $mail->FromName = utf8_decode($nomeRemetente); //remtetene nome
