@@ -29,19 +29,19 @@
         <input type="hidden" value="<?php echo RAIZ; ?>" id="raiz" />
         <header id="principal">
             <!--logo Full Scren-->
-            <div id="logo"> <a href="treinamento/1/conteudo"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo"> <a href="treinamento/1/conteudo"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
           	<!--logo Movel Screen-->
-            <div id="logo_res"> <a href="treinamento/1/conteudo"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo_res"> <a href="treinamento/1/conteudo"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--logo Medium Scren-->
-            <div id="logo_res2"> <a href="treinamento/1/conteudo"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo_res2"> <a href="treinamento/1/conteudo"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--logo Medium Movel Scren-->
-            <div id="logo_res3_1"> <a href="treinamento/1/conteudo"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo_res3_1"> <a href="treinamento/1/conteudo"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--logo Super Movel Scren-->
-            <div id="logo_res3"> <a href="treinamento/1/conteudo"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial"></a>
+            <div id="logo_res3"> <a href="treinamento/1/conteudo"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--Button Back_To_Top Super Movel Screen-->
             <div id="voltarTopo"></div>
@@ -56,7 +56,7 @@
             
             <?php if(!$professor) {?>
             
-            	 <!-- FULL SCREEN-->
+            	 <!--Notification - FULL SCREEN-->
                  <div id="notificacao" style="position: relative; float: right; margin: 2px 25px 2px 0px;">
                     <?php
                     if(isset($visualizar) && $visualizar == 0){
@@ -75,7 +75,7 @@
                     <?php } }?>
                 </div>
             
-                 <!-- MEDIUM SCREEN /MEDIUM MOVEL SCREEN-->
+                 <!--Notification - MEDIUM SCREEN /MEDIUM MOVEL SCREEN-->
                  <div id="notificacao-medium">
                     <?php
                     if(isset($visualizar) && $visualizar == 0){
@@ -87,13 +87,13 @@
     
                      <?php
                      if($visualizar >= 10){?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                     <h1 style="display: inline-block; position: relative; width: 21px; height: 15px; left: -36px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                     <?php }  else {?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
+                     <h1 style="display: inline-block; position: relative; width: 21px; height: 15px; left: -36px; top: -23px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
                     <?php } }?>
                 </div>
                 
-                <!--MOVEL SCREEN -->
+                <!--Notification - MOVEL SCREEN-->
                 <div id="notificacao-movel" style="position: absolute; float: right;  right:16px; top:15px;">
                     <?php
                     if(isset($visualizar) && $visualizar == 0){
@@ -105,9 +105,9 @@
     
                      <?php
                      if($visualizar >= 10){?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -33px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                     <?php }  else {?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
+                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -33px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
                     <?php } } }?>
                 </div>
                 
@@ -125,68 +125,93 @@
                 <li><a href="treinamento">Treinamento</a></li>
                 <li><a href="cronogramaDoCurso">Cronograma do curso</a></li>
             </ul>
-        </section>   
-        <!--MENU SCREEN MEDIUM-->
-        <!--Button Menu-->
-        <a href="#" rel="modal">
-            <nav id="nav-btn-medium">
-                <div></div>
-                <div></div>
-                <div></div>
-            </nav>
-        </a>
-        <!--Menu Slider SCREEN MEDIUM-->
-        <section id="nav-slide-medium">
-            <br/>
-            <p><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></p><br>
-            <p><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href=<?php echo "alterarSenha/{$idUsuario}";?> id="menu_slider" class="alterar_senha">Alterar senha</a></p><br>
-            <p><a <?php if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"  id="menu_slider" class="cadastro_de_usuarios">Cadastro de usuários</a></p><br>
-            <p><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></p><br>
-            <p><a href="logout" id="menu_slider_logout">Sair</a></p><br>
         </section>
-        <!--MENU SCREEN MÓVEL-->
-        <!--Button Menu-->
+        
+        <!--Button Menu - SCREEN MEDIUM / MOVEL-->
         <a href="#" rel="modal">
-            <nav id="nav-btn-movel">
+            <span id="nav-btn-medium" class="nav-btn-medium">
                 <div></div>
                 <div></div>
                 <div></div>
-            </nav>
+            </span>
         </a>
         
+        <!--Button Menu - SCREEN SUPER MOVEL-->
+        <a href="#" rel="modal">
+            <span id="nav-btn-movel" class="nav-btn-movel">
+                <div></div>
+                <div></div>
+                <div></div>
+            </span>
+         </a>
+         
         <!--Menu Slider SCREEN MOVEL-->
-        <section id="nav-slide-movel">
-            <br/>
-            <p><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></p><br>
-            <p><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></p><br>
-            <p><a <?php if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></p><br>
-            <p><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></p><br>
-        </section>
-        
-        <!--Menu Slider SCREEN SUPER MOVEL-->
-        <section id="nav-slide-super-movel">
-            <br/>
-            <p><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></p><br>
-            <p><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></p><br>
-            <p><a <?php if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></p><br>
-            <p><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></p><br>
+        <menu id="nav-slide-medium">
+        	<!--Foto do Perfil-->
+            <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:-55px; margin-top:-20px;">
+            <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
+               <input id="editarMenu" type="button" value="editar"/>
+               <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
 
-            <div id="tcns">
-                <br>
-                <p><a href="treinamento" id="menu_slider" class="treinamento">Treinamento</a></p><br>
-                <p><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso">Cronograma do curso</a></p><br>                
-				<?php
-            		if(!$professor){
-                		if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; echo '<p><a href="notificacoes" id="menu_slider" class="notificacoes">Notificações</a></p><br>';
-               		}
-           		?>
-
-                <p><a href="logout" id="menu_slider_logout">Sair</a></p><br>
+               <input type="file" name="foto" id="fotoMenu" accept="image/*" />
+               <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
+            </form>
             </div>
-        </section>
-                
-        <div id="mascara"></div>
+        
+            <ul style="margin-top:190px;">
+                <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></li>
+                <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
+                <?php 
+					 if($professor){
+						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></li>';
+					 }
+				?>
+                <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></li>
+    
+                <li><a href="logout" id="menu_slider_logout">Sair</a></li>
+                </div>
+            </ul>
+        </menu>
+         
+         <!--Menu Slider SCREEN SUPER MOVEL-->
+        <menu id="nav-slide-super-movel">
+        	<!--Foto do Perfil-->
+            <div id="fotoPerfilMenu-super-movel" style="position:absolute; margin-left:-55px; margin-top:-20px;">
+            <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
+               <input id="editarMenu" type="button" value="editar"/>
+               <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
 
+               <input type="file" name="foto" id="fotoMenu" accept="image/*" />
+               <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
+            </form>
+            </div>
+
+            <ul style="margin-top:190px;">
+                <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></li>
+                <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
+                <?php 
+					 if($professor){
+						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></li>';
+					 }
+				?>
+                <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></li>
+                
+                <div id="tcns">
+                <li><a href="treinamento" id="menu_slider" class="treinamento">Treinamento</a></p></li>
+                <li><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso">Cronograma do curso</a></li>  
+                <?php
+                	if(!$professor){
+                    	if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; echo '<li><a href="notificacoes" id="menu_slider" class="notificacoes">Notificações</a></li>';
+                    }
+                ?>
+    
+                <li><a href="logout" id="menu_slider_logout">Sair</a></li>
+                </div>
+            </ul>
+        </menu>
+                        
+        <div id="mascara"></div> 
+               
 		<!--JAVASCRIPT Back_To_Top - MEDIUM, MOVEL, SUPER-MOVEL SCREEN-->
 		<script>
 			$(document).ready(function() {
@@ -219,50 +244,44 @@
               });
          	</script>
           
-        	<!--JAVA SCRIPT Menu Slider - MEDIUM SCREEN-->
-            <script>
-                 $(document).ready(function(){
-                    $("#nav-slide-medium").hide(); 
-          
-                    $("#nav-btn-medium").click(function(){
-                        $("#nav-slide-medium").slideToggle("fast");
-                        $("#nav-slide-movel").css({"display":"none"});
-                        $("#nav-slide-super-movel").css({"display":"none"});
-                    });   
-                 });
-            </script>
+            <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
+            <script type="text/javascript">
+      			    $(document).ready(function(){
+            			$('.nav-btn-medium').on('click touchstart', function(e){
+                			$('html').toggleClass('menu-active');
+                			e.preventDefault();
+            			});
+        			});
+   			</script>
             
         	<!--JAVA SCRIPT Menu Slider - SUPER MOVEL SCREEN--> 
-            <script>
+            <script type="text/javascript">
+      			    $(document).ready(function(){
+            			$('.nav-btn-movel').on('click touchstart', function(e){
+                			$('html').toggleClass('menu-active');
+                			e.preventDefault();
+            			});
+        			});
+   			</script>
+                
+            <!-- Mascara da página -->
+			<script>
                 $(document).ready(function(){
-                   $("#nav-slide-super-movel").hide(); 
-
-                   $("#nav-btn-movel").click(function(){
-                       $("#nav-slide-super-movel").slideToggle("fast");
-                       $("#nav-slide-medium").css({"display":"none"});
-                       $("#nav-slide-movel").css({"display":"none"});
-                    });
+                    $("a[rel=modal]").click( function(ev){
+                       ev.preventDefault();
+    
+                       var id = $(this).attr("href");
+    
+                       var alturaTela = $(document).height();
+    
+                       //colocando o fundo preto
+                       $('#mascara').css({'height':alturaTela});
+                       $('#mascara').fadeToggle(); 
+    
+                       var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+    
+                       $(id).css({'top':top});
+                       $(id).show();   
+                   });
                 });
             </script>
-            
-        <!-- Mascara da página -->
-        <script>
-            $(document).ready(function(){
-                $("a[rel=modal]").click( function(ev){
-                   ev.preventDefault();
-
-                   var id = $(this).attr("href");
-
-                   var alturaTela = $(document).height();
-
-                   //colocando o fundo preto
-                   $('#mascara').css({'height':alturaTela});
-                   $('#mascara').fadeToggle(); 
-
-                   var top = ($(window).height() / 2) - ( $(id).height() / 2 );
-
-                   $(id).css({'top':top});
-                   $(id).show();   
-               });
-            });
-        </script>
