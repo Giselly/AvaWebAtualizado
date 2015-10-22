@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <div class="camposFormularioSimples">
 
 <div class="inputs">
@@ -52,7 +53,7 @@
 
                     <div>
                         <label for="dataNascimento">Data de nascimento:</label><br/>
-                        <input type="text" class="ui-datepicker-calendar date" name="dataNascimento" value="<?php echo isset($dadosUsuario[0]['dataNascimento']) ? $dadosUsuario[0]['dataNascimento'] : ''; ?>" />
+                        <input type="text" id="datepicker" class="ui-datepicker-calendar date" name="dataNascimento" value="<?php echo isset($dadosUsuario[0]['dataNascimento']) ? $dadosUsuario[0]['dataNascimento'] : ''; ?>" />
                     </div>
 
                     <div id="sexo">
