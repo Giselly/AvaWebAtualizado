@@ -231,41 +231,29 @@
 			}); 
 		    });
 		</script>
-    
-        <!--JAVA SCRIPT Menu de navegação-->
-          <script>
-              $(document).ready(function(){
-
-                  if(screen.width < 675 && screen.width > 994){
-                      $("#nav-slide-medium").css({"display":"none"});
-                  } else if(screen.width < 370 && screen.width > 674){
-                      $("#nav-slide-movel").css({"display":"none"});
-                  }
-              });
-         	</script>
           
             <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
             <script type="text/javascript">
-      			    $(document).ready(function(){
-            			$('.nav-btn-medium').on('click touchstart', function(e){
-                			$('html').toggleClass('menu-active');
-                			e.preventDefault();
-            			});
-        			});
-   			</script>
+                $(document).ready(function(){
+                    $('.nav-btn-medium').on('click touchstart', function(e){
+                            $('html').toggleClass('menu-active');
+                            e.preventDefault();
+                    });
+                });
+            </script>
             
         	<!--JAVA SCRIPT Menu Slider - SUPER MOVEL SCREEN--> 
-            <script type="text/javascript">
-      			    $(document).ready(function(){
-            			$('.nav-btn-movel').on('click touchstart', function(e){
-                			$('html').toggleClass('menu-active');
-                			e.preventDefault();
-            			});
-        			});
-   			</script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.nav-btn-movel').on('click touchstart', function(e){
+                                $('html').toggleClass('menu-active');
+                                e.preventDefault();
+                        });
+                    });
+                </script>
                 
-            <!-- Mascara da página -->
-			<script>
+            <!-- SHOW MASK -->
+            <script>
                 $(document).ready(function(){
                     $("a[rel=modal]").click( function(ev){
                        ev.preventDefault();
@@ -281,7 +269,19 @@
                        var top = ($(window).height() / 2) - ( $(id).height() / 2 );
     
                        $(id).css({'top':top});
-                       $(id).show();   
+                       $(id).show();  
                    });
                 });
             </script>
+            
+            <!-- HIDE MASK --> 
+              <script>
+                $(document).ready(function(){
+                   $('#mascara').click(function(){
+                       $('#mascara').hide();
+                       $('html').toggleClass('menu-active');
+                   });
+                });
+            </script>
+            
+            
