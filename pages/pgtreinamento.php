@@ -53,11 +53,11 @@
         <div class="conteudoLetras">
         <div id="letras">
    <span id="dec-font">
-     <img src="imagens/decrease_font.png" alt="Diminuir" />
+     <img src="imagens/decrease_font.png" alt="Diminuir" title="Diminuir fonte"/>
    </span>
-
+    &nbsp;&nbsp;
    <span id="inc-font">
-     <img src="imagens/increase_font.png" alt="Aumentar" />
+     <img src="imagens/increase_font.png" alt="Aumentar" title="Aumentar fonte" />
    </span>
         </div>
 
