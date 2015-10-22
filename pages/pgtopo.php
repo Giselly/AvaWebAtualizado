@@ -191,7 +191,7 @@
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
                 <?php 
 					 if($professor){
-						 if($url->getURL(0) == "cadastroDeUsuarios") echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="selecionado cadastro">Cadastro de usuários</a></li>';
+						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></li>';
 					 }
 				?>
                 <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></li>
@@ -201,7 +201,7 @@
                 <li><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso">Cronograma do curso</a></li>  
                 <?php
                 	if(!$professor){
-                    	if($url->getURL(0) == "notificacoes") ; echo '<li><a href="notificacoes" class="selecionado notificacoes" id="menu_slider" >Notificações</a></li>';
+                    	if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; echo '<li><a href="notificacoes" id="menu_slider" class="notificacoes">Notificações</a></li>';
                     }
                 ?>
     

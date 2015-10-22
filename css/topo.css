@@ -396,10 +396,11 @@
 		top: 0;
 		left: 0;
 		z-index: 9999;
-		width: 265px;
+		width: 220px;
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
+		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,0.30);
 	}
 	
 	menu li a {
@@ -416,10 +417,10 @@
 		color: #000000;/*#0f1f30*/
 	}
 	menu {
-		-webkit-transform: translateX(-265px);
-		-moz-transform: translateX(-265px);
-		-ms-transform: translateX(-265px);
-		transform: translateX(-265px);
+		-webkit-transform: translateX(-220px);
+		-moz-transform: translateX(-220px);
+		-ms-transform: translateX(-220px);
+		transform: translateX(-220px);
 	}
 
 	.menu-active menu {
@@ -431,13 +432,13 @@
 	
 	.menu-active header, 
 	.menu-active .main {
-		-webkit-transform: translateX(265px);
-		-moz-transform: translateX(265px);
-		-ms-transform: translateX(265px);
-		transform: translateX(265px);
+		-webkit-transform: translateX(220px);
+		-moz-transform: translateX(220px);
+		-ms-transform: translateX(220px);
+		transform: translateX(220px);
 	}
 	menu{
-		transform: translateX(-265px);
+		transform: translateX(-220px);
 		transition: all .25s linear;
 	}
 
@@ -727,6 +728,7 @@
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
+		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,0.30);
 	}
 	
 	menu li a {
@@ -1062,6 +1064,7 @@
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
+		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3)
 	}
 	
 	menu li a {
@@ -1368,6 +1371,7 @@
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
+		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3)
 	}
 	
 	menu li a {
