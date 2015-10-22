@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="css/font.css">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/font.js"></script>
+
 <section id="conteudo">
     <?php include_once('pages/pgmenuLateral.php'); ?>
     <section id="capitulos">
@@ -45,12 +49,26 @@
         </ul>
     </section>
     <section id="conteudoTopico">
+
+        <div class="conteudoLetras">
+        <div id="letras">
+   <span id="dec-font">
+     <img src="imagens/decrease_font.png" alt="Diminuir" />
+   </span>
+
+   <span id="inc-font">
+     <img src="imagens/increase_font.png" alt="Aumentar" />
+   </span>
+        </div>
+
+
         <?php
         if ($url->posicaoExiste(2)) {
             include_once('includes/inc' . $url->getURL(2) . '.php');
         }else{
             include_once('includes/inctopico.php');
         }
-        ?>    
+        ?>
+    </div>
     </section>
 </section>
