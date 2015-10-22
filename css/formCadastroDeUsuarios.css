@@ -144,9 +144,9 @@ div.inputs div#dadosGerais div#fotoPerfil {
 }
 
 @media all and (max-width:530px){
-    body {
+    /*body {
         overflow-y: scroll;
-    }
+    }*/
     
     div.inputs {
         margin-left: -8px;

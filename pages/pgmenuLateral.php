@@ -1,5 +1,5 @@
 <aside id="paginas">
-    
+
         <div id="fotoPerfilMenu">
         <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
            <input id="editarMenu" type="button" value="editar"/>
@@ -9,8 +9,7 @@
            <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
         </form>
         </div>
-    
-    
+        
     <!--<img id="fotoUsuario" src="imagens/perfil/<?php //echo $foto; ?>" alt="" />-->
     <nav id="menuLateral">
         <ul>

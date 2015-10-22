@@ -170,6 +170,10 @@
 	#voltarTopo{
 		display:none;
 	}
+	#fotoMenu-medium{display:none;}
+	#fotoPerfilMenu-medium{display:none;}
+	#fotoMenu-movel{display:none;}
+	#fotoPerfilMenu-movel{display:none;}
 }
 /*Media Queries SCREEN >= 710px AND <= 997px - MEDIUM SCREEN*/	
 @media all and (min-width:710px) and (max-width:997px){
@@ -338,7 +342,7 @@
 
 	/*Menu Slider MOVEL*/
     a#menu_slider_logout:hover{
-		color:#F00;
+		color:#004c98;
 		font-weight:bold;
 	}
 
@@ -383,10 +387,6 @@
 		margin: 7px auto;
 		width: 70%;
 		height: 0.25em;
-		background: #f49c14;
-		box-shadow: 
-		0 .45em 0 0 #f49c14,
-		0 .9em 0 0 #f49c14;
 	}
 	
 	.menu-active .menu-anchor {background: #d55401}
@@ -396,11 +396,10 @@
 		top: 0;
 		left: 0;
 		z-index: 9999;
-		width: 220px;
+		width: 265px;
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
-		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,0.30);
 	}
 	
 	menu li a {
@@ -417,10 +416,10 @@
 		color: #000000;/*#0f1f30*/
 	}
 	menu {
-		-webkit-transform: translateX(-220px);
-		-moz-transform: translateX(-220px);
-		-ms-transform: translateX(-220px);
-		transform: translateX(-220px);
+		-webkit-transform: translateX(-265px);
+		-moz-transform: translateX(-265px);
+		-ms-transform: translateX(-265px);
+		transform: translateX(-265px);
 	}
 
 	.menu-active menu {
@@ -432,13 +431,13 @@
 	
 	.menu-active header, 
 	.menu-active .main {
-		-webkit-transform: translateX(220px);
-		-moz-transform: translateX(220px);
-		-ms-transform: translateX(220px);
-		transform: translateX(220px);
+		-webkit-transform: translateX(265px);
+		-moz-transform: translateX(265px);
+		-ms-transform: translateX(265px);
+		transform: translateX(265px);
 	}
 	menu{
-		transform: translateX(-220px);
+		transform: translateX(-265px);
 		transition: all .25s linear;
 	}
 
@@ -505,6 +504,78 @@
 		cursor:pointer;
 		z-index:9999;
 	}
+	#fotoMenu{display:none;}
+	#fotoPerfilMenu{display:none;}
+	#fotoMenu-movel{display:none;}
+	#fotoPerfilMenu-movel{display:none;}
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-medium {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-medium {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-medium img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: auto 40px;*/
+	}
+	
+	div#editarMenu-medium, input#fotoMenu-medium {
+		display: none;
+		overflow: none;
+		color: #fff;
+	}
+	
+	input#editarFoto-medium{
+		background-color: rgba(0,0,0,.2);
+		display: none;
+		position: absolute;
+		margin: 20px 40px;
+		z-index: 9999;
+		width: 50%;
+		/*border-radius: 85px;*/
+	}
+	
+	input#editarMenu-medium {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: 20px auto 20px 81px;*/
+	}
+	
+	img#fotoUsuario-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
 }
 /*Media Queries SCREEN >=590px AND <=709px - MEDIUM MOVEL SCREEN*/	
 @media all and (min-width:590px) and (max-width:709px){
@@ -666,7 +737,7 @@
 
 	/*Menu Slider MOVEL*/
     a#menu_slider_logout:hover{
-		color:#F00;
+		color:#004c98;
 		font-weight:bold;
 	}
 
@@ -711,10 +782,6 @@
 		margin: 7px auto;
 		width: 70%;
 		height: 0.25em;
-		background: #f49c14;
-		box-shadow: 
-		0 .45em 0 0 #f49c14,
-		0 .9em 0 0 #f49c14;
 	}
 	
 	.menu-active .menu-anchor {background: #d55401}
@@ -728,7 +795,6 @@
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
-		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,0.30);
 	}
 	
 	menu li a {
@@ -848,6 +914,77 @@
    		filter: alpha(opacity=40);
 		cursor:pointer;
 		z-index:9999;
+	}
+	#fotoMenu{display:none;}
+	#fotoPerfilMenu{display:none;}
+	#fotoMenu-movel{display:none;}
+	#fotoPerfilMenu-movel{display:none;}
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-medium {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-medium {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-medium img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: auto 40px;*/
+	}
+	
+	div#editarMenu-medium, input#fotoMenu-medium {
+		display: none;
+		overflow: none;
+		color: #fff;
+	}
+	
+	input#editarFoto-medium{
+		background-color: rgba(0,0,0,.2);
+		display: none;
+		position: absolute;
+		margin: 20px 40px;
+		z-index: 9999;
+		width: 50%;
+		/*border-radius: 85px;*/
+	}
+	
+	input#editarMenu-medium {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: 20px auto 20px 81px;*/
+	}
+	
+	img#fotoUsuario-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
 	}
 }
 /*Media Queries SCREEN >=433px AND <=589px - MOVEL SCREEN*/	
@@ -1002,7 +1139,7 @@
 
 	/*Menu Slider MOVEL*/
     a#menu_slider_logout:hover{
-		color:#F00;
+		color:#004c98;
 		font-weight:bold;
 	}
 
@@ -1047,10 +1184,6 @@
 		margin: 7px auto;
 		width: 70%;
 		height: 0.25em;
-		background: #f49c14;
-		box-shadow: 
-		0 .45em 0 0 #f49c14,
-		0 .9em 0 0 #f49c14;
 	}
 	
 	.menu-active .menu-anchor {background: #d55401}
@@ -1064,7 +1197,6 @@
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
-		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3)
 	}
 	
 	menu li a {
@@ -1116,7 +1248,7 @@
         
 	#tcns p a:hover {
 		background-image: linear-gradient(to bottom, #FFF, #FFF);
-		color: #F00;
+		color: #004c98;
 	}
 	/*FIM Menu Slider - SCREEN MOVEL*/
 
@@ -1174,6 +1306,78 @@
 		cursor:pointer;
 		z-index:9999;
 	}
+	#fotoMenu{display:none;}
+	#fotoPerfilMenu{display:none;}
+	#fotoMenu-movel{display:none;}
+	#fotoPerfilMenu-movel{display:none;}
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-medium {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-medium {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-medium img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: auto 40px;*/
+	}
+	
+	div#editarMenu-medium, input#fotoMenu-medium {
+		display: none;
+		overflow: none;
+		color: #fff;
+	}
+	
+	input#editarFoto-medium{
+		background-color: rgba(0,0,0,.2);
+		display: none;
+		position: absolute;
+		margin: 20px 40px;
+		z-index: 9999;
+		width: 50%;
+		/*border-radius: 85px;*/
+	}
+	
+	input#editarMenu-medium {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: 20px auto 20px 81px;*/
+	}
+	
+	img#fotoUsuario-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
 }
 /*Media Queries SCREEN <432px - SUPER MOVEL SCREEN*/	
 @media all and (max-width:432px){
@@ -1308,7 +1512,7 @@
 
 	/*Menu Slider MOVEL*/
     a#menu_slider_logout:hover{
-		color:#F00;
+		color:#004c98;
 		font-weight:bold;
 	}
 
@@ -1354,10 +1558,6 @@
 		margin: 7px auto;
 		width: 70%;
 		height: 0.25em;
-		background: #f49c14;
-		box-shadow: 
-		0 .45em 0 0 #f49c14,
-		0 .9em 0 0 #f49c14;
 	}
 	
 	.menu-active .menu-anchor {background: none;}
@@ -1371,7 +1571,6 @@
 		height: 100%;
 		padding-top: 10px;
 		background: #e3e2e2;
-		box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3)
 	}
 	
 	menu li a {
@@ -1423,7 +1622,7 @@
         
 	#tcns p a:hover {
 		background-image: linear-gradient(to bottom, #FFF, #FFF);
-		color: #F00;
+		color: #004c98;
 	}
 	/*FIM Menu Slider - SCREEN SUPER-MOVEL*/
 
@@ -1498,6 +1697,78 @@
 		cursor:pointer;
 		z-index:9999;
 	}
+	#fotoMenu{display:none;}
+	#fotoPerfilMenu{display:none;}
+	#fotoMenu-medium{display:none;}
+	#fotoPerfilMenu-medium{display:none;}
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-movel {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-movel {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-movel img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: auto 40px;*/
+	}
+	
+	div#editarMenu-movel, input#fotoMenu-movel {
+		display: none;
+		overflow: none;
+		color: #fff;
+	}
+	
+	input#editarFoto-movel{
+		background-color: rgba(0,0,0,.2);
+		display: none;
+		position: absolute;
+		margin: 20px 40px;
+		z-index: 9999;
+		width: 50%;
+		/*border-radius: 85px;*/
+	}
+	
+	input#editarMenu-movel {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-movel{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		/*margin: 20px auto 20px 81px;*/
+	}
+	
+	img#fotoUsuario-movel{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
 }
 
 /*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
@@ -1571,4 +1842,12 @@
 	#b_next:hover{
 		 background-image: url('../imagens/b_next_blue.gif');
 	}
+	
+	#nav-slide-medium{
+		
+	display:none;}
+	
+	editarMenu{
+		display:none;}
+	
 }

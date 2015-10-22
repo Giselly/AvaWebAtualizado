@@ -149,13 +149,13 @@
         <menu id="nav-slide-medium">
         	<!--Foto do Perfil-->
             <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:-55px; margin-top:-20px;">
-            <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
-               <input id="editarMenu" type="button" value="editar"/>
-               <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
-
-               <input type="file" name="foto" id="fotoMenu" accept="image/*" />
-               <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
-            </form>
+                <form class="" id="fotoMenuLateral-medium" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
+                   <input id="editarMenu-medium" type="button" value="editar"/>
+                   <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-medium" />
+    
+                   <input type="file" name="foto" id="fotoMenu-medium" accept="image/*" />
+                   <input type="submit" class="alterar" name="editar" id="editarFoto-medium" value="Salvar">
+                </form>
             </div>
         
             <ul style="margin-top:190px;">
@@ -163,7 +163,7 @@
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
                 <?php 
 					 if($professor){
-						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro">Cadastro de usuários</a></li>';
+						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios" id="menu_slider" class="cadastro">Cadastro de usuários</a></li>';
 					 }
 				?>
                 <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></li>
@@ -175,17 +175,17 @@
          
          <!--Menu Slider SCREEN SUPER MOVEL-->
         <menu id="nav-slide-super-movel">
-        	<!--Foto do Perfil-->
-            <div id="fotoPerfilMenu-super-movel" style="position:absolute; margin-left:-55px; margin-top:-20px;">
-            <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
-               <input id="editarMenu" type="button" value="editar"/>
+        <!--Foto do Perfil - MOVEL SCREEN-->
+        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:-55px; margin-top:-20px;">
+            <form class="" id="fotoMenuLateral-movel" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
+               <input id="editarMenu-movel" type="button" value="editar"/>
                <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
-
-               <input type="file" name="foto" id="fotoMenu" accept="image/*" />
-               <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
+          
+               <input type="file" name="foto" id="fotoMenu-movel" accept="image/*" />
+               <input type="submit" class="alterar-movel" name="editar" id="editarFoto-movel" value="Salvar">
             </form>
-            </div>
-
+        </div>
+        
             <ul style="margin-top:190px;">
                 <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
