@@ -71,7 +71,7 @@
                 <div id="Endereco">
                     <div>
                         <label for="cep">CEP</label><br/>
-                        <input type="text" name="cep" value="<?php echo (isset($dadosUsuario[0]['cep'])) ? $dadosUsuario[0]['cep'] : ""; ?>" />
+                        <input type="text" name="cep" class="cep" value="<?php echo (isset($dadosUsuario[0]['cep'])) ? $dadosUsuario[0]['cep'] : ""; ?>" />
                     </div>
 
                     <div>
