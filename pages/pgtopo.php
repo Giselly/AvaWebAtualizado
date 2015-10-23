@@ -29,19 +29,19 @@
         <input type="hidden" value="<?php echo RAIZ; ?>" id="raiz" />
         <header id="principal">
             <!--logo Full Scren-->
-            <div id="logo"> <a href="treinamento/1/conteudo"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
           	<!--logo Movel Screen-->
-            <div id="logo_res"> <a href="treinamento/1/conteudo"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--logo Medium Scren-->
-            <div id="logo_res2"> <a href="treinamento/1/conteudo"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res2"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--logo Medium Movel Scren-->
-            <div id="logo_res3_1"> <a href="treinamento/1/conteudo"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res3_1"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--logo Super Movel Scren-->
-            <div id="logo_res3"> <a href="treinamento/1/conteudo"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res3"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
             </div>
             <!--Button Back_To_Top Super Movel Screen-->
             <div id="voltarTopo"></div>
@@ -122,7 +122,7 @@
             <div id="separador">
             </div>
             <ul>
-                <li><a href="treinamento">Treinamento</a></li>
+                <li><a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco">Treinamento</a></li>
                 <li><a href="cronogramaDoCurso">Cronograma do curso</a></li>
             </ul>
         </section>
@@ -197,7 +197,7 @@
                 <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos">Resumos</a></li>
                 
                 <div id="tcns">
-                <li><a href="treinamento" id="menu_slider" class="treinamento">Treinamento</a></p></li>
+                    <li><a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco" id="menu_slider" class="treinamento">Treinamento</a></p></li>
                 <li><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso">Cronograma do curso</a></li>  
                 <?php
                 	if(!$professor){

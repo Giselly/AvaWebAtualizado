@@ -26,6 +26,7 @@
                                 <td class='align-left'>{$resumo['nome']}</td>
                                 <td class='align-left'>{$resumo['dataAtual']}</td>
                                 <td class='align-left'>Capitulo {$resumo['capitulo']}</a></td>";
+                                $style = '';
                                 $notificacaoTxt = '';
                                     if(isset($resumo['notificacao'])){
                                         $notificacaoTxt = $resumo['notificacao'];
@@ -37,10 +38,7 @@
                                     
                                     if($resumo['resumoVisualizado'] == 1){
                                         $style = "color: #000305;";
-                                    } else {
-                                        $style = '';
-                                    }
-                                    
+                                    } 
                                     echo "<td id='ler' class='align-left'><a id='ler' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacaoTxt}</a></td>";  
                                 } else {
                                     echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
