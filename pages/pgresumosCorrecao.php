@@ -1,4 +1,5 @@
 <link rel='stylesheet' type='text/css' href='css/cadastroDeUsuarios.css'>
+<link rel='stylesheet' type='text/css' href='css/lightBox.css'>
 
 <section class="listagemCadastro">
     <div class="camposSection">
@@ -53,7 +54,7 @@
                                 } else {
                                     echo "<td>Não avaliado!</td>";
                                 }
-                            echo "<td id='excluir'><a class='exluirFuncionario' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'>Excluir</a></td>
+                            echo "<td id='excluir'><a href='frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'>Excluir</a></td>
                             </tr>
                         ";
                         }
@@ -65,18 +66,17 @@
             ?>
         </table>
     </div>
-    <a href='#frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'></a>
 </section>
 
 <div id="frmExcluir" class="caixaComentarios">
     <form action="" class="frmComentarios">
         <div id="cabecalho-excluir">
-            <p>Excluir funcionario</p>
+            <p>Excluir Resumo</p>
             <a class="modal_close"></a>
         </div>
         <div class="txt-excluir">
             <p>Você deseja realmente excluir este resumo?</p>
-            <input type="button" value="Excluir" id="confirmarExcluir" />
+            <?php echo " <input type='button' value='Excluir' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'id='confirmarExcluir'/>";?>
             <input type="hidden" id="idUsuarioExcluido" />
             <input type="button" class="modal_close" value="Cancelar" id="cancelar" />
         </div>

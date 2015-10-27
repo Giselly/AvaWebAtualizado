@@ -25,6 +25,7 @@ if($url->posicaoExiste(1) && $url->getURL(1) == 'lerNotificacao'){
         "excluidoNotificacao" => 1
     );
     $resumoBusiness->editar($dados);
+    echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
 } else {
     include_once('pages/pgnotificacoes.php');
 }

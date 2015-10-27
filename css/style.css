@@ -31,7 +31,7 @@ form#fotoMenuLateral {
 div#fotoPerfilMenu {
     display: block;
     position: relative;
-    min-width:320px;
+    width:320px;
     height: 230px;
 }
 
