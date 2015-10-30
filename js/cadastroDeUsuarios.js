@@ -7,7 +7,7 @@ $(document).ready(function () {
         var vazio = false ;
         $.each(['nome', 'apelido', 'login'], function(i, l){
             if($('input[name=' + l + ']').val() ==  ''){
-                $('p#info').html('Preencha todos os campos obrigatorios.');
+                $('p#info').html('Preencha somente os campos necessários.');
                 vazio = true;
             }
         });
@@ -24,7 +24,7 @@ $(document).ready(function () {
             $('p#info').html('');
         }else{
             $('p#info').html('A imagem do perfil deve ter no máximo 2 MB.');
-            $('')
+            $('');
             $(this).val('');
         }
        
