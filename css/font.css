@@ -3,7 +3,8 @@
 }
 
 #letras{
+	position:absolute;
     float: right;
-    margin-right: 15px;
+    right: 15px;
 
 }
