@@ -170,7 +170,7 @@
          <!--Menu Slider SCREEN SUPER MOVEL-->
         <menu id="nav-slide-super-movel">
         <!--Foto do Perfil - MOVEL SCREEN-->
-        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:22px; margin-top:0px;">
+        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:14px; margin-top:0px;">
         	<form name="teste2" id="teste2" class="teste2">
                <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-movel" />
             </form>
