@@ -170,10 +170,6 @@
 	#voltarTopo{
 		display:none;
 	}
-	#fotoMenu-medium{display:none;}
-	#fotoPerfilMenu-medium{display:none;}
-	#fotoMenu-movel{display:none;}
-	#fotoPerfilMenu-movel{display:none;}
 }
 /*Media Queries SCREEN >= 710px AND <= 997px - MEDIUM SCREEN*/	
 @media all and (min-width:710px) and (max-width:997px){
@@ -504,78 +500,6 @@
 		cursor:pointer;
 		z-index:9999;
 	}
-	#fotoMenu{display:none;}
-	#fotoPerfilMenu{display:none;}
-	#fotoMenu-movel{display:none;}
-	#fotoPerfilMenu-movel{display:none;}
-	/** FOTO PERFIL */
-	form#fotoMenuLateral-medium {
-	   display: block;
-	   position: relative;
-	   float: left;   
-	   max-width: 220px;
-	   max-height: 200px;
-	   margin: 20px 81.5px 30px 81.5px;
-	}
-	div#fotoPerfilMenu-medium {
-		display: block;
-		position: relative;
-		min-width:320px;
-		height: 230px;
-	}
-	
-	form#fotoMenuLateral-medium img {
-		display: block;
-		position: relative;
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: auto 40px;*/
-	}
-	
-	div#editarMenu-medium, input#fotoMenu-medium {
-		display: none;
-		overflow: none;
-		color: #fff;
-	}
-	
-	input#editarFoto-medium{
-		background-color: rgba(0,0,0,.2);
-		display: none;
-		position: absolute;
-		margin: 20px 40px;
-		z-index: 9999;
-		width: 50%;
-		/*border-radius: 85px;*/
-	}
-	
-	input#editarMenu-medium {
-		background-color: rgba(0,0,0,.2);
-		display: block;
-		float: left;
-		position: absolute;
-		padding: 0px;
-		margin-top: 0px;
-		z-index: 9999;
-		width: 100%;
-		border-radius: 85px;
-		height: 0px;
-	}
-	
-	img#fotoAt-medium{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: 20px auto 20px 81px;*/
-	}
-	
-	img#fotoUsuario-medium{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		margin: 20px auto 20px 81px;
-	}
-
 }
 /*Media Queries SCREEN >=590px AND <=709px - MEDIUM MOVEL SCREEN*/	
 @media all and (min-width:590px) and (max-width:709px){
@@ -915,77 +839,6 @@
 		cursor:pointer;
 		z-index:9999;
 	}
-	#fotoMenu{display:none;}
-	#fotoPerfilMenu{display:none;}
-	#fotoMenu-movel{display:none;}
-	#fotoPerfilMenu-movel{display:none;}
-	/** FOTO PERFIL */
-	form#fotoMenuLateral-medium {
-	   display: block;
-	   position: relative;
-	   float: left;   
-	   max-width: 220px;
-	   max-height: 200px;
-	   margin: 20px 81.5px 30px 81.5px;
-	}
-	div#fotoPerfilMenu-medium {
-		display: block;
-		position: relative;
-		min-width:320px;
-		height: 230px;
-	}
-	
-	form#fotoMenuLateral-medium img {
-		display: block;
-		position: relative;
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: auto 40px;*/
-	}
-	
-	div#editarMenu-medium, input#fotoMenu-medium {
-		display: none;
-		overflow: none;
-		color: #fff;
-	}
-	
-	input#editarFoto-medium{
-		background-color: rgba(0,0,0,.2);
-		display: none;
-		position: absolute;
-		margin: 20px 40px;
-		z-index: 9999;
-		width: 50%;
-		/*border-radius: 85px;*/
-	}
-	
-	input#editarMenu-medium {
-		background-color: rgba(0,0,0,.2);
-		display: block;
-		float: left;
-		position: absolute;
-		padding: 0px;
-		margin-top: 0px;
-		z-index: 9999;
-		width: 100%;
-		border-radius: 85px;
-		height: 0px;
-	}
-	
-	img#fotoAt-medium{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: 20px auto 20px 81px;*/
-	}
-	
-	img#fotoUsuario-medium{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		margin: 20px auto 20px 81px;
-	}
 }
 /*Media Queries SCREEN >=433px AND <=589px - MOVEL SCREEN*/	
 @media all and (min-width:433px) and (max-width:589px){
@@ -1306,78 +1159,6 @@
 		cursor:pointer;
 		z-index:9999;
 	}
-	#fotoMenu{display:none;}
-	#fotoPerfilMenu{display:none;}
-	#fotoMenu-movel{display:none;}
-	#fotoPerfilMenu-movel{display:none;}
-	/** FOTO PERFIL */
-	form#fotoMenuLateral-medium {
-	   display: block;
-	   position: relative;
-	   float: left;   
-	   max-width: 220px;
-	   max-height: 200px;
-	   margin: 20px 81.5px 30px 81.5px;
-	}
-	div#fotoPerfilMenu-medium {
-		display: block;
-		position: relative;
-		min-width:320px;
-		height: 230px;
-	}
-	
-	form#fotoMenuLateral-medium img {
-		display: block;
-		position: relative;
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: auto 40px;*/
-	}
-	
-	div#editarMenu-medium, input#fotoMenu-medium {
-		display: none;
-		overflow: none;
-		color: #fff;
-	}
-	
-	input#editarFoto-medium{
-		background-color: rgba(0,0,0,.2);
-		display: none;
-		position: absolute;
-		margin: 20px 40px;
-		z-index: 9999;
-		width: 50%;
-		/*border-radius: 85px;*/
-	}
-	
-	input#editarMenu-medium {
-		background-color: rgba(0,0,0,.2);
-		display: block;
-		float: left;
-		position: absolute;
-		padding: 0px;
-		margin-top: 0px;
-		z-index: 9999;
-		width: 100%;
-		border-radius: 85px;
-		height: 0px;
-	}
-	
-	img#fotoAt-medium{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: 20px auto 20px 81px;*/
-	}
-	
-	img#fotoUsuario-medium{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		margin: 20px auto 20px 81px;
-	}
-
 }
 /*Media Queries SCREEN <432px - SUPER MOVEL SCREEN*/	
 @media all and (max-width:432px){
@@ -1697,78 +1478,6 @@
 		cursor:pointer;
 		z-index:9999;
 	}
-	#fotoMenu{display:none;}
-	#fotoPerfilMenu{display:none;}
-	#fotoMenu-medium{display:none;}
-	#fotoPerfilMenu-medium{display:none;}
-	/** FOTO PERFIL */
-	form#fotoMenuLateral-movel {
-	   display: block;
-	   position: relative;
-	   float: left;   
-	   max-width: 220px;
-	   max-height: 200px;
-	   margin: 20px 81.5px 30px 81.5px;
-	}
-	div#fotoPerfilMenu-movel {
-		display: block;
-		position: relative;
-		min-width:320px;
-		height: 230px;
-	}
-	
-	form#fotoMenuLateral-movel img {
-		display: block;
-		position: relative;
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: auto 40px;*/
-	}
-	
-	div#editarMenu-movel, input#fotoMenu-movel {
-		display: none;
-		overflow: none;
-		color: #fff;
-	}
-	
-	input#editarFoto-movel{
-		background-color: rgba(0,0,0,.2);
-		display: none;
-		position: absolute;
-		margin: 20px 40px;
-		z-index: 9999;
-		width: 50%;
-		/*border-radius: 85px;*/
-	}
-	
-	input#editarMenu-movel {
-		background-color: rgba(0,0,0,.2);
-		display: block;
-		float: left;
-		position: absolute;
-		padding: 0px;
-		margin-top: 0px;
-		z-index: 9999;
-		width: 100%;
-		border-radius: 85px;
-		height: 0px;
-	}
-	
-	img#fotoAt-movel{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		/*margin: 20px auto 20px 81px;*/
-	}
-	
-	img#fotoUsuario-movel{
-		height: 140px;
-		border-radius: 85px;
-		border: 5px solid #004c98;
-		margin: 20px auto 20px 81px;
-	}
-
 }
 
 /*Media Queries SCREEN >=710px - MEDIUM AND FULL SCREEN*/	
@@ -1849,5 +1558,230 @@
 	
 	editarMenu{
 		display:none;}
+}
+
+/*-------User Photo Perfil - Nav Slider Menu-------*/
+
+/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+@media all and (min-width:998px){
+	#fotoPerfilMenu-medium{display:none;}
+	#fotoPerfilMenu-movel{display:none}
+	#editarFoto{display:none;}
+}
+/*Media Queries SCREEN >= 710px AND <= 997px - MEDIUM SCREEN*/	
+@media all and (min-width:710px) and (max-width:997px){
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-medium {
+	   display: block;
+	   position: relative;
+	   float: left;
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-medium {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
 	
+	form#fotoMenuLateral-medium img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	input#editarMenu-medium {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	img#fotoUsuario-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
+	#fotoPerfilMenu{display:none;}
+	#fotoPerfilMenu-movel{display:none}
+	#editarFoto{display:none;}
+}
+/*Media Queries SCREEN >=590px AND <=709px - MEDIUM MOVEL SCREEN*/	
+@media all and (min-width:590px) and (max-width:709px){
+		/** FOTO PERFIL */
+	form#fotoMenuLateral-medium {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-medium {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-medium img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	input#editarMenu-medium {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	img#fotoUsuario-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
+	#fotoPerfilMenu{display:none;}
+	#fotoPerfilMenu-movel{display:none}
+	#editarFoto{display:none;}
+}
+/*Media Queries SCREEN >=433px AND <=589px - MOVEL SCREEN*/	
+@media all and (min-width:433px) and (max-width:589px){
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-medium {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-medium {
+		display: block;
+		position: relative;
+		min-width:320px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-medium img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	div#editarMenu-medium, input#fotoMenu-medium {
+		display: none;
+		overflow: none;
+		color: #fff;
+	}
+	
+	img#fotoAt-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	img#fotoUsuario-medium{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
+	#fotoPerfilMenu{display:none;}
+	#fotoPerfilMenu-medium{display:none}
+	#editarFoto{display:none;}
+}
+/*Media Queries SCREEN <432px - SUPER MOVEL SCREEN*/	
+@media all and (max-width:432px){
+	/** FOTO PERFIL */
+	form#fotoMenuLateral-movel {
+	   display: block;
+	   position: relative;
+	   float: left;   
+	   max-width: 220px;
+	   max-height: 200px;
+	   margin: 20px 81.5px 30px 81.5px;
+	}
+	div#fotoPerfilMenu-movel {
+		display: block;
+		position: relative;
+		min-width:200px;
+		height: 230px;
+	}
+	
+	form#fotoMenuLateral-movel img {
+		display: block;
+		position: relative;
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+
+	input#editarMenu-movel {
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 9999;
+		width: 100%;
+		border-radius: 85px;
+		height: 0px;
+	}
+	
+	img#fotoAt-movel{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+	}
+	
+	img#fotoUsuario-movel{
+		height: 140px;
+		border-radius: 85px;
+		border: 5px solid #004c98;
+		margin: 20px auto 20px 81px;
+	}
+
+	#fotoPerfilMenu{display:none;}
+	#fotoPerfilMenu-medium{display:none}
+	#editarFoto{display:none;}
 }

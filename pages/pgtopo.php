@@ -148,17 +148,13 @@
         <!--Menu Slider SCREEN MOVEL-->
         <menu id="nav-slide-medium">
         	<!--Foto do Perfil-->
-            <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:-55px; margin-top:-20px;">
-                <form class="" id="fotoMenuLateral-medium" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
-                   <input id="editarMenu-medium" type="button" value="editar"/>
-                   <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-medium" />
-    
-                   <input type="file" name="foto" id="fotoMenu-medium" accept="image/*" />
-                   <input type="submit" class="alterar" name="editar" id="editarFoto-medium" value="Salvar">
+            <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:30px; margin-top:0px;">
+            	<form name="teste1" id="teste1" class="teste1" enctype="multipart/form-data">
+                   <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
                 </form>
             </div>
         
-            <ul style="margin-top:190px;">
+            <ul style="margin-top:210px;">
                 <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
                 <?php 
@@ -176,17 +172,13 @@
          <!--Menu Slider SCREEN SUPER MOVEL-->
         <menu id="nav-slide-super-movel">
         <!--Foto do Perfil - MOVEL SCREEN-->
-        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:-55px; margin-top:-20px;">
-            <form class="" id="fotoMenuLateral-movel" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
-               <input id="editarMenu-movel" type="button" value="editar"/>
+        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:22px; margin-top:0px;">
+        	<form name="teste2" id="teste2" class="teste2" enctype="multipart/form-data">
                <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
-          
-               <input type="file" name="foto" id="fotoMenu-movel" accept="image/*" />
-               <input type="submit" class="alterar-movel" name="editar" id="editarFoto-movel" value="Salvar">
             </form>
         </div>
         
-            <ul style="margin-top:190px;">
+            <ul style="margin-top:210px;">
                 <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados">Alterar dados</a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha">Alterar senha</a></li>
                 <?php 

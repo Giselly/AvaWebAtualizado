@@ -1,5 +1,5 @@
 <aside id="paginas">
-
+		
         <div id="fotoPerfilMenu">
         <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
            <input id="editarMenu" type="button" value="editar"/>
