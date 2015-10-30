@@ -29,9 +29,6 @@
                             <input type="text" name="usuario" class="id" id="id" required="required" placeholder="Nome Completo" >
                             <br />
                             <input type="email" name="email" class="log" id="pass" required="required" placeholder="Email">
-                            <br />
-                            <input type="text" name="apelido" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
-                            <br />
                             <input type="text" name="login" class="pass" id="log" required="required" placeholder="Login">                       
                             <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />

@@ -16,7 +16,7 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
         "nome" => $form['usuario'],
         "email" => $form['email'],
         "login" => $form['login'],
-        "apelido" => $form['apelido'],
+        "apelido" => $form['usuario'],
         "senha" => $senha
     );
     
