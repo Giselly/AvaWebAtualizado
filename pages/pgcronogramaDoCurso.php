@@ -1,6 +1,4 @@
-<?php
-echo "Cronograma do Curso!";
-?>
+
 <script src="../js/cronogramaDoCurso.js">
 </script>
 <div id="todo">
@@ -9,8 +7,7 @@ echo "Cronograma do Curso!";
             <tbody>
                 <tr id="tr1">
                     <th>Conteudo</th>
-                    <th>Data</th>
-                    <th>Visualizar</th>
+
                 </tr>
 
                 <tr class="conteudos">

@@ -65,8 +65,6 @@
                     <?php } else {?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>      
                      <img src="imagens/balaoVermelho.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
-    
-                     <!--<embed src='imagens/notificação.mp3' width='0' height='0'>-->               
                      <?php
                      if($visualizar >= 10){?>
                      <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
@@ -150,7 +148,7 @@
         	<!--Foto do Perfil-->
             <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:30px; margin-top:0px;">
             	<form name="teste1" id="teste1" class="teste1" enctype="multipart/form-data">
-                   <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
+                   <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-Medium" />
                 </form>
             </div>
         
@@ -173,8 +171,8 @@
         <menu id="nav-slide-super-movel">
         <!--Foto do Perfil - MOVEL SCREEN-->
         <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:22px; margin-top:0px;">
-        	<form name="teste2" id="teste2" class="teste2" enctype="multipart/form-data">
-               <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt" />
+        	<form name="teste2" id="teste2" class="teste2">
+               <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-movel" />
             </form>
         </div>
         

@@ -21,7 +21,8 @@
                             echo "
                             <tr>
                                 <td class='align-left'>{$resumo['dataNotificacao']}</td>";
-                                if(isset($resumo['notificacao'])){
+                                echo isset($resumo['assunto']) ? "<td class='align-left'>{$resumo['assunto']}</td>" : "<td class='align-left'></td>";
+                                 if(isset($resumo['notificacao'])){
                                     if(strlen($resumo['notificacao']) > 28) {
                                         $notificacao = substr($resumo['notificacao'],0, 28). "...";
                                     } else {

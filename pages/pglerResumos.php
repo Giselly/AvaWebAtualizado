@@ -37,6 +37,7 @@
             <?php } else {    
                 echo 'Uma notificacao já foi enviada!';
                 echo '</br></br>';
+                
             }?>
          </div>
         
