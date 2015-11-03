@@ -45,19 +45,7 @@
             </div>
             <!--Button Back_To_Top Movel Screen / Super Movel Screen-->
             <div id="voltarTopo"></div>
-            
-            <!--Footer Icon-->
-            <div id="footer_icon">
-                <div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" title="Voltar Capítulo"></a>
-                </div>
-                <div id="b_next"><a href="#"> <img src="imagens/b_next.png" title="Próximo Capítulo"></a>
-                </div>
-            </div>
-            
-            <!--Button B_PREV and B_NEXT Movel Screen / Super Movel Screen-->
-            <div id="b_prev"></div>
-            <div id="b_next"></div>
-             
+                        
             <div id="tituloSistema">
                 Ambiente Virtual de Aprendizagem
             </div>
