@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2a18779-642c-4ef2-a460-e72dfa7d8169" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagens/capitulo11/02.jpg" afterPath="$PROJECT_DIR$/imagens/capitulo11/02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagens/capitulo11/05.jpg" afterPath="$PROJECT_DIR$/imagens/capitulo11/05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagens/capitulo11/08.jpg" afterPath="$PROJECT_DIR$/imagens/capitulo11/08.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagens/capitulo11/09.jpg" afterPath="$PROJECT_DIR$/imagens/capitulo11/09.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagens/capitulo11/11.jpg" afterPath="$PROJECT_DIR$/imagens/capitulo11/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagens/capitulo11/12.jpg" afterPath="$PROJECT_DIR$/imagens/capitulo11/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.11_-_Ruído.html" afterPath="$PROJECT_DIR$/capitulos/11/11.11_-_Ruído.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html" afterPath="$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.13_-_Destinação.html" afterPath="$PROJECT_DIR$/capitulos/11/11.13_-_Destinação.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.2_-_Significante_e_significado.html" afterPath="$PROJECT_DIR$/capitulos/11/11.2_-_Significante_e_significado.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.3_-_Signo.html" afterPath="$PROJECT_DIR$/capitulos/11/11.3_-_Signo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.4_-_Ícone.html" afterPath="$PROJECT_DIR$/capitulos/11/11.4_-_Ícone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.5_-_índice.html" afterPath="$PROJECT_DIR$/capitulos/11/11.5_-_índice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html" afterPath="$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.7_-_Emissor.html" afterPath="$PROJECT_DIR$/capitulos/11/11.7_-_Emissor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.8_-_Intenção.html" afterPath="$PROJECT_DIR$/capitulos/11/11.8_-_Intenção.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/11/11.9_-_Mensagem.html" afterPath="$PROJECT_DIR$/capitulos/11/11.9_-_Mensagem.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/09/9.7_-_Princípios_de_Design_Contrastes_de_Tipo_Cor.html" afterPath="$PROJECT_DIR$/capitulos/09/9.7_-_Princípios_de_Design_Contrastes_de_Tipo_Cor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/font.js" afterPath="$PROJECT_DIR$/js/font.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AvaWeb.iws" />
@@ -45,109 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="11.2_-_Significante_e_significado.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.2_-_Significante_e_significado.html">
+      <file leaf-file-name="font.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/font.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0188675">
-              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.49945593">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.11_-_Ruído.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.11_-_Ruído.html">
+      <file leaf-file-name="1.1_-_A_folha_de_papel_em_branco.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/capitulos/01/1.1_-_A_folha_de_papel_em_branco.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state vertical-scroll-proportion="-10.807693">
+              <caret line="486" column="20" selection-start-line="486" selection-start-column="20" selection-end-line="486" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.12_-_Receptor.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html">
+      <file leaf-file-name="pgexercicio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/pgexercicio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26651737">
-              <caret line="272" column="30" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.13_-_Destinação.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.13_-_Destinação.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.23077">
-              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.4_-_Ícone.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.4_-_Ícone.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-313.19232">
-              <caret line="479" column="9" selection-start-line="479" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.5_-_índice.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.5_-_índice.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.471698">
-              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.6_-_Símbolo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6981134">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.7_-_Emissor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.7_-_Emissor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.307692">
-              <caret line="603" column="42" selection-start-line="603" selection-start-column="42" selection-end-line="603" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.8_-_Intenção.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.8_-_Intenção.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.9_-_Mensagem.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.9_-_Mensagem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state vertical-scroll-proportion="-11.153846">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -194,8 +99,6 @@
         <option value="$PROJECT_DIR$/capitulos/01/1.4_-_Investigação_do_assunto.html" />
         <option value="$PROJECT_DIR$/capitulos/01/1.5_-_Reunindo_inspiração.html" />
         <option value="$PROJECT_DIR$/capitulos/01/1.6_-_Brainstorming.html" />
-        <option value="$PROJECT_DIR$/js/font.js" />
-        <option value="$PROJECT_DIR$/capitulos/01/1.1_-_A_folha_de_papel_em_branco.html" />
         <option value="$PROJECT_DIR$/capitulos/06/06_-_Contraste.html" />
         <option value="$PROJECT_DIR$/capitulos/05/5.1_Principios_de_Design_Repeticao.html" />
         <option value="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" />
@@ -220,6 +123,8 @@
         <option value="$PROJECT_DIR$/capitulos/11/11.11_-_Ruído.html" />
         <option value="$PROJECT_DIR$/capitulos/11/11.13_-_Destinação.html" />
         <option value="$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html" />
+        <option value="$PROJECT_DIR$/js/font.js" />
+        <option value="$PROJECT_DIR$/capitulos/01/1.1_-_A_folha_de_papel_em_branco.html" />
       </list>
     </option>
   </component>
@@ -294,24 +199,6 @@
               <option name="myItemId" value="capitulos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AvaWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AvaWebAtualizado" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capitulos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -327,14 +214,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03" />
+              <option name="myItemId" value="01" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -426,13 +313,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/pgFormcadastroDeUsuarios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="104" selection-start-line="5" selection-start-column="104" selection-end-line="5" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/inccadastroDeUsuarios.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -574,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgexercicio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/01/1.5_-_Reunindo_inspiração.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -592,20 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="104" column="57" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/01/1.1_-_A_folha_de_papel_em_branco.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="559" column="61" selection-start-line="559" selection-start-column="61" selection-end-line="559" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/font.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -628,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="502" column="33" selection-start-line="502" selection-start-column="33" selection-end-line="502" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="405" column="30" selection-start-line="405" selection-start-column="30" selection-end-line="405" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="234" column="27" selection-start-line="234" selection-start-column="27" selection-end-line="234" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,14 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#p#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-27.461538">
           <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,62 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.4_-_Ícone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-313.19232">
-          <caret line="479" column="9" selection-start-line="479" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.5_-_índice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.471698">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.7_-_Emissor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.307692">
-          <caret line="603" column="42" selection-start-line="603" selection-start-column="42" selection-end-line="603" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.9_-_Mensagem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.8_-_Intenção.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6981134">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -827,18 +613,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26651737">
+          <caret line="272" column="30" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/11/11.13_-_Destinação.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077">
+        <state vertical-scroll-proportion="0.64725643">
           <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html">
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.4_-_Ícone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26651737">
-          <caret line="272" column="30" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
+        <state vertical-scroll-proportion="9.118701">
+          <caret line="479" column="9" selection-start-line="479" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.5_-_índice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82448035">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47113165">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.7_-_Emissor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47480404">
+          <caret line="603" column="42" selection-start-line="603" selection-start-column="42" selection-end-line="603" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.8_-_Intenção.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47592387">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/11/11.9_-_Mensagem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4568869">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/datepicker-pt-br.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/pgexercicio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.153846">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/01/1.1_-_A_folha_de_papel_em_branco.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.807693">
+          <caret line="486" column="20" selection-start-line="486" selection-start-column="20" selection-end-line="486" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/font.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49945593">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
