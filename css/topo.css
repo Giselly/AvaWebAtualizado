@@ -1244,7 +1244,7 @@
         
 	header#principal div{
 		margin:0%;
-		margin-left:35px;
+		margin-left:-12.5px/*35px*/;
 		position:absolute;
 	}
         
@@ -1493,30 +1493,58 @@
 		position: fixed !important; 
 		bottom: 70px; 	
 		background:#FFF;
-		z-index:10;
 		height:60px;
 		width:100%;
 		margin-right:18px;
 		z-index:998;
 	}
-	/*Icon B_PREV and B_NEXT*/
+	
 	#b_prev{
+		background-image: url('../imagens/b_prev.png');
+		width: 40px;
+		height: 40px;
 		position:fixed !important;
 		bottom:80px;
+		display: block;
+		font-weight: bold;
 		left:35%;
-		z-index:998;
+		z-index:9999;
+		cursor:pointer;
 	}
+	
 	#b_next{
+		background-image: url('../imagens/b_next.png');
+		width: 40px;
+		height: 40px;
 		position:fixed !important;
 		bottom:80px;
+		display: block;
+		font-weight: bold;
 		left:55%;
-		z-index:998;
+		z-index:9999;
+		cursor:pointer;
 	}
+	
 	#b_prev:hover{
-		 background-image: url('../imagens/b_prev_blue.gif');
+		background-image: url('../imagens/b_prev1.png');
+		position:fixed !important;
+		bottom:80px;
+		display: block;
+		font-weight: bold;
+		left:35%;
+		z-index:9999;
+		cursor:pointer;
 	}
+	
 	#b_next:hover{
-		 background-image: url('../imagens/b_next_blue.gif');
+		background-image: url('../imagens/b_next1.png');
+		position:fixed !important;
+		bottom:80px;
+		display: block;
+		font-weight: bold;
+		left:55%;
+		z-index:9999;
+		cursor:pointer;
 	}
 }
 /*Media Queries SCREEN <370px - SUPER MOVEL SCREEN*/
@@ -1526,38 +1554,63 @@
 		position: fixed !important; 
 		bottom: 70px; 	
 		background:#FFF;
-		z-index:10;
 		height:60px;
 		width:100%;
 		margin-right:18px;
 		z-index:998;
 	}
-	/*Icon B_PREV and B_NEXT*/
+		
 	#b_prev{
+		background-image: url('../imagens/b_prev.png');
+		width: 40px;
+		height: 40px;
 		position:fixed !important;
 		bottom:80px;
+		display: block;
+		font-weight: bold;
 		left:35%;
-		z-index:998;
+		z-index:9999;
+		cursor:pointer;
 	}
+	
 	#b_next{
+		background-image: url('../imagens/b_next.png');
+		width: 40px;
+		height: 40px;
 		position:fixed !important;
 		bottom:80px;
+		display: block;
+		font-weight: bold;
 		left:55%;
-		z-index:998;
+		z-index:9999;
+		cursor:pointer;
 	}
+	
 	#b_prev:hover{
-		 background-image: url('../imagens/b_prev_blue.gif');
+		background-image: url('../imagens/b_prev1.png');
+		position:fixed !important;
+		bottom:80px;
+		display: block;
+		font-weight: bold;
+		left:35%;
+		z-index:9999;
+		cursor:pointer;
 	}
+	
 	#b_next:hover{
-		 background-image: url('../imagens/b_next_blue.gif');
+		background-image: url('../imagens/b_next1.png');
+		position:fixed !important;
+		bottom:80px;
+		display: block;
+		font-weight: bold;
+		left:55%;
+		z-index:9999;
+		cursor:pointer;
 	}
 	
 	#nav-slide-medium{
-		
-	display:none;}
-	
-	editarMenu{
-		display:none;}
+		display:none;
+	}
 }
 
 /*-------User Photo Perfil - Nav Slider Menu-------*/

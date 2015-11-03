@@ -29,22 +29,34 @@
         <input type="hidden" value="<?php echo RAIZ; ?>" id="raiz" />
         <header id="principal">
             <!--logo Full Scren-->
-            <div id="logo"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
             </div>
           	<!--logo Movel Screen-->
-            <div id="logo_res"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
             </div>
             <!--logo Medium Scren-->
-            <div id="logo_res2"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res2"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
             </div>
             <!--logo Medium Movel Scren-->
-            <div id="logo_res3_1"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res3_1"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
             </div>
             <!--logo Super Movel Scren-->
-            <div id="logo_res3"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999"></a>
+            <div id="logo_res3"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
             </div>
-            <!--Button Back_To_Top Super Movel Screen-->
+            <!--Button Back_To_Top Movel Screen / Super Movel Screen-->
             <div id="voltarTopo"></div>
+            
+            <!--Footer Icon-->
+            <div id="footer_icon">
+                <div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" title="Voltar Capítulo"></a>
+                </div>
+                <div id="b_next"><a href="#"> <img src="imagens/b_next.png" title="Próximo Capítulo"></a>
+                </div>
+            </div>
+            
+            <!--Button B_PREV and B_NEXT Movel Screen / Super Movel Screen-->
+            <div id="b_prev"></div>
+            <div id="b_next"></div>
              
             <div id="tituloSistema">
                 Ambiente Virtual de Aprendizagem
@@ -147,9 +159,7 @@
         <menu id="nav-slide-medium">
         	<!--Foto do Perfil-->
             <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:30px; margin-top:0px;">
-            	<form name="teste1" id="teste1" class="teste1" enctype="multipart/form-data">
                    <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-Medium" />
-                </form>
             </div>
         
             <ul style="margin-top:210px;">
@@ -171,9 +181,7 @@
         <menu id="nav-slide-super-movel">
         <!--Foto do Perfil - MOVEL SCREEN-->
         <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:14px; margin-top:0px;">
-        	<form name="teste2" id="teste2" class="teste2">
                <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-movel" />
-            </form>
         </div>
         
             <ul style="margin-top:210px;">
@@ -221,7 +229,7 @@
 			}); 
 		    });
 		</script>
-          
+        
             <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
             <script type="text/javascript">
                 $(document).ready(function(){
@@ -273,5 +281,3 @@
                    });
                 });
             </script>
-            
-            
