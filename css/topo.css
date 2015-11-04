@@ -1456,7 +1456,6 @@
 		position:fixed !important;
 		right:10px;
 		display: block;
-		font-weight: bold;
 		bottom:130px;
 		text-transform: uppercase;
 		opacity: 0.2;
@@ -1470,7 +1469,6 @@
 		position:fixed !important;
 		right:10px;
 		display: block;
-		font-weight: bold;
 		bottom:130px;
 		text-transform: uppercase;
 		opacity: 0.6;
@@ -1506,7 +1504,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:35%;
 		z-index:9999;
 		cursor:pointer;
@@ -1519,7 +1516,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:55%;
 		z-index:9999;
 		cursor:pointer;
@@ -1530,7 +1526,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:35%;
 		z-index:9999;
 		cursor:pointer;
@@ -1541,7 +1536,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:55%;
 		z-index:9999;
 		cursor:pointer;
@@ -1568,7 +1562,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:32%;
 		z-index:9999;
 		cursor:pointer;
@@ -1581,7 +1574,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:52%;
 		z-index:9999;
 		cursor:pointer;
@@ -1592,7 +1584,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:32%;
 		z-index:9999;
 		cursor:pointer;
@@ -1603,7 +1594,6 @@
 		position:fixed !important;
 		bottom:80px;
 		display: block;
-		font-weight: bold;
 		left:52%;
 		z-index:9999;
 		cursor:pointer;
