@@ -78,7 +78,7 @@
                     <?php
                     if(isset($visualizar) && $visualizar == 0){
                     ?>
-                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px; margin-right:30px;"></a>
                     <?php } else {?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>      
                      <img src="imagens/balaoVermelho.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
@@ -96,7 +96,7 @@
                     <?php
                     if(isset($visualizar) && $visualizar == 0){
                     ?>
-                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao-movel.png" style="width: 40px; height: 40px;"></a>
+                    <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification-movel" src="imagens/notificacao-movel.png" style="width: 40px; height: 40px; margin-right:30px;"></a>
                     <?php } else {?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification-movel" src="imagens/notificacao-movel.png" style="width: 40px; height: 40px;"></a>      
                      <img src="imagens/balaoVermelho-movel.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
