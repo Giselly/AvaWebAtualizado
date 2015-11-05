@@ -118,7 +118,7 @@ nav#menuLateral li a:hover, nav#menuLateral li a.selecionado{
 
 /** CONFIGURAÇÃO DO RODAPE */
 footer#rodape{
-    z-index: 20;
+    z-index: 9999;
     position:fixed;
     display: block;
     background-color: white;
@@ -147,6 +147,9 @@ footer#rodape p {
 }
 
 @media all and (max-width:530px){
+	#rodape{
+		z-index:9999;	
+	}
     footer#rodape div {
         margin-top: -8px;
     }
@@ -408,7 +411,9 @@ input.pesquisa {
 }
 
 @media all and (max-width:370px){
-    
+	#rodape{
+		z-index:9999;
+	}
     section.listagemCadastro {
        margin: auto 9%;
     }
@@ -432,7 +437,10 @@ input.pesquisa {
 }
 
 @media all and (max-width:335px){
-    
+    #rodape{
+		z-index:9999;
+	}
+	
      table.listagem {
         margin-left: -10%;
         width: 85%;
@@ -464,6 +472,10 @@ input.pesquisa {
 }
 
 @media all and (max-width:319px){
+	#rodape{
+		z-index:9999;
+	}
+	
     table.listagem {
         margin-left: -12%;
     }
