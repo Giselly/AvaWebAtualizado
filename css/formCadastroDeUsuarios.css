@@ -155,6 +155,14 @@ div.inputs div#dadosGerais div#fotoPerfil {
     div#dadosGerais {
         margin-left: 5px;
     }
+	
+div.inputs div#dadosGerais, div.inputs div#Endereco {
+    width: 50%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
     
     div.inputs div#dadosGerais div#sexo{
         width: 230px;
@@ -189,12 +197,12 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
     
     form.cadastro div.inputs p.subtitulo {
-        width: 200px;
+        width: 100%;
         margin-left: 10%;
     }
     
     p#tituloPrincipal {
-        width: 220px;
+        width: 105%;
         text-indent: 1.1em;
     }
     

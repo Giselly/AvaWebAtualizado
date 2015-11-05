@@ -190,7 +190,6 @@ table.listagem td:not(.align-left) {
     text-align: center;
 }
 
-
 table.listagem td:first-child {
 	border: 1px solid #c9c9c9;
     width: 20%;
@@ -374,7 +373,8 @@ input.pesquisa {
 
 /**********************| Media Queries |*********************/
 
-@media all and (max-width:540px){   
+@media all and (max-width:540px){
+  
     section.listagemCadastro {
        margin: auto 11%;
        position: relative;
