@@ -282,7 +282,7 @@ table.listagem tr td:hover a {
 form.cadastro{
     padding: 20px;
     /*min-width: 430px;*/
-    width: 76.8229%;
+    /*width: 76.8229%;*/
     height: auto;
     margin: 0 auto;
     font-family: 'Trebuchet MS', sans-serif;
