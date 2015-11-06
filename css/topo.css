@@ -1501,8 +1501,8 @@
 		background-image: url('../imagens/b_prev.png');
 		width: 40px;
 		height: 40px;
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:13px;
 		display: block;
 		left:35%;
 		z-index:9999;
@@ -1513,8 +1513,8 @@
 		background-image: url('../imagens/b_next.png');
 		width: 40px;
 		height: 40px;
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:13px;
 		display: block;
 		left:55%;
 		z-index:9999;
@@ -1523,8 +1523,8 @@
 	
 	#b_prev:hover{
 		background-image: url('../imagens/b_prev1.png');
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:13px;
 		display: block;
 		left:35%;
 		z-index:9999;
@@ -1533,8 +1533,8 @@
 	
 	#b_next:hover{
 		background-image: url('../imagens/b_next1.png');
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:13px;
 		display: block;
 		left:55%;
 		z-index:9999;
@@ -1559,8 +1559,8 @@
 		background-image: url('../imagens/b_prev.png');
 		width: 40px;
 		height: 40px;
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:15px;
 		display: block;
 		left:33.5%;
 		z-index:9999;
@@ -1571,8 +1571,8 @@
 		background-image: url('../imagens/b_next.png');
 		width: 40px;
 		height: 40px;
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:15px;
 		display: block;
 		left:53.5%;
 		z-index:9999;
@@ -1581,8 +1581,8 @@
 	
 	#b_prev:hover{
 		background-image: url('../imagens/b_prev1.png');
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:15px;
 		display: block;
 		left:33.5%;
 		z-index:9999;
@@ -1591,8 +1591,8 @@
 	
 	#b_next:hover{
 		background-image: url('../imagens/b_next1.png');
-		position:fixed !important;
-		bottom:80px;
+		position:absolute !important;
+		bottom:15px;
 		display: block;
 		left:53.5%;
 		z-index:9999;
