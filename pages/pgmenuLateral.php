@@ -22,7 +22,13 @@
                 ?>
 
                 <li><a <?php if ($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro de usuários</a></li>
-                <li><a <?php if ($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>
+                
+				<?php
+                	if($professor){
+                		if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
+					}
+				?>
+                
                 <?php
             }
             ?>

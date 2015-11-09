@@ -158,7 +158,12 @@
 						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios" id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro usuários</a></li>';
 					 }
 				?>
-                <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>
+                
+                <?php
+                	if($professor){
+                		if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
+					}
+				?>
     
                 <li><a href="logout" id="menu_slider_logout"><img src="imagens/icons_navSlider/sair.png">	Sair</a></li>
                 </div>
@@ -180,7 +185,12 @@
 						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro usuários</a></li>';
 					 }
 				?>
-                <li><a <?php if($url->getURL(0) == "resumosCorrecao") echo "class='selecionado'"; ?>href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>
+                
+                <?php
+                	if($professor){
+                		if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
+					}
+				?>
                 
                 <div id="tcns">
                     <li><a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco" id="menu_slider" class="treinamento"><img src="imagens/icons_navSlider/treinamento.png">	Treinamento</a></p></li>
