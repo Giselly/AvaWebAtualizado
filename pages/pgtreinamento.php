@@ -49,17 +49,21 @@
         </ul>
     </section>
     <section id="conteudoTopico">
-
         <div class="conteudoLetras">
-        <div id="letras">
-   <span id="dec-font">
-     <img src="imagens/decrease_font.png" alt="Diminuir" title="Diminuir fonte"/>
-   </span>
-    &nbsp;&nbsp;
-   <span id="inc-font">
-     <img src="imagens/increase_font.png" alt="Aumentar" title="Aumentar fonte" />
-   </span>
-        </div>
+           <div id="letras">
+
+            <span id="reset-font">
+                <span class="size" title="Resetar fonte">A<sub>°</sub></span>   
+            </span>
+
+            <span id="dec-font">
+                <span class="size" title="Diminuir fonte">A-</span>  
+            </span>
+
+            <span id="inc-font">
+                <span class="size" title="Aumentar fonte">A+</span>  
+            </span>
+           </div>
 
 
         <?php
@@ -69,6 +73,6 @@
             include_once('includes/inctopico.php');
         }
         ?>
-    </div>
+      </div>
     </section>
 </section>

@@ -1,11 +1,11 @@
-<link rel="stylesheet" type="text/css" href="css/alterarDados.css">
+
 <link rel="stylesheet" type="text/css" href="css/alterarSenha.css">
 <form class="cadastro" id="simples">
     <div class="camposFormularioSimples">
         <div class="inputs">
             <p id="tituloPrincipal">Alterar senha de acesso</p>
             <div id="campos">
-                <input type="hidden" name="idUsuario" value="<?php echo $url->getURL(1);?>" />
+                <input type="hidden" name="idUsuario" value="<?php echo $url->getURL(0);?>" />
                 
                 <div>
                     <label for="senhaAtual">Senha atual:</label><br/>

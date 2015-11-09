@@ -155,6 +155,14 @@ div.inputs div#dadosGerais div#fotoPerfil {
     div#dadosGerais {
         margin-left: 5px;
     }
+	
+	div.inputs div#dadosGerais, div.inputs div#Endereco {
+		width: 50%;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+	}
+
     
     div.inputs div#dadosGerais div#sexo{
         width: 230px;
@@ -189,15 +197,76 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
     
     form.cadastro div.inputs p.subtitulo {
-        width: 200px;
+        width: 100%;
         margin-left: 10%;
     }
     
     p#tituloPrincipal {
-        width: 220px;
+        width: 105%;
         text-indent: 1.1em;
     }
     
+}
+
+@media all and (max-width:401px){
+	    
+	div.inputs {
+        margin-left: -8px;
+    }
+    
+    div#dadosGerais {
+        margin-left: 5px;
+    }
+	
+	div.inputs div#dadosGerais, div.inputs div#Endereco {
+		width: 78%;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+	}
+
+    
+    div.inputs div#dadosGerais div#sexo{
+        width: 230px;
+    }
+    
+    div.inputs div#dadosGerais div#fotoPerfil {
+        display: block;
+        position: relative;
+        float: none;
+        margin: 0 auto 20px ;
+        margin-left: 40px;
+    }
+    
+    div.inputs div#dadosGerais div#sexo, div#status {
+        font-size: 11pt;
+    }
+    
+    div#salvar input[type=submit] {
+        font-size: 8pt;
+        width: 60px;
+        margin-left: 15%;
+    }
+    
+    div#salvar a {
+        color: #004c98;
+        font-size: 8pt;
+    }
+    
+    form.cadastro p.subtitulo {
+        text-indent: 0.9em;
+        font-size: 10pt;
+    }
+    
+    form.cadastro div.inputs p.subtitulo {
+        width: 100%;
+        margin-left: 10%;
+    }
+    
+    p#tituloPrincipal {
+        width: 105%;
+        text-indent: 1.1em;
+    }
 }
 
 div.inputs div#fotoPerfil img {
@@ -218,7 +287,7 @@ div.inputs input#editar{
     position: absolute;
     padding: 0px;
     margin-top: 0px;
-    z-index: 9999;
+    z-index: 999;
     width: 100%;
     height: 20px;
 }

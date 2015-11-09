@@ -4,12 +4,6 @@ form.cadastro input[type=password], form.cadastro input[type=text], form.cadastr
     width: 100%;
 }
 
-/*form.cadastro input[name=apelido], form.cadastro div.media {
-    width: 184px;
-    padding-right: 0px;
-    margin-right: 0px;
-}*/
-
 td#editar, td#excluir, td#status {
     text-align: center;
 }
@@ -151,6 +145,10 @@ div.inputs div#dadosGerais div#fotoPerfil {
     div#dadosGerais {
         margin-left: 5px;
     }
+    
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 70%;
+    }
 
     div.inputs div#dadosGerais div#sexo{
         width: 230px;
@@ -193,7 +191,7 @@ div.inputs div#dadosGerais div#fotoPerfil {
         width: 220px;
         text-indent: 1.1em;
     }
-
+    
 }
 
 div.inputs div#fotoPerfil img {

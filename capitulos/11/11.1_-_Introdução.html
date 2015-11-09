@@ -7,12 +7,17 @@
         <!--Estilização da Página-->
         <style type="text/css">
 				div#texto2{
-					margin-left:60%;
-					margin-top:-482px;
-					position:relative;
+					position: relative;
+					display: block;
+					float: right;
+					right: 3%;
+					margin-top: 20px;
 					}
 				div#texto1{
 					position:relative;
+					display: block;
+					float: left;
+					left: 3%;
 					}
 				body{
 					font-family:Arial, Helvetica, sans-serif;
@@ -26,24 +31,18 @@
 					font-size:17px;
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				@media all and (max-width:1790px){
+
+
+				@media all and (max-width: 1470px){
 					div#texto2{
-						margin-left:70%;
-						}
+						float: none;
+						clear: both;
+						margin-left: 8%;
+
+
+					}
 				}
-				
-				@media all and (max-width:1640px){
-					div#texto2{
-						margin-left:75%;
-						}
-				}
-				
-				@media all and (max-width:1580px){
-					div#texto2{
-						margin-left:5%;
-						margin-top:10%;
-						}
-				}
+
 				/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 				@media all and (min-width:998px){
 					body{
@@ -291,6 +290,7 @@
 					}
 					#title{
 						margin-left:5%;
+						margin-top: 20px;
 					}
 					#corpo{
 						text-align:justify;
@@ -318,6 +318,11 @@
 					}
 					#title{
 						margin-left:5%;
+						margin-top: 20px;
+					}
+					#texto2{
+						float: none;
+						margin-left: 15%;
 					}
 					#corpo{
 						text-align:justify;
@@ -345,6 +350,7 @@
 					}
 					#title{
 						margin-left:5%;
+						margin-top: 20px;
 					}
 					#corpo{
 						text-align:justify;
@@ -373,6 +379,7 @@
 					#title{
 						margin-left:3%;
 						font-size:17px;
+						margin-top: 20px;
 					}
 					#corpo{
 						text-align:justify;
@@ -403,6 +410,7 @@
 					#title{
 						margin-left:3%;
 						font-size:17px;
+						margin-top: 20px;
 					}
 					#corpo{
 						text-align:justify;
@@ -445,30 +453,38 @@
         <p id="corpo"><br>Os outros  conceitos-chave que precisaremos examinar nesta seção são: o emissor, a  intenção, a mensagem, a transmissão, o ruído, o receptor e o destino.</p>
         
     <div id="texto1">   
-        <p id="corpo"><strong><br>A viagem de uma mensagem</strong><br><br>
+        <p id="corpo" style="margin-bottom: 100px;"><strong><br>A viagem de uma mensagem</strong><br><br>
             Um designer<br>
             Deseja projetar um aspirador de pó<br>
             Ele desenha um aspirador muito eficiente<br>
             O projeto é produzido em plástico e metal<br>
-            O aparelho é vendido acompanhado de instruções complexas<br>
+            O aparelho é vendido acompanhado <br>
+			de instruções complexas<br>
             Um comprador compra o aparelho<br>
-            O comprador usa o produto seguindo as instruções<br><br>
+            O comprador usa o produto seguindo<br>
+			as instruções<br><br>
         
             Um pintor<br>
             Quer pintar um retrato<br>
-            Ele pinta um retrato que lembra o modelo sentado<br>
+            Ele pinta um retrato que lembra<br> o modelo sentado<br>
             O retrato é pintado com aquarela<br>
-            O retrato é pendurado em uma galeria sob luz artificial, o que altera suas cores<br>
+            O retrato é pendurado em uma galeria <br>
+			sob luz artificial,<br>
+			o que altera suas cores<br>
             Um espectador vê o retrato e o compra<br>
-            O observador pendura o quadro sobre a sua lareira, onde ele fica escuro<br><br>
+            O observador pendura o quadro sobre<br>
+			a sua lareira,<br>
+			onde ele fica escuro<br><br>
             
             Um escritor
             Quer escrever um texto sobre semiótica<br>
-            Ele escreve um livro explicando as complexidades do assunto<br>
+            Ele escreve um livro explicando <br>
+			as complexidades do assunto<br>
             O livro é publicado<br>
             Acontece um erro de impressão<br>
             Um leitor lê o livro<br>
-            O leitor, não detectando o erro de impressão, fica confuso<br>
+            O leitor, não detectando o erro de impressão,<br>
+			fica confuso<br>
         </p>
     </div>
     
@@ -500,12 +516,11 @@
         </p>
     </div>
 
-	<!--Footer Icon-->
+     <!--Footer Icon-->
     <div id="footer_icon">
-    	<div id="b_prev"><a href="#"> <img src="imagens/b_prev.png" alt="" title="Voltar Capítulo"></a>
-    	</div>
-    	<div id="b_next"><a href="#"> <img src="imagens/b_next.png" alt="" title="Próximo Capítulo"></a>
-  	  </div>
+        <!--Button B_PREV and B_NEXT Movel Screen / Super Movel Screen-->
+        <div id="b_prev"></div>
+        <div id="b_next"></div>
     </div>
 
     </body>

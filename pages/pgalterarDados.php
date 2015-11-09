@@ -31,32 +31,32 @@
                         <input type="text" name="nome" value="<?php echo (isset($dadosUsuario[0]['nome'])) ? $dadosUsuario[0]['nome'] : ''; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="cpf">CPF</label><br/>
                         <input type="text" name="cpf" class="cpf" value="<?php echo (isset($dadosUsuario[0]['cpf'])) ? $dadosUsuario[0]['cpf'] : ""; ?>" />
-                   </div>
+                    </div>
 
-                    <div>
+                    <div class="media">
                         <label for="rg">RG</label><br/>
                         <input type="text" name="rg" value="<?php echo (isset($dadosUsuario[0]['rg'])) ? $dadosUsuario[0]['rg'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="nomeMae">Nome da mãe</label><br/>
                         <input type="text" name="nomeMae" value="<?php echo (isset($dadosUsuario[0]['nomeMae'])) ? $dadosUsuario[0]['nomeMae'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="nomePai">Nome do pai</label><br/>
                         <input type="text" name="nomePai" value="<?php echo (isset($dadosUsuario[0]['nomePai'])) ? $dadosUsuario[0]['nomePai'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="dataNascimento">Data de nascimento:</label><br/>
                         <input type="text" id="datepicker" class="ui-datepicker-calendar date" name="dataNascimento" value="<?php echo isset($dadosUsuario[0]['dataNascimento']) ? $dadosUsuario[0]['dataNascimento'] : ''; ?>" />
                     </div>
 
-                    <div id="sexo">
+                    <div id="sexo" class="media">
                         <label for="sexo">Sexo</label><br/>
                         <input type="radio" value="1" <?php echo ((!isset($dadosUsuario[0]['sexo']) || $dadosUsuario[0]['sexo'] == '1') ? 'checked="checked"' : '' ); ?> name="sexo" />
                         Masculino
@@ -70,27 +70,27 @@
                 <p class="subtitulo">Endereço e Contatos</p>
                 
                 <div id="Endereco">
-                    <div>
+                    <div class="media">
                         <label for="cep">CEP</label><br/>
                         <input type="text" name="cep" class="cep" value="<?php echo (isset($dadosUsuario[0]['cep'])) ? $dadosUsuario[0]['cep'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="endereco">Endereço</label><br/>
                         <input type="text" name="endereco" value="<?php echo (isset($dadosUsuario[0]['endereco'])) ? $dadosUsuario[0]['endereco'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="bairro">Bairro</label><br/>
                         <input type="text" name="bairro" value="<?php echo (isset($dadosUsuario[0]['bairro'])) ? $dadosUsuario[0]['bairro'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="email">E-mail</label><br/>
                         <input type="text" name="email" value="<?php echo (isset($dadosUsuario[0]['email'])) ? $dadosUsuario[0]['email'] : ""; ?>" />
                     </div>
 
-                    <div>
+                    <div class="media">
                         <label for="telefone">Telefone</label><br/>
                         <input type="text" class="fone" name="telefone" value="<?php echo (isset($dadosUsuario[0]['telefone'])) ? $dadosUsuario[0]['telefone'] : ""; ?>" />
                     </div>
