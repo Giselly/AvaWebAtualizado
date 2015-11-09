@@ -5,7 +5,7 @@
         <div class="inputs">
             <p id="tituloPrincipal">Alterar senha de acesso</p>
             <div id="campos">
-                <input type="hidden" name="idUsuario" value="<?php echo $url->getURL(1);?>" />
+                <input type="hidden" name="idUsuario" value="<?php echo $url->getURL(0);?>" />
                 
                 <div>
                     <label for="senhaAtual">Senha atual:</label><br/>
