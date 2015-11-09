@@ -1608,9 +1608,11 @@
 	}
 	
 	img#fotoAt-Medium{
-		height: 140px;
+		height: 160px;
 		border-radius: 85px;
 		border: 5px solid #004c98;
+		margin-left:5px;
+		margin-top:15px;
 	}
 	
 	img#fotoUsuario-medium{
@@ -1664,9 +1666,11 @@
 	}
 	
 	img#fotoAt-Medium{
-		height: 140px;
+		height: 160px;
 		border-radius: 85px;
 		border: 5px solid #004c98;
+		margin-top:15px;
+		margin-left:-15px;
 	}
 	
 	img#fotoUsuario-medium{
@@ -1713,9 +1717,11 @@
 	}
 	
 	img#fotoAt-Medium{
-		height: 140px;
+		height: 160px;
 		border-radius: 85px;
 		border: 5px solid #004c98;
+		margin-left:-12px;
+		margin-top:15px;
 	}
 	
 	img#fotoUsuario-medium{
@@ -1769,9 +1775,10 @@
 	}
 	
 	img#fotoAt-movel{
-		height: 140px;
+		height: 160px;
 		border-radius: 85px;
 		border: 5px solid #004c98;
+		margin-top:15px;
 	}
 	
 	img#fotoUsuario-movel{
