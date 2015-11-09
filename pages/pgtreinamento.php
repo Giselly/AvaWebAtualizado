@@ -52,16 +52,16 @@
         <div class="conteudoLetras">
            <div id="letras">
 
-               <span id="reset-font">
-                <img src="imagens/reset_font.png" alt="Resetar" title="Resetar fonte"/>
-             </span>
+            <span id="reset-font">
+                <span class="size" title="Resetar fonte">A<sub>°</sub></span>   
+            </span>
 
-             <span id="dec-font">
-                <img src="imagens/decrease_font.png" alt="Diminuir" title="Diminuir fonte"/>
-             </span>
+            <span id="dec-font">
+                <span class="size" title="Diminuir fonte">A-</span>  
+            </span>
 
-             <span id="inc-font">
-                <img src="imagens/increase_font.png" alt="Aumentar" title="Aumentar fonte" />
+            <span id="inc-font">
+                <span class="size" title="Aumentar fonte">A+</span>  
             </span>
            </div>
 
