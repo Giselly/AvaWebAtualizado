@@ -173,11 +173,11 @@
          <!--Menu Slider SCREEN SUPER MOVEL-->
         <menu id="nav-slide-super-movel">
         <!--Foto do Perfil - MOVEL SCREEN-->
-        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:14px; margin-top:-10px;">
+        <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:14px; margin-top:0px;">
                <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-movel" />
         </div>
         
-            <ul style="margin-top:190px;">
+            <ul style="margin-top:210px;">
                 <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados"><img src="imagens/icons_navSlider/alterar_dados.png">	Alterar dados</a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha"><img src="imagens/icons_navSlider/alterar_senha.png">	Alterar senha</a></li>
                 <?php 
