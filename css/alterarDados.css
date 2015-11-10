@@ -97,6 +97,10 @@ div.inputs div#dadosGerais div#fotoPerfil {
         position: relative;
         margin: 0 auto;
     }
+    
+    div.inputs div#Endereco div.media {
+        width: 282.625px;
+    }
 
     div.inputs div#dadosGerais div:not(#fotoPerfil){
         width: 70%;
@@ -192,6 +196,12 @@ div.inputs div#dadosGerais div#fotoPerfil {
         text-indent: 1.1em;
     }
     
+}
+
+@media all and (max-width:320px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 90%;
+    }
 }
 
 div.inputs div#fotoPerfil img {
