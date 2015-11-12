@@ -238,14 +238,35 @@
                 });
             </script>
             
-        	<!--JAVA SCRIPT Menu Slider - SUPER MOVEL SCREEN--> 
+        	<!--JAVA SCRIPT Menu Slider - SUPER MOVEL SCREEN-->
                 <script type="text/javascript">
                     $(document).ready(function(){
                         $('.nav-btn-movel').on('click touchstart', function(e){
                                 $('html').toggleClass('menu-active');
                                 e.preventDefault();
                         });
-                    });
+					
+						/*if($('#nav-btn-medium').on('click touchstart', function(eve){
+							$('html').css('overflow-y', 'hidden');
+							eve.preventDefault();
+						}));
+						else{
+							$('html').css('overflow-y', 'scroll');
+							eve.preventDefault();
+							}
+						});
+
+						$(function(){
+    						$("#nav-btn-medium").mousedown(function(){
+								$('html').css('overflow-y', 'scroll');
+   							});
+						});
+						$(function(){
+    						$("#nav-btn-medium").mouseup(function(){
+								$('html').css('overflow-y', 'hidden');
+    						});
+						});*/
+					});
                 </script>
                 
             <!-- SHOW MASK -->
@@ -266,7 +287,9 @@
     
                        $(id).css({'top':top});
                        $(id).show();  
+					   
                    });
+				   
                 });
             </script>
             

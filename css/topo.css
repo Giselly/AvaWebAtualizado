@@ -10,6 +10,8 @@
     background-color:rgba(0,0,0,.8);
 }
 
+body{overflow-x:hidden;}
+
 /*Media Queries SCREEN >= 998px - FULL SCREEN*/
 @media all and (min-width:998px){
 	* {
@@ -25,7 +27,6 @@
 	body {
 		background-color: #ffffff;
 		font-family: 'Trebuchet MS', sans-serif;
-		overflow-x:hidden;
 	}
         
 	header#principal{
@@ -188,6 +189,9 @@
 		font-family: 'Trebuchet MS', sans-serif;
 		overflow-x:hidden;
 	}
+	
+	#nav-slide-medium{overflow-y: scroll;}
+	#nav-slide-medium{overflow-x: hidden;}
       
 	header#principal{
 		margin-top: 12px;
@@ -518,6 +522,9 @@
 		font-family: 'Trebuchet MS', sans-serif;
 		overflow-x:hidden;
 	}
+	
+	#nav-slide-medium{overflow-y: scroll;}
+	#nav-slide-medium{overflow-x: hidden;}
 	
 	#capitulos{
 		display:none;
@@ -858,6 +865,8 @@
 		overflow-x:hidden;
 	}
 	
+	#nav-slide-medium{overflow-y: scroll;}
+	
 	#capitulos{
 		display:none;
 	}
@@ -1168,10 +1177,9 @@
 		border: 0;
 	}
         
-	body{
-		overflow-x:hidden;
-	}
-        
+	#nav-slide-super-movel{overflow-y: scroll;}
+    #nav-slide-super-movel{overflow-x:hidden;}
+	
 	a{ 
 		color:#FFF;
 	}
@@ -1282,7 +1290,7 @@
 		transition: all 0.0s linear;
         z-index: 9999;
 	}
-        
+
 	#nav-btn-medium div{
 		width: 22px;
 		height: 4px;
@@ -1836,3 +1844,27 @@
 	#fotoPerfilMenu-medium{display:none}
 	#editarFoto{display:none;}
 }
+
+	/* Style Scroll Bar - All Resolutions */ 
+	/* Largura da barra de rolagem */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	
+	/* Fundo da barra de rolagem */
+	::-webkit-scrollbar-track-piece {
+		background-color: #EEE;
+		border-left: 1px solid #CCC
+	}
+	
+	/* Cor do indicador de rolagem */
+	::-webkit-scrollbar-thumb:vertical,
+	::-webkit-scrollbar-thumb:horizontal {
+		background-color: #BAC0C4
+	}
+	
+	/* Cor do indicador de rolagem - ao passar o mouse */
+	::-webkit-scrollbar-thumb:vertical:hover,
+	::-webkit-scrollbar-thumb:horizontal:hover {
+		background-color: #717171
+	}

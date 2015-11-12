@@ -114,7 +114,7 @@ nav#menuLateral li a:hover, nav#menuLateral li a.selecionado{
 
 /** CONFIGURAÇÃO DO RODAPE */
 footer#rodape{
-    z-index: 9999;
+    z-index: 999;
     position:fixed;
     display: block;
     background-color: white;
