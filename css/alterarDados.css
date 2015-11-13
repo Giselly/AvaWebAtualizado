@@ -202,6 +202,9 @@ div.inputs div#dadosGerais div#fotoPerfil {
     div.inputs div#dadosGerais, div.inputs div#Endereco {
         width: 90%;
     }
+	p#tituloPrincipal {
+    	margin-left:8px;
+	}
 }
 
 div.inputs div#fotoPerfil img {
