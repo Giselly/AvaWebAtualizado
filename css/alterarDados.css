@@ -4,13 +4,23 @@ form.cadastro input[type=password], form.cadastro input[type=text], form.cadastr
     width: 100%;
 }
 
+/*form.cadastro input[name=apelido], form.cadastro div.media {
+    width: 184px;
+    padding-right: 0px;
+    margin-right: 0px;
+}*/
+
 td#editar, td#excluir, td#status {
     text-align: center;
 }
 
 /** CADASTRO COMPLETO */
+div#sexo {
+    color: #000;
+}
+
 div.inputs{
-    width: 85%;
+    width: 100%;
 }
 
 div.inputs div:not(#fotoPerfil){
@@ -22,22 +32,25 @@ div.inputs div:not(#fotoPerfil){
 }
 
 div.inputs div#dadosGerais, div.inputs div#Endereco {
-    width: 85%;
+    width: 70%;
     display: block;
     position: relative;
     margin: 0 auto;
 }
 
 p#tituloPrincipal {
+    padding-top: 35px;
     text-align: center;
+
 }
 
 form.cadastro p.subtitulo {
+    width: 80%;
     position: relative;
+    margin: 0 auto;
     display: block;
     font-size: 14pt;
     color: #fff;
-    margin: 10px 20px;
     padding: 10px;
     background-color: #004c98;
     text-align: left;
@@ -46,22 +59,6 @@ form.cadastro p.subtitulo {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
 
-}
-
-/** UPLOAD DE FOTO DO PERFIL */
-
-div.inputs div#dadosGerais div#fotoPerfil {
-    display: block;
-    position: relative;
-    float:left;
-    margin: auto;
-    margin-left:20px;
-    margin-right: 20px;
-    width: 150px;
-    height: 180px;
-    padding: 0px;
-    top: 10px;
-    border: none;
 }
 
 @media all and (min-width:1525px){
@@ -83,39 +80,40 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
 }
 
+@media all and (max-width: 880px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco{
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 820px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco{
+        width: 49%;
+    }
+
+    form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
+        width: 200%;
+    }
+}
+
+
 @media all and (max-width:765px) and (min-width:530px){
 
     div.inputs div#dadosGerais {
-        position: relative;
+        width: 50%;
         display: block;
-        margin-left: 5px;
+        position: relative;
+        margin: 0 auto;
     }
 
     div.inputs div#Endereco {
-        width: 70%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
-    }
-    
-    div.inputs div#Endereco div.media {
-        width: 282.625px;
-    }
-
-    div.inputs div#dadosGerais div:not(#fotoPerfil){
-        width: 70%;
+        width: 50%;
         display: block;
         position: relative;
         margin: 0 auto;
     }
 
-    div.inputs div#dadosGerais div#fotoPerfil {
-        display: block;
-        position: relative;
-        float: none;
-        margin: 0 auto 20px ;
-        margin-left: 85px;
-    }
+
 
     div#salvar input[type=submit] {
         font-size: 10pt;
@@ -137,6 +135,27 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
 }
 
+@media all and (max-width: 720px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 50%;
+    }
+
+    form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
+        width: 150%;
+    }
+}
+
+@media all and (max-width: 600px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 60%;
+    }
+
+    form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
+        width: 150%;
+    }
+}
+
+
 @media all and (max-width:530px){
     /*body {
         overflow-y: scroll;
@@ -149,10 +168,72 @@ div.inputs div#dadosGerais div#fotoPerfil {
     div#dadosGerais {
         margin-left: 5px;
     }
-    
-    div.inputs div#dadosGerais, div.inputs div#Endereco {
-        width: 70%;
+
+    form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
+        width: 100%;
     }
+
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 45%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+
+    div.inputs div#dadosGerais div#sexo{
+        width: 450px;
+    }
+
+    div.inputs div#dadosGerais div#sexo, div#status {
+        font-size: 10pt;
+    }
+
+    div#salvar input[type=submit] {
+        font-size: 10pt;
+        width: 60px;
+        margin-left: 15%;
+    }
+
+    div#salvar a {
+        color: #004c98;
+        font-size: 12pt;
+        text-decoration: none;
+    }
+
+    form.cadastro p.subtitulo {
+        text-indent: 0.9em;
+        font-size: 10pt;
+    }
+
+    form.cadastro div.inputs p.subtitulo {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    p#tituloPrincipal {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width:401px){
+
+    div.inputs {
+        margin-left: -8px;
+    }
+
+    div#dadosGerais {
+        margin-left: 5px;
+    }
+
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 63%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
 
     div.inputs div#dadosGerais div#sexo{
         width: 230px;
@@ -187,28 +268,15 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
 
     form.cadastro div.inputs p.subtitulo {
-        width: 200px;
+        width: 100%;
         margin-left: 10%;
     }
 
     p#tituloPrincipal {
-        width: 220px;
-        text-indent: 1.1em;
+        width: 105%;
+        text-indent: -1.3em;
     }
-    
 }
-
-@media all and (max-width:320px){
-    div.inputs div#dadosGerais, div.inputs div#Endereco {
-        width: 90%;
-    }
-	p#tituloPrincipal {
-    	margin-left:8px;
-	}
-	footer#rodape{
-		position:relative;
-	
-	}
 
 div.inputs div#fotoPerfil img {
     width: 148px;
@@ -228,7 +296,7 @@ div.inputs input#editar{
     position: absolute;
     padding: 0px;
     margin-top: 0px;
-    z-index: 9999;
+    z-index: 999;
     width: 100%;
     height: 20px;
 }

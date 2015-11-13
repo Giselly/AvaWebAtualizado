@@ -2,16 +2,16 @@
 <div class="camposFormularioSimples" style="margin-bottom: 100px;">
 
 <div class="inputs">
-    <p id="tituloPrincipal">Alterar Dados</p>
-                
+
     <form class="cadastro" id="simples" method="post">
+        <p id="tituloPrincipal">Alterar Dados</p>
+
         <?php
             //echo (isset($dadosUsuario[0]['id'])) ?  "<input type='hidden' name='id' value='{$dadosUsuario[0]['id']}'>" : "" ;
             ?>        
         <p class="subtitulo">Dados Gerais</p>
-                
-        <div id="dadosGerais">
 
+        <div id="dadosGerais">
                     <?php
                         echo (isset($dadosUsuario[0]['id'])) ?  "<input type='hidden' name='id' value='{$dadosUsuario[0]['id']}'>" : "" ;
                     ?>
