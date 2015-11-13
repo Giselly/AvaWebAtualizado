@@ -181,14 +181,15 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
     
     div#salvar input[type=submit] {
-        font-size: 8pt;
+        font-size: 10pt;
         width: 60px;
         margin-left: 15%;
     }
     
     div#salvar a {
         color: #004c98;
-        font-size: 8pt;
+        font-size: 12pt;
+        text-decoration: none;
     }
     
     form.cadastro p.subtitulo {

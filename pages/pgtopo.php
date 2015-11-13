@@ -154,16 +154,16 @@
                 <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados"><img src="imagens/icons_navSlider/alterar_dados.png">	Alterar dados</a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha"><img src="imagens/icons_navSlider/alterar_senha.png">	Alterar senha</a></li>
                 <?php 
-					 if($professor){
-						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios" id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro usuários</a></li>';
-					 }
-				?>
+                        if($professor){
+                            if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios" id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro usuários</a></li>';
+                        }
+                ?>
                 
                 <?php
                 	if($professor){
                 		if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
-					}
-				?>
+                        }
+                ?>
     
                 <li><a href="logout" id="menu_slider_logout"><img src="imagens/icons_navSlider/sair.png">	Sair</a></li>
                 </div>
@@ -181,22 +181,22 @@
                 <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados"><img src="imagens/icons_navSlider/alterar_dados.png">	Alterar dados</a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha"><img src="imagens/icons_navSlider/alterar_senha.png">	Alterar senha</a></li>
                 <?php 
-					 if($professor){
-						 if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro usuários</a></li>';
-					 }
-				?>
+                        if($professor){
+                            if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png">	Cadastro usuários</a></li>';
+                        }
+                ?>
                 
                 <?php
                 	if($professor){
-                		if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
-					}
-				?>
+                            if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
+                        }
+                ?>
                 
                 <div id="tcns">
                     <li><a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco" id="menu_slider" class="treinamento"><img src="imagens/icons_navSlider/treinamento.png">	Treinamento</a></p></li>
-                <li><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso"><img src="imagens/icons_navSlider/cronograma_curso.png">	Cronograma curso</a></li>  
+                    <li><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso"><img src="imagens/icons_navSlider/cronograma_curso.png">	Cronograma curso</a></li>  
                 <?php
-                	if(!$professor){
+                    if(!$professor){
                     	if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; echo '<li><a href="notificacoes" id="menu_slider" class="notificacoes"><img src="imagens/icons_navSlider/notificacao2.png">	Notificações</a></li>';
                     }
                 ?>
@@ -210,16 +210,16 @@
                
 		<!--JAVASCRIPT Back_To_Top - MEDIUM, MOVEL, SUPER-MOVEL SCREEN-->
 		<script>
-			$(document).ready(function() {
-				$("#voltarTopo").hide();
-			
-				$(window).scroll(function () {
-			
-				if ($(this).scrollTop() > 300) {
-					$('#voltarTopo').fadeIn();
-				} else {
-					$('#voltarTopo').fadeOut();
-				}
+                    jQuery(document).ready(function() {
+                        $("#voltarTopo").hide();
+
+                        $(window).scroll(function () {
+
+                            if ($(this).scrollTop() > 300) {
+                                    $('#voltarTopo').fadeIn();
+                            } else {
+                                    $('#voltarTopo').fadeOut();
+                            }
 			});
 			
 			$('#voltarTopo').click(function() {
@@ -230,75 +230,46 @@
         
             <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
             <script type="text/javascript">
-                $(document).ready(function(){
+                jQuery(document).ready(function(){
                     $('.nav-btn-medium').on('click touchstart', function(e){
-                            $('html').toggleClass('menu-active');
-                            e.preventDefault();
+                        $('html').toggleClass('menu-active');
+                        e.preventDefault();
+                    });
+                    
+                    $('.nav-btn-movel').on('click touchstart', function(e){
+                        $('html').toggleClass('menu-active');
+                        e.preventDefault();
                     });
                 });
             </script>
-            
-        	<!--JAVA SCRIPT Menu Slider - SUPER MOVEL SCREEN-->
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                        $('.nav-btn-movel').on('click touchstart', function(e){
-                                $('html').toggleClass('menu-active');
-                                e.preventDefault();
-                        });
-					
-						/*if($('#nav-btn-medium').on('click touchstart', function(eve){
-							$('html').css('overflow-y', 'hidden');
-							eve.preventDefault();
-						}));
-						else{
-							$('html').css('overflow-y', 'scroll');
-							eve.preventDefault();
-							}
-						});
-
-						$(function(){
-    						$("#nav-btn-medium").mousedown(function(){
-								$('html').css('overflow-y', 'scroll');
-   							});
-						});
-						$(function(){
-    						$("#nav-btn-medium").mouseup(function(){
-								$('html').css('overflow-y', 'hidden');
-    						});
-						});*/
-					});
-                </script>
                 
             <!-- SHOW MASK -->
-            <script>
-                $(document).ready(function(){
-                    $("a[rel=modal]").click( function(ev){
-                       ev.preventDefault();
-    
-                       var id = $(this).attr("href");
-    
-                       var alturaTela = $(document).height();
-    
-                       //colocando o fundo preto
-                       $('#mascara').css({'height':alturaTela});
-                       $('#mascara').fadeToggle(); 
-    
-                       var top = ($(window).height() / 2) - ( $(id).height() / 2 );
-    
-                       $(id).css({'top':top});
-                       $(id).show();  
-					   
-                   });
-				   
+            <script type="text/javascript">
+               jQuery(document).ready(function(){
+                $("a[rel=modal]").on('click', function(ev){
+                    ev.preventDefault();
+
+                    var id = $(this).attr("href");
+
+                    var alturaTela = $(document).height();
+                    var larguraTela = $(window).width();
+
+                    //colocando o fundo preto
+                    $('#mascara').css({'width':larguraTela,'height':alturaTela});
+                    $('#mascara').fadeToggle(); 
+                    //$('#mascara').fadeTo("slow",0.8);
+
+                    var left = ($(window).width() /2) - ( $(id).width() / 2 );
+                    var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+
+                    $(id).css({'top':top,'left':left});
+                    $(id).show();   
                 });
-            </script>
-            
-            <!-- HIDE MASK --> 
-              <script>
-                $(document).ready(function(){
-                   $('#mascara').click(function(){
-                       $('#mascara').hide();
-                       $('html').toggleClass('menu-active');
-                   });
+
+                $("#mascara").click( function(){
+                    $(this).hide();
+                    $('html').toggleClass('menu-active');
                 });
+            });
             </script>
+             
