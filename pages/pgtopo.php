@@ -246,30 +246,30 @@
             <!-- SHOW MASK -->
             <script type="text/javascript">
                jQuery(document).ready(function(){
-                $("a[rel=modal]").on('click', function(ev){
-                    ev.preventDefault();
+                    $("a[rel=modal]").on('click', function(ev){
+                        ev.preventDefault();
 
-                    var id = $(this).attr("href");
+                        var id = $(this).attr("href");
 
-                    var alturaTela = $(document).height();
-                    var larguraTela = $(window).width();
+                        var alturaTela = $(document).height();
+                        var larguraTela = $(window).width();
 
-                    //colocando o fundo preto
-                    $('#mascara').css({'width':larguraTela,'height':alturaTela});
-                    $('#mascara').fadeToggle(); 
-                    //$('#mascara').fadeTo("slow",0.8);
+                        //colocando o fundo preto
+                        $('#mascara').css({'width':larguraTela,'height':alturaTela});
+                        $('#mascara').fadeToggle(); 
+                        //$('#mascara').fadeTo("slow",0.8);
 
-                    var left = ($(window).width() /2) - ( $(id).width() / 2 );
-                    var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+                        var left = ($(window).width() /2) - ( $(id).width() / 2 );
+                        var top = ($(window).height() / 2) - ( $(id).height() / 2 );
 
-                    $(id).css({'top':top,'left':left});
-                    $(id).show();   
+                        $(id).css({'top':top,'left':left});
+                        $(id).show();   
+                    });
+
+                    $("#mascara").click( function(){
+                        $(this).hide();
+                        $('html').toggleClass('menu-active');
+                    });
                 });
-
-                $("#mascara").click( function(){
-                    $(this).hide();
-                    $('html').toggleClass('menu-active');
-                });
-            });
             </script>
              
