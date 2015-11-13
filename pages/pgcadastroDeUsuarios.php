@@ -1,6 +1,6 @@
 <link rel='stylesheet' type='text/css' href='css/cadastroDeUsuarios.css'>
 
-<section class="listagemCadastro">
+<section class="listagemCadastro" style="margin-bottom: 100px;">
     <div class="camposSection">
         <?php echo $erroExcluir; ?>
         <table class="listagem">

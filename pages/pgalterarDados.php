@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<div class="camposFormularioSimples">
+<div class="camposFormularioSimples" style="margin-bottom: 100px;">
 
 <div class="inputs">
     <p id="tituloPrincipal">Alterar Dados</p>

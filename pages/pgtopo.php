@@ -29,20 +29,19 @@
         <input type="hidden" value="<?php echo RAIZ; ?>" id="raiz" />
         <header id="principal">
             <!--logo Full Scren-->
-            <div id="logo"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
-            </div>
-          	<!--logo Movel Screen-->
-            <div id="logo_res"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
-            </div>
+            <div id="logo"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a></div>
+            
+            <!--logo Movel Screen-->
+            <div id="logo_res"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a></div>
+      
             <!--logo Medium Scren-->
-            <div id="logo_res2"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
-            </div>
+            <div id="logo_res2"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo2.gif" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a></div>
+            
             <!--logo Medium Movel Scren-->
-            <div id="logo_res3_1"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
-            </div>
+            <div id="logo_res3_1"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo3_1.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a></div>
+            
             <!--logo Super Movel Scren-->
-            <div id="logo_res3"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a>
-            </div>
+            <div id="logo_res3"> <a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco"><img src="imagens/logo4.jpg" alt="" title="Voltar a Página Inicial" style="z-index:9999;"></a> </div>
             <!--Button Back_To_Top Movel Screen / Super Movel Screen-->
             <div id="voltarTopo"></div>
                         
@@ -59,15 +58,15 @@
             	 <!--Notification - FULL SCREEN-->
                  <div id="notificacao" style="position: relative; float: right; margin: 2px 25px 2px 0px;">
                     <?php
-                    if(isset($visualizar) && $visualizar == 0){
+                        if(isset($visualizar) && $visualizar == 0){
                     ?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>
                     <?php } else {?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você possui notificações! Clique aqui para visualizá-las!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px;"></a>      
                      <img src="imagens/balaoVermelho.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
                      <?php
-                     if($visualizar >= 10){?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                         if($visualizar >= 10){?>
+                            <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -32px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                     <?php }  else {?>
                      <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -30px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
                     <?php } }?>
@@ -76,7 +75,7 @@
                  <!--Notification - MEDIUM SCREEN /MEDIUM MOVEL SCREEN-->
                  <div id="notificacao-medium">
                     <?php
-                    if(isset($visualizar) && $visualizar == 0){
+                        if(isset($visualizar) && $visualizar == 0){
                     ?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification" src="imagens/notificacao.png" style="width: 40px; height: 40px; margin-right:30px;"></a>
                     <?php } else {?>
@@ -94,7 +93,7 @@
                 <!--Notification - MOVEL SCREEN-->
                 <div id="notificacao-movel" style="position: absolute; float: right;  right:16px; top:15px;">
                     <?php
-                    if(isset($visualizar) && $visualizar == 0){
+                        if(isset($visualizar) && $visualizar == 0){
                     ?>
                     <a href="notificacoes" class="tooltip-bottom" data-tooltip="Você não possui notificações para visualizar!"><img id="notification-movel" src="imagens/notificacao-movel.png" style="width: 40px; height: 40px; margin-right:30px;"></a>
                     <?php } else {?>
@@ -102,8 +101,8 @@
                      <img src="imagens/balaoVermelho-movel.png" style="display: inline-block; position: relative; left: -10px; top: -17px;">
     
                      <?php
-                     if($visualizar >= 10){?>
-                     <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -33px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
+                         if($visualizar >= 10){?>
+                            <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -33px; top: -23px; color: white; font-size: 8pt;"><?php echo $visualizar;?></h1>
                     <?php }  else {?>
                      <h1 style="display: inline-block; position: relative; width: 15px; height: 15px; left: -33px; top: -22px; color: white; font-size: 10pt;"><?php echo $visualizar;?></h1>
                     <?php } } }?>
@@ -112,13 +111,12 @@
             <div id="menuUsuario">
                 <span id="boasVindas">Olá, <?php echo $apelido; ?>  |  </span>Comunicação Digital
                 <a href="logout" id="logout">Sair</a>
-                <!--<a href="logout" id="logout2">Sair</a>-->
+                
             </div>
         </header>
         	
         <section id="menuSistema">
-            <div id="separador">
-            </div>
+            <div id="separador"> </div>
             <ul>
                 <li><a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco">Treinamento</a></li>
                 <li><a href="cronogramaDoCurso">Cronograma do curso</a></li>
@@ -126,26 +124,25 @@
         </section>
         
         <!--Button Menu - SCREEN MEDIUM / MOVEL-->
-        <a href="#" rel="modal">
-            <span id="nav-btn-medium" class="nav-btn-medium">
-                <div></div>
-                <div></div>
-                <div></div>
-            </span>
-        </a>
+        <span id="nav-btn-medium" class="nav-btn-medium">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
         
         <!--Button Menu - SCREEN SUPER MOVEL-->
-        <a href="#" rel="modal">
-            <span id="nav-btn-movel" class="nav-btn-movel">
-                <div></div>
-                <div></div>
-                <div></div>
-            </span>
-         </a>
+       
+        <span id="nav-btn-movel" class="nav-btn-movel">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+         
          
         <!--Menu Slider SCREEN MOVEL-->
         <menu id="nav-slide-medium">
-        	<!--Foto do Perfil-->
+            
+            <!--Foto do Perfil-->
             <div id="fotoPerfilMenu-medium" style="position:absolute; margin-left:30px; margin-top:0px;">
                    <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-Medium" />
             </div>
@@ -161,7 +158,7 @@
                 
                 <?php
                 	if($professor){
-                		if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
+                            if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png">	Resumos</a></li>';
                         }
                 ?>
     
@@ -170,8 +167,9 @@
             </ul>
         </menu>
          
-         <!--Menu Slider SCREEN SUPER MOVEL-->
+        <!--Menu Slider SCREEN SUPER MOVEL-->
         <menu id="nav-slide-super-movel">
+            
         <!--Foto do Perfil - MOVEL SCREEN-->
         <div id="fotoPerfilMenu-movel" style="position:absolute; margin-left:14px; margin-top:0px;">
                <img src="imagens/perfil/<?php  echo $foto;  ?>" alt="" id="fotoAt-movel" />
@@ -243,33 +241,4 @@
                 });
             </script>
                 
-            <!-- SHOW MASK -->
-            <script type="text/javascript">
-               jQuery(document).ready(function(){
-                    $("a[rel=modal]").on('click', function(ev){
-                        ev.preventDefault();
-
-                        var id = $(this).attr("href");
-
-                        var alturaTela = $(document).height();
-                        var larguraTela = $(window).width();
-
-                        //colocando o fundo preto
-                        $('#mascara').css({'width':larguraTela,'height':alturaTela});
-                        $('#mascara').fadeToggle(); 
-                        //$('#mascara').fadeTo("slow",0.8);
-
-                        var left = ($(window).width() /2) - ( $(id).width() / 2 );
-                        var top = ($(window).height() / 2) - ( $(id).height() / 2 );
-
-                        $(id).css({'top':top,'left':left});
-                        $(id).show();   
-                    });
-
-                    $("#mascara").click( function(){
-                        $(this).hide();
-                        $('html').toggleClass('menu-active');
-                    });
-                });
-            </script>
              
