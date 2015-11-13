@@ -205,7 +205,10 @@ div.inputs div#dadosGerais div#fotoPerfil {
 	p#tituloPrincipal {
     	margin-left:8px;
 	}
-}
+	footer#rodape{
+		position:relative;
+	
+	}
 
 div.inputs div#fotoPerfil img {
     width: 148px;
