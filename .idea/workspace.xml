@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2a18779-642c-4ef2-a460-e72dfa7d8169" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Program Files (x86)\VertrigoServ\www\AvaWebAtualizado\capitulos\05\5.1_Principios_de_Design_Repeticao.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files (x86)\VertrigoServ\www\AvaWebAtualizado\capitulos\07\07_–_PRINCÍPIOS_DE_DESIGN_-_Tipo_(E_Vida).html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" afterPath="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/font.js" afterPath="$PROJECT_DIR$/js/font.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AvaWeb.iws" />
@@ -26,31 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="11.5_-_índice.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.5_-_índice.html">
+      <file leaf-file-name="4.1_-_Principios_de_Design_Alinhamento.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="539" column="40" selection-start-line="539" selection-start-column="40" selection-end-line="539" selection-end-column="40" />
-              <folding />
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="891" column="161" selection-start-line="891" selection-start-column="152" selection-end-line="891" selection-end-column="161" />
+              <folding>
+                <element signature="n#style#0;n#p#71;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.6_-_Símbolo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html">
+      <file leaf-file-name="font.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/font.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5.1_-_Principios_de_Design_Repeticao.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/capitulos/05/5.1_-_Principios_de_Design_Repeticao.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.28555432">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.40805224">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,7 +78,6 @@
         <option value="$PROJECT_DIR$/pages/pgconteudo.php" />
         <option value="$PROJECT_DIR$/css/font.css" />
         <option value="$PROJECT_DIR$/pages/pgtreinamento.php" />
-        <option value="$PROJECT_DIR$/js/font.js" />
         <option value="$PROJECT_DIR$/capitulos/01/1.1_-_A_folha_de_papel_em_branco.html" />
         <option value="$PROJECT_DIR$/capitulos/01/1.2_-_Por_que_ideias_.html" />
         <option value="$PROJECT_DIR$/capitulos/01/1.3_-_O_briefing.html" />
@@ -96,7 +87,6 @@
         <option value="$PROJECT_DIR$/capitulos/02/2.1_-_Princípios_de_Design_Epifanía_da_Íuca.html" />
         <option value="$PROJECT_DIR$/capitulos/02/2.2_-_Principios_de_Design_Os_quatros_principios_basicos.html" />
         <option value="$PROJECT_DIR$/capitulos/03/3.1_-_Princípios_de_Design_Proximidade.html" />
-        <option value="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" />
         <option value="$PROJECT_DIR$/capitulos/06/06_-_Contraste.html" />
         <option value="$PROJECT_DIR$/capitulos/07/07_–_PRINCÍPIOS_DE_DESIGN_-_Tipo_(E_Vida).html" />
         <option value="$PROJECT_DIR$/capitulos/08/8.1_-_Princípios_de_Design_Categoria_de_Tipos_Introdução.html" />
@@ -123,6 +113,8 @@
         <option value="$PROJECT_DIR$/capitulos/11/11.5_-_índice.html" />
         <option value="$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html" />
         <option value="$PROJECT_DIR$/capitulos/05/5.1_Principios_de_Design_Repeticao.html" />
+        <option value="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" />
+        <option value="$PROJECT_DIR$/js/font.js" />
       </list>
     </option>
   </component>
@@ -140,7 +132,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -194,25 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="capitulos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AvaWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AvaWebAtualizado" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capitulos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="05" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,10 +245,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13574423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -419,13 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/font.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.931034">
-          <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/01/1.2_-_Por_que_ideias_.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="8.5">
@@ -486,13 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.4528303">
           <caret line="269" column="37" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.188679">
-          <caret line="395" column="33" selection-start-line="395" selection-start-column="33" selection-end-line="395" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -652,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/11/11.5_-_índice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.4669653">
           <caret line="539" column="40" selection-start-line="539" selection-start-column="40" selection-end-line="539" selection-end-column="40" />
           <folding />
         </state>
@@ -660,7 +620,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding />
         </state>
@@ -668,8 +628,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/05/5.1_-_Principios_de_Design_Repeticao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.28555432">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="891" column="161" selection-start-line="891" selection-start-column="152" selection-end-line="891" selection-end-column="161" />
+          <folding>
+            <element signature="n#style#0;n#p#71;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/font.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40805224">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

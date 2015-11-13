@@ -25,7 +25,7 @@ $z(document).ready(function(){
         var size = $z("#questoes label").css('font-size');
         var size = $z(".conteudoLetras p").css('font-size');
 
-        if(size >= 16 + 'px') {
+        if(size > 18 + 'px') {
 
             size = size.replace('px', '');
             size = parseInt(size) - 2;
