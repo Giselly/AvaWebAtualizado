@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d2a18779-642c-4ef2-a460-e72dfa7d8169" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/alterarDados.css" afterPath="$PROJECT_DIR$/css/alterarDados.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/alterarSenha.css" afterPath="$PROJECT_DIR$/css/alterarSenha.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/formCadastroDeUsuarios.css" afterPath="$PROJECT_DIR$/css/formCadastroDeUsuarios.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pgalterarDados.php" afterPath="$PROJECT_DIR$/pages/pgalterarDados.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,43 +28,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="4.1_-_Principios_de_Design_Alinhamento.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
-              <caret line="891" column="161" selection-start-line="891" selection-start-column="152" selection-end-line="891" selection-end-column="161" />
-              <folding>
-                <element signature="n#style#0;n#p#71;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/font.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alterarDados.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alterarDados.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/alterarDados.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.2988764">
-              <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formCadastroDeUsuarios.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/formCadastroDeUsuarios.css">
+      <file leaf-file-name="alterarSenha.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/alterarSenha.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7586207">
-              <caret line="6" column="60" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.6474429">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pgalterarSenha.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/pgalterarSenha.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,8 +71,18 @@
       <file leaf-file-name="pgalterarDados.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/pgalterarDados.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state vertical-scroll-proportion="-23.884615">
+              <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formCadastroDeUsuarios.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/formCadastroDeUsuarios.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -94,12 +104,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/pgredefine.php" />
-        <option value="$PROJECT_DIR$/includes/increcuperaSenha.php" />
         <option value="$PROJECT_DIR$/pages/pgrecuperaSenha.php" />
         <option value="$PROJECT_DIR$/pages/pgmenuLateral.php" />
         <option value="$PROJECT_DIR$/pages/pgalterarSenha.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/includes/incfont.php" />
         <option value="$PROJECT_DIR$/pages/pgfont.php" />
         <option value="$PROJECT_DIR$/includes/incalterarDados.php" />
@@ -143,8 +150,11 @@
         <option value="$PROJECT_DIR$/capitulos/05/5.1_Principios_de_Design_Repeticao.html" />
         <option value="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" />
         <option value="$PROJECT_DIR$/js/font.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/pages/pgalterarDados.php" />
         <option value="$PROJECT_DIR$/css/alterarDados.css" />
+        <option value="$PROJECT_DIR$/css/formCadastroDeUsuarios.css" />
+        <option value="$PROJECT_DIR$/css/alterarSenha.css" />
       </list>
     </option>
   </component>
@@ -289,7 +299,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -329,20 +339,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/pgaguarde.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgcadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/pgcadastroDeUsuarios.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6662934">
@@ -541,59 +537,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.1_-_Introdução.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.943397">
-          <caret line="292" column="41" selection-start-line="292" selection-start-column="41" selection-end-line="292" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/09/9.2_-_Princípios_de_Design_Contrastes_de_Tipos_Tamanho.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.188679">
           <caret line="270" column="34" selection-start-line="270" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.2_-_Significante_e_significado.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.18868">
-          <caret line="193" column="30" selection-start-line="193" selection-start-column="30" selection-end-line="193" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.3_-_Signo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="302" column="37" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.4_-_Ícone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.7_-_Emissor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="415" column="17" selection-start-line="415" selection-start-column="17" selection-end-line="415" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.8_-_Intenção.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="306" column="17" selection-start-line="306" selection-start-column="17" selection-end-line="306" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.9_-_Mensagem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="306" column="17" selection-start-line="306" selection-start-column="17" selection-end-line="306" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -625,36 +572,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.5_-_índice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4669653">
-          <caret line="539" column="40" selection-start-line="539" selection-start-column="40" selection-end-line="539" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/05/5.1_-_Principios_de_Design_Repeticao.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
+        <state vertical-scroll-proportion="0.0">
           <caret line="891" column="161" selection-start-line="891" selection-start-column="152" selection-end-line="891" selection-end-column="161" />
           <folding>
             <element signature="n#style#0;n#p#71;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447674859415" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -675,26 +606,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/formCadastroDeUsuarios.css">
+    <entry file="file://$PROJECT_DIR$/pages/pgalterarDados.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7586207">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="60" />
+        <state vertical-scroll-proportion="-23.884615">
+          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgalterarDados.php">
+    <entry file="file://$PROJECT_DIR$/css/formCadastroDeUsuarios.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/alterarDados.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2988764">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/pgalterarSenha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/alterarSenha.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6474429">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding />
         </state>
       </provider>

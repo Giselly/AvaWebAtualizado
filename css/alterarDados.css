@@ -217,7 +217,15 @@ form.cadastro p.subtitulo {
 
 }
 
-@media all and (max-width:401px){
+@media all and (max-width: 420px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 65%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+}
+
+@media all and (max-width:410px){
 
     div.inputs {
         margin-left: -8px;
@@ -228,7 +236,7 @@ form.cadastro p.subtitulo {
     }
 
     div.inputs div#dadosGerais, div.inputs div#Endereco {
-        width: 63%;
+        width: 60%;
         display: block;
         position: relative;
         margin: 0 auto;
@@ -239,20 +247,11 @@ form.cadastro p.subtitulo {
         width: 230px;
     }
 
-    div.inputs div#dadosGerais div#fotoPerfil {
-        display: block;
-        position: relative;
-        float: none;
-        margin: 0 auto 20px ;
-        margin-left: 40px;
-    }
-
     div.inputs div#dadosGerais div#sexo, div#status {
         font-size: 11pt;
     }
 
     div#salvar input[type=submit] {
-        font-size: 8pt;
         width: 60px;
         margin-left: 15%;
     }
@@ -274,19 +273,17 @@ form.cadastro p.subtitulo {
 
     p#tituloPrincipal {
         width: 105%;
-        text-indent: -1.3em;
+        text-indent: -1.8em;
     }
 }
 
-div.inputs div#fotoPerfil img {
-    width: 148px;
-    height: 180px;
-    margin: auto;
-}
-
-div#button, input#foto {
-    display: none;
-    overflow: none;
+@media all and (max-width: 320px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 75%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
 }
 
 div.inputs input#editar{
@@ -301,10 +298,11 @@ div.inputs input#editar{
     height: 20px;
 }
 
+}
 /** SALVAR */
 
 div.inputs div#salvar {
     display: block;
     position:relative;
-    width: 100%;
+    width: 82%;
 }

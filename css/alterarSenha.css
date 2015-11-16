@@ -1,5 +1,5 @@
 input[type=password] {
-    width: 100%;
+    width: 60%;
 }
 
 div.inputs{
@@ -7,7 +7,11 @@ div.inputs{
 }
 
 form#simples{
-    width: 50%;
+    width: 100%;
+}
+
+p#tituloPrincipal{
+    text-indent: 2.5em;
 }
 
 @media all and (max-width: 1705px) {
@@ -38,10 +42,6 @@ form#simples{
     div.inputs{
         width: 50%;
     }
-
-    form#simples{
-        width: 55%;
-    }
 }
 
 @media all and (max-width: 775px) {
@@ -55,9 +55,6 @@ form#simples{
         width: 65%;
     }
 
-    form#simples{
-        width: 65%;
-    }
 }
 
 @media all and (max-width: 530px) {
@@ -65,9 +62,6 @@ form#simples{
         width: 70%;
     }
 
-    form#simples{
-        width: 65%;
-    }
 }
 
 @media all and (max-width: 490px) {
@@ -79,30 +73,27 @@ form#simples{
         width: 80%;
     }
 
-    form#simples{
-        width: 70%;
-    }
 }
 
 @media all and (max-width: 395px) {
     div.inputs{
-        width: 75%;
+        width: 80%;
     }
 
-    form#simples{
-        width: 80%;
+    div.inputs div#campos{
+        width: 110%;
+    }
+
+    p#tituloPrincipal{
+        text-indent: 0.7em;
     }
 }
 
 @media all and (max-width: 320px) {
     div.inputs{
         width: 85%;
-        margin-left: -20px;
     }
 
-    form#simples{
-        width: 85%;
-    }
 }
 
 

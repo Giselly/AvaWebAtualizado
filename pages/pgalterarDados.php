@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 
-                <div>
+                <div id="salvar">
                     <input name="enviar" class="alterar" type="submit" value="Alterar" />
                 </div>
                 

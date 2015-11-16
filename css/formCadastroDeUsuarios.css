@@ -64,13 +64,12 @@ div.inputs div#dadosGerais div#fotoPerfil {
     display: block;
     position: relative;
     float:left;
-    margin: auto;
     margin-left:20px;
     margin-right: 20px;
     width: 150px;
     height: 180px; 
     padding: 0px;
-    top: 10px;
+    top: -2px;
     border: none;
 }
 
@@ -102,13 +101,18 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
     
     div.inputs div#Endereco {
+        position: relative;
+        display: block;
+        margin-left: 5px;
+    }
+    
+    div.inputs div#dadosGerais div:not(#fotoPerfil){
         width: 70%;
         display: block;
         position: relative;
         margin: 0 auto;
     }
-    
-    div.inputs div#dadosGerais div:not(#fotoPerfil){
+    div.inputs div#Endereco div:not(#fotoPerfil){
         width: 70%;
         display: block;
         position: relative;
@@ -144,20 +148,13 @@ div.inputs div#dadosGerais div#fotoPerfil {
 }
 
 @media all and (max-width:530px){
-    /*body {
-        overflow-y: scroll;
-    }*/
-    
+
     div.inputs {
         margin-left: -8px;
     }
-    
-    div#dadosGerais {
-        margin-left: 5px;
-    }
-	
+
 	div.inputs div#dadosGerais, div.inputs div#Endereco {
-		width: 50%;
+		width: 35%;
 		display: block;
 		position: relative;
 		margin: 0 auto;
@@ -172,8 +169,6 @@ div.inputs div#dadosGerais div#fotoPerfil {
         display: block;
         position: relative;
         float: none;
-        margin: 0 auto 20px ;
-        margin-left: 40px;
     }
     
     div.inputs div#dadosGerais div#sexo, div#status {
@@ -209,6 +204,27 @@ div.inputs div#dadosGerais div#fotoPerfil {
     
 }
 
+@media all and (max-width: 480px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 40%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media all and(max-width: 410px){
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 10%;
+        display: block;
+        position: relative;
+    }
+
+    .media{
+        margin: 0 auto;
+    }
+}
+
 @media all and (max-width:401px){
 	    
 	div.inputs {
@@ -220,7 +236,7 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
 	
 	div.inputs div#dadosGerais, div.inputs div#Endereco {
-		width: 78%;
+		width: 60%;
 		display: block;
 		position: relative;
 		margin: 0 auto;
