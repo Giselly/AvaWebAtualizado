@@ -17,5 +17,5 @@
             <h2 id="tituloCapitulo">Resumo Enviado!</h2>
             <h3 id="subtituloCapitulo">Aguarde uma notificação!</h3>
         <?php } ?>        
-    </form> 
+    </form>
 </section>

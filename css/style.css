@@ -395,8 +395,7 @@ input.pesquisa {
     }
     
     input.novo {
-        margin-left: -7%;
-        width: 106%;
+        width: 100%;
     }
     
     input.pesquisa {
@@ -421,7 +420,6 @@ input.pesquisa {
     }
     
     input.novo {
-        margin-left: -5%;
         margin-right: 0;
         width: 300px;
     }
@@ -456,7 +454,6 @@ input.pesquisa {
     }
     
     input.novo {
-        margin-left: -10%;
         margin-right: 0;
         width: 300px;
     }
@@ -477,12 +474,14 @@ input.pesquisa {
         margin-left: -12%;
     }
     
-     input.novo {
-        margin-left: -12%;
-    }
-    
     input.pesquisa {
         width: 296px;
         margin-left: -12%;
+    }
+}
+
+@media all and (max-width: 315px){
+    input.novo{
+        width: 100%;
     }
 }

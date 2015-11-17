@@ -1,20 +1,19 @@
 
 section#resumo {
     display: block;
-    position: relative;
+    position: absolute;
     float:none;
-    width: 95%;
-    height: 100%;
-    //min-width: 560px;
-    min-height: 500px;
-    margin: 15px;
+    width: 65%;
+    top: 15%;
+    min-width: 260px;
+    margin-left: 25px;
 }
 
 textarea.textArea {
     display: block;
     position: relative;
     resize: none;
-    //min-width: 530px;
+    min-width: 530px;
     width: 100%;
     min-height: 450px;
     height: 90%;
@@ -24,6 +23,7 @@ textarea.textArea {
 .novo {
     display: block;
     margin-top: 10px;
+    margin-bottom: 100px;
     float: left;
 }
 
@@ -43,4 +43,14 @@ textarea.textArea {
 
 #rodape {
     display: none;
+}
+
+@media all and (max-width: 410px){
+    section#resumo {
+        width: 85%;
+    }
+
+    .novo{
+        width: 50%;
+    }
 }
