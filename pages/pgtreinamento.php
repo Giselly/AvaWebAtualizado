@@ -53,7 +53,7 @@
            <div id="letras">
 
             <span id="reset-font">
-                <span class="size" title="Resetar fonte">A<sub>°</sub></span>   
+                <span class="size" title="Resetar fonte">A<sub>º</sub></span>   
             </span>
 
             <span id="dec-font">
