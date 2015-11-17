@@ -128,16 +128,7 @@
             <div></div>
             <div></div>
             <div></div>
-        </span>
-        
-        <!--Button Menu - SCREEN SUPER MOVEL-->
-       
-        <span id="nav-btn-movel" class="nav-btn-movel">
-            <div></div>
-            <div></div>
-            <div></div>
-        </span>
-         
+        </span>         
          
         <!--Menu Slider SCREEN MOVEL-->
         <menu id="nav-slide-medium">
@@ -208,37 +199,42 @@
                
 		<!--JAVASCRIPT Back_To_Top - MEDIUM, MOVEL, SUPER-MOVEL SCREEN-->
 		<script>
-                    jQuery(document).ready(function() {
-                        $("#voltarTopo").hide();
-
-                        $(window).scroll(function () {
-
-                            if ($(this).scrollTop() > 300) {
-                                    $('#voltarTopo').fadeIn();
-                            } else {
-                                    $('#voltarTopo').fadeOut();
-                            }
-			});
+			jQuery(document).ready(function() {
+				$("#voltarTopo").hide();
 			
-			$('#voltarTopo').click(function() {
-				$('body,html').animate({scrollTop:0},600);
-			}); 
-		    });
+				$(window).scroll(function () {
+			
+					if ($(this).scrollTop() > 300) {
+			  			$('#voltarTopo').fadeIn();
+					} else {
+			  			$('#voltarTopo').fadeOut();
+					}
+				});
+			
+				$('#voltarTopo').click(function() {
+					$('body,html').animate({scrollTop:0},600);
+				}); 
+			});
 		</script>
         
-            <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
-            <script type="text/javascript">
-                jQuery(document).ready(function(){
-                    $('.nav-btn-medium').on('click touchstart', function(e){
-                        $('html').toggleClass('menu-active');
-                        e.preventDefault();
-                    });
-                    
-                    $('.nav-btn-movel').on('click touchstart', function(e){
-                        $('html').toggleClass('menu-active');
-                        e.preventDefault();
-                    });
+        <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                $('.nav-btn-medium').on('click touchstart', function(e){
+                    $('html').toggleClass('menu-active');
+                    e.preventDefault();
+					
+					/*Function Scroll Disable*/
+					classe = document.getElementById('nav-btn-medium').className; 
+					if(classe == 'nav-btn-medium'){
+					   document.getElementById('nav-btn-medium').className = 'nav-btn-medium-active';
+					   $('html').css("overflow-y", "hidden");
+				   }else{
+					   document.getElementById('nav-btn-medium').className = 'nav-btn-medium';
+					   $('html').css("overflow-y", "scroll");
+				   }
+				   
                 });
-            </script>
                 
-             
+            });
+        </script>             
