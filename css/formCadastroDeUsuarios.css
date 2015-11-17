@@ -121,10 +121,9 @@ div.inputs div#dadosGerais div#fotoPerfil {
     
     div.inputs div#dadosGerais div#fotoPerfil {
         display: block;
+        margin: 0 auto;
         position: relative;
         float: none;
-        margin: 0 auto 20px ;
-        margin-left: 85px;
     }
     
     div#salvar input[type=submit] {
@@ -147,96 +146,66 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
 }
 
-@media all and (max-width:530px){
+@media all and (max-width:530px) {
 
-    div.inputs {
-        margin-left: -8px;
+    div.inputs div#dadosGerais, div.inputs div#Endereco {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+
     }
 
-	div.inputs div#dadosGerais, div.inputs div#Endereco {
-		width: 35%;
-		display: block;
-		position: relative;
-		margin: 0 auto;
-	}
-
-    
-    div.inputs div#dadosGerais div#sexo{
+    div.inputs div#dadosGerais div#sexo {
         width: 230px;
     }
-    
+
     div.inputs div#dadosGerais div#fotoPerfil {
         display: block;
+        margin: 0 auto;
         position: relative;
         float: none;
     }
-    
+
     div.inputs div#dadosGerais div#sexo, div#status {
         font-size: 11pt;
     }
-    
+
     div#salvar input[type=submit] {
         font-size: 10pt;
         width: 60px;
         margin-left: 15%;
     }
-    
+
     div#salvar a {
         color: #004c98;
         font-size: 12pt;
         text-decoration: none;
     }
-    
+
     form.cadastro p.subtitulo {
         text-indent: 0.9em;
         font-size: 10pt;
     }
-    
+
     form.cadastro div.inputs p.subtitulo {
-        width: 100%;
-        margin-left: 10%;
-    }
-    
-    p#tituloPrincipal {
-        width: 105%;
-        text-indent: 1.1em;
-    }
-    
-}
-
-@media all and (max-width: 480px){
-    div.inputs div#dadosGerais, div.inputs div#Endereco {
-        width: 40%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
+        width: 85%;
     }
 }
 
-@media all and(max-width: 410px){
+@media all and (max-width: 450px){
     div.inputs div#dadosGerais, div.inputs div#Endereco {
-        width: 10%;
+        width: 70%;
         display: block;
         position: relative;
-    }
-
-    .media{
-        margin: 0 auto;
     }
 }
 
 @media all and (max-width:401px){
-	    
-	div.inputs {
-        margin-left: -8px;
-    }
-    
-    div#dadosGerais {
-        margin-left: 5px;
-    }
+
 	
 	div.inputs div#dadosGerais, div.inputs div#Endereco {
-		width: 60%;
+		width: 78%;
 		display: block;
 		position: relative;
 		margin: 0 auto;
@@ -251,8 +220,6 @@ div.inputs div#dadosGerais div#fotoPerfil {
         display: block;
         position: relative;
         float: none;
-        margin: 0 auto 20px ;
-        margin-left: 40px;
     }
     
     div.inputs div#dadosGerais div#sexo, div#status {
@@ -270,19 +237,12 @@ div.inputs div#dadosGerais div#fotoPerfil {
         font-size: 8pt;
     }
     
-    form.cadastro p.subtitulo {
-        text-indent: 0.9em;
-        font-size: 10pt;
-    }
-    
     form.cadastro div.inputs p.subtitulo {
-        width: 100%;
-        margin-left: 10%;
+        width: 80%;
     }
-    
+
     p#tituloPrincipal {
-        width: 105%;
-        text-indent: 1.1em;
+        text-indent: -0.5em;
     }
 }
 
