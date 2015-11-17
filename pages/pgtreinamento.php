@@ -11,9 +11,11 @@
                 if ($professor || (int) $capitulo < $capituloAtual + 2) {
                     ?>
                     <li>
-                        <h3>Capítulo <?php echo $capitulo; ?></h3>
+                        <h3>Capítulo <?php echo $capitulo; 
+                        ?></h3>
                         <ul class="subItens">
                             <?php
+                            echo "<input id='cap' type='hidden' value='{$capitulo}'/>";
                             $i = 0;
                             foreach ($conteudoCapitulo as $topico) {
 
@@ -26,7 +28,8 @@
                                 /** Estilo do link selecionado */
                                 $selecionado = ($refTopico == utf8_encode(inserirUnderline($topico)) &&  !($url->posicaoExiste(2) && $url->getURL(2) != "topico")) ? "id='clicado'" : "";
                                 $id = $i+1;
-                                echo "<li id='{$capitulo} {$id}'><a {$selecionado} href='{$link}'>{$exibir}</a></li>";
+                                echo "<li id='{$id}' class='{$capitulo}'><a  class='{$capitulo}{$id}' {$selecionado} href='{$link}'>{$exibir}</a></li>";
+                                
                                 $i++;
                                 
                             }
@@ -38,8 +41,8 @@
                             $resumoSel = ($url->posicaoExiste(2) && $url->getURL(2) == "resumo" && $refCapitulo == $capitulo) ? "id='clicado'" : "";
                             
                             ?>
-                            <li><a <?php echo $exercicioSel; ?> href="<?php echo "treinamento/{$capitulo}/exercicio"; ?>">Exercício</a>        
-                            <li><a <?php echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
+                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?> ><a <?php echo "class='{$capitulo}{$i}'"; echo $exercicioSel; ?> href="<?php echo "treinamento/{$capitulo}/exercicio"; ?>">Exercício</a>        
+                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?>><a <?php echo "class='{$capitulo}{$i}'"; echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
                         </ul>
                     </li>
                     <?php
