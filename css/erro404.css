@@ -1,24 +1,214 @@
-section#conteudo {
-    position: relative;
-    background-image: url('../imagens/background.png');
-    width: 949px;
-    margin-top: 0px;
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 2px;
+/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+@media all and (min-width:998px){
+	section#conteudo {
+		position: relative;
+		background-image: url('../imagens/background.png');
+		width: 949px;
+		margin-top: 0px;
+		padding-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2px;
+	}
+	
+	div.imagemSection {
+		position: relative;
+		background-color: white;
+		width: 865px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 20px;
+	}
+	
+	img.erro404_medium{
+		display:none;
+	}
+	img.erro404_medium-movel{
+		display:none;
+	}
+	
+	img.erro404_movel{
+		display:none;
+	}
+		
+	img.erro404_super-movel{
+		display:none;
+	}
 }
 
-div.imagemSection {
-    position: relative;
-    background-color: white;
-    width: 865px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 20px;
+/*Media Queries SCREEN >= 710px AND <= 997px - MEDIUM SCREEN*/	
+@media all and (min-width:710px) and (max-width:997px){
+	section#conteudo {
+		position: relative;
+		background-image: url('../imagens/background.png');
+		width: 711.75px;
+		margin-top: 0px;
+		padding-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2px;
+	}
+	
+	div.imagemSection {
+		position: relative;
+		background-color: white;
+		width: 660px;
+		height: auto;
+		margin-left: 0.5%;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 20px;
+	}
+	
+	img.erro404{
+		display:none;
+	}
+	img.erro404_medium-movel{
+		display:none;
+	}
+	
+	img.erro404_movel{
+		display:none;
+	}
+		
+	img.erro404_super-movel{
+		display:none;
+	}
+}
+
+/*Media Queries SCREEN >=590px AND <=709px - MEDIUM MOVEL SCREEN*/	
+@media all and (min-width:590px) and (max-width:709px){
+	section#conteudo {
+		position: relative;
+		background-image: url('../imagens/background.png');
+		width: 474.5px;
+		margin-top: 0px;
+		padding-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2px;
+	}
+	
+	div.imagemSection {
+		position: relative;
+		background-color: white;
+		width: 530px;
+		height: auto;
+		right: 11%;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 20px;
+	}
+	
+	img.erro404{
+		display:none;
+	}
+	
+	img.erro404_medium{
+		display:none;
+	}
+	
+	img.erro404_movel{
+		display:none;
+	}
+	
+	img.erro404_super-movel{
+		display:none;
+	}
+}
+
+/*Media Queries SCREEN >=433px AND <=589px - MOVEL SCREEN*/	
+@media all and (min-width:433px) and (max-width:589px){
+	
+	section#conteudo {
+		position: relative;
+		background-image: url('../imagens/background.png');
+		width: 474.5px;
+		margin-top: 0px;
+		padding-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2px;
+	}
+	
+	div.imagemSection {
+		position: relative;
+		background-color: white;
+		width: 380px;
+		height: auto;
+		left: 2%;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 20px;
+	}
+	
+	img.erro404{
+		display:none;
+	}
+	
+	img.erro404_medium{
+		display:none;
+	}
+	
+	img.erro404_medium-movel{
+		display:none;
+	}
+	
+	img.erro404_super-movel{
+		display:none;
+	}
+}
+/*Media Queries SCREEN <432px - SUPER MOVEL SCREEN*/	
+@media all and (max-width:432px){
+
+	section#conteudo {
+		position: relative;
+		background-image: url('../imagens/background.png');
+		width: 474.5px;
+		margin-top: 0px;
+		left:1%;
+		padding-top: 50px;
+		padding-bottom: 2px;
+	}
+	
+	div.imagemSection {
+		position: relative;
+		background-color: white;
+		width: 300px;
+		height: auto;
+		margin-right: 0.5%;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 5px;
+	}
+	
+	img.erro404{
+		display:none;
+	}
+	
+	img.erro404_medium{
+		display:none;
+	}
+	
+	img.erro404_medium-movel{
+		display:none;
+	}
+	
+	img.erro404_movel{
+		display:none;
+	}
+
 }
