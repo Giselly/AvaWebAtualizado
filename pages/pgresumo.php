@@ -1,4 +1,6 @@
 <link rel='stylesheet' type='text/css' href='css/resumo.css'>
+<link rel='stylesheet' type='text/css' href='css/font.css'>
+
 
 <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" src="tinymce/js/tinymce/tinyMCEpt_BR.js"></script>

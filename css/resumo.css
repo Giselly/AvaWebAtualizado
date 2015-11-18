@@ -1,8 +1,17 @@
+h2#tituloCapitulo{
+    width: 50%;
+    margin-right: -20px;
+}
+
+form#resumo{
+    top: 25%;
+}
+
 section#resumo {
     display: block;
-    position: absolute;
+    position: relative;
     float:none;
-    width: 65%;
+    width: 96.5%;
     top: 15%;
     min-width: 260px;
     margin-left: 25px;
@@ -22,7 +31,7 @@ textarea.textArea {
 .novo {
     display: block;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     float: left;
 }
 
@@ -43,12 +52,56 @@ textarea.textArea {
     display: none;
 }
 
+@media all and (max-width: 997px){
+    section#resumo{
+        width: 180%;
+    }
+
+    div#letras{
+        margin-top: 0px;
+    }
+
+}
+
+@media all and (max-width: 890px){
+    section#resumo{
+        width: 170%;
+    }
+}
+
+@media all and (max-width: 885px){
+    div#letras{
+        margin-top: -8px;
+    }
+
+}
+
+@media all and (max-width: 820px){
+    section#resumo{
+        width: 160%;
+    }
+}
+
+@media all and (max-width: 755px){
+    section#resumo{
+        width: 150%;
+    }
+}
+
+@media all and (max-width: 709px){
+    section#resumo{
+        width: 265%;
+    }
+    div#letras{
+        margin-top: 0px;
+    }
+}
 @media all and (max-width: 410px){
     section#resumo {
-        width: 85%;
+        width: 250%;
     }
 
     .novo{
-        width: 50%;
+        width: 20%;
     }
 }

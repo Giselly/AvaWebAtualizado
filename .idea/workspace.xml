@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2a18779-642c-4ef2-a460-e72dfa7d8169" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/alterarSenha.css" afterPath="$PROJECT_DIR$/css/alterarSenha.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/font.css" afterPath="$PROJECT_DIR$/css/font.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pgresumo.php" afterPath="$PROJECT_DIR$/pages/pgresumo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/resumo.css" afterPath="$PROJECT_DIR$/css/resumo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
@@ -27,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pgresumo.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pgresumo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/pgresumo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.019036954">
+              <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -41,7 +43,27 @@
         <entry file="file://$PROJECT_DIR$/css/resumo.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+              <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/font.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alterarSenha.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/alterarSenha.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -57,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8890098">
-              <caret line="484" column="18" selection-start-line="484" selection-start-column="18" selection-end-line="484" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="457" column="17" selection-start-line="457" selection-start-column="17" selection-end-line="457" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -83,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/capitulos/01/1.4_-_Investigação_do_assunto.html" />
         <option value="$PROJECT_DIR$/capitulos/01/1.5_-_Reunindo_inspiração.html" />
         <option value="$PROJECT_DIR$/capitulos/01/1.6_-_Brainstorming.html" />
         <option value="$PROJECT_DIR$/capitulos/02/2.1_-_Princípios_de_Design_Epifanía_da_Íuca.html" />
@@ -104,10 +125,8 @@
         <option value="$PROJECT_DIR$/capitulos/11/11.6_-_Símbolo.html" />
         <option value="$PROJECT_DIR$/capitulos/05/5.1_Principios_de_Design_Repeticao.html" />
         <option value="$PROJECT_DIR$/capitulos/04/4.1_-_Principios_de_Design_Alinhamento.html" />
-        <option value="$PROJECT_DIR$/js/font.js" />
         <option value="$PROJECT_DIR$/pages/pgalterarDados.php" />
         <option value="$PROJECT_DIR$/css/alterarDados.css" />
-        <option value="$PROJECT_DIR$/css/alterarSenha.css" />
         <option value="$PROJECT_DIR$/css/formCadastroDeUsuarios.css" />
         <option value="$PROJECT_DIR$/capitulos/09/9.1_-_Princípios_de_Design_Contrastes_de_Tipos_Introdução.html" />
         <option value="$PROJECT_DIR$/capitulos/09/9.2_-_Princípios_de_Design_Contrastes_de_Tipos_Tamanho.html" />
@@ -131,9 +150,12 @@
         <option value="$PROJECT_DIR$/capitulos/11/11.12_-_Receptor.html" />
         <option value="$PROJECT_DIR$/capitulos/11/11.13_-_Destinação.html" />
         <option value="$PROJECT_DIR$/css/treinamento.css" />
-        <option value="$PROJECT_DIR$/pages/pgresumo.php" />
-        <option value="$PROJECT_DIR$/css/resumo.css" />
+        <option value="$PROJECT_DIR$/css/alterarSenha.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/font.css" />
+        <option value="$PROJECT_DIR$/css/resumo.css" />
+        <option value="$PROJECT_DIR$/js/font.js" />
+        <option value="$PROJECT_DIR$/pages/pgresumo.php" />
       </list>
     </option>
   </component>
@@ -177,8 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,12 +227,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,19 +286,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -315,20 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgtreinamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -438,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/font.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/cadastroDeUsuarios.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -456,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,15 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/alterarSenha.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16757345">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="244" column="27" selection-start-line="244" selection-start-column="27" selection-end-line="244" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="722" column="4" selection-start-line="722" selection-start-column="4" selection-end-line="722" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,7 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="462" column="329" selection-start-line="462" selection-start-column="329" selection-end-line="462" selection-end-column="329" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="508" column="4" selection-start-line="508" selection-start-column="4" selection-end-line="508" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="475" column="12" selection-start-line="475" selection-start-column="12" selection-end-line="475" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="471" column="0" selection-start-line="471" selection-start-column="0" selection-end-line="471" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="460" column="4" selection-start-line="460" selection-start-column="4" selection-end-line="460" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="478" column="107" selection-start-line="478" selection-start-column="107" selection-end-line="478" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.461538">
           <caret line="418" column="4" selection-start-line="418" selection-start-column="4" selection-end-line="418" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="516" column="10" selection-start-line="516" selection-start-column="10" selection-end-line="516" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="315" column="8" selection-start-line="315" selection-start-column="8" selection-end-line="315" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.76923">
           <caret line="466" column="0" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="521" column="10" selection-start-line="521" selection-start-column="10" selection-end-line="521" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="551" column="10" selection-start-line="551" selection-start-column="10" selection-end-line="551" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="566" column="10" selection-start-line="566" selection-start-column="10" selection-end-line="566" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="634" column="4" selection-start-line="634" selection-start-column="4" selection-end-line="634" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="470" column="0" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="478" column="0" selection-start-line="478" selection-start-column="0" selection-end-line="478" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="540" column="8" selection-start-line="540" selection-start-column="8" selection-end-line="540" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="465" column="562" selection-start-line="465" selection-start-column="562" selection-end-line="465" selection-end-column="562" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="583" column="0" selection-start-line="583" selection-start-column="0" selection-end-line="583" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.115385">
           <caret line="466" column="10" selection-start-line="466" selection-start-column="10" selection-end-line="466" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,10 +636,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgresumo.php">
+    <entry file="file://$PROJECT_DIR$/css/alterarSenha.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="457" column="17" selection-start-line="457" selection-start-column="17" selection-end-line="457" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/pgtreinamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4580067">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/font.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.092491835">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/font.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -679,15 +679,15 @@
     <entry file="file://$PROJECT_DIR$/css/resumo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/pages/pgresumo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8890098">
-          <caret line="484" column="18" selection-start-line="484" selection-start-column="18" selection-end-line="484" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.019036954">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
           <folding />
         </state>
       </provider>

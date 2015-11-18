@@ -24,14 +24,13 @@ span.size {
     color: #FFF;
     padding:2px; 
 }
-
-@media all and (max-width:995px){
+@media all and (max-width: 997px){
     #letras{
         margin-top: -8px;
     }
 }
 
-@media all and (max-width:435px){
+@media all and (max-width:432px ){
     #letras{
         margin-top: 0px;
     }

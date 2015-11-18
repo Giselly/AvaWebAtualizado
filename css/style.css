@@ -421,7 +421,7 @@ input.pesquisa {
     
     input.novo {
         margin-right: 0;
-        width: 300px;
+        width: 315px;
     }
     
     input.pesquisa {
@@ -477,6 +477,9 @@ input.pesquisa {
     input.pesquisa {
         width: 296px;
         margin-left: -12%;
+    }
+    input.novo{
+        width: 100%;
     }
 }
 
