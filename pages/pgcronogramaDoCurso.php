@@ -1,27 +1,23 @@
 
-<script src="../js/cronogramaDoCurso.js">
-</script>
-<div id="todo">
-    <div id="tabela">
-        <table id="cronograma">
-            <tbody>
-                <tr id="tr1">
-                    <th>Conteudo</th>
-
-                </tr>
-
-                <tr class="conteudos">
+<section class="listagemCadastro" style="margin-bottom: 100px;">
+    <div class="camposSection">
+        <table class="listagem" id="cronograma">
+            <tr id="title">
+                <th>Conteúdo</th>
+            </tr>
+            
+            <tr class="conteudos">
                     <th id="flip" class="flip">CAPITULO 01 - COMUNICANDO IDEIAS</th>
                     <td id="panel1" class="panel">1.1 A foLha de papel em branco</td>
                     <td id="panel" class="panel">1.2 Por que ideias?</td>
                     <td id="panel" class="panel">1.3 O briefing</td>
-                    <td id="panel" class="panel">1.4 Investigacao do assunto</td>
-                    <td id="panel" class="panel">1.5 Reunindo inspiracao</td>
+                    <td id="panel" class="panel">1.4 Investigação do assunto</td>
+                    <td id="panel" class="panel">1.5 Reunindo inspiração</td>
                     <td id="panel" class="panel">1.6 Brainstorming</td>
                     
                 </tr>
                 <tr class="conteudos">
-                    <th id="flip" class="flip">CAPITULO 02 - PRINCIPIOS DE DESIGN - EPIFANIA UNICA</th>
+                    <th id="flip" class="flip">CAPITULO 02 - PRINCIPIOS DE DESIGN - EPIFANIA IUCA</th>
                     <td id="panel" class="panel">2.1 Os quatro principios basicos</td>
                 </tr>
                 <tr class="conteudos">
@@ -71,7 +67,6 @@
                     <td id="panel" class="panel">11.12 Receptor</td>
                     <td id="panel" class="panel">11.13 Destinacao</td>
                 </tr>
-            </tbody>
         </table>
     </div>
-</div>
+</section>

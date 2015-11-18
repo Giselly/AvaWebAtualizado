@@ -1,21 +1,16 @@
 div#footer_icon{display:none;}
 
-table {
+table#cronograma {
     text-align: left;
     margin: 0 auto;
-    width: 1000px;
-    font-size: 15pt;
+    width: 62.5%;
+}
 
-}
-tr#tr1 th{
-    background-color: #797979;
-    border-spacing: 0;
-    border-collapse: collapse;
-    color: white;
-    padding: 10px;
-    border: solid thin black;
+tr#title th {
     text-align: center;
+    font-size: 18pt;
 }
+
 .panel, .flip {
     padding: 5px;
     text-align: left;
@@ -23,19 +18,20 @@ tr#tr1 th{
     border: solid thin black;
     color: black;
     position: relative;
-    width: 98.5%;
+    width: 98.4%;
     cursor: pointer;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: normal;
     display: block;
 }
+
 .panel {
     padding: 10px;
     display: none;
-    border: 1px solid white;
+    border: solid thin white;
     color: white;
     font-style: italic;
-    width: 97.2%;
+    width: 98.4%;
     float: left;
     clear: both;
     position: relative;
@@ -43,6 +39,22 @@ tr#tr1 th{
 }
 
 table td:hover {
-    background: #797979;
-    color: white;
+    background: #FFF;
+    color: #797979;
+}
+
+@media all and (max-width:440px){
+    table#cronograma {
+        margin-left: -20px;
+    }
+    
+    tr#title th {
+        width: 315px !important;
+        border: solid thin white;
+    }
+    
+    .panel, .flip {
+        width: 315px !important;
+        border: none;
+    }
 }
