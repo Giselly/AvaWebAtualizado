@@ -1299,13 +1299,8 @@ body{overflow-x:hidden;}
 		margin: 4px 0px;
 		transition: all 0.0s linear;
 	}
-
+	
 	/*Menu Slider MOVEL*/
-    a#menu_slider_logout:hover{
-		color:#004c98;
-		font-weight:bold;
-	}
-
 	html, body {overflow-x: hidden;}
 	
 	header {
@@ -1376,6 +1371,7 @@ body{overflow-x:hidden;}
 		background: #FFF;
 		color: #000000;/*#0f1f30*/
 	}
+	
 	menu {
 		-webkit-transform: translateX(-220px);
 		-moz-transform: translateX(-220px);
