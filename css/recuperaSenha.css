@@ -12,6 +12,8 @@ body{
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+div#footer_icon{display:none;}
+
 #login{
     width: 450px;
     background-color: #e2e2e2;

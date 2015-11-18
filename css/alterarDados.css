@@ -1,5 +1,7 @@
 /** FORMULÁRIO */
 
+div#footer_icon{display:none;}
+
 form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
     width: 100%;
 }

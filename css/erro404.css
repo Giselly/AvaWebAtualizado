@@ -1,3 +1,4 @@
+
 /*Media Queries SCREEN >= 998px - FULL SCREEN*/
 @media all and (min-width:998px){
 	section#conteudo {
@@ -124,6 +125,8 @@
 	img.erro404_super-movel{
 		display:none;
 	}
+	
+	div#footer_icon{display:none;}
 }
 
 /*Media Queries SCREEN >=433px AND <=589px - MOVEL SCREEN*/	
@@ -168,6 +171,8 @@
 	img.erro404_super-movel{
 		display:none;
 	}
+	
+	div#footer_icon{display:none;}
 }
 /*Media Queries SCREEN <432px - SUPER MOVEL SCREEN*/	
 @media all and (max-width:432px){
@@ -210,5 +215,6 @@
 	img.erro404_movel{
 		display:none;
 	}
-
+	
+	div#footer_icon{display:none;}
 }
