@@ -128,8 +128,7 @@
             <div></div>
             <div></div>
             <div></div>
-        </span>         
-         
+        </span>               
         <!--Menu Slider SCREEN MOVEL-->
         <menu id="nav-slide-medium">
             
@@ -223,18 +222,32 @@
                 $('.nav-btn-medium').on('click touchstart', function(e){
                     $('html').toggleClass('menu-active');
                     e.preventDefault();
-					
-					/*Function Scroll Disable*/
-					classe = document.getElementById('nav-btn-medium').className; 
-					if(classe == 'nav-btn-medium'){
-					   document.getElementById('nav-btn-medium').className = 'nav-btn-medium-active';
-					   $('html').css("overflow-y", "hidden");
-				   }else{
-					   document.getElementById('nav-btn-medium').className = 'nav-btn-medium';
-					   $('html').css("overflow-y", "scroll");
-				   }
-				   
+			
+                        var alturaTela = $(document).height();
+                        /*Function Scroll Disable*/
+                        classe = document.getElementById('nav-btn-medium').className; 
+                        if(classe === 'nav-btn-medium'){
+                           $('.nav-btn-medium').addClass('menu-active');
+                           $('#mascara').css({'height':alturaTela});
+                           $('#mascara').fadeToggle(300);   
+                           $('html').css("overflow-y", "hidden");
+                        }else{
+                            $('.nav-btn-medium').removeClass('menu-active');
+                            $('html').css("overflow-y", "scroll");
+                            $('#mascara').hide();
+                        }
+     
                 });
                 
+                $('#mascara').click(function(){
+                    $(this).hide();
+                    $('html').removeClass('menu-active');
+                    $('html').css('overflow-y','scroll');
+                    
+                    if($('.nav-btn-medium').hasClass('menu-active')){
+                        $('.nav-btn-medium').removeClass('menu-active');
+                    }
+                });
+                         
             });
-        </script>             
+        </script>   
