@@ -5,7 +5,7 @@
 <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" src="tinymce/js/tinymce/tinyMCEpt_BR.js"></script>
 
-<section id="resumo">
+<section id="resumo-send">
     <form method="POST" id="resumo">
         <?php if($existeResumo == false) {
             ?>
@@ -16,8 +16,7 @@
             <!--<textarea name="resumo" class="textArea"></textarea>-->
             <input type="submit" name="salvar" class="novo" value="Salvar">
         <?php } else {?>
-            <h2 id="tituloCapitulo">Resumo Enviado!</h2>
-            <h3 id="subtituloCapitulo">Aguarde uma notificação!</h3>
+            <img src="imagens/resumo-sucesso.png" id="img-suc">
         <?php } ?>        
     </form>
 </section>
