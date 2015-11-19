@@ -42,7 +42,7 @@
                             
                             ?>
                             <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?> ><a <?php echo "class='{$capitulo}{$i}'"; echo $exercicioSel; ?> href="<?php echo "treinamento/{$capitulo}/exercicio"; ?>">Exercício</a>        
-                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?>><a <?php echo "class='{$capitulo}{$i}'"; echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
+                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?>><a <?php echo "class='{$capitulo}{$i} resumo'"; echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
                         </ul>
                     </li>
                     <?php
