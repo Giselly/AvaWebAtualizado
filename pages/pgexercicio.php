@@ -1,3 +1,4 @@
+<link rel='stylesheet' type='text/css' href='css/font.css'>
 <h2 id="tituloCapitulo">Capítulo <?php echo $url->getURL(1); ?></h2>
 <section id="exercicio">
     <?php
@@ -7,7 +8,7 @@
 
         <section id="iniciarExercicio">
             <input type="button" id="iniciar" value="Iniciar" />
-            <a href="#">Voltar ao conteúdo</a>
+            <a href="#" id="voltar">Voltar ao conteúdo</a>
         </section>
         <form method="post" id="exercicio">
             <ol id="questoes">
@@ -37,7 +38,7 @@
                 }
                 ?>
             </ol>
-            <input type="submit" value="Salvar" name="salvar" />
+            <input type="submit" id="salvar" value="Salvar" name="salvar" />
         </form>
         <?php
     } else {

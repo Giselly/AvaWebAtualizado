@@ -1181,7 +1181,7 @@ body{overflow-x:hidden;}
 	#nav-slide-super-movel{overflow-y: scroll;}
         #nav-slide-super-movel{overflow-x:hidden;}
 	
-	a{ 
+	a:not(#voltar, #menu_slider){
 		color:#FFF;
 	}
         

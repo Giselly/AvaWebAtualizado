@@ -1,3 +1,22 @@
+a{
+    text-decoration: none;
+}
+
+input#iniciar, input#salvar {
+    position: relative;
+    width: auto;
+    background: #004c98;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin: 0px 15px 120px 0px;
+}
+
 section#conteudo{
     width: 99.9%;
     /*min-width: 980px;*/
@@ -87,6 +106,8 @@ p#conteudoTopico{
 /** QUESTIONARIO ############################################################ */
 section#exercicio{
     margin: 0px 50px 30px 50px;
+    width: 95%;
+    word-wrap: break-word;
 }
 
 form#exercicio{
@@ -112,3 +133,96 @@ ol#opcoes label{
     text-align: justify;
 }
 
+@media all and (max-width: 1100px){
+    form#exercicio{
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 1001px){
+    form#exercicio{
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 997px){
+    form#exercicio{
+        width: 180%;
+    }
+}
+
+@media all and (max-width: 920px){
+    form#exercicio{
+        width: 170%;
+    }
+}
+
+@media all and (max-width: 885px){
+    section#exercicio{
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 790px){
+    section#exercicio{
+        width: 80%;
+    }
+
+}
+@media all and (max-width: 731px){
+    form#exercicio{
+        width: 150%;
+    }
+
+}
+
+@media all and (max-width: 709px){
+    form#exercicio{
+        width: 240%;
+    }
+    section#exercicio{
+        width: 100%;
+    }
+    input[type=submit]{
+        margin-bottom: 130px;
+    }
+}
+
+
+@media all and (max-width: 650px){
+    section#exercicio{
+        width: 120%;
+    }
+    form#exercicio{
+        width: 200%;
+    }
+}
+
+
+@media all and (max-width: 543px){
+    section#exercicio{
+        width: 190%;
+    }
+    form#exercicio{
+        width: 120%;
+    }
+}
+
+@media all and (max-width: 460px){
+   h2#tituloCapitulo{
+       width: 100%;
+   }
+}
+
+
+@media all and (max-width: 340px){
+    form#exercicio {
+        width: 150%;
+    }
+}
+
+@media all and (max-width: 305px){
+    form#exercicio{
+        width: 120%;
+    }
+}
