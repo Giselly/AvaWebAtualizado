@@ -10,12 +10,12 @@
             </form>
             <tr>
                 <th><span>Nome Completo</span><span id="nome">Nome</span></th>
-                <th><span>Data</span><img src="imagens/data-b.png" title="Data" /></th>
-                <th><span>Capítulo</span><img src="imagens/cap-b.png" title="Capítulo" /></th>
-                <th><span>Notificação</span><img src="imagens/notificacao-b.png" title="Notificação" /></th>
+                <th id="data"><span>Data</span><img src="imagens/data-b.png" title="Data" /></th>
+                <th id="capitulo"><span>Capítulo</span><img src="imagens/cap-b.png" title="Capítulo" /></th>
+                <th id="notificação"><span>Notificação</span><img src="imagens/notificacao-b.png" title="Notificação" /></th>
                 <th><span>Ler</span><img src="imagens/ler-b.png" title="Ler" /></th>
                 <th><span>Aprovação</span></th>
-                <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
+                <th id="excluir"><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
             <?php
             if(isset($dadosResumo)){
@@ -25,8 +25,8 @@
                             echo "
                             <tr>
                                 <td class='align-left'>{$resumo['nome']}</td>
-                                <td class='align-left'>{$resumo['dataAtual']}</td>
-                                <td class='align-left'>Capitulo {$resumo['capitulo']}</a></td>";
+                                <td id='data' class='align-left'>{$resumo['dataAtual']}</td>
+                                <td id='capitulo' class='align-left'>Capitulo {$resumo['capitulo']}</a></td>";
                                 $style = '';
                                 $notificacaoTxt = '';
                                     if(isset($resumo['notificacao'])){
@@ -42,7 +42,7 @@
                                     } 
                                     echo "<td id='ler' class='align-left'><a id='ler' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacaoTxt}</a></td>";  
                                 } else {
-                                    echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
+                                    echo "<td id='notificação' class='align-left'>Nenhuma notificação enviada!</td>"; 
                                 }
 
                             echo "

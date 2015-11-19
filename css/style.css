@@ -156,6 +156,19 @@ footer#rodape p {
     }
 }
 
+/*MEDIA Responsive PgResumosCorreção*/
+@media all and (min-width:0px) and (max-width:709px){
+	#data{display:none;}	
+	#capitulo{display:none;}
+	#notificação{display:none;}
+}
+
+/*MEDIA Responsive PgCadastroDeUsuarios*/
+@media all and (min-width:0px) and (max-width:709px){
+	#email{display:none;}	
+	#editar{display:none;}
+}
+
 /**********************| LISTAGEM |**********************/
 
 section.listagemCadastro {
@@ -163,6 +176,8 @@ section.listagemCadastro {
     margin: auto;
     position: relative;
 }
+
+#nome{display:none;}
 
 div.camposSection {
     position: relative;
@@ -421,7 +436,6 @@ input.pesquisa {
     
     input.novo {
         margin-right: 0;
-        width: 315px;
     }
     
     input.pesquisa {
@@ -437,8 +451,7 @@ input.pesquisa {
 	}
 	
      table.listagem {
-        margin-left: -10%;
-        width: 85%;
+		 min-width:100%;
     }
     
     table.listagem th span {
@@ -455,7 +468,6 @@ input.pesquisa {
     
     input.novo {
         margin-right: 0;
-        width: 300px;
     }
     
     input.pesquisa {

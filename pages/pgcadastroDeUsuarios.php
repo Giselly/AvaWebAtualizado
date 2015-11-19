@@ -10,9 +10,9 @@
             </form>
             <tr>
                 <th><span>Nome Completo</span><span id="nome">Nome</span></th>
-                <th><span>E-mail</span><img src="imagens/email-icon.png" title="E-mail" /></th>
+                <th id="email"><span>E-mail</span><img src="imagens/email-icon.png" title="E-mail" /></th>
                 <th><span>Status</span><img src="imagens/info.png" title="Status" /></th>
-                <th><span>Editar</span><img src="imagens/editar-b.png" title="Editar" /></th>
+                <th id="editar"><span>Editar</span><img src="imagens/editar-b.png" title="Editar" /></th>
                 <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
             <?php
@@ -21,7 +21,7 @@
                     echo "
                     <tr id='dados'>
                         <td class='align-left'>{$usuario['nome']}</td>
-                        <td class='align-left'>{$usuario['email']}</td>
+                        <td id='email' class='align-left'>{$usuario['email']}</td>
                         <td id='status'><input name='primeiroLogin' disabled='disabled' type='hidden' " . (($usuario['primeiroLogin'] == 1) ? "value='ativo'/> <a href='{$url->getURL(0)}/desativar/{$usuario['id']}'><img src='imagens/ativar.png' title='Usuario ativo! Clique para desativar!'></a>" : "value='inativo'/> <a href='{$url->getURL(0)}/ativar/{$usuario['id']}'><img src='imagens/desativar.png' title='Usuario inativo! Clique para ativar!'></a> ") . "</td>
                         <td id='editar'><a href='{$url->getURL(0)}/editar/{$usuario['id']}'><img id='imgE' src='imagens/editar.png' title='Editar' /></a></td>
                         <td id='excluir'><a class='exluirFuncionario' href='{$usuario['id']}'><img id='imgL' src='imagens/lixeira.gif' title='Excluir' /></a></td>
