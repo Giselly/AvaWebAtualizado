@@ -198,6 +198,23 @@ table.listagem {
     min-width: 100%;
 }
 
+@media all and (max-width: 390px){
+	
+	p {
+		font-size: 12px;
+	}
+	
+	table.listagem {
+		position: relative;
+		border-spacing: 0;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 100%;
+		font-size:12px;
+	}
+}
+
 table.listagem td:not(.align-left) {
     text-align: center;
 }

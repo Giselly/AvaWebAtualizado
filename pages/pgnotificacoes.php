@@ -11,7 +11,7 @@
                 <th>Data</th>
                 <th>Assunto</th>
                 <th>Notificação</th>
-                <th>Excluir</th>
+                <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
             <?php
             if(isset($dadosResumo)){
@@ -34,12 +34,12 @@
                                         $style = '';
                                     }
                                     
-                                   echo "<td class='align-left'><a style='{$style}' href='{$url->getURL(0)}/lerNotificacao/{$resumo["id"]}'>{$notificacao}</a></td>";  
+                                   echo "<td class='align-left'><a style='{$style}' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacao}</a></td>";  
                                 } else {
                                    echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
                                 }
                             echo "
-                                <td id='excluir'><a class='excluirFuncionario' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'>Excluir</a></td>
+                                <td id='excluir'><a class='excluirFuncionario' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'><img id='imgL' src='imagens/lixeira.gif' title='Excluir' /></a></td>
                             </tr>
                         ";
                         }                   
