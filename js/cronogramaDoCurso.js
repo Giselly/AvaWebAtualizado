@@ -1,7 +1,6 @@
-
-$(document).ready(function(){
-    $("th.flip").click(function(){
+jQuery(document).ready(function(){
+    $(".flip").click(function(){
         $(this).parent().find(".panel").slideToggle("2000");
     });
-
+    
 });

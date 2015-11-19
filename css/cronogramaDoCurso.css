@@ -1,19 +1,12 @@
-div#footer_icon{display:none;}
-
-table#cronograma {
-    text-align: left;
-    margin: 0 auto;
-    width: 62.5%;
-}
 
 tr#title th {
-    text-align: center;
     font-size: 18pt;
+    cursor: default;
 }
 
 .panel, .flip {
     padding: 5px;
-    text-align: left;
+    text-align: center;
     background-color: white;
     border: solid thin black;
     color: black;
@@ -38,14 +31,9 @@ tr#title th {
     background-color: black;
 }
 
-table td:hover {
-    background: #FFF;
-    color: #797979;
-}
-
 @media all and (max-width:440px){
     table#cronograma {
-        margin-left: -20px;
+        margin-left: -15px;
     }
     
     tr#title th {
@@ -57,4 +45,12 @@ table td:hover {
         width: 315px !important;
         border: none;
     }
+}
+
+@media all and (max-width:320px){
+    section#list {
+        width: 280px !important;
+        margin-left: -10px;
+    }
+    
 }
