@@ -414,7 +414,7 @@ input.pesquisa {
         width: 106%;
     }
     
-    table.listagem th span {
+    table.listagem th span:not(#aprocacao) {
         display: none;
     }
     

@@ -14,7 +14,7 @@
                 <th id="capitulo"><span>Capítulo</span><img src="imagens/cap-b.png" title="Capítulo" /></th>
                 <th id="notificação"><span>Notificação</span><img src="imagens/notificacao-b.png" title="Notificação" /></th>
                 <th><span>Ler</span><img src="imagens/ler-b.png" title="Ler" /></th>
-                <th><span>Aprovação</span></th>
+                <th id="aprovacao"><span>Aprovação</span><img src="imagens/aprovacao.png" title="Aprovação" /></th>
                 <th id="excluir"><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
             <?php
@@ -40,7 +40,7 @@
                                     if($resumo['resumoVisualizado'] == 1){
                                         $style = "color: #000305;";
                                     } 
-                                    echo "<td id='ler' class='align-left'><a id='ler' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacaoTxt}</a></td>";  
+                                    echo "<td id='notificação' class='align-left'><a id='ler' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacaoTxt}</a></td>";  
                                 } else {
                                     echo "<td id='notificação' class='align-left'>Nenhuma notificação enviada!</td>"; 
                                 }
