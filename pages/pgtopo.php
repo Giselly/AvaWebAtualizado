@@ -196,25 +196,25 @@
                         
         <div id="mascara"></div> 
                
-		<!--JAVASCRIPT Back_To_Top - MEDIUM, MOVEL, SUPER-MOVEL SCREEN-->
-		<script>
-			jQuery(document).ready(function() {
-				$("#voltarTopo").hide();
-			
-				$(window).scroll(function () {
-			
-					if ($(this).scrollTop() > 300) {
-			  			$('#voltarTopo').fadeIn();
-					} else {
-			  			$('#voltarTopo').fadeOut();
-					}
-				});
-			
-				$('#voltarTopo').click(function() {
-					$('body,html').animate({scrollTop:0},600);
-				}); 
-			});
-		</script>
+        <!--JAVASCRIPT Back_To_Top - MEDIUM, MOVEL, SUPER-MOVEL SCREEN-->
+        <script>
+                jQuery(document).ready(function() {
+                        $("#voltarTopo").hide();
+
+                        $(window).scroll(function () {
+
+                                if ($(this).scrollTop() > 300) {
+                                        $('#voltarTopo').fadeIn();
+                                } else {
+                                        $('#voltarTopo').fadeOut();
+                                }
+                        });
+
+                        $('#voltarTopo').click(function() {
+                                $('body,html').animate({scrollTop:0},600);
+                        }); 
+                });
+        </script>
         
         <!--JAVA SCRIPT Menu Slider - MOVEL SCREEN--> 
         <script type="text/javascript">

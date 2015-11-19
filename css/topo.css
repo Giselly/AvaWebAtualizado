@@ -329,7 +329,7 @@ body{overflow-x:hidden;}
 		cursor: pointer;
 		background-color: #004c98;
 		transition: all 0.0s linear;
-        z-index: 9999;
+                z-index: 9999;
 	}
         
 	#nav-btn-medium div{
@@ -341,7 +341,7 @@ body{overflow-x:hidden;}
 	}
 
 	/*Menu Slider MOVEL*/
-    a#menu_slider_logout:hover{
+        a#menu_slider_logout:hover{
 		color:#004c98;
 		font-weight:bold;
 	}
@@ -655,7 +655,7 @@ body{overflow-x:hidden;}
 		cursor: pointer;
 		background-color: #004c98;
 		transition: all 0.0s linear;
-        z-index: 9999;
+                z-index: 9999;
 	}
         
 	#nav-btn-medium div{
@@ -866,7 +866,7 @@ body{overflow-x:hidden;}
 	}
 	
 	#nav-slide-medium{overflow-y: scroll;}
-    #nav-slide-medium{overflow-x:hidden;}
+        #nav-slide-medium{overflow-x:hidden;}
 	
 	#capitulos{
 		display:none;
@@ -989,7 +989,7 @@ body{overflow-x:hidden;}
 		cursor: pointer;
 		background-color: #004c98;
 		transition: all 0.0s linear;
-        z-index: 9999;
+                z-index: 9999;
 	}
         
 	#nav-btn-medium div{
@@ -1179,7 +1179,7 @@ body{overflow-x:hidden;}
 	}
         
 	#nav-slide-super-movel{overflow-y: scroll;}
-    #nav-slide-super-movel{overflow-x:hidden;}
+        #nav-slide-super-movel{overflow-x:hidden;}
 	
 	a{ 
 		color:#FFF;
@@ -1289,7 +1289,7 @@ body{overflow-x:hidden;}
 		cursor: pointer;
 		background-color: #004c98;
 		transition: all 0.0s linear;
-        z-index: 9999;
+                z-index: 9999;
 	}
 
 	#nav-btn-medium div{
