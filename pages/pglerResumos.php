@@ -3,12 +3,16 @@
 <script type="text/javascript" src="tinymce/js/tinymce/tinyMCEpt_BR.js"></script>
 <?php  $resumoBuscarPorId = $resumoBusiness->buscarPorId($url->getURL(2));  ?>
 <section id="resumo">
-    <h2 class="titulo"><?php echo "Resumo";?></h2>
-    <h2 class="titulo"><?php echo "Capitulo ".$resumoBuscarPorId[0]['capitulo'];?></h2>
-    <h2 class="informacoesGerais">Nome: <?php echo $resumoBuscarPorId[0]['nome'];?></h2>
-    <h2 class="informacoesGerais">Data: <?php echo $resumoBuscarPorId[0]['dataAtual'];?></h2>
-    <div class="textArea"><?php echo $resumoBuscarPorId[0]['resumo'];?></div>
-    <a href="#Notificacao" rel="leanModal"><input type="button" class="novo" value="Enviar Notificação"></a>
+    <h2 class="titulo"><?php echo "- Resumo -";?></h2>
+    <h2 class="titulo"><?php echo "Capitulo ".$resumoBuscarPorId[0]['capitulo'];?></h2> <br>
+    <div class="notificacao" style="height:200px;">
+        <h2 class="informacoesGerais">Nome: <span> <?php echo $resumoBuscarPorId[0]['nome'];?></span></h2>
+        <h2 class="informacoesGerais">Data: <span> <?php echo $resumoBuscarPorId[0]['dataAtual'];?></span></h2>
+        <div id="noti">
+            <div class="textArea"><?php echo $resumoBuscarPorId[0]['resumo'];?></div> <br>
+            <a href="#Notificacao" rel="leanModal"><input type="button" class="novo" value="Enviar Notificação"></a>
+        </div>
+    </div>
 </section>
 <!-- Lightbox -->
 <div id="Notificacao" class="caixaLightBox">
