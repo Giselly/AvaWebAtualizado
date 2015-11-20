@@ -33,24 +33,35 @@ tr#title th {
 
 @media all and (max-width:440px){
     table#cronograma {
-        margin-left: -15px;
+		right:-22px;
     }
     
     tr#title th {
-        width: 315px !important;
+        width: 92% !important;
         border: solid thin white;
     }
     
     .panel, .flip {
-        width: 315px !important;
+        width: 92% !important;
         border: none;
     }
 }
 
 @media all and (max-width:320px){
-    section#list {
-        width: 280px !important;
-        margin-left: -10px;
+	
+    table#cronograma {
+		left: 5px;
     }
     
+    tr#title th {
+        width: 100% !important;
+        border: solid thin white;
+		left: 5px;
+    }
+    
+    .panel, .flip {
+        width: 100% !important;
+        border: none;
+		left: 5px;
+    }    
 }
