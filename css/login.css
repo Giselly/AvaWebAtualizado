@@ -309,6 +309,14 @@ a#bola:hover {
     }
 }
 
+@media all and (max-width:955px){
+    #areaLogin {
+        position: absolute;
+        right: -15%;
+        width: 350px;
+    }
+}
+
 @media all and (max-width:939px){
     #imagens {
         display: none;
@@ -358,6 +366,7 @@ a#bola:hover {
     #areaLogin {
         width: 85%;
         position: relative;
+        left: 2%;
         margin: -60px auto;
         float: none;
     }
@@ -378,5 +387,14 @@ a#bola:hover {
         width: 95%;
     }
     
+}
+
+@media all and (max-width:435px){
+     #areaLogin {
+        width: 85%;
+        position: relative;
+       left:0;
+        float: none;
+    }
 }
 
