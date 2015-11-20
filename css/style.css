@@ -427,7 +427,8 @@ input.pesquisa {
     }
     
     input.novo {
-        width: 100%;
+        left: -20px;
+        width: 105%;
     }
     
     input.pesquisa {
@@ -439,9 +440,10 @@ input.pesquisa {
 }
 
 @media all and (max-width:370px){
-	#rodape{
-		z-index:9999;
-	}
+    #rodape{
+            z-index:9999;
+    
+            
     section.listagemCadastro {
        margin: auto 9%;
     }
@@ -452,7 +454,8 @@ input.pesquisa {
     }
     
     input.novo {
-        margin-right: 0;
+        left: 0;
+        width: 100%;
     }
     
     input.pesquisa {
@@ -495,20 +498,21 @@ input.pesquisa {
 }
 
 @media all and (max-width:319px){
-	#rodape{
-		z-index:9999;
-	}
+    #rodape{
+            z-index:9999;
+    }
 	
     table.listagem {
-        margin-left: -12%;
+        margin-left: -10%;
     }
     
     input.pesquisa {
-        width: 296px;
-        margin-left: -12%;
+        width: 102%;
+        margin-left: -10%;
     }
     input.novo{
-        width: 100%;
+        left:-20px;
+        width: 102%;
     }
 }
 
@@ -516,4 +520,6 @@ input.pesquisa {
     input.novo{
         width: 100%;
     }
+}
+
 }
