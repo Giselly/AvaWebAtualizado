@@ -199,11 +199,7 @@ table.listagem {
 }
 
 @media all and (max-width: 390px){
-	
-	p {
-		font-size: 12px;
-	}
-	
+		
 	table.listagem {
 		position: relative;
 		border-spacing: 0;
@@ -213,6 +209,11 @@ table.listagem {
 		min-width: 100%;
 		font-size:12px;
 	}
+	
+	table.listagem tr td a p{
+		font-size:12px;
+	}
+	
 }
 
 table.listagem td:not(.align-left) {
