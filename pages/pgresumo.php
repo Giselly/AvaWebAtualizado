@@ -12,10 +12,10 @@
             <h2 id="tituloCapitulo"><?php echo "Resumo";?></h2>
             <h2 id="tituloCapitulo"><?php echo "Capitulo ".$url->getURL(1); ?></h2>
             <input type="hidden" name="tipo" value="novo"/>
-            <div id="resumo">
+            <!--<div id="resumo">-->
             <textarea name="content" class="textArea" style="width:100%"></textarea>
                 <!--<textarea name="resumo" class="textArea"></textarea>-->
-            </div>
+           <!-- </div>-->
             <input type="submit" name="salvar" class="novo" value="Salvar">
         <?php } else {?>
             <img src="imagens/resumo-sucesso.png" id="img-suc">
