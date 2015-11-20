@@ -75,6 +75,7 @@ if (isset($form['editar'])) {
     );
     
     $usuarioBusiness->editar($dados);
-    echo "<script>window.location = '" . RAIZ . "treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco';</script>";
+    echo "<script>window.location = '" . RAIZ . $capituloAtual.";</script>";
+    //echo "<script>window.location = '" . RAIZ . "treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco';</script>";
 }
 //}

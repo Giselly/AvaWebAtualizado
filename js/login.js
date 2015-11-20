@@ -34,7 +34,7 @@ $(document).ready(function () {
                         $('#info').html("Login efetuado com sucesso.")
                                 .addClass('logado');
 
-                        /** Redireciona para a home caso o usuario seja vádidos*/
+                        /** Redireciona para a home caso o usuario seja válido*/
                         window.location = $('#raiz').val() + "treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco";
                         
                         $('#notification').addClass('toolbar-bottom').end().removeClass('toolbar-bottom');

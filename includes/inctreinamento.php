@@ -1,7 +1,7 @@
 <?php
 
 /** @var string referencia do capitulo selecionado */
-$refCapitulo = $url->posicaoExiste(1) ? $url->getURL(1) : "01";
+$refCapitulo = $url->posicaoExiste(1) ? $url->getURL(1) : "0".$capituloAtual;
 
 /** @var string referencia do topico selecionado */
 $refTopico = $url->posicaoExiste(3) ? $url->getURL(3) : "";
