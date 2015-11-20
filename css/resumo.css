@@ -4,7 +4,13 @@ h2#tituloCapitulo{
 }
 
 form#resumo{
+    position: relative;
+    display: block;
+    margin: 0 auto;
     top: 25%;
+    left: 30%;
+    width: 100%;
+
 }
 
 img#img-suc {
@@ -14,17 +20,7 @@ img#img-suc {
     width: 40%;
 }
 
-section#resumo {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 40%;
-    height: 580px;
-    top: 15%;
-    border: 1px solid #999;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+div#resumo {
 }
 
 div.notificacao {
@@ -88,6 +84,18 @@ textarea.textArea {
     display: none;
 }
 
+@media all and (max-width: 1600px){
+    form#resumo{
+        left: 10%;
+    }
+}
+
+@media all and (max-width: 1440px){
+    form#resumo{
+        left: 5%;
+    }
+}
+
 @media all and (max-width:1390px){
     aside#paginas{
         display: none;
@@ -96,100 +104,97 @@ textarea.textArea {
     img#img-suc {
         left: 45%;
     }
+
+    form#resumo{
+        width: 150%;
+    }
+}
+
+@media all and (max-width: 1280px){
+    form#resumo{
+        left: 8%;
+    }
+}
+
+@media all and (max-width: 1152px){
+    form#resumo{
+        left: 12%;
+    }
+}
+
+@media all and (max-width: 1024px){
+    form#resumo{
+        left: 9%;
+    }
 }
 
 @media all and (max-width: 997px){
-    section#resumo{
-        width: 60%;
-        margin-top: 2%;
-    }
-
     div#letras{
         margin-top: 0px;
     }
 
 }
 
-@media all and (max-width: 890px){
-    section#resumo{
-        width: 70%;
-        margin-top: 2%;
-    }
-}
-
-@media all and (max-width: 820px){
-    section#resumo{
-        width: 60%;
-    }
-}
-
-@media all and (max-width: 755px){
-    section#resumo{
-        width: 60%;
-    }
-}
-
 @media all and (max-width: 709px){
-    section#resumo{
-        width: 60%;
-        height: 550px;
-    }
-    
     img#img-suc {
         left: 10%;
         top: 40%;
         width: 80%;
     }
+
+    form#resumo{
+        width: 250%;
+        left: 19%;
+    }
 }
 
 @media all and (max-width:515px){
-     section#resumo{
-        width: 80%;
-        height: 530px;
+     form#resumo{
+        width: 230%;
+    }
+}
+
+@media all and (max-width: 475px){
+    form#resumo{
+       width: 200%;
+        left: 30%;
     }
 }
 
 @media all and (max-width: 420px){
-    section#resumo {
-        width: 100%;
-        height: 530px;
-        margin-top: 10%;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
+     form#resumo {
+        width: 180%;
     }
     
     div.notificacao {
         margin-top: -2%;
     }
 
-    div#footer_icon {
-        display: none;
-    }
-    
     .novo{
         width: 20%;
     }
 }
 
+@media all and (max-width: 400px){
+    form#resumo{
+        left: 17%;
+    }
+}
+
+@media all and (max-width: 365px){
+    form#resumo{
+        width: 165%;
+    }
+}
+
 @media all and (max-width: 320px){
-    section#resumo {
-        width: 100%;
-        height: 350px;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-        overflow: hidden;
+    form#resumo {
+        width: 135%;
     }
     
     div.notificacao {
         height: 200px;
     }
-    
-    div#footer_icon {
-        display: none;
-    }
-    
     .novo{
         width: 20%;
     }

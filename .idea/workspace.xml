@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2a18779-642c-4ef2-a460-e72dfa7d8169" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pgexercicio.php" afterPath="$PROJECT_DIR$/pages/pgexercicio.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/topo.css" afterPath="$PROJECT_DIR$/css/topo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/treinamento.css" afterPath="$PROJECT_DIR$/css/treinamento.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pgresumo.php" afterPath="$PROJECT_DIR$/pages/pgresumo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/resumo.css" afterPath="$PROJECT_DIR$/css/resumo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AvaWeb.iws" />
@@ -33,7 +32,7 @@
       <file leaf-file-name="pgexercicio.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/pgexercicio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="58" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="58" />
               <folding />
             </state>
@@ -43,9 +42,11 @@
       <file leaf-file-name="pgresumo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/pgresumo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,11 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/topo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6477404">
-              <caret line="1199" column="19" selection-start-line="1199" selection-start-column="19" selection-end-line="1199" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1095" column="25" selection-start-line="1095" selection-start-column="25" selection-end-line="1095" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resumo.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/resumo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4265506">
+              <caret line="74" column="29" selection-start-line="73" selection-start-column="19" selection-end-line="74" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -141,12 +152,12 @@
         <option value="$PROJECT_DIR$/css/alterarSenha.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/font.css" />
-        <option value="$PROJECT_DIR$/css/resumo.css" />
         <option value="$PROJECT_DIR$/js/font.js" />
-        <option value="$PROJECT_DIR$/pages/pgresumo.php" />
         <option value="$PROJECT_DIR$/pages/pgexercicio.php" />
         <option value="$PROJECT_DIR$/css/treinamento.css" />
         <option value="$PROJECT_DIR$/css/topo.css" />
+        <option value="$PROJECT_DIR$/pages/pgresumo.php" />
+        <option value="$PROJECT_DIR$/css/resumo.css" />
       </list>
     </option>
   </component>
@@ -164,7 +175,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -190,7 +201,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,13 +230,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,10 +288,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.106770836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10744235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -604,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/resumo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/pgconteudo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -629,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,18 +652,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgresumo.php">
+    <entry file="file://$PROJECT_DIR$/pages/pgexercicio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pgexercicio.php">
+    <entry file="file://$PROJECT_DIR$/css/topo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1095" column="25" selection-start-line="1095" selection-start-column="25" selection-end-line="1095" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -673,10 +676,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/topo.css">
+    <entry file="file://$PROJECT_DIR$/pages/pgresumo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6477404">
-          <caret line="1199" column="19" selection-start-line="1199" selection-start-column="19" selection-end-line="1199" selection-end-column="19" />
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/resumo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4265506">
+          <caret line="74" column="29" selection-start-line="73" selection-start-column="19" selection-end-line="74" selection-end-column="29" />
           <folding />
         </state>
       </provider>
