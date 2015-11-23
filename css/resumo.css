@@ -148,10 +148,15 @@ textarea.textArea {
     }
 }
 
-@media all and (max-width:515px){
+@media all and (max-width:540px){
      form#resumo{
         width: 230%;
     }
+	.novo{
+		width:101% !important;
+		margin-left:20px;
+	}
+	
 }
 
 @media all and (max-width: 475px){

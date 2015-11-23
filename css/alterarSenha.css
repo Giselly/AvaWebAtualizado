@@ -96,9 +96,6 @@ p#tituloPrincipal{
         width: 85%;
     }
 
-}
-
-
 @media all and (max-width:960px){
     p:not(#tituloPrincipal) p:not(#nav-slide-movel){
         font-size: 13pt;
