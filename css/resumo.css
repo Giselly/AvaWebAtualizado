@@ -39,8 +39,7 @@ div.notificacao {
 }
 
 div#noti {
-    height: auto;
-    max-height: 450px;
+    height: 300px;
     overflow-y: auto;
 }
 
@@ -153,11 +152,10 @@ textarea.textArea {
      form#resumo{
         width: 230%;
     }
-    
-    .novo{
-        width:101% !important;
-        margin-left:20px;
-    }
+	.novo{
+		width:101% !important;
+		margin-left:20px;
+	}
 	
 }
 
@@ -181,14 +179,12 @@ textarea.textArea {
     
     div.notificacao {
         margin-top: -2%;
-        overflow: auto;
     }
 
     .novo{
         width: 20%;
     }
 }
-
 @media all and (max-width: 400px){
     form#resumo{
         left: 17%;
@@ -210,10 +206,7 @@ textarea.textArea {
         margin-top: 50%;
         width:180%;
     }
-    
-    div.notificacao {
-        height: 200px;
-    }
+ 
     .novo{
         width: 20%;
     }
