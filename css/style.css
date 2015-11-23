@@ -442,13 +442,9 @@ input.pesquisa {
 
 @media all and (max-width:370px){
     #rodape{
-            z-index:9999;
-    
-            
-    section.listagemCadastro {
-       margin: auto 9%;
-    }
-    
+    	z-index:9999;
+	}
+                
     table.listagem {
         margin-left: -5%;
         width: 106%;
@@ -457,12 +453,6 @@ input.pesquisa {
     input.novo {
         left: 0;
         width: 100%;
-    }
-    
-    input.pesquisa {
-        width: 294px;
-        margin-left: -5%;
-        float: left;
     }
 }
 
@@ -490,12 +480,6 @@ input.pesquisa {
     input.novo {
         margin-right: 0;
     }
-    
-    input.pesquisa {
-        width: 298px;
-        margin-left: -11%;
-        float: left;
-    }
 }
 
 @media all and (max-width:319px){
@@ -521,6 +505,4 @@ input.pesquisa {
     input.novo{
         width: 100%;
     }
-}
-
 }
