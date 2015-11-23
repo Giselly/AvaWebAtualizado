@@ -246,31 +246,37 @@ div.inputs div#dadosGerais div#fotoPerfil {
     }
 }
 
-div.inputs div#fotoPerfil img {
-    width: 148px;
-    height: 180px;
-    margin: auto;
-}
+	div.inputs div#fotoPerfil img {
+		width: 148px;
+		height: 180px;
+		margin: auto;
+	}
+	
+	div#button, input#foto {
+		display: none;
+		overflow: none;
+	}
+	
+	div.inputs input#editar{
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 999;
+		width: 100%;
+		height: 20px;
+	}	
 
-div#button, input#foto {
-    display: none;
-    overflow: none;
-}
-
-div.inputs input#editar{
-    background-color: rgba(0,0,0,.2);
-    display: block;
-    float: left;
-    position: absolute;
-    padding: 0px;
-    margin-top: 0px;
-    z-index: 999;
-    width: 100%;
-    height: 20px;
+@media all and (max-width:320px){
+	
+	div.inputs div#dadosGerais, div.inputs div#Endereco {
+			width:100%;	
+	}
 }
 
 /** SALVAR */
-
 div.inputs div#salvar {
     display: block;
     position:relative;
