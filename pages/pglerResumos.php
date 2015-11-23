@@ -10,8 +10,8 @@
         <h2 class="informacoesGerais">Data: <span> <?php echo $resumoBuscarPorId[0]['dataAtual'];?></span></h2>
         <div id="noti">
             <div class="textArea"><?php echo $resumoBuscarPorId[0]['resumo'];?></div> <br>
-            <a href="#Notificacao" rel="leanModal"><input type="button" class="novo" value="Enviar Notificação"></a>
         </div>
+    <a href="#Notificacao" rel="leanModal"><input type="button" class="novo" value="Enviar Notificação"></a>        
     </div>
 </section>
 <!-- Lightbox -->

@@ -39,7 +39,8 @@ div.notificacao {
 }
 
 div#noti {
-    height: 300px;
+    height: auto;
+    max-height: 450px;
     overflow-y: auto;
 }
 
@@ -152,10 +153,11 @@ textarea.textArea {
      form#resumo{
         width: 230%;
     }
-	.novo{
-		width:101% !important;
-		margin-left:20px;
-	}
+    
+    .novo{
+        width:101% !important;
+        margin-left:20px;
+    }
 	
 }
 
@@ -179,6 +181,7 @@ textarea.textArea {
     
     div.notificacao {
         margin-top: -2%;
+        overflow: auto;
     }
 
     .novo{
