@@ -34,7 +34,7 @@
                                         $style = '';
                                     }
                                     
-                                   echo "<td class='align-left'><a style='{$style}' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacao}</a></td>";  
+                                   echo "<td class='align-left'><a id='not' style='{$style}' href='{$url->getURL(0)}/lerNotificacao/{$resumo['id']}'>{$notificacao}</a></td>";  
                                 } else {
                                    echo "<td class='align-left'>Nenhuma notificação enviada!</td>"; 
                                 }
@@ -70,3 +70,14 @@
         </div>
     </form>
 </div>
+<script>
+	$(document).ready(function(){
+		
+	   var tam = $(window).width();
+	 
+	   if (tam <=699 ){
+		  $("#not").removeClass('#not');
+		  $("#not").text("Ler");
+	   }
+	});
+</script>
