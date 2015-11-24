@@ -54,13 +54,13 @@ tr#title th {
     }
     
     tr#title th {
-        width: 100% !important;
+        /*width: 100% !important;*/
         border: solid thin white;
 		left: 5px;
     }
     
     .panel, .flip {
-        width: 100% !important;
+        /*width: 100% !important;*/
         border: none;
 		left: 5px;
     }    
