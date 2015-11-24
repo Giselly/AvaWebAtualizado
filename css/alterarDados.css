@@ -1,16 +1,8 @@
 /** FORMULÁRIO */
-
 div#footer_icon{display:none;}
-
 form.cadastro input[type=password], form.cadastro input[type=text], form.cadastro input[type=email], form.cadastro select{
     width: 100%;
 }
-
-/*form.cadastro input[name=apelido], form.cadastro div.media {
-    width: 184px;
-    padding-right: 0px;
-    margin-right: 0px;
-}*/
 
 td#editar, td#excluir, td#status {
     text-align: center;
@@ -103,23 +95,15 @@ form.cadastro p.subtitulo {
 
     div.inputs div#dadosGerais {
         width: 50%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
     }
 
     div.inputs div#Endereco {
         width: 50%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
     }
 
-
-
     div#salvar input[type=submit] {
-        font-size: 10pt;
-        width: 20%;
+		font-size: 10pt;
+        width: 35%;
         margin-left: 20%;
     }
 
@@ -159,9 +143,6 @@ form.cadastro p.subtitulo {
 
 
 @media all and (max-width:530px){
-    /*body {
-        overflow-y: scroll;
-    }*/
 
     div.inputs {
         margin-left: -8px;
@@ -177,9 +158,6 @@ form.cadastro p.subtitulo {
 
     div.inputs div#dadosGerais, div.inputs div#Endereco {
         width: 45%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
     }
 
 
@@ -222,9 +200,6 @@ form.cadastro p.subtitulo {
 @media all and (max-width: 420px){
     div.inputs div#dadosGerais, div.inputs div#Endereco {
         width: 65%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
 }
 
 @media all and (max-width:410px){
@@ -239,12 +214,8 @@ form.cadastro p.subtitulo {
 
     div.inputs div#dadosGerais, div.inputs div#Endereco {
         width: 60%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
     }
-
-
+	
     div.inputs div#dadosGerais div#sexo{
         width: 230px;
     }
@@ -278,28 +249,21 @@ form.cadastro p.subtitulo {
         text-indent: -1.8em;
     }
 }
-
+div.inputs input#editar{
+		background-color: rgba(0,0,0,.2);
+		display: block;
+		float: left;
+		position: absolute;
+		padding: 0px;
+		margin-top: 0px;
+		z-index: 999;
+		width: 100%;
+		height: 20px;
+}
 @media all and (max-width: 320px){
     div.inputs div#dadosGerais, div.inputs div#Endereco {
         width: 75%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
     }
-}
-
-div.inputs input#editar{
-    background-color: rgba(0,0,0,.2);
-    display: block;
-    float: left;
-    position: absolute;
-    padding: 0px;
-    margin-top: 0px;
-    z-index: 999;
-    width: 100%;
-    height: 20px;
-}
-
 }
 /** SALVAR */
 
