@@ -74,21 +74,21 @@ input[type=text], input[type=password], input[type=email] {
 #id {
     position: relative;
     padding-left: 5px;
-    //background-image: url("../imagens/login.png");
+    /*background-image: url("../imagens/login.png");*/
     background-repeat: no-repeat;
 }
 
 #pass {
     position: relative;
     padding-left: 5px;
-    //background-image: url("../imagens/senha.png");
+    /*background-image: url("../imagens/senha.png");*/
     background-repeat: no-repeat;
 }
 
 #log {
     position: relative;
     padding-left: 5px;
-    //background-image: url("../imagens/senha.png");
+    /*background-image: url("../imagens/senha.png");*/
     background-repeat: no-repeat;
     width: 40.11%;
 }
