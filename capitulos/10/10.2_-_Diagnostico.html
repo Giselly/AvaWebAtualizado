@@ -1,140 +1,635 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title></title>
-<style type="text/css">
-	body{
-		font-family:Arial, Helvetica, sans-serif;
-		}
-		img#img{
-		margin-left:5%;
-		width:40%;
-		box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-		-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-		-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);	
-		}
-	#titulo{
-		margin-left:5%;	
-		font-size:18px;
-		}
-	p#p1{
-		margin-left:5%;
-		font-size:17px;
-		width:40%;
-		text-align:justify;
-		margin-top:40px;
-		}
-	
-	
-	#titulo1{
-		margin-left:5%;
-		font-size:17px;	
-		}
-	img#img{
-		margin-left:5%;
-		width:40%;
-		box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-		-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-		-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);	
-		}
-		img#img1{
-		width:18%;
-		margin-left:27%;
-		margin-top:5%;
-		box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-		-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-		-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);	
-		}
-		p#p2{
-		width:20%;
-		text-align:justify;
-		margin-left:5%;
-		margin-top:-24%;
-		font-size:17px;
-		}
-</style>
-
+    <meta charset="utf-8">
+    <title></title>
+		<style type="text/css">
+		   	/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+			@media all and (min-width:998px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					margin-right: 3%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					border: solid 2px #fff;
+					width: 43%;
+					height: 38%;
+					margin-right: 3%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+			}
+			/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
+			@media all and (min-width:918px) and (max-width:997px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:40%;
+					height:40%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:40%;
+					height:40%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:65%;
+				}
+			}
+			/*Media Queries SCREEN >= 851px AND <= 917px*/
+			@media all and (min-width:851px) and (max-width:917px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:40%;
+					height:40%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:40%;
+					height:40%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:61%;
+				}
+			}
+			/*Media Queries SCREEN >= 785px AND <= 850px*/
+			@media all and (min-width:785px) and (max-width:850px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:50%;
+					height:50%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:50%;
+					height:50%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:60%;
+				}
+			}
+			/*Media Queries SCREEN >= 731px AND <= 784px*/
+			@media all and (min-width:731px) and (max-width:784px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:50%;
+					height:50%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:50%;
+					height:50%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:57%;
+				}
+			}
+			/*Media Queries SCREEN >= 710px AND <= 730px*/
+			@media all and (min-width:710px) and (max-width:730px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:50%;
+					height:50%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:50%;
+					height:50%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:54%;
+				}
+			}
+			/*Media Queries SCREEN >= 535px AND <= 709px*/
+			@media all and (min-width:535px) and (max-width:709px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:50%;
+					height:50%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:50%;
+					height:50%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:95%;
+					margin-right:5%;
+				}
+			}
+			/*Media Queries SCREEN >= 483px AND <= 534px*/
+			@media all and (min-width:483px) and (max-width:534px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:50%;
+					height:50%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:50%;
+					height:50%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:460px;
+				}
+			}
+			/*Media Queries SCREEN >= 424px AND <= 484px*/
+			@media all and (min-width:424px) and (max-width:484px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:5%;
+					margin-top: 20px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:45%;
+					height:45%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:45%;
+					height:45%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:400px;
+				}
+			}
+			/*Media Queries SCREEN >= 390px AND <= 423px*/
+			@media all and (min-width:390px) and (max-width:423px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+					}
+				#title{
+					margin-left:3%;
+					margin-top: 20px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+					}
+				#img{
+					width:45%;
+					height:45%;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:right;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:45%;
+					height:45%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:376px;
+				}
+			}
+			/*Media Queries SCREEN >= 365px AND <= 389px*/
+			@media all and (min-width:365px) and (max-width:389px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:3%;
+					margin-top: 20px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+				   width:85%;
+					height:85%;
+					margin-left:8%;
+					margin-bottom:30px;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:85%;
+					height:85%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:98%;
+					margin-right:5%;
+				}
+			}
+			/*Media Queries SCREEN >= 350px AND <= 364px*/
+			@media all and (min-width:350px) and (max-width:364px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+					}
+				#title{
+					margin-left:3%;
+					margin-top: 20px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:3%;
+					margin-right:3%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:85%;
+					height:85%;
+					margin-left:5%;
+					margin-bottom:3%;
+					margin-bottom:30px;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:85%;
+					height:85%;
+					margin-bottom:3%;
+					margin-bottom:30px;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:100%;
+					margin-right:5%;
+				}
+			}
+			/*Media Queries SCREEN >= 320px AND <= 349px*/
+			@media all and (min-width:320px) and (max-width:349px){
+				 body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:3%;
+					font-size:17px;
+					margin-top: 20px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					margin-right:3%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:85%;
+					height:85%;
+					margin-left:5%;
+					margin-bottom:30px;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:85%;
+					height:85%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:97%;
+					margin-right:3%;
+				}
+			}
+			/*Media Queries SCREEN <= 319px*/
+			@media all and (max-width:319px){
+				 body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					margin-left:3%;
+					font-size:17px;
+					margin-top: 20px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:3%;
+					margin-right:1%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#img{
+					width:85%;
+					height:85%;
+					margin-left:9%;
+					margin-bottom:30px;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#img2{
+					width:85%;
+					height:85%;					
+					/* Sombra da Imagem */
+					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				}
+				#conteudoTopico{
+					min-width:99%;
+					margin-right:1%;
+				}
+			}
+        </style>
+    
 </head>
 <body>
 
-	<p id="titulo"><strong>10.2 - Diagnóstico: A base do roteiro.</strong></p>
-    		<img src="imagens/capitulo10/03.jpg" id="img">
+	<p id="title"><strong>10.2 - Diagnóstico: A base do roteiro.</strong></p>
+	<p>&nbsp;</p>
+    <img src="imagens/capitulo10/03.jpg" id="img">
 
-    <p id="p1">
+    <p id="corpo">
     Alguma vez você já fez suas malas antes de definir para onde vai viajar? Ou mesmo sem saber particularidades mínimas relativas ao local de estada? Encontrará calor ou frio? Praia ou neve? Frequentará ambientes requintados ou fará esportes radicais? Assim como um viajante, um apresentador deve chegar bem preparado ao seu destino – é fundamental que tenha clareza em relação ao que o espera. São cinco os aspectos que merecem mais destaque:
     </p>
-    <p id="p1">
+    <p>&nbsp;</p>
+    <p id="corpo">
     1.	A audiência que assistirá à apresentação<br>
 	2.	O contexto em que a apresentação será realizada<br>
 	3.	O tempo disponível para a apresentação<br>
 	4.	Seu perfil no papel de apresentador<br>
-	5.	O objetivo principal da apresentação <br>
-    </p>
-    <p id="titulo"><strong>1. AUDIÊNCIA</strong></p>
-    <p id="p1">	A audiência deve ser encarada como personagem principal de qualquer apresentação. Antes de iniciar um roteiro, algumas perguntas básicas relativas a ela devem ser feitas:</p>
-	<p id="p1">
+	5.	O objetivo principal da apresentação </p>
+<p><br>
+</p>
+    <p id="title"><strong>1. AUDIÊNCIA</strong></p>
+<p>&nbsp;</p>
+    <p id="corpo">	A audiência deve ser encarada como personagem principal de qualquer apresentação. Antes de iniciar um roteiro, algumas perguntas básicas relativas a ela devem ser feitas:</p>
+<p>&nbsp;</p>
+	<p id="corpo">
     •	Quem estará presente? Serão diretores de uma empresa? Clientes de porte? Uma equipe de vendas?<br>
 	•	Essas pessoas são técnicas?<br>
 	•	Elas têm perfil mais formal ou descontraído?<br>
 	•	Quais os conhecimentos da audiência sobre o tema da apresentação?<br>
-	•	De que forma o que vou apresentar pode beneficiar essa audiência?<br> 
-    </p>
-	<p id="p1">
+	•	De que forma o que vou apresentar pode beneficiar essa audiência?</p>
+	<p><br> 
+</p>
+	<p id="corpo">
            Compreender o perfil, as necessidades e os interesses da audiência é fundamental. Mais que isso, é preciso identificar que benefícios o produto, ideia ou conceito apresentado pode gerar para essa audiência – e alinhar a ela o tema e a abordagem da apresentação. Em um auditório tomado por estudantes de agronomia, não faria sentido uma apresentação sobre o bom uso dos aparelhos de musculação. Da mesma forma, para executivos de uma fábrica de automóveis, seria bem desagradável uma tarde dedicada à apresentação de técnicas para confecção de arranjos florais. Por mais óbvia que essa recomendação possa parecer, não são raras as apresentações elaboradas com foco exclusivo no apresentador e no orgulho que este tem de seus produtos, ideias e capacidades. O fato é que, por melhor que sejam esses atributos, é importante focar no que eles podem representar para a audiência. Caso não consiga identificar tais benefícios, é preferível desmarcar a apresentação.
     </p>
-	<p id="titulo1"> <strong>COM QUEM VOU FALAR ?</strong></p>
-    <p id="p1">
+<p>&nbsp;</p>
+	<p id="title"> <strong>COM QUEM VOU FALAR ?</strong>    </p>
+<p>&nbsp;</p>
+	<p id="corpo">
     Quando não se conhece bem o perfil da audiência, é interessante tentar investigar quem são essas pessoas que assistirão à sua apresentação. Há vários caminhos para essa investigação.<br>
     No primeiro contato com uma empresa.<br>
     •	Navegue no site da empresa e em blogs a ela relacionados.<br>
     •	Converse com pessoas que fazem negócios com essa empresa.<br>
     •	Procure eventuais reportagens relacionadas a ela.<br><br>
-    Ao criar palestras para serem feitas em eventos.<br><br>
+    </p>
+	<p id="corpo">Ao criar palestras para serem feitas em eventos.<br><br>
     •	Estude o perfil do evento.<br>
     •	Informe-se sobre o tema e o conteúdo de outras palestras que acontecerão no local.<br>
     •	Identifique os expositores.<br>
     •	Visite o site de edições anteriores do evento e atente aos depoimentos dos participantes.<br><br>
+    <img src="imagens/capitulo10/04.jpg" id="img"> 
     Além das pesquisas on-line e em suas redes social e profissional, faça uma rápida investigação no local, na própria ocasião do evento. Chegue antes da hora marcada, atente à dinâmica do ambiente e converse com algumas pessoas. Do mesmo modo, enquanto espera por uma reunião na recepção de uma empresa, fique atento a todos os sinais que demonstrem os valores locais.
     Logo no início da apresentação, ainda vale a pena fazer algumas perguntas à audiência, identificando eventual necessidade de se aprofundar em alguns conceitos, passar mais superficialmente por outros e, se necessário, improvisar para melhor atender ao público presente.  
     </p>
-    <img src="imagens/capitulo10/04.jpg" id="img">
-    <p id="titulo"><strong>2. CONTEXTO</strong></p>
-    <p id="p1">
-            Em relação ao contexto em que será feita a apresentação, é importante obter algumas informações antes de iniciar a confecção de um roteiro:<br><br>
-            <strong>Apresentação isolada ou em evento?</strong><br><br>
+<p>&nbsp; </p>
+    <p id="title"><strong>2. CONTEXTO</strong></p>
+<p>&nbsp;</p>
+    <p id="corpo">
+    Em relação ao contexto em que será feita a apresentação, é importante obter algumas informações antes de iniciar a confecção de um roteiro:<br><br>
+    <strong>Apresentação isolada ou em evento?</strong><br><br>
     Em apresentações isoladas, costuma-se ter maior liberdade em relação à escolha do tema e à abordagem. No caso de apresentações inseridas em eventos, é importante criar um roteiro que faça sentido no contexto.<br><br>
     <strong>Recursos de apoio</strong><br><br>
     Nas apresentações corporativas, são raras as ocasiões em que não se tem acesso a computadores com PowerPoint e projetor. De todo modo, especialmente se a apresentação estiver prevista para ambientes inusitados, vale a pena certificar-se dos recursos disponíveis. As apresentações devem ser encaradas de forma ampla e, além do PowerPoint, podem contar com outros materiais de suporte (discutiremos o assunto no Capítulo 5, O PowerPoint e outras ferramentas de apoio).<br><br>
     <strong>O tamanho da audiência</strong><br><br>
     Sua apresentação será feita para cinco pessoas em uma sala de reuniões ou em um auditório para 2 mil pessoas? Em geral, apresentações para públicos restritos podem ser feitas em tom mais intimista, com uma abordagem mais pessoal. Além disso, como veremos no próximo capítulo, o tamanho do público também interfere em alguns aspectos do visual da apresentação, como dimensão das fontes e das imagens que ilustram os slides.
-        </p>
-        <img src="imagens/capitulo10/05.jpg" id="img">
-	<p id="titulo"><strong>3. TEMPO</strong></p><br>
-      	<img src="imagens/capitulo10/06.jpg" id="img1">
-        <p id="p2">
-Ao preparar uma apresentação, estime seu tempo total de duração e as frações que serão reservadas para cada assunto. Em palestras e eventos, o cronograma costuma ser predeterminado. Já no caso de reuniões, é prudente, antes do início, perguntar aos envolvidos o tempo que eles têm disponível. Se um personagem-chave para a aprovação de um projeto estiver com pressa, acelere o discurso, omita alguns detalhes e garanta o desfecho da apresentação em sua presença. Caso os presentes peçam detalhamentos, da mesma forma, esteja apto para atendê-los. Muitas vezes, quem define o término de uma apresentação é a audiência. Quanto mais bem preparado você estiver, mais facilidade terá para atendê-los, sintetizando ou detalhando seu discurso.<br>
+</p>
+	<p>&nbsp;</p>
+	<p>&nbsp; </p>
+    <p id="title"><strong>3. TEMPO</strong></p>
+	<p>&nbsp;</p>
+    <img src="imagens/capitulo10/06.jpg" id="img">
+	<p id="corpo">
+	  Ao preparar uma apresentação, estime seu tempo total de duração e as frações que serão reservadas para cada assunto. Em palestras e eventos, o cronograma costuma ser predeterminado. Já no caso de reuniões, é prudente, antes do início, perguntar aos envolvidos o tempo que eles têm disponível. Se um personagem-chave para a aprovação de um projeto estiver com pressa, acelere o discurso, omita alguns detalhes e garanta o desfecho da apresentação em sua presença. Caso os presentes peçam detalhamentos, da mesma forma, esteja apto para atendê-los. Muitas vezes, quem define o término de uma apresentação é a audiência. Quanto mais bem preparado você estiver, mais facilidade terá para atendê-los, sintetizando ou detalhando seu discurso.<br>
 Se o tempo predeterminado for maior que o necessário, não se estenda – reserve minutos finais para dúvidas e questões. Essa troca é sempre bem-vinda. Mesmo que não haja restrições de tempo, cuidado para não exagerar: apresentações demasiadamente longas são um pesadelo para qualquer audiência, a menos que o apresentador ou o conteúdo sejam extraordinários. Tenha em mente que uma boa ideia, sustentada por uma boa história, pode conquistar a adesão da audiência até mesmo em uma conversa no elevador.
-		</p>
-	<p id="titulo"><strong>4. APRESENTADOR</strong></p>
-    <p id="p1">
-É fundamental que a apresentação seja coerente com o perfil do apresentador. A pessoa que falará é séria ou desinibida? Ousada ou conservadora? Prefere manter uma postura discreta ou fazer de sua apresentação um show off?<br>
+</p>
+	<p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p id="title"><strong>4. APRESENTADOR</strong></p>
+    <p>&nbsp;</p>
+    <img src="imagens/capitulo10/05.jpg" id="img" style="clear:both;">
+    <img src="imagens/capitulo10/07.jpg" id="img" style="clear:both;">
+
+<p id="corpo">
+	  É fundamental que a apresentação seja coerente com o perfil do apresentador. A pessoa que falará é séria ou desinibida? Ousada ou conservadora? Prefere manter uma postura discreta ou fazer de sua apresentação um show off?<br>
 Mesmo levando em conta o perfil da marca e da empresa representada, o traço pessoal do apresentador deve dar o tom à apresentação. Quanto mais à vontade ele estiver, mais natural e convincente será, e mais confiança passará ao público.
 	</p>
-	<img src="imagens/capitulo10/07.jpg" id="img">
-	
-	<p id="titulo"><strong>5. OBJETIVO</strong></p>
-	<p id="p1">
+<p>&nbsp;</p>
+	<p id="title"><strong>5. OBJETIVO</strong></p>
+	<p>&nbsp;</p>
+	<p id="corpo" style="margin-bottom:160px;">
         Uma apresentação não deve ser vista como um fim, mas como um meio de conseguir um objetivo maior diante de determinado público. A definição clara do objetivo é um dos pontos mais importantes ao estruturá-la, e deve ser o ponto de partida para a definição da abordagem.<br><br>
     •	Qual é a finalidade dessa apresentação?<br>
     •	O que você pretende conseguir com ela?<br>
     •	O que você quer que sua audiência pense, sinta e reflita?<br>
     •	Que atitude você espera que a audiência tenha a partir desse evento?<br>
     •	Para você, o que significa sucesso nessa apresentação?<br><br>
+    <img src="imagens/capitulo10/08.jpg" id="img" style="clear:both;">
     Embora seja fundamental ter clareza sobre esses questionamentos, muitas vezes isso não acontece e as apresentações são montadas no escuro. Ao identificar o “estado atual” e o “estado desejado” em relação a determinado cenário, é possível estabelecer o objetivo da apresentação, seja a venda de um produto, a motivação de uma equipe, a conquista de parceiros para um projeto ou a comunicação de uma nova filosofia na empresa.<br>
     De modo geral, o objetivo da apresentação pode ser traduzido na identificação e no comprometimento da audiência com o conceito apresentado, o que, posteriormente, leva essa audiência a determinada ação. Um termo preciso? Adesão. Existem inúmeras formas de adesão e é dela, desse objetivo identificado, que deve brotar o tema da apresentação, aquele que servirá de base para o desenvolvimento de todo o roteiro.
     </p>
-	<img src="imagens/capitulo10/08.jpg" id="img">
 
 </body>
 </html>
