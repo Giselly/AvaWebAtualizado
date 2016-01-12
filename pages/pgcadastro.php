@@ -40,7 +40,14 @@
                             <br />
                             <input value="Enviar" type="submit" id="button" name="enviar"> ou  <a href="login">Voltar a tela de login</a></p>
                         </div>
+                         
                     </form>
+                
+                <div class="aguarde" id="aguardarConfirmacao">
+                    <p> Aguarde a confirmação do seu cadastro para logar-se. Um email será enviado!</p></br>
+                    <a href="login">Voltar a tela de login</a>
+                </div> 
+                    
             </div>
         </div>
     </body>

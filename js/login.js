@@ -28,16 +28,15 @@ $(document).ready(function () {
                     if(resultado == '-1'){
                         $('#info').html("Aguarde uma confirmação do seu cadastro.")
                                 .addClass('erro');;
-                    } else if (resultado !== '0') {
+                    } else if (resultado == '0') {
+                        $('#info').html("Login ou senha inválido.")
+                                .addClass('erro');                      
+                    } else {
                         $('#info').html("Login efetuado com sucesso.")
                                 .addClass('logado');
                         /** Redireciona para a home caso o usuario seja válido*/
                         window.location = $('#raiz').val() + "treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco";
-                        
                         $('#notification').addClass('toolbar-bottom').end().removeClass('toolbar-bottom');
-                    } else {
-                        $('#info').html("Login ou senha inválido.")
-                                .addClass('erro');
                     }
                 });
         return false;

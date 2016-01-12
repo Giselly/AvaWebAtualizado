@@ -22,6 +22,8 @@ if(count($usuario) > 0 && $usuario[0]['primeiroLogin'] == '0') {
     session_start();
     $_SESSION['login'] = $usuario[0]['login'];
     $_SESSION['senha'] = $usuario[0]['senha'];
+} else {
+    echo '0';
 }
 ?>
 
