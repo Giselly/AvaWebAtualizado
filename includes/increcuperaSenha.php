@@ -8,11 +8,6 @@
 $info = '';
 $erro = '';
 
-/**
- * Inclui classes de envio de email
- */
-require_once('Classes/mail/class.phpmailer.php');
-
 /** Inclui a função de enviar email */
 require_once('functions/funcenviaEmail.php');
 
@@ -24,15 +19,15 @@ require_once('functions/funcvalidaUsuario.php');
  */
 if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
     /**
-     * @var string $nome
+     * @var string $cpf
      * @var string $email
      * @var string $nomeRemetente
      * @var string $remetente
      * @var array $dados
      */
-    $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
     $email = $_POST['email'];
-    $dados = validaUsuario($nome, $email);
+    $dados = validaUsuario($cpf);
     $nomeRemetente = 'Instituto Tecnológico e Vocacional Avançado';
     $remetente = 'avaweb@iteva.org.br';
 
@@ -40,6 +35,8 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
     if ($dados) {
         /** Pega o id do usuario que está tentando recuperar a senha */
         $id = $dados->id;
+       /** Nome do usuario que deseja recuperar a senha */
+        $nome = $dados->nome;
 
         /** Pega a data atual em segundos */
         $data = strtotime(date("Y-m-d H:i:s"));
@@ -69,7 +66,7 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
          * @var string $erro
          * Informa o usuario se não tiver enviado o email
          */
-        $erro = "Nome ou email não cadastrado.";
+        $erro = "CPF não cadastrado.";
     }
 }
 
@@ -83,3 +80,4 @@ $erro = ($erro != '') ? "<p class='erro'>{$erro}</p>" : '';
 
 /** Inclui a pagina de envio de email */
 include_once('pages/pgrecuperaSenha.php');
+ 

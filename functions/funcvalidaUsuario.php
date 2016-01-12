@@ -1,13 +1,13 @@
 <?php
-    function validaUsuario($nome, $email) {
+    function validaUsuario($cpf) {
         /** Conecta com o banco */
         $pdo = new PDO("mysql:host=" . HOST . ";dbname=" . DBSA, USER, PASS);
         $pdo->exec("SET CHARACTER SET utf8");
 
         /** Escreve a query que seleciona o email e o nome do usuario */
-        $verifica = $pdo->prepare("SELECT * FROM usuarios WHERE nome = ? AND email = ?");
-        $verifica->bindValue(1, $nome);
-        $verifica->bindValue(2, $email);
+        $verifica = $pdo->prepare("SELECT * FROM usuarios WHERE login = ? ");
+        $verifica->bindValue(1, $cpf);
+        //$verifica->bindValue(2, $email);
 
         /** Execulta a query */
         $verifica->execute();
