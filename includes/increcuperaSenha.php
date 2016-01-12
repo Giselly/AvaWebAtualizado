@@ -28,8 +28,6 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
     $cpf = $_POST['cpf'];
     $email = $_POST['email'];
     $dados = validaUsuario($cpf);
-    $nomeRemetente = 'Instituto Tecnológico e Vocacional Avançado';
-    $remetente = 'avaweb@iteva.org.br';
 
     /** Checa se a função de validar o usuario deu certo */
     if ($dados) {
@@ -51,13 +49,13 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
         ";
 
         /** Envia o email para o usuario */
-        sendMail('Recuperação de senha do Ambiente Virtual de Aprendizagem', $mensagem, $remetente, $nomeRemetente, $email, $nome, '', '');
+        sendMail('Recuperação de senha do Ambiente Virtual de Aprendizagem', $mensagem, $email, $nome, '', '');
 
         /**
          * @var string $info
          * Informa o usuario do envio do email
          */
-        $info = "Foi enviado um link pro seu email.";
+        $info = "Acesse seu email para redefinir a senha.";
 
         /** Redireciona pro login */
         echo "<meta http-equiv='refresh' content=5;url='" . RAIZ . "login'>";

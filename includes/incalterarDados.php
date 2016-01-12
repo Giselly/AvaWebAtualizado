@@ -17,4 +17,4 @@ if (isset($form)) {
 $dadosUsuario = $usuarioBusiness->buscarPorID($idUsuario);
 
 /** Include da pagina de alteração de login */
-include_once('pages/pgalterarDados.php');
+include_once('pages/pgFormcadastroDeUsuarios.php');

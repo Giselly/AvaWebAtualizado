@@ -1,23 +1,21 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" href="css/formCadastroDeUsuarios.css">
-<script src="js/formCadastroDeUsuarios.js"></script>
-<!--<link rel="stylesheet" href="css/jquery-ui.css">/-->
+
 <section>
     <form class="cadastro" id="completo" name="formUsuario" method="POST" enctype="multipart/form-data">
             <div class="inputs">
-                <p id="tituloPrincipal">Cadastro de Usuários</p>
+                <?php
+                if($url->getURL(0) == 'cadastroDeUsuarios') {
+                    echo '<p id="tituloPrincipal">Cadastro de Usuários</p>';
+                } else {
+                   echo '<p id="tituloPrincipal">Alterar Dados</p>'; 
+                }?>
                 
                 <p class="subtitulo">Dados Gerais</p>
                 
                 <div id="dadosGerais">
-                    <div id="fotoPerfil">
-                        <input id="editar" type="button" value="editar"/>
-                            <img src="imagens/perfil/<?php echo $foto; ?>" alt="" id="fotoAtual" />
 
-                            <input type="file" name="foto" id="foto" accept="image/*" />
-                    </div>
-
-                    <input type="hidden" name="tipo" value="<?php echo $url->getURL(1); ?>" />
+                    <input type="hidden" name="tipo" value="<?php echo $url->getURL(1);?>" />
 
                     <?php
                         echo (isset($dadosUsuario[0]['id']) && $url->getURL(1) == 'editar') ?  "<input type='hidden' name='id' value='{$dadosUsuario[0]['id']}'>" : "" ;

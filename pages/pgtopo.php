@@ -138,19 +138,16 @@
             </div>
         
             <ul style="margin-top:210px;">
-                <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados"><img src="imagens/icons_navSlider/alterar_dados.png">	<p class="l_menu">Alterar dados</p></a></li>
+                <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados/editar" id="menu_slider" class="alterar_dados"><img src="imagens/icons_navSlider/alterar_dados.png">	<p class="l_menu">Alterar dados</p></a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha"><img src="imagens/icons_navSlider/alterar_senha.png"><p class="l_menu">Alterar senha</p></a></li>
-                <?php 
-                        if($professor){
-                            if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios" id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png"><p class="l_menu">Cadastro usuários</p></a></li>';
-                        }
-                ?>
-                
                 <?php
-                	if($professor){
-                            if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png"><p class="l_menu">Resumos</p></a></li>';
-                        }
+                if ($professor) {
                 ?>
+
+                <li><a <?php if ($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"><img src="imagens/icons_navSlider/cadastro_usuario.png"><p class="l_menu">Cadastro de usuários</p></a></li>
+                <li><a <?php  if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"';?> href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png"><p class="l_menu">Resumos</p></a></li>
+		<?php
+		} ?>
     
                 <li><a href="logout" id="menu_slider_logout"><img src="imagens/icons_navSlider/sair.png"><p class="l_menu">Sair</p></a></li>
                 </div>
@@ -166,27 +163,24 @@
         </div>
         
             <ul style="margin-top:210px;">
-                <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados" id="menu_slider" class="alterar_dados"><img class="img_menu1" src="imagens/icons_navSlider/alterar_dados.png"><p class="l_menu1">Alterar dados</p></a></li>
+                <li><a <?php if($url->getURL(0) == "alterarDados") echo "class='selecionado'"; ?>href="alterarDados/editar" id="menu_slider" class="alterar_dados"><img class="img_menu1" src="imagens/icons_navSlider/alterar_dados.png"><p class="l_menu1">Alterar dados</p></a></li>
                 <li><a <?php if($url->getURL(0) == "alterarSenha") echo "class='selecionado'"; ?>href="alterarSenha" id="menu_slider" class="alterar_senha"><img class="img_menu2" src="imagens/icons_navSlider/alterar_senha.png"><p class="l_menu1">Alterar senha</p></a></li>
-                <?php 
-                        if($professor){
-                            if($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; echo '<li><a href="cadastroDeUsuarios"  id="menu_slider" class="cadastro"><img src="imagens/icons_navSlider/cadastro_usuario.png"><p class="l_menu1">Cadastro usuários</p></a></li>';
-                        }
-                ?>
-                
                 <?php
-                	if($professor){
-                            if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"'; echo '<li><a href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png"><p class="l_menu1">Resumos</p></a></li>';
-                        }
+                if ($professor) {
                 ?>
+
+                <li><a <?php if ($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"><img src="imagens/icons_navSlider/cadastro_usuario.png"><p class="l_menu">Cadastro de usuários</p></a></li>
+                <li><a <?php  if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"';?> href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png"><p class="l_menu">Resumos</p></a></li>
+		<?php
+		} ?>
                 
                 <div id="tcns">
                     <li><a href="treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco" id="menu_slider" class="treinamento"><img class="img_menu3" src="imagens/icons_navSlider/treinamento.png"><p class="l_menu1">Treinamento</p></a></li>
                     <li><a href="cronogramaDoCurso" id="menu_slider" class="cronograma_do_curso"><img class="img_menu4" src="imagens/icons_navSlider/cronograma_curso.png"><p class="l_menu1">Cronograma curso</p></a></li>  
                 <?php
-                    if(!$professor){
-                    	if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; echo '<li><a href="notificacoes" id="menu_slider" class="notificacoes"><img class="img_menu1" src="imagens/icons_navSlider/notificacao2.png"><p class="l_menu1">Notificações</p></a></li>';
-                    }
+                    if(!$professor){?>
+                    	<li><a <?php if($url->getURL(0) == "notificacoes") echo "class='selecionado'"; ?> href="notificacoes" id="menu_slider" class="notificacoes"><img class="img_menu1" src="imagens/icons_navSlider/notificacao2.png"><p class="l_menu1">Notificações</p></a></li>
+                <?php    }
                 ?>
     
                 <li><a href="logout" id="menu_slider_logout"><img class="img_menu6" src="imagens/icons_navSlider/sair.png"><p class="l_menu1">Sair</p></a></li>

@@ -9,6 +9,7 @@ $usuarioBusiness = Usuario::getInstance();
 /** Recebe o formulario */
 $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
+/** Ativar e desativar usuários */
 if ($url->posicaoExiste(1) && ($url->getURL(1) == 'ativar')) {
     $dados = array(
         "id" =>$url->getURL(2),
@@ -16,7 +17,25 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'ativar')) {
     ); 
     $usuarioBusiness->editar($dados);
     $usuarioEmail = $usuarioBusiness->buscarPorID($url->getURL(2));
-    include_once ('enviarEmailConfirmacao.php');
+    
+    /* Função para enviar email de confirmação*/
+    include_once ('functions/funcenviaEmail.php');
+    
+    $assunto = 'Cadastro Aprovado';
+    $mensagem = "
+        <div style='display: block; position: relative; width: 500px; height: 400px; border: 2px solid #004c98;'>
+            <div style='display: block; position: relative; padding-left: 175px; padding-right: 175px; padding-top: 15px;'>
+                <img src='cid:iteva'>
+            </div>
+            <div style='display: block; position: relative; margin: 5px; padding: 20px;'>
+                <p style='font-size: 14pt;'>Olá {$usuarioEmail[0]['apelido']}, <br/> sua solicitação de cadastro foi aprovada. Você já pode efetuar seu primeiro login no AVAWEB!</p>
+                <a href='http:\\ava.iteva.org.br' style='display: block; text-align: center; font-size: 14pt;'>Clique para ser redirecionado ao AVAWEB</a>
+            </div>
+        </div>";
+    $destino = $usuarioEmail[0]['email'];  
+    $nomeDestino = $usuarioEmail[0]['email'];
+    sendMail($assunto, $mensagem, $destino, $nomeDestino,'','');
+    
     echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
     
 } else if ($url->posicaoExiste(1) && ($url->getURL(1) == 'desativar')){
@@ -37,20 +56,20 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
         /** Remove o indice cadastrar da array */
         unset($form['cadastrar']);
 
-        if (isset($_FILES["foto"])) {
+        /*if (isset($_FILES["foto"])) {
             $foto = $_FILES["foto"];
 
             if (!empty($foto["name"])) {
                 preg_match("/\.(gif|bmp|png|jpg|jpeg|ico){1}$/i", $foto["name"], $ext);
 
                 /** Gera um nome único para a imagem */
-                $nome_imagem = md5(uniqid(time())) . "." . $ext[1];
+                //$nome_imagem = md5(uniqid(time())) . "." . $ext[1];
 
                 /** Caminho de onde ficará a imagem */
-                $caminho_imagem = "imagens/perfil/" . $nome_imagem;
+                //$caminho_imagem = "imagens/perfil/" . $nome_imagem;
 
-                /** Faz o upload da imagem para seu respectivo caminho */
-                move_uploaded_file($foto["tmp_name"], $caminho_imagem);
+                /** Faz o upload da imagem para seu respectivo caminho 
+                /move_uploaded_file($foto["tmp_name"], $caminho_imagem);
                 if ($url->getURL(1) == 'editar') {
                     $dadosUsuario = $usuarioBusiness->buscarPorID($form['id']);
 
@@ -61,28 +80,28 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
 
                 $form['foto'] = $nome_imagem;
             }
-        }
-            //$form['senha'] = base64_encode($form['senha']);
+        }*/
+        
         /** Verifica se o form é de cadastro ou atualização */
-        if ($form['tipo'] == 'novo') {
-            /** Remove o indice tipo da array */
-            unset($form['tipo']);
+            if ($form['tipo'] == 'novo') {
+                /** Remove o indice tipo da array */
+                unset($form['tipo']);
 
-            /** Executa o cadastro do usuario */
-            $usuarioBusiness->cadastrar($form);
+                /** Executa o cadastro do usuario */
+                $usuarioBusiness->cadastrar($form);
+                echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
+            } else {
+                /** Remove o indice tipo da array */
+                unset($form['tipo']);
+
+                /** Executa a atualização de um usuario */
+                $usuarioBusiness->editar($form);
+
+            }
+
+            /** Redireciona para a listagem */
             echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
-        } else {
-            /** Remove o indice tipo da array */
-            unset($form['tipo']);
-
-            /** Executa a atualização de um usuario */
-            $usuarioBusiness->editar($form);
-            
-        }
-
-        /** Redireciona para a listagem */
-        echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
-        exit;
+            exit;
     }
 
     if ($url->getURL(1) == 'editar') {

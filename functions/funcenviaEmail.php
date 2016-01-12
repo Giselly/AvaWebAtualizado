@@ -4,7 +4,7 @@
     */
     require_once('Classes/mail/class.phpmailer.php');
     
-    function sendMail($assunto,$mensagem,$remetente,$nomeRemetente,$destino,$nomeDestino, $reply = NULL, $replyNome = NULL){
+    function sendMail($assunto,$mensagem,$destino,$nomeDestino, $reply = NULL, $replyNome = NULL){
 
         require_once('Classes/mail/class.phpmailer.php'); //Include pasta/classe do PHPMailer
 
@@ -12,24 +12,22 @@
         $mail->IsSMTP(); //Habilita envio SMPT
         $mail->SMTPAuth = true; //Ativa email autenticado
         $mail->IsHTML(true);
+        $mail->CharSet = "UTF-8"; // Charset da mensagem (opcional)
         
         /* Protocolo da conexão */
-        $mail->SMTPSecure = "tls";
-        /* Porta da conexão */
-        $mail->Port = "587";
+        $mail->SMTPSecure = "ssl";
 
-        $mail->Host = 'smtp.office365.com'; //Servidor de envio
-        $mail->Port = 587; //Porta de envio
-        $mail->Username = 'avaweb@iteva.org.br'; //email para smtp autenticado
-        $mail->Password = 'Iteva100'; //seleciona a porta de envio
+        $mail->Host = 'smtp.gmail.com'; //Servidor de envio
+        $mail->Port = 465; //Porta de envio
+        $mail->Username = 'nicolasmatos.iteva@gmail.com'; //email para smtp autenticado
+        $mail->Password = 'iteva234'; //seleciona a porta de envio
 
-        $mail->From = $remetente; //remtente
-        $mail->FromName = $nomeRemetente; //remtetene nome
+        $mail->From = 'nicolasmatos.iteva@gmail.com'; //remetente
+        $mail->FromName = 'Instituto Tecnológico e Vocacional Avançado - AVAWEB'; //nome remetente
         
-        /* Configura a mensagem */
-        $mail->IsHTML(true); // Configura um e-mail em HTML
-        $mail->CharSet = "UTF-8"; // Charset da mensagem (opcional)
-
+        /* Enviar imagem */
+        $mail->AddEmbeddedImage('Images/marca.png', 'iteva');
+        
         if($reply != NULL){
             $mail->AddReplyTo($reply,$replyNome);
         }
