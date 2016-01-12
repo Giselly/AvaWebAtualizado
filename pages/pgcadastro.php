@@ -7,6 +7,8 @@
         <base href="<?php echo RAIZ; ?>">
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/login.js"></script>
+        <script src="js/mascaras.js"></script>
+        <script src="js/jquery.mask.js"></script>
         <link rel="stylesheet" type="text/css" href="css/login.css">
         <link rel="shortcut icon" href="imagens/icon.ico" type="image/gif">
     </head>
@@ -33,7 +35,7 @@
                             <br />
                             <input type="text" name="apelido" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
                             <br />
-                            <input type="text" name="login" class="pass" id="log" required="required" placeholder="Login">                       
+                            <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF">                       
                             <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />
                             <input value="Enviar" type="submit" id="button" name="enviar"> ou  <a href="login">Voltar a tela de login</a></p>

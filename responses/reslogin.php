@@ -25,15 +25,6 @@ if(count($usuario) > 0 && $usuario[0]['primeiroLogin'] == '0') {
 }
 ?>
 
-<!--<input id="capituloAtual" type="text" value="<?php echo $usuario[0]['capituloAtual']?>">-->
-/*if($usuario[0]['primeiro_login'] == 0) {
-    $dados = array(
-     "id" => $usuario[0]['id'],   
-     "primeiro_login" => 1
-    );
-}
-:
-$user->editar($dados);*/
 <?php
 /** Retorna a quantidade de usuarios retornados na consulta */
 echo count($usuario);
