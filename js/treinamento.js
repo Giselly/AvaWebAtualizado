@@ -44,8 +44,7 @@ $(document).ready(function () {
             readURL(this);
             $('p#info').html('');
         }else{
-            $('p#info').html('A imagem do perfil deve ter no máximo 2 MB.');
-            $('');
+            alert("A imagem do perfil deve ter no máximo 2 MB.");
             $(this).val('');
         }
        
@@ -67,6 +66,40 @@ $(document).ready(function () {
     $("div#fotoPerfilMenu").mouseleave(function(){
         $("input#editarMenu").fadeOut("slow");  
         $("input#editarFoto").css('display','none');
+    });
+    
+    
+    /** Jcrop foto perfil*/
+    $(function(){ 
+       $('.jcrop').Jcrop(); 
+    });    
+    
+    function exibePreview(c) {                   
+        var rx = 100 / c.w;
+        var ry = 100 / c.h;
+
+        // atualiza CSS do preview para refletir o tamanho da imagem enviada 
+        // e o posicionamento do crop
+        $('#preview').css({
+        width: Math.round(rx * <?php echo $imagesize[0]; ?>) + 'px',
+        height: Math.round(ry * <?php echo $imagesize[1]; ?>) + 'px',
+        marginLeft: '-' + Math.round(rx * c.x) + 'px',
+        marginTop: '-' + Math.round(ry * c.y) + 'px'
+        });
+
+        // campos hidden que armazenam os valores
+        $('#x').val(c.x);
+        $('#y').val(c.y);
+        $('#x2').val(c.x2);
+        $('#y2').val(c.y2);
+                    $('#w').val(c.w);
+                    $('#h').val(c.h);
+                    }
+    
+    $('.jcrop').Jcrop({
+	onChange: exibePreview,
+	onSelect: exibePreview,
+	aspectRatio: 1
     });
     
 /**

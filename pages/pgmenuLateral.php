@@ -1,14 +1,14 @@
-
+<link href="css/jquery.Jcrop.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.Jcrop.js"></script>
 <aside id="paginas">
 		
         <div id="fotoPerfilMenu">
-        <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
-           <input id="editarMenu" type="button" value="editar"/>
-           <img src="imagens/perfil/<?php echo $foto; ?>" alt="" id="fotoAt" />
-
-           <input type="file" name="foto" id="fotoMenu" accept="image/*" />
-           <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
-        </form>
+            <form class="" id="fotoMenuLateral" name="fotoMenuLateral" method="POST" enctype="multipart/form-data">
+               <input id="editarMenu" type="button" value="editar"/>
+               <img src="imagens/perfil/<?php echo $foto; ?>" alt="" id="fotoAt" class="jcrop"/>
+               <input type="file" name="foto" id="fotoMenu" accept="image/*" />              
+               <input type="submit" class="alterar" name="editar" id="editarFoto" value="Salvar">
+            </form>            
         </div>
         
     <!--<img id="fotoUsuario" src="imagens/perfil/<?php //echo $foto; ?>" alt="" />-->

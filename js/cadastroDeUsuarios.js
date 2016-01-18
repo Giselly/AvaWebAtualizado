@@ -15,10 +15,10 @@ $(document).ready(function () {
         
     });
 
-    /** Receber a imagem selecionada e exbe no img#fotoAtual */
-    $('input#foto').change(function(){
+    /** Receber a imagem selecionada e exbe no img#fotoAtual 
+    $('input#foto').change(function(){*/
         
-        /** Verifica se o arquivo possui menos que 2MB */
+        /** Verifica se o arquivo possui menos que 2MB 
         if(this.files[0].size < 2*(1024*1024)){
             readURL(this);
             $('p#info').html('');
@@ -40,7 +40,7 @@ $(document).ready(function () {
     
         $("div#fotoPerfil").mouseleave(function(){
             $("input#editar").animate({height: '20px', opacity: '0.8'}, "slow");        
-        });
+        });*/
     
     
     /** Configurações do lightbox */
