@@ -51,12 +51,14 @@ if(isset($form['salvar'])){
     
     $resumoBusiness->editar($dados);
     if($form["aprovacao"] == 1){
-    $dadosUsuario = array (
-        "id" => $form["idUsuario"],
-        "capituloAtual" => $capituloAtual+1
-    );   
-       
-    $usuarioBusiness->editar($dadosUsuario);
+        $dadosUsuario = array (
+            "id" => $form["idUsuario"],
+            "capituloAtual" => $capituloAtual+1
+        );   
+
+        $usuarioBusiness->editar($dadosUsuario);
     }
-    //var_dump($dadosUsuario);
+    echo '<script>alert("Enviado!");</script>';
+    echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
+    
 } 

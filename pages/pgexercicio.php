@@ -2,8 +2,9 @@
 <h2 id="tituloCapitulo">Capítulo <?php echo $url->getURL(1); ?></h2>
 <section id="exercicio">
     <?php
-    
-    if (!isset($nota)) {
+    $dataBanco = date('Y-m-d H:i:s', strtotime('+1 days',strtotime($exercicios[0]['data'])));
+    $data = date('Y-m-d H:i:s');
+    if ((!$exercicios[0]['maiorNota']) || ($exercicios[0]['maiorNota'] < 7 && $dataBanco == $data)) {
         ?>
 
         <section id="iniciarExercicio">
@@ -42,10 +43,10 @@
         </form>
         <?php
     } else {
-        if($nota > 7){
-            echo "<p>Parabens, você tirou um {$nota} e pode continuar nos próximos níveis.</p>";
+        if($exercicios[0]['maiorNota'] > 7){
+            echo "<p>Parabéns, você tirou {$exercicios[0]['maiorNota']} e pode continuar nos próximos níveis.</p>";
         }else{
-            echo "<p>Você tirou um {$nota} e deverá repetir o teste.O novo teste estará liberado apenas amanhã.";
+            echo "<p>Sua maior nota nesse exercício é {$exercicios[0]['maiorNota']} e você deverá repetí-lo. O novo teste estará liberado apenas amanhã.";
             
         }
     }

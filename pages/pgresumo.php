@@ -18,7 +18,7 @@
            <!-- </div>-->
             <input type="submit" name="salvar" class="novo" value="Salvar">
         <?php } else {?>
-            <img src="imagens/resumo-sucesso.png" id="img-suc">
-        <?php } ?>        
+            <h3>Resumo enviado com sucesso. Aguarde uma notificação para passar para o próximo capítulo.</h3>
+        <?php } ?>     
     </form>
 </section>

@@ -42,13 +42,27 @@
                             $resumoSel = ($url->posicaoExiste(2) && $url->getURL(2) == "resumo" && $refCapitulo == $capitulo) ? "id='clicado'" : "";
                             
                             ?>
-                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?> ><a <?php echo "class='{$capitulo}{$i}'"; echo $exercicioSel; ?> href="<?php echo "treinamento/{$capitulo}/exercicio"; ?>">Exercício</a>        
-                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?>><a <?php echo "class='{$capitulo}{$i} resumo'"; echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
-                        </ul>
-                    </li>
-                    <?php
-                }
-            }
+                            <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?> ><a <?php echo "class='{$capitulo}{$i}'"; echo $exercicioSel; ?> href="<?php echo "treinamento/{$capitulo}/exercicio"; ?>">Exercício</a> 
+                                
+                            <?php
+                                if(!$professor){
+                                    /** @var Exercicio*/
+                                    $exerciciosBusiness = Exercicio::getInstance();
+                                    $exe = $exerciciosBusiness->buscarPorCapituloUsuario($capitulo, $idUsuario);
+                                    
+                                    if(isset($exe[0]["maiorNota"]) && $exe[0]["maiorNota"] >=7){ ?> 
+                                        <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?>><a <?php echo "class='{$capitulo}{$i} resumo'"; echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
+                            <?php   } else {
+                                        echo '<li style="color: #989898;">Resumo</li>';
+                                    }
+                                } else {?>
+                                     <li <?php $i++; echo "id= '{$i}' class='{$capitulo}'"?>><a <?php echo "class='{$capitulo}{$i} resumo'"; echo $resumoSel; ?>href="<?php echo "treinamento/{$capitulo}/resumo"; ?>">Resumo</a></li>
+                                   
+                        <?php   }
+                    }?>
+                    </ul>
+               </li>            
+            <?php    }
             ?>
         </ul>
     </section>

@@ -44,12 +44,11 @@ if (isset($form['salvar'])) {
         "data" => date("Y-m-d H:i:s")
     );
 
-    /** */
+    /** */    
     $exerciciosBusiness->cadastrar($dados);
+    
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0';>";
+} else {   
+    $exercicios = $exerciciosBusiness->buscarPorCapituloUsuario((int) $url->getURL(1), $idUsuario);
+    include_once('pages/pgexercicio.php');
 }
-
-$exercicios = $exerciciosBusiness->buscarPorCapituloUsuario((int) $url->getURL(1), $idUsuario);
-
-$exercicios[0]['data'] = strtotime($exercicios[0]['data']);
-
-include_once('pages/pgexercicio.php');

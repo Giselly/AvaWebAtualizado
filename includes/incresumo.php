@@ -1,3 +1,6 @@
+<link rel='stylesheet' type='text/css' href='css/resumo.css'>
+<link rel='stylesheet' type='text/css' href='css/font.css'>
+
 <?php
 
 /**@var Resumo */
@@ -18,8 +21,7 @@ if(isset($form['salvar'])){
     $resumoBusiness->cadastrar($dados);
     
      
-    echo '<h2 id="tituloCapitulo">Resumo Enviado!</h2>';
-    echo '<h3 id="subtituloCapitulo">Aguarde uma notificação!</h3>';
+    echo'<h3>Resumo enviado com sucesso. Aguarde uma notificação para passar para o próximo capítulo.</h3>';
 
     /*$destinatario = "jlarteedesign@gmail.com";
     $destinatario = "giselly.reboucas@iteva.org.br";
