@@ -23,32 +23,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `capitulos`
---
-
-CREATE TABLE IF NOT EXISTS `capitulos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `ordem` int(11) DEFAULT NULL,
-  `titulo` varchar(100) DEFAULT NULL,
-  `subtitulo` varchar(255) DEFAULT NULL,
-  `conteudo` mediumtext,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
-
---
--- Extraindo dados da tabela `capitulos`
---
-
-INSERT INTO `capitulos` (`id`, `ordem`, `titulo`, `subtitulo`, `conteudo`) VALUES
-(1, 1, 'Capitulo 1', 'Subtitulo do capitulo 1', 'Conteudo do capitulo 1'),
-(2, 2, 'Capitulo 2', 'Subtitulo do capitulo 2', 'Conteudo do capitulo 2'),
-(3, 3, 'Capitulo 3', 'Subtitulo do capitulo 3', 'Conteudo do capitulo 3'),
-(4, 4, 'Capitulo 4', 'Subtitulo do capitulo 4', 'Conteudo do capitulo 4'),
-(5, 5, 'Capitulo 5', 'Subtitulo do capitulo 5', 'Conteudo do capitulo 5');
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `exerciciosconcluidos`
 --
 
@@ -61,23 +35,7 @@ CREATE TABLE IF NOT EXISTS `exerciciosconcluidos` (
   PRIMARY KEY (`id`),
   KEY `fk_exerc_capitulo_idx` (`idCapitulo`),
   KEY `fk_exerc_usuarios_idx` (`idUsuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
-
---
--- Extraindo dados da tabela `exerciciosconcluidos`
---
-
-INSERT INTO `exerciciosconcluidos` (`id`, `idCapitulo`, `idUsuario`, `nota`, `data`) VALUES
-(8, 1, 10, 3.33333, NULL),
-(11, 1, 11, 10, NULL),
-(12, 1, 10, 3.33333, NULL),
-(13, 1, 10, 3.33333, NULL),
-(14, 1, 10, 6.66667, NULL),
-(15, 1, 10, 3.33333, NULL),
-(16, 2, 11, 10, '2015-09-08 14:26:12'),
-(17, 1, 10, 10, '2015-09-11 15:24:52'),
-(18, 1, 10, 6, '2015-09-24 15:21:37'),
-(19, 1, 58, 8, '2015-10-20 09:28:14');
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 -- --------------------------------------------------------
 
@@ -92,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `itens` (
   `valor` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_itens_questoes_idx` (`idQuestoes`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=163 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=383 ;
 
 --
 -- Extraindo dados da tabela `itens`
@@ -260,7 +218,227 @@ INSERT INTO `itens` (`id`, `idQuestoes`, `item`, `valor`) VALUES
 (159, 40, 'Alinhamento centralizado', 1),
 (160, 40, 'Alinhamento a esquerda', 0),
 (161, 40, 'Alinhamento à direita', 0),
-(162, 40, 'Todas as alternativas estão corretas.', 0);
+(162, 40, 'Todas as alternativas estão corretas.', 0),
+(163, 41, 'Não se deve repetir fontes. ', 0),
+(164, 41, 'Obrigatoriamente o material a se repetir deve ser a cor.', 0),
+(165, 41, 'Algum aspecto do design deve repetir-se no material inteiro. ', 1),
+(166, 41, 'Nenhuma das alternativas é verdadeira. ', 0),
+(167, 41, 'Ao fazer uso do princípio da repetição, estou padronizando o material gráfico', 0),
+(168, 42, 'Consistência.', 1),
+(169, 42, 'Inconsistência.', 0),
+(170, 42, 'Padronização.', 0),
+(171, 42, 'Pregnância. ', 0),
+(172, 42, 'Unificador.', 0),
+(173, 43, '“Um esforço consciente para unificar todos os elementos do design. ”', 0),
+(174, 43, '“Justamente a repetição de alguns elementos. ”', 0),
+(175, 43, '“Um elemento-chave visual que unifica o material. ”', 0),
+(176, 43, 'Apenas as alternativas a e c estão corretas', 1),
+(177, 43, 'Apenas a alternativa b está correta.', 0),
+(178, 44, 'Unificar e acrescentar interesse visual.', 1),
+(179, 44, 'Cria a sensação de calma e segurança.', 0),
+(180, 44, 'Criar um elemento forte.', 0),
+(181, 44, 'Tornar a leitura desagradável. ', 0),
+(182, 45, 'Evitar repetir o elemento em demasia, não tornar o material enfadonho e estar consciente do contraste. ”', 1),
+(183, 45, 'Cuidado ao repetir tipografias, evitar repetir formas aleatórias.', 0),
+(184, 45, 'Evitar o uso de cores contrastantes em formas aproximadas.', 0),
+(185, 45, 'Nenhuma das alternativas', 0),
+(186, 46, 'Proximidade', 0),
+(187, 46, 'Contraste', 0),
+(188, 46, 'Alinhamento', 0),
+(189, 46, 'Repetição', 1),
+(190, 47, 'Ajuda a organizar as informações.', 0),
+(191, 47, 'Ajuda a guiar o leitor pelas páginas.', 0),
+(192, 47, 'Centraliza as informações.', 0),
+(193, 47, 'Nenhuma das alternativas.', 0),
+(194, 47, 'Alternativas a e b.', 1),
+(195, 48, 'Um visual mais profissional e dá personalidade as peças.', 1),
+(196, 48, 'Mais desorganizado e menos profissional.', 0),
+(197, 48, 'Sofisticado, comum e básico.', 0),
+(198, 48, 'Nenhuma das alternativas', 0),
+(199, 49, 'Em nenhum caso. A repetição é desnecessária.', 0),
+(200, 49, 'Em materiais onde o contraste não foi empregado.', 0),
+(201, 49, 'Em peças de uma só página.', 1),
+(202, 49, 'Do material for muito extenso.', 0),
+(203, 50, 'Está errada, pois os princípios do design se completam.', 1),
+(204, 50, 'Está correta, pois somente a repetição basta para criar um bom design.', 0),
+(205, 50, 'Está em partes correta. Pois a repetição pode ser empregada junta a outros princípios, exceto com o contraste.', 0),
+(206, 50, 'Está errada, porque o princípio que não pode ser empregado junto aos outros é o princípio do alinhamento. ', 0),
+(207, 51, 'O contraste tem que ser fraco.', 0),
+(208, 51, 'O contraste deve ser empregado apenas nas fontes. ', 0),
+(209, 51, 'Não se deve fazer contrastes com variações de fontes. ', 0),
+(210, 51, 'O contraste deve ser forte.', 1),
+(211, 52, 'Deve diferenciar um pouco um do outro.', 0),
+(212, 52, 'Criar um padrão para ambos.', 0),
+(213, 52, 'Diferencia-los completamente.', 1),
+(214, 52, 'Criar algo que os torne semelhantes.', 0),
+(215, 52, 'Distancia-los.', 0),
+(216, 53, '“Podemos alcançar o contraste de várias maneiras. Uma letra grande pode ser contrastada com uma pequena. ”', 0),
+(217, 53, '“Realmente faz que o leitor queira olhar para o material. ”', 0),
+(218, 53, '“O leitor deve ser capaz de, à primeira passada de olhos sobre um material, compreender imediatamente o que ele representa. ”', 1),
+(219, 53, '“Não se pode contrastar um fio de meio ponto com um de 1 ponto. Não se pode contrastar o marrom-escuro com o preto. ”', 0),
+(220, 54, 'Evitar contrastar uma linha pouco espessa com uma linha mais espessa.', 0),
+(221, 54, 'Evitar contrastar textos na cor marrom e títulos em preto.', 0),
+(222, 54, 'Evitar usar duas ou mais fontes similares.', 0),
+(223, 54, 'Nenhuma opção.', 0),
+(224, 54, 'Apenas os itens a, b e c, estão corretos.', 1),
+(225, 55, 'Pregnância', 0),
+(226, 55, 'Repetição', 0),
+(227, 55, 'Contraste', 1),
+(228, 55, 'Alinhamento', 0),
+(229, 55, 'Proximidade', 0),
+(230, 56, 'Trabalhar com as fontes.', 1),
+(231, 56, 'Inserir diferentes formas.', 0),
+(232, 56, 'Aplicar cores e texturas.', 0),
+(233, 56, 'Mesclar fotos e ilustrações.', 0),
+(234, 57, 'Um fio mais fino, com espessura de meio ponto.', 0),
+(235, 57, 'Um fio duplo com duas espessuras.', 0),
+(236, 57, 'Um fio mais forte de 2 ou 4 pontos.', 1),
+(237, 57, 'Dois fios de dupla espessura.', 0),
+(238, 57, 'Um fio de espessura igual ao fio já utilizado.', 0),
+(239, 58, 'Duplo.', 1),
+(240, 58, 'Único.', 0),
+(241, 58, 'Triplo.', 0),
+(242, 58, 'Não há propósito algum.', 0),
+(243, 59, 'Apenas mais um princípio básico do design.', 0),
+(244, 59, 'O contraste é uma cor que dá mais atratividade ao material.', 0),
+(245, 59, 'Uma tática usada por designers para dispersar a atenção do público.', 0),
+(246, 59, 'Uma das maneiras mais eficazes de acrescentar algum atrativo visual ao material.', 1),
+(247, 59, 'Nenhuma das opções', 0),
+(248, 60, 'Criar interesse sobre uma página e auxiliar na organização das informações.', 1),
+(249, 60, 'Criar uma cor personalizada no material e organizar melhor as informações.', 0),
+(250, 60, 'Dar ênfase em alguma informação e deixar o material mais bonito.', 0),
+(251, 60, 'Confundir o leitor e criar um foco em uma informação não necessária.', 0),
+(252, 61, 'Usamos somente uma família de fontes, sem muitas variações.', 1),
+(253, 61, 'Ao combinarmos fontes similares. ', 0),
+(254, 61, 'Quando usamos elemento nitidamente diferentes entre si. ', 0),
+(255, 61, 'Ao fazermos usos de formas similares.', 0),
+(256, 61, 'Ao distribuir as fontes de modo que o espaçamento seja proporcional entre si.', 0),
+(257, 62, 'São formas regulares básicas como a elipse, o retângulo e o triângulo. ', 0),
+(258, 62, 'É o material básico de qualquer página impressa.', 1),
+(259, 62, 'São elementos dispostos de forma aleatória no material.', 0),
+(260, 62, 'Linhas de várias espessuras e tamanhos.', 0),
+(261, 62, 'Nenhuma das alternativas.', 0),
+(262, 63, 'O leitor não consegue de imediato interpretar as informações.', 0),
+(263, 63, 'O designer se perde ao combinar mais de uma fonte.', 0),
+(264, 63, 'Onde você consegue reconhecer e dar nome aos contrastes.', 0),
+(265, 63, 'Combinamos fontes similares em estilo, tamanho, peso e etc.', 1),
+(266, 64, 'Combinando fontes separadas e elementos nitidamente diferentes entre si.', 1),
+(267, 64, 'Distribuindo de forma irregular as informações.', 0),
+(268, 64, 'Utilizando duas famílias de fontes similar.', 0),
+(269, 64, 'Aplicando cores fortes sobre cores um pouco mais forte.', 0),
+(270, 64, 'Todas as alternativas.', 0),
+(271, 65, 'Calmaria e formalidade.', 1),
+(272, 65, 'Bastante uso da Repetição e alinhamento.', 0),
+(273, 65, 'Bastante contrastante e aspecto de formalidade.', 0),
+(274, 65, 'Uso excessivo de alinhamentos a esquerda e variações de tamanhos e pesos.', 0),
+(275, 66, 'De meio ponto.', 0),
+(276, 66, 'De dupla espessura.', 0),
+(277, 66, 'Mais fino.', 0),
+(278, 66, 'Mais forte.', 1),
+(279, 66, 'De um ponto e meio.', 0),
+(280, 67, 'Como um conceito pouco útil.', 0),
+(281, 67, 'Algo instável e que pode ser modulado.', 0),
+(282, 67, 'Como um conceito sólido e útil.', 1),
+(283, 67, 'Algo que deve ser evitado.', 0),
+(284, 67, 'A autora não define concordância.', 0),
+(285, 68, 'Bastante explorado, pois causa uma boa impressão na leitura.', 0),
+(286, 68, 'Evitado, pois causa uma má impressão.', 1),
+(287, 68, 'Utilizado com cautela.', 0),
+(288, 68, 'Proporcionado através de cores quentes e frias.', 0),
+(289, 69, 'Seis, e são elas: tamanho, peso, estrutura, forma, direção e cor.', 1),
+(290, 69, 'Cinco, e são elas: tamanho, peso, contorno, posição e forma.', 0),
+(291, 69, 'Seis, e são elas: cor, peso, estrutura, alinhamento, forma e contorno.', 0),
+(292, 69, 'Três, e são eles: tamanho, peso e estrutura.', 0),
+(293, 69, 'Duas maneiras, e são elas: tamanho e peso.', 0),
+(294, 70, 'Relacionado ao alinhamento das informações', 1),
+(295, 70, 'Criar uma cor personalizada no material.', 0),
+(296, 70, 'À organização e à clareza das informações colocadas nos materiais.', 0),
+(297, 70, 'À profundidade ocasionada pelas cores do material.', 0),
+(298, 71, 'Estilo antigo, moderno, serifa grossa, sem serifa, manuscrita, decorativo, pixel.', 1),
+(299, 71, 'Estilo moderno, estilo antigo, serifa fina, sem serifa, manuscrita e decorativo.', 0),
+(300, 71, 'Estilo antigo, moderno, sem serifa, manuscrita, decorativo e russa.', 0),
+(301, 71, 'Largura fixa, moderno, sem serifa, manuscrita, decorativo', 0),
+(302, 71, 'Ao distribuir a fontes de modo que o espaçamento seja proporcional entre si.', 0),
+(303, 72, 'Tipologia baseada no estilo velho oeste. ', 0),
+(304, 72, 'É o material básico de qualquer página impressa.', 0),
+(305, 72, 'Tipografia que se baseia na escrita manual dos escribas.', 1),
+(306, 72, 'São tipologias formadas por curvas.', 0),
+(307, 73, 'Contrastante', 0),
+(308, 73, 'Cintilante', 0),
+(309, 73, 'Elegante.', 0),
+(310, 73, 'Ofuscante.', 1),
+(311, 74, 'Moderno.', 0),
+(312, 74, 'Estilo Antigo.', 1),
+(313, 74, 'Manuscrito.', 0),
+(314, 74, 'Serifa Grossa', 0),
+(315, 74, 'Decorativo', 0),
+(316, 75, 'Jornais e revista.', 0),
+(317, 75, 'Provas e documentos.', 0),
+(318, 75, 'Livros infantis.', 1),
+(319, 75, 'Panfletos e banners ', 0),
+(320, 75, 'Nenhuma das opções.\r\n', 0),
+(321, 76, 'A maioria delas possuem peso iguais.', 1),
+(322, 76, 'Todas possuem transição grosso-fino.', 0),
+(323, 76, 'Possuem uma variação no traçado das letras.', 0),
+(324, 76, 'Parecem desorganizadas.', 0),
+(325, 76, 'Nenhuma das opções.', 0),
+(326, 77, 'Parecem ter sido escritos à mão, com uma caneta tinteiro, com um pincel ou, às vezes, com um lápis ou caneta profissional.', 1),
+(327, 77, 'São engraçadas e sem serifas.', 0),
+(328, 77, 'Fontes com serifa grossa, mas que conseguimos ver suavemente a transição grosso-fino.', 0),
+(329, 77, 'Nenhuma das opções.', 0),
+(330, 78, 'É a linha imaginária que limita a altura do tipo', 0),
+(331, 78, 'É a linha invisível sobre qual o tipo fica.', 1),
+(332, 78, 'É a linha que corta na diagonal as transições grosso-fino.', 0),
+(333, 78, 'Nenhuma das opções.', 0),
+(334, 79, 'Parte das letras que são mais altas do que a altura do x.', 0),
+(335, 79, 'É a transição entre grosso-fino.', 0),
+(336, 79, 'São as partes das letras que ficam abaixo da linha base.', 1),
+(337, 79, 'Nenhuma das opções.', 0),
+(338, 80, 'Parte das letras que são mais altas do que a altura do x.', 1),
+(339, 80, 'É a transição entre grosso-fino.', 0),
+(340, 80, 'São as partes das letras que ficam abaixo da linha base.', 0),
+(341, 80, 'Nenhuma das opções.', 0),
+(342, 81, 'Peso, estrutura, direção, tamanho, altura e largura.', 0),
+(343, 81, 'Tamanho, peso, estrutura, forma, direção e cor.', 1),
+(344, 81, 'Tamanho, medida, ligaduras, ascendente e descentes.', 0),
+(345, 81, 'Bold, regular, tamanho, peso e direção', 0),
+(346, 82, 'Peso.', 0),
+(347, 82, 'Forma.', 0),
+(348, 82, 'Tamanho.', 1),
+(349, 82, 'Estrutura.', 0),
+(350, 83, 'Maneira pela qual a fonte é construída.', 1),
+(351, 83, 'Ao tamanho da fonte.', 0),
+(352, 83, 'A composição da forma.', 0),
+(353, 83, 'A direção da forma.', 0),
+(354, 84, 'Sempre combine duas fontes de mesma categoria na mesma página.', 0),
+(355, 84, 'Use pesos bem parecidos.', 0),
+(356, 84, 'Nunca coloque duas fontes de mesma categoria na mesma página.', 1),
+(357, 84, 'Repita a cor em todo o material.', 0),
+(358, 85, 'Manuscrito versus itálico.', 0),
+(359, 85, 'Serifa grossa versus estilo antigo.', 0),
+(360, 85, 'Caixa alta versus negrito.', 0),
+(361, 85, 'Romam versus itálico.', 1),
+(362, 85, 'Nenhuma das opções.', 0),
+(363, 86, 'Que as letras têm a mesma altura, tanto em caixa-alta como em caixa-baixa', 0),
+(364, 86, 'Que possuam uma largura mais espessa. ', 0),
+(365, 86, 'Que a fonte está reta em suas partes superior e inferior.', 1),
+(366, 86, 'Nenhuma das opções.', 0),
+(367, 87, 'De enfatizá-la.', 1),
+(368, 87, 'Apenas por estética.', 0),
+(369, 87, 'Para diferenciá-la das demais.', 0),
+(370, 87, 'Nenhuma das opções.', 0),
+(371, 88, 'Espessura dos traços da fonte.', 1),
+(372, 88, 'Ao tamanho entre cada letra.', 0),
+(373, 88, 'Altura de uma letra e outra.', 0),
+(374, 88, 'A mancha de tinta quando impressa.', 0),
+(375, 89, 'Contraste de peso.', 1),
+(376, 89, 'Contraste de forma.', 0),
+(377, 89, 'Contraste de estrutura.', 0),
+(378, 89, 'Nenhuma das opções.', 0),
+(379, 90, 'Ao formato do tipo.', 1),
+(380, 90, 'Ao traço.', 0),
+(381, 90, 'Espessura.', 0),
+(382, 90, 'Aos cantos da letra.', 0);
 
 -- --------------------------------------------------------
 
@@ -274,7 +452,7 @@ CREATE TABLE IF NOT EXISTS `questoes` (
   `questao` mediumtext,
   PRIMARY KEY (`id`),
   KEY `fk_questoes_capitulos_idx` (`idCapitulo`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=91 ;
 
 --
 -- Extraindo dados da tabela `questoes`
@@ -320,7 +498,57 @@ INSERT INTO `questoes` (`id`, `idCapitulo`, `questao`) VALUES
 (37, 4, 'O proposito básico do alinhamento é?'),
 (38, 4, 'Normalmente ao se combinar um alinhamento marcante e uma fonte apropriada, criamos uma estética?'),
 (39, 4, 'Para atingir o alinhamento numa pagina devemos fazer o uso consciente do posicionamento dos elementos, mesmo que os elementos estejam_________.'),
-(40, 4, 'Segundo a autora o que devemos evitar em nossos materiais?');
+(40, 4, 'Segundo a autora o que devemos evitar em nossos materiais?'),
+(41, 5, 'O princípio da repetição afirma que:'),
+(42, 5, 'Como a repetição pode ser considerada? '),
+(43, 5, 'Qual das afirmativas abaixo está CORRETA?'),
+(44, 5, 'Qual o proposito básico da repetição?'),
+(45, 5, 'Quais os cuidados que se deve ter em relação ao princípio da repetição?'),
+(46, 5, 'Ao criar títulos com mesmo tamanho e mesmo peso, faço uso de qual princípio básico do design?'),
+(47, 5, 'Sobre a repetição é correto afirmar que?'),
+(48, 5, 'O uso da repetição cria o quê tipo de visual?'),
+(49, 5, 'O princípio da repetição é muito útil no caso...'),
+(50, 5, '“O princípio da repetição NÃO deve ser empregado junto a nenhum outro princípio do design. ”\r\nSobre esta afirmativa é correto afirmar que.\r\n'),
+(51, 6, 'Qual regra deve ser lembrada ao aplicar o princípio de contraste?'),
+(52, 6, 'Segundo o princípio de contraste, o que deve ser feito quando há dois elementos diferentes? '),
+(53, 6, '“O contraste é um ponto crítico na organização das informações; ...”\r\nA melhor alternativa que completa essa afirmação é?\r\n'),
+(54, 6, 'Em qual das alternativas estão os itens que se deve evitar, ao fazer uso do princípio de contraste? '),
+(55, 6, 'Ao utilizarmos de uma letra grande em uma informação e uma menor em outra, estamos fazendo uso de qual princípio básico do design?'),
+(56, 6, 'A maneira mais fácil de acrescentar contraste a um material é?'),
+(57, 6, 'Se utilizo um fio fino em um material, qual outro estilo de fio seria indicado para dar um maior contraste?'),
+(58, 6, 'O propósito do contraste é?'),
+(59, 6, 'Segundo a autora o contraste é?'),
+(60, 6, 'Quais os dois objetivos do contraste?'),
+(61, 7, 'Ocorre uma relação concordante quando faço uso de?'),
+(62, 7, 'O que a autora define por tipo?'),
+(63, 7, 'Uma relação conflitante é aquela onde?'),
+(64, 7, 'Como faço para criar uma relação contrastante? '),
+(65, 7, 'Quais as características dos designs concordantes?'),
+(66, 7, 'Uma fonte pesada combina com que tipo de contorno?'),
+(67, 7, 'Como a autora define concordância?'),
+(68, 7, 'O conflito é algo que deve ser?'),
+(69, 7, 'Quantas maneiras temos para contrastar a tipologia, e quais são elas?'),
+(70, 7, 'A que o design está relacionado?'),
+(71, 8, 'Os principais grupos de tipos são:'),
+(72, 8, 'O que é o estilo antigo?'),
+(73, 8, 'Quando usamos o estilo de tipo moderno em uma extensa área de texto, obtemos um efeito, classificado como?'),
+(74, 8, 'Ao criarmos uma extensa área de texto corrido, aconselha-se fazer uso de qual etilo tipográfico? '),
+(75, 8, 'Tipos com serifa grossa costumam ser utilizados em que tipo de material?'),
+(76, 8, 'Uma característica presente nas sans serif é?'),
+(77, 8, 'Manuscrito é o termo usado para classificar fontes que...'),
+(78, 8, 'O que linha base?'),
+(79, 8, 'O que são descendentes?'),
+(80, 8, 'O que são ascendentes?'),
+(81, 9, 'Os contrastes abordados no livro são?'),
+(82, 9, 'O contraste que trabalha as variações de tamanho é o?'),
+(83, 9, 'O contraste de estrutura refere-se a quê?'),
+(84, 9, 'Uma das regras importantes para contrastar tipo é?'),
+(85, 9, 'Um dos contrastes citados no livro é o do?'),
+(86, 9, 'O que significa o Estilo Romam?'),
+(87, 9, 'Usamos o itálico em uma palavra com qual objetivo?'),
+(88, 9, 'Contraste de peso refere-se à?'),
+(89, 9, 'Uma das melhores maneiras de aumentar a estética visual e organizar as informações de uma página, é fazer uso de qual contraste?'),
+(90, 9, 'Forma refere-se à quê?');
 
 -- --------------------------------------------------------
 
@@ -344,16 +572,14 @@ CREATE TABLE IF NOT EXISTS `resumo` (
   `notificacaoVisualizada` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `idUsuario` (`idUsuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Extraindo dados da tabela `resumo`
 --
 
 INSERT INTO `resumo` (`id`, `idUsuario`, `capitulo`, `resumo`, `resumoVisualizado`, `aprovacao`, `assunto`, `dataAtual`, `notificacao`, `dataNotificacao`, `excluidoNotificacao`, `excluidoResumo`, `notificacaoVisualizada`) VALUES
-(1, 11, 1, '<p>Resumo teste</p>', 1, 1, 'Deu certo', '2015-09-11', '<p>Vc foi aprovado</p>', '2015-09-11', 0, 0, 1),
-(2, 11, 1, '<p>Resumo teste</p>', 0, 2, 'Mara', '2015-09-11', '<p>Amarsfda</p>', '2015-10-16', 0, 0, 0),
-(3, 11, 2, '<p>tyhsgdfhgdfghdfg</p>', 0, 1, '', '2015-09-11', '<p>ghdsfgjhhjfghjfdghertyrtyertytrreyt</p>', '2015-09-11', 0, 0, 1);
+(1, 7, 1, '<p>Resumo Teste</p>\r\n<p>Por outro lado, a consulta aos diversos militantes promove a alavancagem das formas de a&ccedil;&atilde;o.</p>\r\n<p>Ainda assim, existem d&uacute;vidas a respeito de como a expans&atilde;o dos mercados mundiais cumpre um papel essencial na formula&ccedil;&atilde;o do or&ccedil;amento setorial.</p>', 0, 1, '', '2016-01-19', '', '2016-01-19', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -386,29 +612,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `primeiroLogin` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `login_UNIQUE` (`login`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=64 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `apelido`, `login`, `senha`, `cpf`, `rg`, `sexo`, `nomeMae`, `nomePai`, `estadoCivil`, `foto`, `dataNascimento`, `email`, `telefone`, `status`, `cep`, `endereco`, `bairro`, `capituloAtual`, `professor`, `primeiroLogin`) VALUES
-(10, 'Administradora Giselly', 'Administrador do sistema', 'admin', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', '', '', 0, 'mae', 'pai', '', '50c8386e4ef64554332eb33dcd14bec3.jpg', '2015-10-14 00:00:00', 'gisellyazevedo@hotmail.com', '(85) 9.8546-1027', 1, '', '', '', 3, 1, 1),
-(11, 'Nicolas Matos', 'Nicolas', 'nicolas', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', '', '', NULL, '', '', '', 'default.jpg', NULL, 'nicolau@email.com', '', 1, NULL, NULL, NULL, 0, 0, 1),
-(47, 'Maria Giselly Rebouças Azevedo', 'Giselly', 'giselly', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(49, 'Giselly Azevedo', 'Giselly', 'giselly123', '*A4B6157319038724E3560894F7F932C8886EBFCF', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(50, 'Josinaldo Batista', 'josinaldo', 'josi', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(51, 'Josinaldo Batista da Silva', 'Josinaldo Batista', 'zerlan', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', '123.456.888-88', '156464649879', 0, 'mae', 'pai', NULL, 'default.jpg', '1997-06-09 00:00:00', 'gisellyazevedo@hotmail.com', '(98) 9.8989-8989', 1, '65.656-556', 'hgkgjhgjhgjh', 'iuhiuhjjh', 0, 0, 1),
-(52, 'Isadora Freitas', 'Isadora Freitas', 'isadora', '*00A51F3F48415C7D4E8908980D443C29C69B60C9', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(53, 'Israel Oliveira da Silva', 'Israel', 'israel ', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', '', '', NULL, '', '', '', 'default.jpg', NULL, 'giselly.reboucas@iteva.org.br', '', 1, NULL, NULL, NULL, 0, 0, 1),
-(55, 'Josinaldo Nicolas', 'JoseNicolas', 'jn', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(56, 'Ruan Nicolas Matos', 'Ruan Nicolas', 'ruan', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(57, 'Lucas Que Loucura', 'Lucas', 'lucas', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(58, 'Lucca Ribeiro', 'Lucca', 'lucca', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 1),
-(59, 'Dimas Silva', 'Dimas Silva', 'dimas', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0),
-(60, 'Reginaldo Maranhão', 'Reginaldo Maranhão', 'naldo', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0),
-(62, 'Reginaldo Maranhão', 'Reginaldo Maranhão', 'regi', '*531E182E2F72080AB0740FE2F2D689DBE0146E04', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0),
-(63, 'Gi Rebouças', 'giselly', 'gi', '*846AEC788124A4D732D51692E35E9DE488607F86', NULL, NULL, NULL, NULL, NULL, NULL, 'default.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 0, 0, 0);
+(5, 'Administrador do Sistema', 'Administrador do Sistema', '111.111.111-11', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, 'ea330a123af56d8da6b3de67ea412d4e.jpg', NULL, 'avaweb@iteva.org.br', NULL, 1, NULL, NULL, NULL, 0, 1, 1),
+(7, 'Maria Giselly Rebouças Azevedo', 'Giselly Rebouças', '222.222.222-22', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, NULL, NULL, NULL, NULL, '9f24edb15c408c557d4dca91d7905f17.jpg', NULL, 'gisellyazevedo@hotmail.com', NULL, 1, NULL, NULL, NULL, 1, 0, 1);
 
 --
 -- Restrições para as tabelas dumpadas
@@ -418,8 +630,7 @@ INSERT INTO `usuarios` (`id`, `nome`, `apelido`, `login`, `senha`, `cpf`, `rg`, 
 -- Restrições para a tabela `exerciciosconcluidos`
 --
 ALTER TABLE `exerciciosconcluidos`
-  ADD CONSTRAINT `fk_exerc_capitulo` FOREIGN KEY (`idCapitulo`) REFERENCES `capitulos` (`id`) ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_exerc_usuarios` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION;
+  ADD CONSTRAINT `exerciciosconcluidos_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION;
 
 --
 -- Restrições para a tabela `itens`
