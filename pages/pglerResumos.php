@@ -5,7 +5,7 @@
 <section id="resumo">
     <h2 class="titulo"><?php echo "- Resumo -";?></h2>
     <h2 class="titulo"><?php echo "Capitulo ".$resumoBuscarPorId[0]['capitulo'];?></h2> <br>
-    <div class="notificacao" style="height:200px;">
+    <div class="notificacao" style="min-height:200px; height: auto;">
         <h2 class="informacoesGerais">Nome: <span> <?php echo $resumoBuscarPorId[0]['nome'];?></span></h2>
         <h2 class="informacoesGerais">Data: <span> <?php echo $resumoBuscarPorId[0]['dataAtual'];?></span></h2>
         <div id="noti">
@@ -35,14 +35,15 @@
             if(($resumoBuscarPorId[0]['notificacao']) == NULL && ($resumoBuscarPorId[0]['notificacao']) == '') {?>
                 <input type="hidden" name="idResumo" value="<?php echo $resumoBuscarPorId[0]['id']; ?>" />
                 <input type="hidden" name="idUsuario" value="<?php echo $resumoBuscarPorId[0]['idUsuario']; ?>" />
-                <input type="text" name="assunto" placeholder="Assunto..." style="width:60%; display: block; position: relative; margin: 10px; "/>
-                <textarea name="content" style="width:100%; height: 100%;"></textarea>
-                <button id="salvar-notificacao" name="salvar" type="submit">Salvar</button>
+                <input type="text" name="assunto" text="Resumo" placeholder="Assunto..." style="width:60%; display: block; position: relative; margin: 10px; "/>
+                <textarea name="content" style="width:100%; height: 100%;">Seu resumo foi aprovado! O próximo capítulo foi liberado!</textarea>
+                
             <?php } else {    
                 echo 'Uma notificacao já foi enviada!';
                 echo '</br></br>';
                 
             }?>
+            <button id="salvar-notificacao" name="salvar" type="submit">Salvar</button>
          </div>
         
     </form>
