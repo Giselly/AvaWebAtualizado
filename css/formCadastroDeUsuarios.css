@@ -58,6 +58,10 @@ form.cadastro p.subtitulo {
     
 }
 
+div#salvar{
+    margin-bottom: 50px;
+}
+
 /** UPLOAD DE FOTO DO PERFIL */
 
 div.inputs div#dadosGerais div#fotoPerfil {
@@ -136,13 +140,25 @@ div.inputs div#dadosGerais div#fotoPerfil {
         color: #004c98;
         font-size: 10pt;
     }
-   
+
     form.cadastro p.subtitulo {
         text-indent: 0.9em;
     }
     
     div.inputs div#dadosGerais div#sexo, div#status {
         font-size: 10pt;
+    }
+}
+
+@media all and (max-width: 765px){
+    div.inputs div#salvar{
+        margin-left: -18%;
+    }
+}
+
+@media all and (max-width: 710px){
+    div.inputs div#salvar{
+        padding-bottom: 100px;
     }
 }
 
@@ -175,6 +191,9 @@ div.inputs div#dadosGerais div#fotoPerfil {
         font-size: 10pt;
         width: 60px;
         margin-left: 15%;
+    }
+    div.inputs div#salvar{
+        margin-left: -13%;
     }
 
     div#salvar a {
@@ -281,4 +300,5 @@ div.inputs div#salvar {
     display: block;
     position:relative;
     width: 100%;
+    margin-bottom: 50px;
 }

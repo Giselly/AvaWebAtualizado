@@ -20,7 +20,15 @@ img#img-suc {
     width: 80%;
 }
 
-div#resumo {
+div#titulos{
+    width: 100%;
+}
+
+div#hs{
+    width: 20%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
 }
 
 div.notificacao {
@@ -56,9 +64,10 @@ textarea.textArea {
 
 .novo {
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 200px;
     float: left;
+    margin-left: -20px;
 }
 
 .titulo {
@@ -145,6 +154,16 @@ textarea.textArea {
     form#resumo{
         width: 250%;
         left: 19%;
+    }
+}
+
+@media all and (max-width: 609px){
+    div#hs{
+        width: 50%;
+    }
+
+    h2#titulo1{
+        margin-left: 31.5%;
     }
 }
 

@@ -3,8 +3,12 @@
 <script type="text/javascript" src="tinymce/js/tinymce/tinyMCEpt_BR.js"></script>
 <?php  $resumoBuscarPorId = $resumoBusiness->buscarPorId($url->getURL(2));  ?>
 <section id="resumo">
-    <h2 class="titulo"><?php echo "- Resumo -";?></h2>
-    <h2 class="titulo"><?php echo "Capitulo ".$resumoBuscarPorId[0]['capitulo'];?></h2> <br>
+    <div id="titulos">
+        <div id="hs">
+            <h2 class="titulo" id="titulo1"><?php echo "- Resumo -";?></h2>
+            <h2 class="titulo"><?php echo "Capitulo ".$resumoBuscarPorId[0]['capitulo'];?></h2> <br>
+        </div>
+    </div>
     <div class="notificacao" style="min-height:200px; height: auto;">
         <h2 class="informacoesGerais">Nome: <span> <?php echo $resumoBuscarPorId[0]['nome'];?></span></h2>
         <h2 class="informacoesGerais">Data: <span> <?php echo $resumoBuscarPorId[0]['dataAtual'];?></span></h2>
