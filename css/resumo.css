@@ -25,7 +25,7 @@ div#titulos{
 }
 
 div#hs{
-    width: 20%;
+    width: 40%;
     display: block;
     position: relative;
     margin: 0 auto;
@@ -144,6 +144,18 @@ textarea.textArea {
 
 }
 
+@media all and (max-width: 810px){
+    h2#titulo1{
+        left: 3%;
+    }
+}
+
+@media all and (max-width: 750px){
+    h2#titulo1{
+        left: 6%;
+    }
+}
+
 @media all and (max-width: 709px){
     img#img-suc {
         left: -10%;
@@ -155,16 +167,24 @@ textarea.textArea {
         width: 250%;
         left: 19%;
     }
-}
-
-@media all and (max-width: 609px){
-    div#hs{
-        width: 50%;
-    }
 
     h2#titulo1{
-        margin-left: 31.5%;
+        left: 11%;
     }
+}
+
+
+@media all and (max-width: 630px){
+    h2#titulo1{
+        left: 15%;
+    }
+}
+
+@media all and (max-width: 590px){
+    h2#titulo1{
+        left: 19%;
+    }
+
 }
 
 @media all and (max-width:540px){
@@ -175,13 +195,53 @@ textarea.textArea {
 		width:101% !important;
 		margin-left:20px;
 	}
+
+    h2#titulo1{
+        left: 22%;
+    }
 	
 }
+
+@media all and (max-width: 521px){
+    div#hs{
+        width: 50%;
+    }
+    h2#titulo1{
+        left: 24%;
+    }
+}
+
+@media all and (max-width: 490px) {
+    h2#titulo1{
+        left: 27%;
+    }
+
+    div#hs{
+        width: 60%;
+    }
+}
+
 
 @media all and (max-width: 475px){
     form#resumo{
        width: 200%;
         left: 30%;
+    }
+}
+
+@media all and (max-width: 456px){
+    h2#titulo1{
+        left: 30%;
+    }
+
+    div#hs{
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 432px){
+    h2#titulo1{
+        left: 0;
     }
 }
 
