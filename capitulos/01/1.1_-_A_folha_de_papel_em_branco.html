@@ -6,14 +6,43 @@
         <title>Documento sem título</title>
         <!--Estilização da Página-->
         <style type="text/css">
+			#azul_caixa{
+				background:#004C98;
+				color:#FFFFFF;
+				margin-left: 5%;
+				margin-right: 3%;
+			}
 
+			@media all and (min-width:1699px){
+				.img_full{
+					margin-top:4%;
+				}
+			}
+			
+			@media all and (max-width: 710px){
+				body{
+					overflow: hidden;
+				}	
+			}
+			
+			@media all and (min-width:0px) and (max-width:1698px){
+				.img_full{
+					margin-top:0px;
+				}
+			}
+			
 			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 			@media all and (min-width:998px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					height: 30px;
+					width: 305px;
+					border-radius: 2px;
+					color: #FFFFFF;
 				}
 				#corpo{
 					text-align:justify;
@@ -23,27 +52,26 @@
 				}
 				#img{
 					border: solid 2px #fff;
-					width: 43%;
-					height: 38%;
+					width: 29%;
+					height: 28%;
 					margin-right: 25px;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					margin-right: 6%;
+					float:right;
 				}
-				#img2{
+				#imga{
 					border: solid 2px #fff;
-					width: 43%;
-					height: 38%;
-					margin-bottom:3%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}		
+					width: 45%;
+					height: 40%;
+					margin-bottom: 16px;					
+				}	
+				#imgb{
+					border: solid 2px #fff;
+					width: 45%;
+					height: 40%;
+					margin-bottom:3%;	
+				}	
 			}
 			/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
 			@media all and (min-width:918px) and (max-width:997px){
@@ -51,7 +79,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -65,19 +98,20 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:40%;
-					height:40%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+				}
+				#imga{
+					border: solid 2px #fff;
+					width: 85%;
+					height: 80%;
+					margin-bottom: 16px;					
+				}	
+				#imgb{
+					border: solid 2px #fff;
+					width: 85%;
+					height: 80%;
+					clear: both;
+					margin-bottom:3%;	
+				}	
 				#conteudoTopico{
 					min-width:65%;
 				}
@@ -88,7 +122,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -101,20 +140,20 @@
 					height:40%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:40%;
-					height:40%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 75%;
+					height: 70%;
+					margin-bottom: 16px;
+					clear: both;				
+				}	
+				#imgb{
+					border: solid 2px #fff;
+					width: 75%;
+					height: 70%;
+					margin-bottom:3%;	
+				}	
 				#conteudoTopico{
 					min-width:61%;
 				}
@@ -125,7 +164,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -138,20 +182,20 @@
 					height:50%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:50%;
-					height:50%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+					margin-bottom: 8px;					
+				}	
+				#imgb{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+					margin-bottom:3%;
+					clear: both;	
+				}	
 				#conteudoTopico{
 					min-width:60%;
 				}
@@ -162,7 +206,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -175,20 +224,21 @@
 					height:50%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:50%;
-					height:50%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;
+				}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+					margin-bottom: 7px;					
+				}	
+				#imgb{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+					margin-bottom:3%;
+					clear: both;
+				}	
 				#conteudoTopico{
 					min-width:57%;
 				}
@@ -199,7 +249,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -212,20 +267,20 @@
 					height:50%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:50%;
-					height:50%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+					margin-bottom: 7px;					
+				}	
+				#imgb{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+					margin-bottom: 3%;
+					clear: both;	
+				}	
 				#conteudoTopico{
 					min-width:54%;
 				}
@@ -236,7 +291,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -249,20 +309,18 @@
 					height:50%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:50%;
-					height:50%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:95%;
 					margin-right:5%;
@@ -274,7 +332,12 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -287,20 +350,18 @@
 					height:50%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:50%;
-					height:50%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:460px;
 				}
@@ -311,8 +372,13 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+					background: #004C98;
+					margin-left: 5%;
 					margin-top: 20px;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -325,20 +391,18 @@
 					height:45%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:45%;
-					height:45%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:400px;
 				}
@@ -347,36 +411,39 @@
 			@media all and (min-width:390px) and (max-width:423px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
-					}
+				}
 				#title{
-					margin-left:3%;
+					background: #004C98;
+					margin-left: 3%;
 					margin-top: 20px;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
 					margin-left:5%;
 					font-size:17px;
 					font-family:Arial, Helvetica, sans-serif;
-					}
+				}
 				#img{
 					width:45%;
 					height:45%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:45%;
-					height:45%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					float:right;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:376px;
 				}
@@ -387,8 +454,13 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:3%;
+					background: #004C98;
+					margin-left: 3%;
 					margin-top: 20px;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -400,20 +472,18 @@
 				   width:85%;
 					height:85%;
 					margin-left:8%;
-					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:85%;
-					height:85%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					margin-bottom:30px;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:98%;
 					margin-right:5%;
@@ -423,10 +493,15 @@
 			@media all and (min-width:350px) and (max-width:364px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
-					}
+				}
 				#title{
-					margin-left:3%;
+					background: #004C98;
+					margin-left: 3%;
 					margin-top: 20px;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -440,22 +515,18 @@
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:85%;
-					height:85%;
-					margin-bottom:3%;
-					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					margin-bottom:30px;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:100%;
 					margin-right:5%;
@@ -467,9 +538,14 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:3%;
-					font-size:17px;
+					background: #004C98;
+					margin-left: 3%;
 					margin-top: 20px;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					font-size: 17px;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -481,21 +557,19 @@
 				#img{
 					width:85%;
 					height:85%;
-					margin-left:5%;
-					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:85%;
-					height:85%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					margin-left:8%;
+					margin-bottom:30px;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:97%;
 					margin-right:3%;
@@ -507,9 +581,14 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:3%;
-					font-size:17px;
+					background: #004C98;
+					margin-left: 3%;
 					margin-top: 20px;
+					width: 290px;
+					border-radius: 2px;
+					color: #FFFFFF;
+					font-size: 17px;
+					width: 305px;
 				}
 				#corpo{
 					text-align:justify;
@@ -522,49 +601,83 @@
 					width:85%;
 					height:85%;
 					margin-left:9%;
-					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
-				#img2{
-					width:85%;
-					height:85%;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-}
+					margin-bottom:30px;}
+				#imga{
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
+				#imgb{
+					clear: both;
+					border: solid 2px #fff;
+					width: 80%;
+					height: 80%;
+				}	
 				#conteudoTopico{
 					min-width:99%;
 					margin-right:1%;
 				}
 			}
+			
+			@media all and (min-width:998px) and (max-width:1300px){
+				#imga{
+					width: 89%;
+					height: 88%;
+				}
+				
+				#imgb{
+					width: 89%;
+					height: 88%;
+					clear: both;
+				}
+			}
+			
+			@media all and (min-width:998px) and (max-width:1090px){
+				#title{
+					    margin-top: 15px;
+				}
+			}
+			
+			@media all and (min-width:710px) and (max-width:765px){
+				#title{
+					    margin-top: 10px;
+				}
+			}
+			
         </style>
     </head>
     <!--HTML-->
     <body>
-    <p id="title"><strong>1.1  - A folha de papel em branco</strong></p>
+    <div id="title"><center><p style="padding:4px"><strong>1.1  - A folha de papel em branco</strong></p></center></div>
     <p>&nbsp;</p>
-    <img src="imagens/capitulo01/01.jpg" id="img"/>
+    <img src="imagens/capitulo01/01.png" id="img" alt=""/>
     <p id="corpo">Não  há nada mais desconcertante do que a rigidez de uma folha de papel em branco ou  do que o brilho ofuscante de uma tela vazia, especialmente entre receber uma  proposta de trabalho de ilustração profissional e deixar sua primeira marca.  Essa sensação desorientadora pode progredir rapidamente para certo mal-estar,  que chega a lembrar os sentimentos que emergiam quando éramos levados, ainda  crianças, a esperar do lado de fora da sala do diretor. Quando não cuidamos  deles, nossos medos se combinam ao estresse para se transformar em pânico  total, enquanto os sintomas de náusea, palpitações e suor frio e quente se  tornam cada vez mais visíveis. Nessas circunstâncias, a única cura satisfatória  é uma ideia. Concretizar sua ideia levando o lápis ao papel, ou o mouse ao  monitor, é o primeiro passo na jornada de executar uma ilustração. Para que o  trabalho de ilustrador seja uma experiência frutífera em vez de uma tarefa  tediosa, é essencial compreender como as ideias tomam forma, e como dar aquela ajudinha  ao processo quando elas não fluem tão rapidamente quanto o desejado.</p><br />
     <p>&nbsp;</p>
-    <p style="margin-left:5%; font-size:19px;"><strong>Criação de ideias</strong></p><br /><br />
+    <div id="m_ret_azul" style="margin-left: 5%;">
+    	<div id="ret_azul_title" style="height: 17px; width: 4px; background: #004C98; margin-top: 2.5px; position: absolute;"></div>
+    	<p style="font-size:19px; margin-left:10px; color:#004C98;"><strong>Criação de ideias</strong></p><br><br>
+    </div>
     <p style="margin-left:5%; font-size:17px;"><strong>O ponto de partida</strong></p>
     <p style="margin-left:5%;">&nbsp;</p>
     <p id="corpo">Encarar  uma folha de papel em branco no começo de um novo projeto pode ser o aspecto  mais estressante de um trabalho.
-    <br>
-    <br>
-    <strong>Páginas duplas de um caderno de esboços Jenni Grey, 2005</strong>
-    <br>
-    <br>
-    Gerar ideias faz  parte do papel do ilustrador, e a maioria das pessoas começa o processo no  caderno de esboços (sketchbook). Um relacionamento muito especial pode se  desenvolver entre o artista/ilustrador e seus cadernos de esboços – um lugar em  que a comunicação é mais pessoal, onde o único público é o próprio artista, e  em que a pura experimentação com conceitos e ideias pode começar.</p>
+    </p>
     <br>
     <center>
-    <p><img id="img2" src="imagens/capitulo01/02.jpg" style="margin-bottom:160px;" /></p>
+        <div class="img_full">
+            <img src="imagens/capitulo01/02_1.jpg" id="imga" alt=""/>
+            <img src="imagens/capitulo01/02_2.jpg" id="imgb" alt=""/>
+        </div>
+        <br>
+        <br>
     </center>
-
+    <div id="azul_caixa" style="margin-bottom: 160px;">
+        <p id="corpo" style="margin-right: 3%; margin-left:3%; padding:16px;">
+        <strong>Páginas duplas de um caderno de esboços Jenni Grey, 2005</strong>
+        <br>
+        <br>
+        Gerar ideias faz  parte do papel do ilustrador, e a maioria das pessoas começa o processo no  caderno de esboços (sketchbook). Um relacionamento muito especial pode se  desenvolver entre o artista/ilustrador e seus cadernos de esboços – um lugar em  que a comunicação é mais pessoal, onde o único público é o próprio artista, e  em que a pura experimentação com conceitos e ideias pode começar.</p>
+    </div>
+    <br>
     
 </body>
 </html>
