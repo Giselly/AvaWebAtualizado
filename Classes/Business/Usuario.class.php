@@ -120,10 +120,9 @@ class Usuario {
      */
     public function editarSenha($idUsuario, $senhaAtual, $novaSenha, $confirmarSenha) {
         if ($this->validarSenha($idUsuario, $senhaAtual)) {
-
             if ($novaSenha == $confirmarSenha) {
                 /** Query para alterar senha */
-                $query = "UPDATE [tabela] SET senha = PASSWORD(?) WHERE id = ? ";
+                $query = "UPDATE [tabela] SET senha = PASSWORD(?) WHERE id = ?";
 
                 /** Dados para alterar a senha */
                 $dados = array($novaSenha, $idUsuario);
@@ -137,7 +136,7 @@ class Usuario {
                 $retorno = "Os campos \"nova senha\" e \"confirmar nova senha\" não conferem, por favor, preencha novamente.";
             }
         } else {
-            $retorno = "A senha atual não está correta, por favor, preencha novamente com a sua senha atual.";
+            $retorno = "A senha atual não está correta, por favor, preencha novamente com a sua senha atual."."Senha  ".$senhaAtual;
         }
 
         return $retorno;

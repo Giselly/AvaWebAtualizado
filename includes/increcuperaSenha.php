@@ -9,7 +9,7 @@ $info = '';
 $erro = '';
 
 /** Inclui a função de enviar email */
-require_once('functions/funcenviaEmail.php');
+require_once('functions/funcEnviarEmail.php');
 
 /** Inclui a função de validar se o usuario existe */
 require_once('functions/funcvalidaUsuario.php');

@@ -3,13 +3,16 @@
 /* Inclui a classe do phpmailer */				
 require("Classes/mail/PHPMailerAutoload.php");
 
-/* Cria uma Instância da classe */
-$mail = new PHPMailer();
+
 
 /* 
  * CONFIGURAÇÕES BÁSICAS 
  *
  */
+function sendMail($assunto,$mensagem,$destinatario,$nomeDestinatario, $reply = NULL, $replyNome = NULL){
+
+/* Cria uma Instância da classe */
+$mail = new PHPMailer();
 
 $remetente = 'avaweb@iteva.org.br';
 $nomeRemetente = 'AVAWEB';
@@ -74,5 +77,6 @@ if ($email_enviado) {
 
     mail($to, $subject, $message, $headers);
     echo "Erro!";
+}
 }
 ?>
