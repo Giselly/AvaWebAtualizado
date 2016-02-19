@@ -20,6 +20,7 @@ if (isset($_SESSION['login']) && is_string($_SESSION['login'])) {
         $idUsuario = $form['idUsuario'];
        /** Edita a senha do usuario */
        $retorno =  $usuario->editarSenha($idUsuario, $form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
+       echo $form['senhaAtual'];
        if($retorno == "true") {
        ?>
        

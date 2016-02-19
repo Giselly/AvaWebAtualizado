@@ -21,7 +21,7 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
     );
     
     $usuarioBusiness->cadastrar($dados);
-    include_once('pages/pglogin.php');
+    //include_once('pages/pglogin.php');
 } else {
     include_once('pages/pgcadastro.php');
 }

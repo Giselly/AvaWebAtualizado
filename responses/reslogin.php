@@ -22,6 +22,7 @@ if(count($usuario) > 0 && $usuario[0]['primeiroLogin'] == '0') {
     session_start();
     $_SESSION['login'] = $usuario[0]['login'];
     $_SESSION['senha'] = $usuario[0]['senha'];
+    echo '1';
 } else {
     echo '0';
 }
@@ -29,4 +30,4 @@ if(count($usuario) > 0 && $usuario[0]['primeiroLogin'] == '0') {
 
 <?php
 /** Retorna a quantidade de usuarios retornados na consulta */
-echo count($usuario);
+//echo count($usuario);

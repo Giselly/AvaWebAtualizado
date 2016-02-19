@@ -27,11 +27,11 @@ $(document).ready(function () {
                     /** Verifica se o usuario é válido */
                     if(resultado == '-1'){
                         $('#info').html("Aguarde uma confirmação do seu cadastro.")
-                                .addClass('erro');;
-                    } else if (resultado == '0') {
+                                .addClass('erro');
+                    }else if(resultado == 0) {
                         $('#info').html("Login ou senha inválido.")
                                 .addClass('erro');                      
-                    } else {
+                    }else{
                         $('#info').html("Login efetuado com sucesso.")
                                 .addClass('logado');
                         /** Redireciona para a home caso o usuario seja válido*/

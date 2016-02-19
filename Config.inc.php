@@ -12,11 +12,11 @@ if (file_exists('functions/functions.php')) {
 $host = is_string($_SERVER["HTTP_HOST"]) ? $_SERVER["HTTP_HOST"] : "" ; 
 
 define('HOST', 'localhost');
-define('USER', 'root');
-define('PASS', 'vertrigo');
-define('DBSA', 'ava');
+define('USER', 'itevaorg');
+define('PASS', '_mot234_');
+define('DBSA', 'itevaorg_avaweb');
 
-define('RAIZ', "http://{$host}/AvaWebAtualizado/");
+define('RAIZ', "http://ava.iteva.org.br/");
 
 // AUTO LOAD DE CLASSES ########################################################
 function __autoload($Class) {

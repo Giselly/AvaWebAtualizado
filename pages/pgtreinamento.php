@@ -21,10 +21,10 @@
                             foreach ($conteudoCapitulo as $topico) {
 
                                 /** Link para visualizar este capitulo */
-                                $link = "treinamento/{$capitulo}/topico/" . utf8_encode(inserirUnderline($topico));
+                                $link = "treinamento/{$capitulo}/topico/" . inserirUnderline($topico);
 
                                 /** Nome de exibição deste capitulo */
-                                $exibir = utf8_encode($topico);
+                                $exibir = $topico;
 
                                 /** Estilo do link selecionado */
                                 $selecionado = ($refTopico == utf8_encode(inserirUnderline($topico)) &&  !($url->posicaoExiste(2) && $url->getURL(2) != "topico")) ? "id='clicado'" : "";
