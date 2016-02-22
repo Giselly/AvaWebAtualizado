@@ -119,7 +119,7 @@ class Usuario {
      * @return string
      */
     public function editarSenha($idUsuario, $senhaAtual, $novaSenha, $confirmarSenha) {
-        if ($this->validarSenha($idUsuario, $senhaAtual)) {
+        if (($this->validarSenha($idUsuario, $senhaAtual)) == 1) {
             if ($novaSenha == $confirmarSenha) {
                 /** Query para alterar senha */
                 $query = "UPDATE [tabela] SET senha = PASSWORD(?) WHERE id = ?";
