@@ -13,6 +13,15 @@
 				margin-right: 3%;
 			}
 
+			div#corpo2{
+				display: inline-block;
+			}
+			div#corpo3{
+				display: block;
+				width: 94.4%;
+				margin-left: 2.3%;
+			}
+
 			@media all and (min-width:1699px){
 				.img_full{
 					margin-top:4%;
@@ -52,10 +61,10 @@
 				}
 				#img{
 					border: solid 2px #fff;
-					width: 29%;
-					height: 28%;
+					width: 49%;
+					height: 360px;
 					margin-right: 25px;
-					margin-left:5%;
+					margin-left:1.5%;
 					margin-bottom:3%;
 					margin-right: 6%;
 					float:right;
@@ -68,7 +77,7 @@
 				}	
 				#imgb{
 					border: solid 2px #fff;
-					width: 45%;
+					width: 110%;
 					height: 40%;
 					margin-bottom:3%;	
 				}	
@@ -95,7 +104,7 @@
 				#img{
 					width:40%;
 					height:40%;
-					margin-left:5%;
+					margin-left:1.5%;
 					margin-bottom:3%;
 					float:right;					
 				}
@@ -107,7 +116,7 @@
 				}	
 				#imgb{
 					border: solid 2px #fff;
-					width: 85%;
+					width: 110%;
 					height: 80%;
 					clear: both;
 					margin-bottom:3%;	
@@ -138,7 +147,7 @@
 				#img{
 					width:40%;
 					height:40%;
-					margin-left:5%;
+					margin-left:1.5%;
 					margin-bottom:3%;
 					float:right;}
 				#imga{
@@ -180,7 +189,7 @@
 				#img{
 					width:50%;
 					height:50%;
-					margin-left:5%;
+					margin-left:1.5%;
 					margin-bottom:3%;
 					float:right;}
 				#imga{
@@ -650,34 +659,41 @@
     <body>
     <div id="title"><center><p style="padding:4px"><strong>1.1  - A folha de papel em branco</strong></p></center></div>
     <p>&nbsp;</p>
-    <img src="imagens/capitulo01/01.png" id="img" alt=""/>
+    <img src="imagens/capitulo01/01.jpg" id="img" alt=""/>
     <p id="corpo">Não  há nada mais desconcertante do que a rigidez de uma folha de papel em branco ou  do que o brilho ofuscante de uma tela vazia, especialmente entre receber uma  proposta de trabalho de ilustração profissional e deixar sua primeira marca.  Essa sensação desorientadora pode progredir rapidamente para certo mal-estar,  que chega a lembrar os sentimentos que emergiam quando éramos levados, ainda  crianças, a esperar do lado de fora da sala do diretor. Quando não cuidamos  deles, nossos medos se combinam ao estresse para se transformar em pânico  total, enquanto os sintomas de náusea, palpitações e suor frio e quente se  tornam cada vez mais visíveis. Nessas circunstâncias, a única cura satisfatória  é uma ideia. Concretizar sua ideia levando o lápis ao papel, ou o mouse ao  monitor, é o primeiro passo na jornada de executar uma ilustração. Para que o  trabalho de ilustrador seja uma experiência frutífera em vez de uma tarefa  tediosa, é essencial compreender como as ideias tomam forma, e como dar aquela ajudinha  ao processo quando elas não fluem tão rapidamente quanto o desejado.</p><br />
     <p>&nbsp;</p>
-    <div id="m_ret_azul" style="margin-left: 5%;">
-    	<div id="ret_azul_title" style="height: 17px; width: 4px; background: #004C98; margin-top: 2.5px; position: absolute;"></div>
-    	<p style="font-size:19px; margin-left:10px; color:#004C98;"><strong>Criação de ideias</strong></p><br><br>
-    </div>
-    <p style="margin-left:5%; font-size:17px;"><strong>O ponto de partida</strong></p>
-    <p style="margin-left:5%;">&nbsp;</p>
-    <p id="corpo">Encarar  uma folha de papel em branco no começo de um novo projeto pode ser o aspecto  mais estressante de um trabalho.
-    </p>
-    <br>
-    <center>
-        <div class="img_full">
-            <img src="imagens/capitulo01/02_1.jpg" id="imga" alt=""/>
-            <img src="imagens/capitulo01/02_2.jpg" id="imgb" alt=""/>
-        </div>
-        <br>
-        <br>
-    </center>
-    <div id="azul_caixa" style="margin-bottom: 160px;">
-        <p id="corpo" style="margin-right: 3%; margin-left:3%; padding:16px;">
-        <strong>Páginas duplas de um caderno de esboços Jenni Grey, 2005</strong>
-        <br>
-        <br>
-        Gerar ideias faz  parte do papel do ilustrador, e a maioria das pessoas começa o processo no  caderno de esboços (sketchbook). Um relacionamento muito especial pode se  desenvolver entre o artista/ilustrador e seus cadernos de esboços – um lugar em  que a comunicação é mais pessoal, onde o único público é o próprio artista, e  em que a pura experimentação com conceitos e ideias pode começar.</p>
-    </div>
-    <br>
-    
+
+	<div id="corpo2">
+		<div id="m_ret_azul" style="margin-left: 5%; height: 35px;">
+			<div id="ret_azul_title" style="height: 17px; width: 4px; background: #004C98; margin-top: 2.5px; position: absolute;"></div>
+			<p style="font-size:19px; margin-left:10px; color:#004C98;"><strong>Criação de ideias</strong></p><br><br>
+		</div>
+
+		<div id="corpo3">
+			<p style="margin-left:2.7%; font-size:17px; margin-bottom: 5px;"><strong>O ponto de partida</strong></p>
+			<p id="corpo" style="margin-left: 2.6%; margin-right: -28px;">Encarar  uma folha de papel em branco no começo de um novo projeto pode ser o aspecto  mais estressante de um trabalho.
+			</p>
+			<div id="box" style="display: inline-flex; width: 100%;">
+				<div id="textoImage" style="display: block;">
+					<br>
+					<center>
+						<div class="img_full">
+							<img src="imagens/capitulo01/02_2.jpg" id="imgb" alt=""/>
+						</div>
+				</div>
+					<br>
+					<br>
+				</center>
+				<div id="azul_caixa" style="margin-bottom: 160px; display: block; width: 119%; margin-top: 5%;">
+					<p id="corpo" style="margin-right: 3%; margin-left:3%; padding: 28px; font-size: 17px;">
+					<strong>Páginas duplas de um caderno de esboços Jenni Grey, 2005</strong>
+					<br>
+					<br>
+					Gerar ideias faz  parte do papel do ilustrador, e a maioria das pessoas começa o processo no  caderno de esboços (sketchbook). Um relacionamento muito especial pode se  desenvolver entre o artista/ilustrador e seus cadernos de esboços – um lugar em  que a comunicação é mais pessoal, onde o único público é o próprio artista, e  em que a pura experimentação com conceitos e ideias pode começar.</p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
 </body>
 </html>
