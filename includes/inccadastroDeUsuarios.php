@@ -56,31 +56,6 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
         /** Remove o indice cadastrar da array */
         unset($form['cadastrar']);
 
-        /*if (isset($_FILES["foto"])) {
-            $foto = $_FILES["foto"];
-
-            if (!empty($foto["name"])) {
-                preg_match("/\.(gif|bmp|png|jpg|jpeg|ico){1}$/i", $foto["name"], $ext);
-
-                /** Gera um nome único para a imagem */
-                //$nome_imagem = md5(uniqid(time())) . "." . $ext[1];
-
-                /** Caminho de onde ficará a imagem */
-                //$caminho_imagem = "imagens/perfil/" . $nome_imagem;
-
-                /** Faz o upload da imagem para seu respectivo caminho 
-                /move_uploaded_file($foto["tmp_name"], $caminho_imagem);
-                if ($url->getURL(1) == 'editar') {
-                    $dadosUsuario = $usuarioBusiness->buscarPorID($form['id']);
-
-                    if ($dadosUsuario[0]['foto'] != 'default.jpg') {
-                        unlink('imagens/perfil/' . $dadosUsuario[0]['foto']);
-                    }
-                }
-
-                $form['foto'] = $nome_imagem;
-            }
-        }*/
         
         /** Verifica se o form é de cadastro ou atualização */
             if ($form['tipo'] == 'novo') {
@@ -115,13 +90,16 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == '
     /** Include da pagina de configuração de perfil */
     include_once("pages/pgForm{$url->getURL(0)}.php");
     exit;
-} elseif ($url->posicaoExiste(1) && $url->getURL(1) == 'excluir') {
+} 
 
+if ($url->posicaoExiste(1) && $url->getURL(1) == 'excluir') {
     $erro = "";
 
     /** Executa a exclusão de um usuario */
+    //echo $usuarioBusiness->excluir($url->getURL(2));exit(1);
     try {
         $usuarioBusiness->excluir($url->getURL(2));
+        
         echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}';</script>";
     } catch (Exception $ex) {
         echo "<script>window.location = '" . RAIZ . "{$url->getURL(0)}/erro/{$url->getURL(2)}';</script>";
@@ -147,7 +125,7 @@ if ($url->posicaoExiste(1) && $url->getURL(1) == 'erro') {
     /** Dados usuario erro ao exlcuir */
     $dadosUsuarioErro = $usuarioBusiness->buscarPorID($url->getURL(2));
 
-    $erroExcluir = "<p class='erro'>Erro ao exlcuir o usuário '{$dadosUsuarioErro[0]['apelido']}'. Ele(a) está cadastrado em alguma das avaliações.</p>";
+    $erroExcluir = "<p class='erro'>Erro ao excluir o usuário '{$dadosUsuarioErro[0]['apelido']}'.</p>";
 } else {
     $erroExcluir = "";
 }

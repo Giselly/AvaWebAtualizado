@@ -136,7 +136,7 @@ class Usuario {
                 $retorno = "Os campos \"nova senha\" e \"confirmar nova senha\" não conferem, por favor, preencha novamente.";
             }
         } else {
-            $retorno = "A senha atual não está correta, por favor, preencha novamente com a sua senha atual."."Senha  ".$senhaAtual;
+            $retorno = "A senha atual não está correta, por favor, preencha novamente com a sua senha atual.";
         }
 
         return $retorno;

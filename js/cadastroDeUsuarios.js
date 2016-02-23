@@ -14,35 +14,13 @@ $(document).ready(function () {
         return !vazio;
         
     });
-
-    /** Receber a imagem selecionada e exbe no img#fotoAtual 
-    $('input#foto').change(function(){*/
-        
-        /** Verifica se o arquivo possui menos que 2MB 
-        if(this.files[0].size < 2*(1024*1024)){
-            readURL(this);
-            $('p#info').html('');
-        }else{
-            $('p#info').html('A imagem do perfil deve ter no máximo 2 MB.');
-            $('');
-            $(this).val('');
-        }
-       
-    });
     
-        $("input#editar").mouseenter(function(){
-            $("input#editar").animate({dispaly: 'block', height: '100%', opacity: '0.5'}, "slow");             
-        });
-        
-        $("input#editar").click(function(){
-                $("input#foto").click();
-            });
-    
-        $("div#fotoPerfil").mouseleave(function(){
-            $("input#editar").animate({height: '20px', opacity: '0.8'}, "slow");        
-        });*/
-    
-    
+   /*$("#excluir").click(function(){
+        var user;
+        user = $("#usuarioExcluir").val();
+        $("#hrefExcluir").href("cadastroDeUsuarios/excluir/"+user);
+        $(".excluir").href("cadastroDeUsuarios/excluir/"+user);
+    });*/
     /** Configurações do lightbox */
     $(".caixaComentarios").draggable();
     $("a[rel*=leanModal]").leanModal({top: 200, overlay: 0.4, closeButton: ".modal_close"});
@@ -50,13 +28,16 @@ $(document).ready(function () {
     /** Exbibição da mensagem de exclusão */
     $('a.exluirFuncionario').click(function (e) {
         e.preventDefault();
-        $('#idUsuarioExcluido').val($(this).attr('href'));
+        /*$('#hrefExcluir').href($(this).attr('href'));*/
+        $('#idUsuarioExcluido').val($(this).attr('href'));        
         $('#btnExcluir').click();
+        $('#hrefExcluir').attr('href','cadastroDeUsuarios/excluir/'+$('#idUsuarioExcluido').val());
+        //alert($('#idUsuarioExcluido').val());
     });
-
+    
     /** Redireciona para a pagina de exclusão */
     $('#confirmarExcluir').click(function () {
-        window.location = $('#raiz').val() + 'cadastraFunc/excluir/' + $('#idUsuarioExcluido').val();
+        window.location = $('#raiz').val() + 'cadastroDeUsuarios/excluir/' + $('#idUsuarioExcluido').val();
     });
 });
 

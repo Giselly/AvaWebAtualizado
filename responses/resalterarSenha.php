@@ -17,12 +17,9 @@ session_start();
 if (isset($_SESSION['login']) && is_string($_SESSION['login'])) {
     if(isset($form)) {
         unset($form['enviar']);
-        $idUsuario = $form['idUsuario'];
-       /** Edita a senha do usuario */
-       //$senhaAtual = $usuario->password($form['senhaAtual']);
-       $retorno =  $usuario->editarSenha($idUsuario, $senhaAtual, $form['novaSenha'], $form['confirmarSenha']);
-       echo $senhaAtual;
-       if($retorno == "true") {
+        /** Edita a senha do usuario */
+        $retorno =  $usuario->editarSenha($form['idUsuario'],$form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
+        if($retorno == "true") {
        ?>
        
        <script>
