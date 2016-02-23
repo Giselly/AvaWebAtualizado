@@ -104,8 +104,9 @@
                 </div>
                 
                 <div id="salvar">
-                    <input type="submit" class="alterar" name="cadastrar" value="Salvar">
-                    <a href="<?php echo RAIZ . $url->getURL(0); ?>">Voltar a listagem</a>
+                    <input type="submit" class="alterar" name="cadastrar" value="Salvar">                   
+                    
+                    <a href="<?php echo ($url->getURL(0) == "alterarDados") ? RAIZ."treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco" : RAIZ . $url->getURL(0); ?>">Voltar</a>
                 </div>
                 
                 <div>
