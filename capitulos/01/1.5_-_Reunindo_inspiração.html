@@ -7,29 +7,160 @@
         <!--Estilização da Página-->
         <style type="text/css">
         /*Media Queries SCREEN >= 998px - FULL SCREEN*/
-        @media all and (min-width:998px){
-            body{
-                font-family:Arial, Helvetica, sans-serif;
+        @media all and (min-width:1451px) {
+            body {
+                font-family: Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
                 margin-left:5%;
+                margin-right: 25px;
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2 {
+                text-align: justify;
+                margin-left: 7%;
+                margin-right: 25px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:43%;
-                height:38%;
-                margin-left:5%;
-                margin-bottom:3%;
+                border: solid 2px #fff;
+                width: 43%;
+                height: 38%;
+                margin-right: 25px;
+                margin-left:1.5%;
+                margin-bottom:1.5%;
                 float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+            }
+            #img2{
+                border: solid 2px #fff;
+                width: 43%;
+                height: 38%;
+                margin-bottom:1.5%;
+                margin-left: -2%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+            #corpo_par{
+                text-align: justify;
+                margin-top: -31.5%;
+                margin-left: 46%;
+                margin-right: 25px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        /*Media Queries SCREEN >= 998px - FULL SCREEN*/
+        @media all and (min-width:998px) and (max-width: 1450px){
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                margin-right: 25px;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2 {
+                text-align: justify;
+                margin-left: 7%;
+                margin-right: 25px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #img{
+                border: solid 2px #fff;
+                width: 88%;
+                height: 88%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                border: solid 2px #fff;
+                width: 100%;
+                height: 38%;
+                margin-bottom:1.5%;
+                margin-left: -2%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par {
+                text-align: justify;
+                margin-top: 2.5%;
+                margin-left: 8%;
+                margin-right: 25px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
@@ -38,7 +169,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -46,19 +182,61 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 95%;
+                height: 95%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:100%;
+                height:100%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                margin-right: 5%;
             }
             #conteudoTopico{
                 min-width:65%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 851px AND <= 917px*/
@@ -67,7 +245,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -75,19 +258,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                margin-right: 5%;
             }
             #conteudoTopico{
                 min-width:61%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 785px AND <= 850px*/
@@ -96,7 +322,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -104,19 +335,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                margin-right: 5%;
             }
             #conteudoTopico{
                 min-width:60%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 731px AND <= 784px*/
@@ -125,7 +399,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -133,19 +412,61 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
             }
             #conteudoTopico{
                 min-width:57%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 710px AND <= 730px*/
@@ -154,7 +475,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -162,28 +488,76 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
             }
             #conteudoTopico{
                 min-width:54%;
             }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
         }
+        
         /*Media Queries SCREEN >= 620px AND <= 709px*/
         @media all and (min-width:620px) and (max-width:709px){
             body{
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -191,20 +565,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
             }
             #conteudoTopico{
                 min-width:95%;
                 margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 535px AND <= 619px*/
@@ -213,7 +629,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -221,20 +642,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
                 margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
             }
             #conteudoTopico{
                 min-width:95%;
                 margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 483px AND <= 534px*/
@@ -243,7 +706,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -251,19 +719,61 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
-                margin-bottom:5%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
             }
             #conteudoTopico{
                 min-width:460px;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 424px AND <= 484px*/
@@ -271,8 +781,13 @@
             body{
                 font-family:Arial, Helvetica, sans-serif;
             }
-            #title{
-                margin-left:5%;
+            #title {
+                background: #004C98;
+                margin-left: 5%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
                 margin-top: 20px;
             }
             #corpo{
@@ -281,19 +796,61 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
-                margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2 {
+                width: 90%;
+                height: 90%;
+                margin-left: 6%;
+                margin-bottom: 3%;
             }
             #conteudoTopico{
                 min-width:400px;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 390px AND <= 423px*/
@@ -302,7 +859,12 @@
                 font-family:Arial, Helvetica, sans-serif;
                 }
             #title{
-                margin-left:3%;
+                background: #004C98;
+                margin-left: 3%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
                 margin-top: 20px;
             }
             #corpo{
@@ -310,20 +872,62 @@
                 margin-left:5%;
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
+                }
+            #corpo2{
+				text-align:justify;
+				margin-left:7%;
+				font-size:16px;
+				font-family:Arial, Helvetica, sans-serif;
             }
             #img{
-                width:52%;
-                height:52%;
-                margin-left:5%;
-                margin-bottom:3%;
-                float:right;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                width:90%;
+                height:90%;
+                margin-left:8%;
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:8%;
+                margin-bottom:30px;
             }
             #conteudoTopico{
                 min-width:376px;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 365px AND <= 389px*/
@@ -332,7 +936,12 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:3%;
+                background: #004C98;
+                margin-left: 3%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
                 margin-top: 20px;
             }
             #corpo{
@@ -341,28 +950,76 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:85%;
-                height:85%;
+                width:90%;
+                height:90%;
                 margin-left:8%;
                 margin-bottom:30px;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
             }
             #conteudoTopico{
                 min-width:98%;
                 margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 350px AND <= 364px*/
         @media all and (min-width:350px) and (max-width:364px){
             body{
                 font-family:Arial, Helvetica, sans-serif;
-                }
+            }
             #title{
-                margin-left:3%;
+                background: #004C98;
+                margin-left: 3%;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
                 margin-top: 20px;
             }
             #corpo{
@@ -372,19 +1029,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:85%;
-                height:85%;
-                margin-left:8%;
+                width:90%;
+                height:90%;
+                margin-left:5%;
                 margin-bottom:30px;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
             }
             #conteudoTopico{
                 min-width:100%;
                 margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 3%;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN >= 320px AND <= 349px*/
@@ -393,6 +1093,11 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
+                background: #004C98;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
                 margin-left:3%;
                 font-size:17px;
                 margin-top: 20px;
@@ -404,19 +1109,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:85%;
-                height:85%;
+                width:90%;
+                height:90%;
                 margin-left:5%;
                 margin-bottom:30px;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
             }
             #conteudoTopico{
                 min-width:97%;
                 margin-right:3%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
         /*Media Queries SCREEN <= 319px*/
@@ -425,6 +1173,11 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
+                background: #004C98;
+                height: 25px;
+                width: 230px;
+                border-radius: 2px;
+                color: #FFFFFF;
                 margin-left:3%;
                 font-size:17px;
                 margin-top: 20px;
@@ -436,19 +1189,62 @@
                 font-size:17px;
                 font-family:Arial, Helvetica, sans-serif;
             }
+            #corpo2{
+				text-align:justify;
+				margin-left:7%;
+				font-size:16px;
+				font-family:Arial, Helvetica, sans-serif;
+            }
             #img{
-                width:85%;
-                height:85%;
+                width:90%;
+                height:90%;
                 margin-left:9%;
-				margin-bottom:30px;
-                /* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
             }
             #conteudoTopico{
                 min-width:99%;
                 margin-right:1%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;
+                height: 18px;
+                width: 18px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
             }
         }
     </style>
@@ -457,7 +1253,6 @@
     <body>
     <p id="title"><strong>1.5 - Reunindo inspiração</strong></p>
     <p>&nbsp;</p>
-    <p id="corpo">
     <img id="img" src="imagens/capitulo01/09.jpg" style="margin-right: 25px;">
     <p id="corpo">A  inspiração para os projetos e para as ideias que movem os projetos não vem  apenas a partir da pesquisa do assunto em questão. O ilustrador deve estar  constantemente em busca de inspiração e de materiais e recursos de referência.  A maioria dos ilustradores cria seus próprios arquivos de imagens e objetos,  organizando suas coleções em pastas, gavetas e caixas. Essas coleções podem ser  fontes incríveis de inspiração.</p>
     <p id="corpo"><br>
@@ -466,19 +1261,28 @@
       A  inspiração pode ser uma simples combinação de cores usadas em um pedaço de  embalagem, a forma como uma figura é capturada em uma fotografia ou a textura  de um bilhete de trem que você guardou desde a infância – existe um sexto  sentido que os ilustradores desenvolvem ao colecionar e fazer colagens de  matérias de referência.</p>
     <p id="corpo"><br>
       Fazer  um arquivo de referências é um processo agradável e, embora possa tomar  bastante tempo, é um aspecto extremamente gratificante e útil do processo  criativo. Ter consciência de suas influências e de estética visual à qual você  reage bem o ensina a obter inspiração e a ter ideias a partir de seu dia-a-dia.</p>
-    <p id="corpo"><br>
-      <strong>O caderno de esboços</strong></p>
+    <br>
+    <div id="m_ret_azul" style="margin-left: 5%;">
+        <div id="bar_azul_title" style="height: 24px; width: 4px; background: #004C98; position: absolute;"></div>
+        <p id="corpo" style="font-size:19px; margin-left:10px; color:#004C98;">O caderno de esboços</strong></p>
+    </div>
     <p id="corpo"><br>
       O  caderno de esboços é o melhor amigo do ilustrador. Ele não serve apenas para  fazer esboços e desenhos, mas também como companheiro constante e como o único  item no qual o ilustrador registra e documenta suas anotações, imagens  encontradas e todo o tipo de material de inspiração. Adquira o hábito de levá-lo  com você o tempo todo; compre um que caiba no seu bolso ou em uma bolsa que  você use sempre. Não cometa o erro de usar uma agenda ou um organizador para  substituir o caderno de esboços – não é a mesma coisa. Não se deve marcar hora  para ser criativo, pois isso é algo que deve ocorrer naturalmente, e quando  ocorrer, você precisa estar preparado.</p>
     <p id="corpo"><br>
       Use  seu caderno de esboços para guardar tudo o que você registra e não se preocupe  em mantê-lo especificamente para trabalhos pessoais ou profissionais – jogue  tudo ali dentro e você verá como as duas áreas se misturam e se combinam.  Desenhe, rabisque, escreva e faça anotações em qualquer lugar, a qualquer hora.  Recorte achados de jornais e revistas e os cole com fita, grampeie canhotos de  ingressos e quaisquer outros objetos que você encontrar ou colecionar. Inclua  fotos, pedaços de fotocópias resgatados, estênceis, adesivos, panfletos,  cartões... a lista é infinita.</p>
-    <p id="corpo"><br>
-      <strong>A pasta do projeto</strong></p>
+    <br>
+    <div id="m_ret_azul" style="margin-left: 5%;">
+        <div id="bar_azul_title" style="height: 24px; width: 4px; background: #004C98; position: absolute;"></div>
+        <p id="corpo" style="font-size:19px; margin-left:10px; color:#004C98;">A pasta do projeto</strong></p>
+    </div>
     <p id="corpo"><br>
       Criar  uma pasta para cada projeto é outro método de armazenar todos os materiais  relacionados, ideias e inspirações, bem como a papelada formal ligada a um  projeto, como briefing, contrato e materiais de referência fornecidos pelo  cliente. É útil criar tanto uma pasta digital quanto uma pasta física para o  projeto. Crie uma nova pasta em seu disco rígido para toda a correspondência.  Cópias de e-mails e material de referência digital são tão importantes quanto a  versão física do projeto. A pasta do projeto é como uma versão expandida e mais  focada do caderno de esboços, e abrange tudo que se relaciona ou poderia se  relacionar ao projeto em questão.<br>
       A  pasta de projeto útil é aquela que inclui todos os aspectos do projeto – desde  páginas relevantes que você arranca dos cadernos de esboços até uma série de  fotos de referência e fotocópias de livros usados ou impressões de buscas do  Google. Esse é o material que vai ajudá-lo a gerar ideias inspiradoras – tenha  todos os seus materiais de referência, anotações e pesquisa escrita e visual  espalhados à sua frente enquanto trabalha. A folha de papel ou a tela em branco  vai parecer menos intimidante quando cercada do material visual que alimentou  seu pensamento.</p>
-    <p id="corpo"><br>
-      <strong>O ambiente criativo</strong></p>
+    <br>
+    <div id="m_ret_azul" style="margin-left: 5%;">
+        <div id="bar_azul_title" style="height: 24px; width: 4px; background: #004C98; position: absolute;"></div>
+        <p id="corpo" style="font-size:19px; margin-left:10px; color:#004C98;">O ambiente criativo</strong></p>
+    </div>
     <p id="corpo"><br>
       Trabalhar  em um ambiente positivo pode fazer maravilhas pela geração de ideias criativas.  Para a maioria das pessoas, encontrar um espaço calmo e tranquilo para se  recolher e trabalhar é de grande ajuda. Desligue o telefone, coloque o celular  no modo silencioso e saia do e-mail para garantir que seu tempo não seja  interrompido por um fluxo de comunicação constante com o mundo exterior.  Desligue o rádio, o CD player e a TV, e se prepare para pensar de forma  criativa.</p>
     <p id="corpo"><br>
@@ -494,7 +1298,10 @@
     <p id="corpo"><br>
       A  maioria dos ilustradores cria seus próprios arquivos de imagens e objetos,  organizando suas coleções em pastas, gavetas e caixas. Essas coleções podem ser  fontes incríveis de inspiração.</p>
     <p>&nbsp;</p>
-    <p id="corpo"><strong>Pesquisa histórica</strong></p>
+    <div id="m_ret_azul" style="margin-left: 5%;">
+        <div id="bar_azul_title" style="height: 24px; width: 4px; background: #004C98; position: absolute;"></div>
+        <p id="corpo" style="font-size:19px; margin-left:10px; color:#004C98;">Pesquisa histórica</strong></p>
+    </div>
     <p id="corpo" style="margin-bottom:160px;"><br>
       Precisão  histórica pode não ser um fator na maioria das ilustrações, mas, sempre que um  projeto requer informações visuais detalhadas sobre um assunto, é recomendável  realizar uma pesquisa mais profunda. Como um assistente de cenário e figurino  no teatro, o ilustrador deve garantir que todos os aspectos da imagem sejam  cuidadosamente considerados e estejam de acordo com o tempo e o local. As  imagens nesta página mostram como o ilustrador usou referências de tipografia e  cartazes Vitorianos. Usar informações de especialistas garante que erros não  sejam cometidos. </p>
 
