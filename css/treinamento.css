@@ -2,6 +2,20 @@ a{
     text-decoration: none;
 }
 
+div#title{
+    background: #004C98;
+    height: auto;
+    width: 20%;
+    border-radius: 2px;
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+
+li.letra{
+    color: #004C98;
+}
+
+
 input#iniciar, input#salvar {
     position: relative;
     width: auto;
@@ -133,6 +147,18 @@ ol#opcoes label{
     text-align: justify;
 }
 
+@media all and (max-width: 1500px){
+    div#title{
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 1220px){
+    div#title{
+        width: 45%;
+    }
+}
+
 @media all and (max-width: 1100px){
     form#exercicio{
         width: 90%;
@@ -148,6 +174,10 @@ ol#opcoes label{
 @media all and (max-width: 997px){
     form#exercicio{
         width: 180%;
+    }
+
+    div#title{
+        width: 65%;
     }
 }
 
@@ -165,7 +195,7 @@ ol#opcoes label{
 
 @media all and (max-width: 790px){
     section#exercicio{
-        width: 80%;
+        width: 85%;
     }
 
 }
@@ -185,6 +215,13 @@ ol#opcoes label{
     }
     input[type=submit]{
         margin-bottom: 130px;
+    }
+
+}
+
+@media all and (max-width: 700px){
+    div#title{
+        width: 85%;
     }
 }
 
@@ -208,12 +245,30 @@ ol#opcoes label{
     }
 }
 
+@media all and (max-width: 535px){
+    div#title{
+        width: 100%;
+    }
+}
+
 @media all and (max-width: 460px){
    h2#tituloCapitulo{
        width: 100%;
    }
 }
 
+@media all and (max-width: 435px){
+    div#title{
+        width: 130%;
+    }
+}
+
+@media all and (max-width: 350px){
+    section#exercicio {
+        width: 200%;
+        margin-left: 2px;
+    }
+}
 
 @media all and (max-width: 340px){
     form#exercicio {

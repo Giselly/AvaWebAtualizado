@@ -1,5 +1,7 @@
-<link rel='stylesheet' type='text/css' href='css/font.css'>
-<h2 id="tituloCapitulo">Capítulo <?php echo $url->getURL(1); ?></h2>
+<link rel='stylesheet' type='text/css' href='css/fontExercicio.css'>
+
+
+<div id="title"><h2 id="tituloCapitulo">Capítulo <?php echo $url->getURL(1); ?></h2></div>
 <section id="exercicio">
     <?php
     $dataBanco = date('Y-m-d H:i:s', strtotime('+1 days',strtotime($exercicios[0]['data'])));
@@ -17,7 +19,7 @@
                 foreach ($questoes as $questao) {
                     ?>
 
-                    <li>
+                    <li class="numero">
                         <p id="pergunta<?php echo $questao['id']; ?>">
                             <?php echo $questao['questao'] ?>
                         </p>
@@ -25,7 +27,7 @@
                             <?php
                             foreach ($questoesBusiness->buscarPorQuestao($questao['id']) as $item) {
                                 ?>
-                                <li>
+                                <li class="letra">
                                     <input type="radio" value="<?php echo $item['id']; ?>" name="opcao<?php echo $questao['id']; ?>" />
                                     <label><?php echo $item['item']; ?></label>
                                 </li>
