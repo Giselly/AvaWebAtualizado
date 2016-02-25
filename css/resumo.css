@@ -3,14 +3,42 @@ h2#tituloCapitulo{
     margin-right: -20px;
 }
 
+p#facaResumo{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
 form#resumo{
     position: relative;
     display: block;
     margin: 0 auto;
     top: 25%;
-    left: 30%;
+    left:5%;
     width: 100%;
 
+}
+
+div#title{
+    background: #004C98;
+    height: auto;
+    width: 27%;
+    border-radius: 2px;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+div#m_ret_azul{
+    height: 35px;
+    color: #004C98;
+}
+
+div#ret_azul_title{
+    height: 25px;
+    width: 4px;
+    margin-top: 3px;
+    background: #004C98;
+    position: absolute;
 }
 
 img#img-suc {
@@ -67,7 +95,6 @@ textarea.textArea {
     margin-top: 30px;
     margin-bottom: 200px;
     float: left;
-    margin-left: -20px;
 }
 
 .titulo {
@@ -91,12 +118,6 @@ textarea.textArea {
 
 #rodape {
     display: none;
-}
-
-@media all and (max-width: 1600px){
-    form#resumo{
-        left: 10%;
-    }
 }
 
 @media all and (max-width: 1440px){
@@ -139,7 +160,7 @@ textarea.textArea {
 
 @media all and (max-width: 997px){
     div#letras{
-        margin-top: 0px;
+        margin-top: 0;
     }
 
 }
@@ -171,6 +192,10 @@ textarea.textArea {
     h2#titulo1{
         left: 11%;
     }
+
+    div#title{
+        width: 40%;
+    }
 }
 
 
@@ -196,10 +221,6 @@ textarea.textArea {
 		margin-left:20px;
 	}
 
-    h2#titulo1{
-        left: 22%;
-    }
-	
 }
 
 @media all and (max-width: 521px){

@@ -9,8 +9,15 @@
     <form method="POST" id="resumo">
         <?php if($existeResumo == false) {
             ?>
-            <h2 id="tituloCapitulo"><?php echo "Resumo";?></h2>
-            <h2 id="tituloCapitulo"><?php echo "Capitulo ".$url->getURL(1); ?></h2>
+            <div id="title">
+                <h2 class="title" id="tituloCapitulo"><?php echo "Resumo";?></h2>
+            </div>
+            <br>
+            <div id="m_ret_azul">
+                <div id="ret_azul_title"></div>
+                <h2 class="subTitle" id="tituloCapitulo"><?php echo "Capitulo ".$url->getURL(1); ?></h2>
+            </div>
+            <p id="facaResumo">Agora faça um resumo sobre o capítulo estudado:</p>
             <input type="hidden" name="tipo" value="novo"/>
             <!--<div id="resumo">-->
             <textarea name="content" class="textArea" style="width:100%"></textarea>
