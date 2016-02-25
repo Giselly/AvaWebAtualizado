@@ -54,7 +54,7 @@
                                 } else {
                                     echo "<td>Não avaliado!</td>";
                                 }
-                            echo "<td id='excluir'><a href='frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'>Excluir</a></td>
+                            echo "<td id='excluir'><a class='exluirFuncionario' href='frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'>Excluir</a></td>
                             </tr>
                         ";
                         }
@@ -76,7 +76,7 @@
         </div>
         <div class="txt-excluir">
             <p>Você deseja realmente excluir este resumo?</p>
-            <?php echo " <input type='button' value='Excluir' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'id='confirmarExcluir'/>";?>
+            <a id="hrefExcluir"><?php echo " <input type='button' value='Excluir' href='{$url->getURL(0)}/Excluir/{$resumo['id']}'id='confirmarExcluir'/>";?></a>
             <input type="hidden" id="idUsuarioExcluido" />
             <input type="button" class="modal_close" value="Cancelar" id="cancelar" />
         </div>

@@ -2,6 +2,18 @@
 
 /** @var Usuario */
 $usuarioBusiness = Usuario::getInstance();
+$dadosUser = $usuarioBusiness->buscar();
+$user = array();
+$i = 0;
+foreach($dadosUser as $dados){
+    $user['u'.$i]= $dados['login'];
+    $i++;
+}
+$js_array = json_encode($user);
+
+?>
+<input id="array" type="hidden" value=<?php echo $js_array;?>>
+<?php
 
 /** Recebe o formulario */
     $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -21,7 +33,11 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
     );
     
     $usuarioBusiness->cadastrar($dados);
-    //include_once('pages/pglogin.php');
+    
+    include_once('pages/pglogin.php');
+    ?>
+    <script>alert('Seu cadastro foi realizado, aguarde a confirmação.');</script>
+<?php
 } else {
     include_once('pages/pgcadastro.php');
 }

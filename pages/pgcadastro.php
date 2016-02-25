@@ -7,6 +7,7 @@
         <base href="<?php echo RAIZ; ?>">
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/login.js"></script>
+        <script src="js/cadastro.js"></script>
         <script src="js/mascaras.js"></script>
         <script src="js/jquery.mask.js"></script>
         <link rel="stylesheet" type="text/css" href="css/login.css">
@@ -26,6 +27,7 @@
                             <img id="bola2" src="imagens/bola.png">
                         </a>
                     </div>
+                    <div id="teste">
                     <form id="areaLogin" method="post">
                         <h1>Solicite um cadastro</h1>
                         <div id="inputs">
@@ -38,11 +40,12 @@
                             <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF">                       
                             <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />
+                            <p id="info"></p>
                             <input value="Enviar" type="submit" id="button" name="enviar"> ou  <a href="login">Voltar a tela de login</a></p>
                         </div>
-                         
+                        
                     </form>
-                
+                    </div>
                 <div class="aguarde" id="aguardarConfirmacao">
                     <p> Aguarde a confirmação do seu cadastro para logar-se. Um email será enviado!</p></br>
                     <a href="login">Voltar a tela de login</a>
