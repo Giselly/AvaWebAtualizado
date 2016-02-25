@@ -151,7 +151,7 @@ a:hover {
 #info {
     position: relative;
     font-weight: bold;
-    width: 80.5%;
+    width: 82%;
 }
 
 .erro {
@@ -263,7 +263,7 @@ a#bola:hover {
     #info {
         position: relative;
         font-weight: bold;
-        width: 79.5%;
+        width: 81.5%;
     }
 
     #log {
@@ -401,7 +401,7 @@ a#bola:hover {
     }
 
     p#info, .erro, .info, .processando, .logado {
-        width: 92.5%;
+        width: 94%;
     }
 }
 
@@ -414,6 +414,6 @@ a#bola:hover {
     }
 
     p#info, .erro, .info, .processando, .logado {
-        width: 90.5%;
+        width: 93.5%;
     }
 }

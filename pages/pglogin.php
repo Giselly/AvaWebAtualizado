@@ -29,7 +29,7 @@
                 <form id="areaLogin" name="login">
                     <h1>Portal Aluno</h1>
                     <div id="inputs">
-                        <input type="text" name="cpf" class="cpf" id="id" onKeyPress="MascaraCPF(login.cpf);" onBlur="ValidarCPF(login.cpf);" required maxlength="15" placeholder="CPF" >
+                        <input type="text" name="usuario" class="cpf" id="id" onKeyPress="MascaraCPF(login.usuario);" required maxlength="14" placeholder="CPF" >
                         <br />
                         <input type="password" name="senha" class="log" id="pass" required  maxlength="20" placeholder="Senha">
                         <p id="info"></p>

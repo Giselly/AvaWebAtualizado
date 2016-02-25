@@ -28,7 +28,7 @@
                         </a>
                     </div>
                     <div id="teste">
-                    <form id="areaLogin" method="post">
+                    <form id="areaLogin" method="post" name="areaLogin">
                         <h1>Solicite um cadastro</h1>
                         <div id="inputs">
                             <input type="text" name="usuario" class="id" id="id" required="required" placeholder="Nome Completo" >
@@ -37,7 +37,7 @@
                             <br />
                             <input type="text" name="apelido" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
                             <br />
-                            <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF">                       
+                            <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF" onKeyPress="MascaraCPF(areaLogin.login);" maxlength="14">
                             <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />
                             <p id="info"></p>
