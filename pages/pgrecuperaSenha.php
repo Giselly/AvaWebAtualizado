@@ -26,10 +26,10 @@
                             <img id="bola2" src="imagens/bola.png">
                         </a>
                     </div>
-                    <form id="areaLogin" method="post">
+                    <form id="areaLogin" method="post" name="areaLogin">
                         <h1>Redefinição de senha</h1>
                         <div id="inputs">
-                            <input type="text" name="cpf" class="id cpf" id="id" required placeholder="CPF" >
+                            <input type="text" name="cpf" class="id cpf" id="id" required placeholder="CPF" onKeyPress="MascaraCPF(areaLogin.cpf);" maxlength="14">
                             <br />
                             <input type="email" name="email" class="log" id="pass" required placeholder="Email">
                             <br />
