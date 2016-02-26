@@ -30,7 +30,7 @@ class Capitulo {
     }
     
     public function TopicoAtual($capitulo, $topico){
-        include_once "{$this->path}{$capitulo}/" . $this->inserirUnderline($topico);
+        include_once "{$this->path}{$capitulo}/" .utf8_decode($this->inserirUnderline($topico));
     }
     
     private function removerUnderline($topico){

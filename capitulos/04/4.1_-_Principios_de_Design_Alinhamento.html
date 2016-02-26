@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="pt-br">
+<div lang="pt-br">
 <head>
     <meta charset="utf-8">
     <title>Documento sem título</title>
@@ -9,31 +9,77 @@
 			display:inline-block;
 			position:relative; 
 			float:left; 
-			width: 45%;		
+			width: 40%;
 		}
 		
 		#img-2 {
 			width:83.75%;	
 		}
-		
+
+		p.legenda{
+			font-style:italic;
+			margin-left:7%;
+			font-size:17px;
+			text-align:justify;
+			margin-right:18px;
+			font-weight: bold;
+		}
+
+		div.imagemLegenda{
+			display: inline-flex;
+		}
+
+		div.legenda{
+			display: block;
+			width: 40%;
+		}
+
+		div.imagem{
+			width: 80%;
+		}
+
+		div.texto{
+			display: block;
+			width: 70%;
+			margin-left: -4%;
+			margin-right: 5%;
+		}
+
+		img#img1{
+			width: 100%;
+		}
+
+		img#img2{
+			width: 90%;
+		}
+
+		img#img3{
+			width: 100%;
+		}
+
 		/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 		@media all and (min-width:998px){
 			body{
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#title{
-				margin-left:5%;
+				background: #004C98;
+				margin-left: 5%;
+				height: auto;
+				width: 35%;
+				border-radius: 2px;
+				color: #FFFFFF;
 			}
 			#corpo{
 				text-align:justify;
 				margin-left:5%;
+				margin-right: 5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width: 37%;
-				height: 37%;
-				margin-left: 29.2%;
+				width: 80%;
+				margin-left: 10%;
 				margin-bottom: 3%;
 				float: left;
 				/* Sombra da Imagem */				
@@ -696,39 +742,66 @@
     </style>
 </head>
     
-<body>
+<>
     <div id="conteudoTopico">
-   	  <p id="title"><strong>04 – PRINCÍPIOS DE DESIGN – Alinhamento</strong></p><br>
-    <p id="corpo">Os iniciantes em design tendem a  colocar o texto e a imagem em qualquer lugar da pagina que tenha espaço, e o  fazem, geralmente, sem consciencia dos outros intens existentes naquela pagina.  Isso resulta no efeito tao desorganizado que voce já conhece, que é como uma  cozinha desarrumada: uma xícara aqui, um prato lá, um guardanapo no chão, um  pote na pia, água no chão. Não é muito dificel arrumar tudo nessa cozinha um  pouco bagunçada, assim como não é muito dificel arrumar uma pagina confusamente  diagramada, com alinhamentos mal-determinados.</p><br>
-   	  <p id="corpo">Segundo o principio do  alinhamento, <strong>nada deve ser colocado  arbitrariamente em uma pagina. Cada item deve ter uma conexão visual com algo  na pagina. </strong>O principio do alinhamento obriga a pessoa a ser consciente: já  não se pode simplesmente jogar as coisas na pagina nos lugares onde houver  espaço</p><br>
-   	  <p id="corpo">Quando os itens são alinhados na  pagina, há uma unidade coesa, mais forte. Mesmo quando os elementos alinhados  estiverem fisicamente separados uns dos outros, se estiverem alinhados, haverá  uma linha invisível conectando-os, tanto em relaçao aos seus olhos quanto à sua  mente. Apesar de posicionar alguns elementos separadamente, indicando suas  ligaçoes de acordo com o princípio da proximidade, é o princípio do  alinhamentos que avisará ao leitor que, mesmo não estando proximos, os itens  fazem parte do mesmo material. As paginas a seguir ilustram essa idéia</p><br>
-        <p id="corpo">Dê uma olhada neste cartáo de  visita (o mesmo que você já viu no ultimo capitulo). Parte do seu problema é  que nada esta alinhado nada. Nesse pequeno espaço existem elementos com três  alinhamentos diferentes: à esquerda, à direita e centralizado. Os dois grupos  de textos estao alinhados nos cantos esquerdo ou direito, com os dois blocos na  parte inferior do cartão (estes, por sua vez, tambem não estao alinhadas por  suas linhas de base)</p><br>
+   	    <p id="title"><strong>04 – PRINCÍPIOS DE DESIGN – Alinhamento</strong></p><br>
+        <p id="corpo">Os iniciantes em design tendem a  colocar o texto e a imagem em qualquer lugar da pagina que tenha espaço, e o  fazem, geralmente, sem consciencia dos outros intens existentes naquela pagina.  Isso resulta no efeito tao desorganizado que voce já conhece, que é como uma  cozinha desarrumada: uma xícara aqui, um prato lá, um guardanapo no chão, um  pote na pia, água no chão. Não é muito dificel arrumar tudo nessa cozinha um  pouco bagunçada, assim como não é muito dificel arrumar uma pagina confusamente  diagramada, com alinhamentos mal-determinados.</p>
+		<p>&nbsp;</p>
+		<p id="corpo">Segundo o principio do  alinhamento, <strong>nada deve ser colocado  arbitrariamente em uma pagina. Cada item deve ter uma conexão visual com algo  na pagina. </strong>O principio do alinhamento obriga a pessoa a ser consciente: já  não se pode simplesmente jogar as coisas na pagina nos lugares onde houver  espaço</p>
+		<p>&nbsp;</p>
+		<p id="corpo">Quando os itens são alinhados na  pagina, há uma unidade coesa, mais forte. Mesmo quando os elementos alinhados  estiverem fisicamente separados uns dos outros, se estiverem alinhados, haverá  uma linha invisível conectando-os, tanto em relaçao aos seus olhos quanto à sua  mente. Apesar de posicionar alguns elementos separadamente, indicando suas  ligaçoes de acordo com o princípio da proximidade, é o princípio do  alinhamentos que avisará ao leitor que, mesmo não estando proximos, os itens  fazem parte do mesmo material. As paginas a seguir ilustram essa idéia</p>
+		<p>&nbsp;</p>
+		<p id="corpo">Dê uma olhada neste cartáo de  visita (o mesmo que você já viu no ultimo capitulo). Parte do seu problema é  que nada esta alinhado nada. Nesse pequeno espaço existem elementos com três  alinhamentos diferentes: à esquerda, à direita e centralizado. Os dois grupos  de textos estao alinhados nos cantos esquerdo ou direito, com os dois blocos na  parte inferior do cartão (estes, por sua vez, tambem não estao alinhadas por  suas linhas de base)</p>
     </div><br/>
-    
-    <img src="imagens/capitulo04/1.jpg" id="img" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both;margin-left:5%; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Para que os elementos deste cartâo foram simplesmente jogados em qualquer lugar e colados. Nenhum dos elementos tem nenhuma conexão com qualquer outro elemento do cartão.</p>
-    <p>&nbsp;</p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+			<img src="imagens/capitulo04/1.jpg" id="img" style="border: solid 2px #fff;"/>
+		</div>
+		<div class="texto">
+			<p class="legenda"><br>Para que os elementos deste cartâo foram simplesmente jogados em qualquer lugar e colados. Nenhum dos elementos tem nenhuma conexão com qualquer outro elemento do cartão.</p>
+    	</div>
+	</div>
+	<p>&nbsp;</p>
   	<p>&nbsp;</p>
     
     <p id="corpo" style="clear:both;font-style:italic;">Decida quais itens devem ser agrupados de acordo com o principio de proximidade e quais devem ficar separados.</p><br><br>
-    
-    <img src="imagens/capitulo04/2.jpg" id="img" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both;margin-left:5%; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Movendo todos os elementos para a direita e alinhando-os de maneira igual, as informações ficam mais organizadas. (È claro: você deve ter percebido que além disso, eu agrupei elementos interligados em proximidade entre si, o que tambem ajudou.)</p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+			<img src="imagens/capitulo04/2.jpg" id="img" style="border: solid 2px #fff;"/>
+		</div>
+
+		<div class="texto">
+			<p class="legenda"><br>Movendo todos os elementos para a direita e alinhando-os de maneira igual, as informações ficam mais organizadas. (È claro: você deve ter percebido que além disso, eu agrupei elementos interligados em proximidade entre si, o que tambem ajudou.)</p>
+			<p>&nbsp;</p>
+			<p class="legenda">No exemplo (repetido a seguir) que você viu na seção sob proximidade, o texto tambem estava alinhado pela marte central. Mas se ele ficar alinhado pela esquerda ou pela direita, a linha invisível que o conecta ficará mais forte, pois terá um limite vertical a seguir. Isso faz que os textos alinhados à esquerda e à direita fiquem com aspecto mais limpo e mais forte. Compare os dois exemplos a seguir. Falaremos sobre eles nas proximas páginas.<br><br></p>
+		</div>
+	</div>
+	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+			<img src="imagens/capitulo04/3.jpg" id="img" style="border: solid 2px #fff;"/>
+		</div>
+		<div class="texto">
+    		<p class="legenda"><br>Este exemplo mostra uma boa disposição, com blocos de textos agrupados em uma proximidade lógica. O texto está centralizado pelas suas linhas e centralizado na pagina. Apesar de ser um alinhamento válido, os cantos estão “flutuantes”; o peso da linha não fica visível.<br><br></p>
+   		</div>
+	</div>
+
     <p>&nbsp;</p>
   	<p>&nbsp;</p>
-    
-    <p style="font-style:italic;clear:both;margin-left:5%; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;">No exemplo (repetido a seguir) que você viu na seção sob proximidade, o texto tambem estava alinhado pela marte central. Mas se ele ficar alinhado pela esquerda ou pela direita, a linha invisível que o conecta ficará mais forte, pois terá um limite vertical a seguir. Isso faz que os textos alinhados à esquerda e à direita fiquem com aspecto mais limpo e mais forte. Compare os dois exemplos a seguir. Falaremos sobre eles nas proximas páginas.<br><br></p>
-    <p>&nbsp;</p>
-  	<p>&nbsp;</p>
-    
-    <img src="imagens/capitulo04/3.jpg" id="img" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both;margin-left:5%; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Este exemplo mostra uma boa disposição, com blocos de textos agrupados em uma proximidade lógica. O texto está centralizado pelas suas linhas e centralizado na pagina. Apesar de ser um alinhamento válido, os cantos estão “flutuantes”; o peso da linha não fica visível.<br><br></p>
-    <p>&nbsp;</p>
-  	<p>&nbsp;</p>
-    
-    <img src="imagens/capitulo04/4.jpg" id="img" style="border: solid 2px #fff;clear:both;"/>
-    <p style="font-style:italic;clear:both;margin-left:5%; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Este exemplo apresenta a mesma organização visual, mas está alinhado à direita. Agora o canto bem delimitado à direita ficou visível. A “linha invisìvel” que conecta as extremidades dos dois conjutos de texto é mais forte.<strong>A força deste canto é o que da peso ao layout.</strong><br><br></p>
-    <p>&nbsp;</p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+   			 <img src="imagens/capitulo04/4.jpg" id="img" style="border: solid 2px #fff;clear:both;"/>
+		</div>
+		<div class="texto">
+    		<p class="legenda"><br>Este exemplo apresenta a mesma organização visual, mas está alinhado à direita. Agora o canto bem delimitado à direita ficou visível. A “linha invisìvel” que conecta as extremidades dos dois conjutos de texto é mais forte.<strong>A força deste canto é o que da peso ao layout.</strong><br><br></p>
+    	</div>
+	</div>
+	<p>&nbsp;</p>
   	<p>&nbsp;</p>
      
      <p id="corpo" style="clear:both">Você costuma centralizar tudo automaticamente? O alinhamento centralizado é o mais usado pelos iniciantes: é muito seguro e a sensação de usa-lo é de conforto. O alinhamento centralizado cria uma aparencia mais formal, mais comum e sem brilho. Dê uma olhada nas diagramações de que você mais gosta. Aposto que a maioria dos materiais com uma estética sofisticada não esta centralizada. Sei que é difícel para um iniciante libertar-se do alinhamento pelo centro; você precisará forçar-se a fazê-lo uma primeira vez. Mas experimente combinar o alinhamento à esquerda ou à direita com um bom uso da proximidade e ficará surpreso com as mudanças que ocorrerão em seu trabalho.<br><br></p>
@@ -740,7 +813,7 @@
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Esta é uma tipica capa de relatorio, certo? Este formato padrao tem uma aparencia sem brilho, quase amadora,capaz de influenciar a reaçâo inicial de uma pessoa em relaçâo ao relatorio.</p>
  	</div>
     
-    <div id="posicao" style="margin-right:5%;">
+    <div id="posicao" style="margin-right:5%; margin-left: 9%;">
     <img src="imagens/capitulo04/6.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
     <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>A força do alinhamento à esquerda confere à capa do relatorio uma aparencia mais sofisticada. Mesmo que o nome da autora esteja distante do titulo, a linha invisível criado pelo alinhamento concecta os dois blocos de texto.</p><br><br>
     </div>
@@ -754,7 +827,7 @@
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Esta opçao não é ruim, mas o layout centralizao é um pouco monotono e a moldura cria um espaço muito hermético, confinando os elementos.<br><br><br></p>
  	</div>
     
-    <div id="posicao" style="margin-right:5%;"> 
+    <div id="posicao" style="margin-right:5%; margin-left: 9%">
     <img src="imagens/capitulo04/8.jpg" id="img-2" style=" margin-left:5%; border: solid 2px #fff;"/>
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; margin-left:5%; font-weight: bold;"><br>Um alinhamento á esquerda deixa a pagina mais sofisticada. A limitação da linha pontilhada à esquerda abre a página e reforça o alinhamento.<br><br><br></p>
     </div>
@@ -766,7 +839,7 @@
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Esta opção está com alinhamento à direita, os elementos posicionados do lado esquerdo. Fiz algumas modificações na fonte.<br><br></p>
  	</div>
     
-    <div id="posicao" style="margin-right:-5%;"> 
+    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
     <img src="imagens/capitulo04/10.jpg" id="img-2" style="margin-left:5%; border: solid 2px #fff;"/>
     <p style="font-style:italic;clear:both; font-size:17px; margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Seja ousado<br><br></p>
     </div>
@@ -780,7 +853,7 @@
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify;  margin-right:18px; font-weight: bold;"><br>Centralizado. <br>Realmente monótono<br><br><br></p>
  	</div>
     
-    <div id="posicao" style="margin-right:-5%;"> 
+    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
     <img src="imagens/capitulo04/12.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-left:5%; margin-right:18px; font-weight: bold;"><br>Se você quiser centralizar o texto, pelo menos faça que ele fique centralizado de maneira obvía.<br><br><br></p>
     </div>
@@ -792,7 +865,7 @@
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Experimente descentralizar o bloco com o texto centralizado<br><br></p>
  	</div>
     
-    <div id="posicao" style="margin-right:-5%;"> 
+    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
     <img src="imagens/capitulo04/14.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
      <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-left:5%; margin-right:18px; font-weight: bold;"><br>Se você centralizar o texto, tente faze-lo ficar mais expressivo de alguma maneira.<br><br></p>
     </div>
@@ -806,7 +879,7 @@
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Este é o tipo de layout que não mostra bons exemplos de planejamento visual: fonte comum, letras muito grandes, emaranhado de texto, duplos retornos de carro, moldura inadequada.<br><br><br></p>
  	</div>
     
-    <div id="posicao" style="margin-right:-5%;"> 
+    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
     <img src="imagens/capitulo04/16.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-left:5%; margin-right:18px; font-weight: bold;"><br>O alinhamento centralizado demanda cuidado dobrado para funcionar. Este layout tem uma fonte tradicional, com um tamanho relativamente pequeno, mais espaço entre as linhas, muito espaço em branco ao redor do texto, sem moldura.<br><br><br></p>
     </div>
@@ -820,7 +893,7 @@
     <p>&nbsp;</p>
   	<p>&nbsp;</p>
     
-    <div id="posicao" style="margin-right:-5%;"> 
+    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
     <img src="imagens/capitulo04/18.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; margin-left:5%; font-weight: bold;"><br>Destaque um layout largo, centrazlizado, com um formato horizontal.Tente fazer seu proximo folheto assim.<br><br></p>
     </div>
@@ -829,66 +902,114 @@
     
      <p id="corpo" style="clear:both;"><br><br>Você está habituado a trabalhar com alinhamentos texto. Até adquirir mais experiencia, lembre-se de uma regra: utilize apenas um alinhamento de texto por página, ou seja, o texto deve ser todo alinhado à esquerda, à direita ou centralizado.</p><br/>
      
+	<div style="display: inline-flex; width: 100%">
+		<div style="width: 33%; margin-left: 5%;">
+		 	<img id="img1" src="imagens/capitulo04/19.jpg" />
+		</div>
 
-     <img src="imagens/capitulo04/19.jpg" style="border: solid 2px #fff; display:inline-block; float: left;margin-left:5%;width:30%;"/>
-     <img src="imagens/capitulo04/20.jpg" style="border: solid 2px #fff; display:inline-block; float: right;margin-right:5%;width:30%;"/>
-     <img src="imagens/capitulo04/21.jpg" style="border: solid 2px #fff; display: block; position: relative; float: none; margin: auto;width:30%;"/><br/>
-     
+		<div style="width: 33%">
+		 	<img id="img2" src="imagens/capitulo04/21.jpg" /><br/>
+		</div>
+
+		<div style="width: 33%; margin-right: 4%;">
+			<img id="img3" src="imagens/capitulo04/20.jpg" />
+		</div>
+    </div>
      <p id="corpo" style="clear:both;"><br><br>Este texto está justificado. Algumas pessoas o classificam como alinhado à direita e à esquerda e algumas como blocado. As linhas de texto ficam alinhadas dos dois lados. Só utilize este alinhamento se suas linhas puderem ter uma largura tal que evite a formação de “vazios” horrivéis entre as palavras.</p>
      
      <p id="corpo">Às vezes é possível utilizar os alinhamentos à esquerda na mesma página, mas é importante que você se certifique de alinhar os elementos de alguma maneira.</p><br/>
-    
-     <img src="imagens/capitulo04/22.jpg" id="img" style="border: solid 2px #fff;"/>
-     <p style="font-style:italic;clear:both; font-size:17px; margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Apesar de esses dois elementos permanecerem com dois alinhamentos diferentes (o texto de cima está alinhado à esquerda e o de baixo, a direita), a lateral do texto descrito de baixo está alinhado com a lateral direita do título de cima, conectando os elementos através de uma linha invisível. Isso não foi feito por acaso!<br><br></p>
-     <p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+     		<img src="imagens/capitulo04/22.jpg" id="img" style="border: solid 2px #fff;"/>
+		</div>
+		<div class="texto">
+			<p class="legenda"><br>Apesar de esses dois elementos permanecerem com dois alinhamentos diferentes (o texto de cima está alinhado à esquerda e o de baixo, a direita), a lateral do texto descrito de baixo está alinhado com a lateral direita do título de cima, conectando os elementos através de uma linha invisível. Isso não foi feito por acaso!<br><br></p>
+		</div>
+	</div>
+	 <p>&nbsp;</p>
   	 <p>&nbsp;</p>
-    
-     <img src="imagens/capitulo04/23.jpg" id="img" style="border: solid 2px #fff;clear: both;"/>
-     <p style="font-style:italic;clear:both; font-size:17px; margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Neste exemplo, o título e subtítulo estão alinhados à esquerda, mas a descrição está centralizada; não existe um alinhamento em comum entre os dois elementos do texto. Eles não estão conectados entre si.<br><br></p>
-     <p>&nbsp;</p>
+	<div class="imagemLegenda">
+		<div class="imagem">
+     		<img src="imagens/capitulo04/23.jpg" id="img" style="border: solid 2px #fff;clear: both;"/>
+		</div>
+		<div class="texto">
+     		<p class="legenda"><br>Neste exemplo, o título e subtítulo estão alinhados à esquerda, mas a descrição está centralizada; não existe um alinhamento em comum entre os dois elementos do texto. Eles não estão conectados entre si.<br><br></p>
+		</div>
+	</div>
+	 <p>&nbsp;</p>
   	 <p>&nbsp;</p>
     
       <p id="corpo" style="clear: both;">Quando colocar outros itens na página, é importante que cada um deles tenha um alinhamento visual com outro item da página. Se as linhas de texto estiverem nas horizontais, alinhe suas laterais direita ou esquerdas. Se houver figuras, alinhe suas laterais direitas ou esquerdas. Se houver figuras, alinhe suas laterais com outras laterais existentes na página. Nada deve ser posicionado arbitrariamente na página.<br><br></p>
      <p>&nbsp;</p>
   	 <p>&nbsp;</p>
-      
-      <img src="imagens/capitulo04/24.jpg" id="img" style="border: solid 2px #fff; display: block; position: relative; float: none; margin: auto;"/>
-      <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Nesse caso, há dois problemas, certo? Falta de proximidade e falta de alinhamento. Mesmo que esse seja uma planilha bastante comum e sem atrativos, não há motivos para não fazer que a pagina fique com uma aparência melhor e apresentar as informações com a máxima de clareza possível. Quando as informações são difíceis de entender, é <strong> muito </strong> importante apresenta-las com clareza e organização.<br><br></p>
-     <p>&nbsp;</p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+      		<img src="imagens/capitulo04/24.jpg" id="img" style="border: solid 2px #fff; display: block; position: relative; float: none; margin: auto;"/>
+		</div>
+		<div class="texto">
+      		<p class="legenda"><br><br>Nesse caso, há dois problemas, certo? Falta de proximidade e falta de alinhamento. Mesmo que esse seja uma planilha bastante comum e sem atrativos, não há motivos para não fazer que a pagina fique com uma aparência melhor e apresentar as informações com a máxima de clareza possível. Quando as informações são difíceis de entender, é <strong> muito </strong> importante apresenta-las com clareza e organização.<br><br></p>
+     	</div>
+	</div>
+	 <p>&nbsp;</p>
   	 <p>&nbsp;</p>
     
       <p id="corpo" style="clear: both;">Provavelmente a falta de alinhamento seja maior por causa de materiais com uma aparência antiestética. Seus olhos gostam de ver tudo em ordem, pois isso cria uma sensação de calma e segurança.</p>
       <p id="corpo" style="clear: both;">Em qualquer material com um bom design é possível desenhar linhas sobre os objetos alinhados, mesmo que a apresentação do material seja composta por muitos itens diferentes.</p><br/>
-      
-      <img src="imagens/capitulo04/25.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
-      <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Nesse caso, o simples alinhamento dos itens muda tudo. Observe que nenhum item está colocado arbitrariamente na página; todo item possui alguma conexão visual com outro.</p>
-<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Se eu soubesse do que trata esse quadro, talvez optasse por passar o quadro da direita mais ainda para a direita, distante do quadro maior, mantendo suas partes superiores alinhados, ou eu distanciaria mais o quadro inferior. Ajustaria o espaçamento entre os três quadros, segundo suas interligações logicas.
-<br><br></p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+      		<img src="imagens/capitulo04/25.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+		</div>
+		<div class="texto">
+      		<p class="legenda"><br><br>Nesse caso, o simples alinhamento dos itens muda tudo. Observe que nenhum item está colocado arbitrariamente na página; todo item possui alguma conexão visual com outro.</p>
+			<p class="legenda"><br>Se eu soubesse do que trata esse quadro, talvez optasse por passar o quadro da direita mais ainda para a direita, distante do quadro maior, mantendo suas partes superiores alinhados, ou eu distanciaria mais o quadro inferior. Ajustaria o espaçamento entre os três quadros, segundo suas interligações logicas.<br><br></p>
+    	</div>
+	</div>
      <p>&nbsp;</p>
   	 <p>&nbsp;</p>
 
 	<p id="corpo" style="clear:both;">Um inconveniente com os materiais criados por pessoas que não conhecem design é a sutil falta de alinhamento, como títulos centralizados e subtítulos com paragrafo de endentação. À primeira vista, qual dos exemplos destas duas páginas tem um visual mais limpo e preciso?</p><br><br>
-    
-     <img src="imagens/capitulo04/26.jpg" id="img" style="border: solid 2px #fff;"/>
-     <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Essa é uma diagramação muito comum; os títulos estão centralizados, os textos estão centralizados, o texto está alinhado à esquerda, as endentações de parágrafos têm a largura das da máquina de escrever (ou seja, cinco espaços ou meia polegada como se aprende nos cursos de datilografia) e a ilustração está centralizada em uma das colunas.</p>
-<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Nunca centralize os títulos se o texto for alinhado à esquerda ou se ele tiver endentações. Se o texto não tiver laterais bem delimitadas à esquerda e à direita, não é possível observar se o título está realmente centralizado.</p>
-<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Todos esses pontos desalinhados criam uma página desorganizada: endentações muito grandes, laterais irregulares de texto, títulos centralizados com espaços em branco dos dois lados, ilustração centralizada.<br><br></p>
-     <p>&nbsp;</p>
-  	 <p>&nbsp;</p>
+	<div class="imagemLegenda">
+		<div class="imagem">
+     		<img src="imagens/capitulo04/26.jpg" id="img" style="border: solid 2px #fff;"/>
+		</div>
+		<div class="texto">
+			<p class="legenda"><br>Essa é uma diagramação muito comum; os títulos estão centralizados, os textos estão centralizados, o texto está alinhado à esquerda, as endentações de parágrafos têm a largura das da máquina de escrever (ou seja, cinco espaços ou meia polegada como se aprende nos cursos de datilografia) e a ilustração está centralizada em uma das colunas.</p>
+			<p class="legenda"><br>Nunca centralize os títulos se o texto for alinhado à esquerda ou se ele tiver endentações. Se o texto não tiver laterais bem delimitadas à esquerda e à direita, não é possível observar se o título está realmente centralizado.</p>
+			<p class="legenda"><br>Todos esses pontos desalinhados criam uma página desorganizada: endentações muito grandes, laterais irregulares de texto, títulos centralizados com espaços em branco dos dois lados, ilustração centralizada.<br><br></p>
+     	</div>
+	</div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
 
 	<p id="corpo" style="clear:both;">Esses pequenos desalinhamentos contribuem para que a pagina fique visualmente desorganizada. Encontre uma linha e guie-se através dela. Mesmo que a diferença seja sutil e seu chefe não consiga dizer qual é diferença entre o exemplo a seguir e o anterior, a estética mais sofisticada é obviamente a melhor.</p><br/>
+	<div class="imagemLegenda">
+		<div class="imagem">
+			<img src="imagens/capitulo04/27.jpg" id="img" style="border: solid 2px #fff;"/>
+		</div>
+		<div class="texto">
+			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><strong>Encontre um alinhamento e use-o como guia.</strong></p>
+			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Se o texto for alinhado à esquerda, deixe os títulos e subtítulos alinhados à esquerda.</p>
+			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Os primeiros parágrafos costumam ser deixados sem endentação. O objetivo de endentar um parágrafo, mas sempre se sabe que o primeiro também é um parágrafo.</p>
+			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Em uma máquina de escrever, a endentação comum é de cinco espaços. No caso das letras proporcionadas utilizadas no computador, a endentação tipográfica padrão e a de um <strong>eme</strong> (um eme é tão largo quanto o tamanho da sua letra), que mais se assemelha a dois espaços.</p>
+			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Se houver fotos ou ilustrações, alinhe-as com uma das laterais e/ou com as linhas de base.</p></div><br>
+		</div>
+	</div>
 
-	<img src="imagens/capitulo04/27.jpg" id="img" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><strong>Encontre um alinhamento e use-o como guia.</strong></p>
-	<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Se o texto for alinhado à esquerda, deixe os títulos e subtítulos alinhados à esquerda.</p>
-	<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Os primeiros parágrafos costumam ser deixados sem endentação. O objetivo de endentar um parágrafo, mas sempre se sabe que o primeiro também é um parágrafo.</p>
-	<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Em uma máquina de escrever, a endentação comum é de cinco espaços. No caso das letras proporcionadas utilizadas no computador, a endentação tipográfica padrão e a de um <strong>eme</strong> (um eme é tão largo quanto o tamanho da sua letra), que mais se assemelha a dois espaços.</p>
-	<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Se houver fotos ou ilustrações, alinhe-as com uma das laterais e/ou com as linhas de base.</p></div><br>
 	<p id="corpo" style="clear:both;"><br>Mesmo um material que tenha uma abertura bem diagramada e um bom design pode ser beneficiado por sutis ajustes de alinhamento. O alinhamento forte costuma ser a chave que falta para um layout mais profissional. Olhe todos os elementos para ter certeza de que eles estão relacionados a outros elementos da pagina.</p><br>
 
-	<img src="imagens/capitulo04/28.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
-    <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Você consegue visualizar todos os lugares nos quais os itens poderiam estar alinhados, mas não estão? Se este livro for seu, marque todas as incidências de falta de alinhamentos desta página. Há pelo menos nove!</p><br><br>
-    
+	<div class="imagemLegenda">
+		<div class="imagem">
+			<img src="imagens/capitulo04/28.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+    	</div>
+		<div class="texto">
+			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Você consegue visualizar todos os lugares nos quais os itens poderiam estar alinhados, mas não estão? Se este livro for seu, marque todas as incidências de falta de alinhamentos desta página. Há pelo menos nove!</p><br><br>
+    	</div>
+	</div>
     <p id="corpo" style="clear:both;"><br>Preste atenção no caso de ilustrações que ficarem um pouco desalinhadas para fora da margem, de legendas quando estiverem centralizadas sob as fotos, de títulos que na0 estiverem alinhados com o texto, ou de uma combinação de texto centralizado com texto alinhado à esquerda.</p><br/>
     
     <img src="imagens/capitulo04/29.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
