@@ -10,6 +10,13 @@
         <link rel='stylesheet' type='text/css' href='css/lightBox.css'>
         <link rel='stylesheet' type='text/css' href='css/tooltip.css'>       
          <?php echo $arqCSS; ?>
+        <script>
+            $LAB
+            .script("framework.js").wait()
+            .script("plugin.framework.js")
+            .script("myplugin.framework.js").wait()
+            .script("init.js").wait();
+        </script>
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/jquery.mask.js" type="text/javascript"></script>
         <script src="js/mascaras.js" type="text/javascript"></script>

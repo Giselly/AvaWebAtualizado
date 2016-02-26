@@ -20,12 +20,17 @@ if (isset($_SESSION['login']) && is_string($_SESSION['login'])) {
         /** Edita a senha do usuario */
         $retorno =  $usuario->editarSenha($form['idUsuario'],$form['senhaAtual'], $form['novaSenha'], $form['confirmarSenha']);
         if($retorno == "true") {
+            session_destroy();
        ?>
        
        <script>
            alert("Você será redirecionado para tela de login para logar-se com a nova senha!");
-       </script>
-       <?php echo "<META http-equiv='refresh' content='0;URL=" . RAIZ . "login'> ";
+         
+       </script> 
+       
+       <?php 
+
+       echo "<META http-equiv='refresh' content='0;URL=" . RAIZ . "login'> ";
     } else {
         echo $retorno;
     }

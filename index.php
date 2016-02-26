@@ -1,7 +1,7 @@
 <?php
 
 /** Inclui o arquivo de configurações gerais do projeto */
-include_once('Classes/config.inc.php');
+include_once('Classes/Config.inc.php');
 
 /** @var Url */
 $url = Url::getInstance();
