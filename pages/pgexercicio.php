@@ -1,7 +1,7 @@
 <link rel='stylesheet' type='text/css' href='css/fontExercicio.css'>
 
 
-<div id="title"><h2 id="tituloCapitulo">Capítulo <?php echo $url->getURL(1); ?></h2></div>
+<div id="title2"><h2 id="tituloCapitulo">Capítulo <?php echo $url->getURL(1); ?></h2></div>
 <section id="exercicio">
     <?php
     $dataBanco = date('Y-m-d H:i:s', strtotime('+1 days',strtotime($exercicios[0]['data'])));
