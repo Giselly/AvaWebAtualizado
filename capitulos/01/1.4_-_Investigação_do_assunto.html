@@ -29,10 +29,20 @@
         #title{
             background: #004C98;
             margin-left: 5%;
-            height: 25px;
-            width: 260px;
+            height: auto;
+            width: 25%;
             border-radius: 2px;
             color: #FFFFFF;
+            padding: 2px;
+        }
+
+        #corpo2 {
+            text-align: justify;
+            margin-left: 9%;
+            margin-right: 25px;
+            margin-bottom: -1%;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #corpo3{
@@ -57,8 +67,8 @@
             #title{
                 background: #004C98;
                 margin-left: 5%;
-                height: 25px;
-                width: 260px;
+                height: auto;
+                width:30%;
                 border-radius: 2px;
                 color: #FFFFFF;
             }
@@ -71,7 +81,7 @@
             }
             #corpo2 {
                 text-align: justify;    
-				margin-left: 13%;
+				margin-left: 9%;
                 margin-right: 25px;
                 font-size: 16px;
                 font-family: Arial, Helvetica, sans-serif;
@@ -128,6 +138,12 @@
             }
         }
 
+        @media all and (max-width: 1550px){
+            #title{
+                width: 40%;
+            }
+        }
+
         /*Media Queries SCREEN >= 998px - FULL SCREEN*/
         @media all and (min-width:998px) and (max-width: 1450px){
             body {
@@ -136,8 +152,7 @@
             #title{
                 background: #004C98;
                 margin-left: 5%;
-                height: 25px;
-                width: 260px;
+                width: 45%;
                 border-radius: 2px;
                 color: #FFFFFF;
             }
@@ -203,6 +218,18 @@
                 font-size: 17px;
                 font-family: Arial, Helvetica, sans-serif;
                 margin-top: 4px;
+            }
+        }
+
+        @media all and (max-width: 1300px){
+            #title{
+                width: 55%;
+            }
+        }
+
+        @media all and (max-width: 1150px){
+            #title{
+                width: 65%;
             }
         }
         /*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
@@ -532,6 +559,7 @@
             #title{
                 margin-left:5%;
                 margin-top: 20px;
+                width: 75%;
             }
             #corpo{
                 text-align:justify;
@@ -582,6 +610,7 @@
             #title{
                 margin-left:3%;
                 margin-top: 20px;
+                width: 80%;
             }
             #corpo{
                 text-align:justify;
@@ -627,6 +656,7 @@
             #title{
                 margin-left:3%;
                 margin-top: 20px;
+                width: 85%;
             }
             #corpo{
                 text-align:justify;
@@ -718,6 +748,7 @@
                 margin-left:3%;
                 font-size:17px;
                 margin-top: 20px;
+                width: 90%;
             }
             #corpo{
                 text-align:justify;
