@@ -6,11 +6,8 @@
         <title>Documento sem título</title>
         <!--Estilização da Página-->
         <style type="text/css">
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
-			@media all and (min-width:998px){
-				body{
-					font-family:Arial, Helvetica, sans-serif;
-				}
+			
+			@media all and (min-width:1336px){
 				.cl_imgs{
 					width: 100%;
 				}
@@ -50,24 +47,179 @@
 					margin-left:5%;
 					margin-top:-15px;
 					position:relative;
-					}
+				}
 				#t2{
 					margin-left:45%;
 					margin-top:-265px;
 					position:relative;
-					}
+				}
 				#texto{
 					margin-left:50%;
 					margin-top:-535px;
 					position:relative;
-					}
-				#img{
-					width:37%;
-					height:37%;
-					margin-left:10%;
-					/* Sombra da Imagem */
 				}
 				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+			}
+			
+			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+			@media all and (min-width:998px) and (max-width:1335px){
+				.cl_imgs{
+					width: 100%;
+				}
+				#img17{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img18{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                    padding: 3px;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+					margin-right: 25px;
+                }
+				#t1{
+					margin-left:5%;
+					margin-top:-15px;
+					position:relative;
+				}
+				#t2{
+					margin-left:45%;
+					margin-top:-265px;
+					position:relative;
+				}
+				#texto{
+					margin-left:50%;
+					margin-top:-535px;
+					position:relative;
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+			}
+			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+			@media all and (min-width:998px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+				#img{
+					width: 37%;
+					height: 37%;
+					margin-left: 5%;
+					float: left;
+				}
+				#legenda {
+					float:left;
+					margin-left:5%;
+					position:relative;
+					width:30%;	
+				}
+				#fonte {
+					font-style:italic;
+					clear:both;
+					width:80%;	
+				}
+								#azul_caixa{
 					background:#004C98;
 					color:#FFFFFF;
 					margin-left: 5%;
@@ -165,55 +317,9 @@
                     font-family:Arial, Helvetica, sans-serif;
                 }
 				#img{
-					width:37%;
-					height:37%;
-					margin-left:0%;
-					float:right;
-					/* Sombra da Imagem */
-				}
-			}
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
-			@media all and (min-width:998px){
-				body{
-					font-family:Arial, Helvetica, sans-serif;
-				}
-                #title{
-                    background: #004C98;
-                    margin-left: 5%;
-                    height: 25px;
-                    width: 200px;
-                    border-radius: 2px;
-                    color: #FFFFFF;
-                }
-                .corpo{
-                    text-align:justify;
-                    margin-left:5%;
-                    font-size:17px;
-                    font-family:Arial, Helvetica, sans-serif;
-                }
-				#img{
-					width: 37%;
-					height: 37%;
-					margin-left: 5.2%;
+					width: 90%;
 					float: left;
 					/* Sombra da Imagem */
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#legenda {
-					float:left;
-					margin-left:5%;
-					position:relative;
-					width:30%;	
-				}
-				#fonte {
-					font-style:italic;
-					clear:both;
-					width:80%;	
 				}
 			}
 			/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
@@ -235,20 +341,22 @@
                     font-size:17px;
                     font-family:Arial, Helvetica, sans-serif;
                 }
+				#img17{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img18{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
 				#img{
-					width:40%;
-					height:40%;
-					margin-left:29.2%;
+					width:90%;
+					height:90%;
+					margin-left:5%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				}
 				#conteudoTopico{
 					min-width:65%;
@@ -264,6 +372,41 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 851px AND <= 917px*/
 			@media all and (min-width:851px) and (max-width:917px){
@@ -278,26 +421,29 @@
                     border-radius: 2px;
                     color: #FFFFFF;
                 }
+				#img17{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img18{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img{
+					width:90%;
+					height:90%;
+					margin-bottom:3%;
+					float:left;
+					margin-left: 5%;
+				}
                 .corpo{
                     text-align:justify;
                     margin-left:5%;
                     font-size:17px;
                     font-family:Arial, Helvetica, sans-serif;
                 }
-				#img{
-					width:70%;
-					height:70%;
-					margin-left:22%;
-					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
 				#conteudoTopico{
 					min-width:61%;
 				}
@@ -311,6 +457,41 @@
 					font-style:italic;
 					clear:both;
 					width:80%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 785px AND <= 850px*/
@@ -332,22 +513,22 @@
                     font-size:17px;
                     font-family:Arial, Helvetica, sans-serif;
                 }
+				#img17{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img18{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
 				#img{
-					width:60%;
-					height:60%;
-					margin-left:22%;
+					width:90%;
+					height:90%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					margin-left: 5%;
 				}
 				#conteudoTopico{
 					min-width:60%;
@@ -362,6 +543,41 @@
 					font-style:italic;
 					clear:both;
 					width:80%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 731px AND <= 784px*/
@@ -382,26 +598,29 @@
                     margin-left:5%;
                     font-size:17px;
                     font-family:Arial, Helvetica, sans-serif;
+					margin-right: 25px;
                 }
+				#img17{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+					margin-left: 10% !important;
+				}
+				#img18{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+					margin-left: 10% !important;
+				}
 				#img{
-					width:50%;
-					height:50%;
-					margin-left:25%;
+					width:80%;
+					height:80%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					margin-left: 5%;
 				}
 				#conteudoTopico{
-					min-width:57%;
+					min-width:60%;
 				}
 				#legenda {
 					float:left;
@@ -413,6 +632,41 @@
 					font-style:italic;
 					clear:both;
 					width:80%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 710px AND <= 730px*/
@@ -439,19 +693,7 @@
 					height:50%;
 					margin-left:22%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:54%;
 				}
 				#legenda {
@@ -464,6 +706,41 @@
 					font-style:italic;
 					clear:both;
 					width:80%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 535px AND <= 709px*/
@@ -490,19 +767,7 @@
 					height:50%;
 					margin-left:25%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2{
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:95%;
 					margin-right:5%;
 				}
@@ -519,6 +784,41 @@
 					font-style:italic;
 					clear:both;
 					width:80%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 483px AND <= 534px*/
@@ -545,19 +845,7 @@
 					height:80%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:460px;
 				}
 				#legenda {
@@ -569,6 +857,41 @@
 					font-style:italic;
 					clear:both;
 					width:85%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 424px AND <= 484px*/
@@ -595,19 +918,7 @@
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:400px;
 				}
 				#legenda {
@@ -619,6 +930,41 @@
 					font-style:italic;
 					clear:both;
 					width:85%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 390px AND <= 423px*/
@@ -645,19 +991,7 @@
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:376px;
 				}
 				#legenda {
@@ -669,6 +1003,41 @@
 					font-style:italic;
 					clear:both;
 					width:85%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 365px AND <= 389px*/
@@ -697,12 +1066,7 @@
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					float:left;}
 				#posicao {
 					display:block;
 					float:none;
@@ -710,12 +1074,7 @@
 					margin-left:5%;
 				}
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */				
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:98%;
 					margin-right:5%;
@@ -729,6 +1088,41 @@
 					font-style:italic;
 					clear:both;
 					width:85%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 350px AND <= 364px*/
@@ -756,12 +1150,7 @@
 					width:85%;
 					height:85%;
 					margin-left:5%;
-					margin-bottom:3%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					margin-bottom:3%;}
 				#posicao {
 					display:block;
 					float:none;
@@ -769,12 +1158,7 @@
 					margin-left:5%;
 				}
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:100%;
 					margin-right:5%;
@@ -789,6 +1173,41 @@
 					clear:both;
 					margin-left:5%;
 					width:85%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN >= 320px AND <= 349px*/
@@ -822,12 +1241,7 @@
 					width:85%;
 					height:75%;
 					margin-left:5%;
-					margin-bottom:3%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					margin-bottom:3%;}
 				#posicao {
 					display:block;
 					float:none;
@@ -836,12 +1250,7 @@
 				}
 				
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:97%;
 					margin-right:3%;
@@ -856,6 +1265,41 @@
 					font-style:italic;
 					clear:both;
 					width:90%;	
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 			/*Media Queries SCREEN <= 319px*/
@@ -884,12 +1328,7 @@
 					width:75%;
 					height:75%;
 					margin-left:9%;
-					margin-bottom:3%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					margin-bottom:3%;}
 				#posicao {
 					display:block;
 					float:none;
@@ -897,15 +1336,45 @@
 				}
 				
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:99%;
 					margin-right:1%;
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 		</style>
@@ -946,14 +1415,15 @@
 	O que você leu a seguir (da esquerda para a direita)?<br><br>
 	O que aconteceu quando você alcançou o canto inferior direito; para onde seu olhar se dirigiu?<br><br>
 	Ele ficou vagando para certificar-se de não ter perdido alguma informação espalhada pelos cantos?
-	</p>
-   
+    </p>
 </div>
+<br>
+<br>
+<p>&nbsp;</p>
 
-<p class="corpo" style="font-size:15pt;clear:both;font-weight: 500;">
-	E se confundir ainda mais as coisas?
-</p>
-
+<p class="corpo" style="font-size:14pt;clear:both;"><br>E se confundir ainda mais as coisas?</p>
+<br>
+<br>
 <div>
 	<img src="imagens/capitulo03/2.jpg" id="img"  style="border: solid 2px #fff;"/>
 	<p class="corpo" style="font-size:17px;width: 50%;float: right;font-weight: bold;"><br>
@@ -964,7 +1434,9 @@
 	 <br><br><br>
 	</p>
 </div> 
-    <p class="corpo" style="position: relative;margin-top: 25%;font-weight: 500;font-size: 16pt;">
+<br>
+<br>
+    <p class="corpo" style="clear:both; position: relative;font-weight: 500;font-size: 16pt;">
     	Quando vários itens estão próximos entre si, eles se tornam uma unidade visual, e não várias unidades separadas. Assim como na vida, a proximidade implica uma relação.
     	<br><br>
 		Várias coisas acontecem quando elementos similares são agrupados em uma unidade. A página fica mais organizada. É possível saber por onde começar a leitura e onde terminá-la. Além disso, o espaço em branco (o espaço ao redor das letras) também fica mais organizado.<br><br>
@@ -980,14 +1452,14 @@
 	  </em><br>
 	</p>
 </div>
-    <p class="corpo" style="position: relative;margin-top: 10%;font-weight: 600;font-size: 14pt;">A seguir você verá um típico cabeçalho de newsletter (jornal). Quantos elementos separados se encontram nesse material? De acordo com o posicionamento, existe algum item relacionado a outro?<br><br>
+    <p class="corpo" style="position: relative;margin-top: 3%;font-weight: 600;font-size: 14pt;">A seguir você verá um típico cabeçalho de newsletter (jornal). Quantos elementos separados se encontram nesse material? De acordo com o posicionamento, existe algum item relacionado a outro?<br><br>
 	</p>
  <div>   
 	<img src="imagens/capitulo03/4.jpg" id="img"  style="border: solid 2px #fff;"/>
-	    <p class="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;position: relative;top:10px;">
+	    <p class="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;position: relative;">
     		Pense um pouco para decidir quais são os itens que deveriam ser agrupados e quais deveriam ficar separados.
     	</p>
-	    <p class="corpo" style="font-size: 17px;margin-left: 5%;font-weight: bold; position: relative;top: 10px;"><br>
+	    <p class="corpo" style="font-size: 17px;margin-left: 5%;font-weight: bold; position: relative;"><br>
       		<em>
 				E a data e as informações sobre publicação? Deveriam estar próximos, pois ambas identificam especificamente esta edição.
 			</em>
@@ -1137,7 +1609,7 @@ Antes de tentar trabalhar o design com essas informações, escreva separadament
 Quando os conjuntos de informações estiverem formados, você poderá trabalhar com eles na página. Com seu computador, você pode experimentar muitas opções.
 </p><br>
 
-<p id="corpo" style="margin-right:25px;">É muito raro que o uso do princípio da proximidade seja a única solução para uma página problemática. Os outros três principais são intrínsecos ao processo de design e, em geral, você perceberá que está aplicando os quatro. Mas aprenda um de cada vez; comece pelo da proximidade. No exemplo a seguir, escolhi os elementos que deveriam ficar agrupados e trabalhei com os outros princípios (e fontes).
+<p class="corpo" style="font-size:17px; margin-left:5%; clear:both; font-weight: bold;">É muito raro que o uso do princípio da proximidade seja a única solução para uma página problemática. Os outros três principais são intrínsecos ao processo de design e, em geral, você perceberá que está aplicando os quatro. Mas aprenda um de cada vez; comece pelo da proximidade. No exemplo a seguir, escolhi os elementos que deveriam ficar agrupados e trabalhei com os outros princípios (e fontes).
 </p>
 
 	<img src="imagens/capitulo03/14.jpg" id="img"  style="border: solid 2px #fff;"/>
@@ -1160,7 +1632,7 @@ O maior inconveniente do anúncio original, porém, é o de que não existe uma 
 
 	<img src="imagens/capitulo03/16.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p class="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; margin-bottom:150px; clear:both; font-weight: bold;">Os links do site estão todos em uma coluna, para mostrar sua relação (e a ilustração foi para o outro lado).<br>
+<p class="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; margin-bottom:150px; clear:both; font-weight: bold;"><br>Os links do site estão todos em uma coluna, para mostrar sua relação (e a ilustração foi para o outro lado).<br>
 A citação ficou mais afastada do principal bloco de texto já que não está diretamente relacionada a ele.<br>
 Também utilizei o princípio do alinhamento (abordado no capítulo 4): o texto está alinhado à esquerda e cada um dos elementos foi alinhado com algo.
 
