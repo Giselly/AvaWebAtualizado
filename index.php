@@ -76,14 +76,14 @@ if ($url->getURL(0) == 'recuperaSenha') {
             exit;
         }
         
-        if($primeiroLogin == 1) {
+        /*if($primeiroLogin == 1) {
             /** Incluindo o topo, conteudo e rodape */
             include_once('includes/inctopo.php');
             include_once('includes/incconteudo.php');
             include_once('includes/incrodape.php');
-        } else {
+       /* } else {
             include_once ('pages/pgaguarde.php');
-        }
+        }*/
     } else {
         
         include_once("includes/inc{$url->getURL(0)}.php");

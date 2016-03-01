@@ -24,8 +24,8 @@
                     <input type="hidden" name="senha" value="*23AE809DDACAF96AF0FD78ED04B6A265E05AA257" />
 
                     <div class="media">
-                        <label for="apelido">Apelido</label><br/>
-                        <input type="text" name="apelido" value="<?php echo (isset($dadosUsuario[0]['apelido']) && $url->getURL(1) == 'editar') ? $dadosUsuario[0]['apelido'] : ""; ?>"  pattern="[a-zA-Z\s]+$" />
+                        <label for="apelido">Apelido</label><br/>  <!--pattern="[a-zA-Z\s]+$"--> 
+                        <input type="text" name="apelido" value="<?php echo (isset($dadosUsuario[0]['apelido']) && $url->getURL(1) == 'editar') ? $dadosUsuario[0]['apelido'] : ""; ?>"/>
                     </div>
 
                     <div class="media">
@@ -34,8 +34,8 @@
                     </div>
 
                     <div  class="media">
-                        <label for="nome">Nome completo</label><br/>
-                        <input type="text" name="nome" value="<?php echo (isset($dadosUsuario[0]['nome']) && $url->getURL(1) == 'editar') ? $dadosUsuario[0]['nome'] : ""; ?>" pattern="[a-zA-Z\s]+$"  />
+                        <label for="nome">Nome completo</label><br/> <!-- pattern="[a-zA-Z\s]+$"-->  
+                        <input type="text" name="nome" value="<?php echo (isset($dadosUsuario[0]['nome']) && $url->getURL(1) == 'editar') ? $dadosUsuario[0]['nome'] : ""; ?>"/>
                     </div>
 
                     <div>

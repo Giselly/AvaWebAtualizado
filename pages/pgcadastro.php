@@ -15,7 +15,7 @@
     </head>
     <body>
         <input type="hidden" value="<?php echo RAIZ; ?>" id="raiz" />
-
+        
         <div id="fundoAzul">
             <div id="login">
                     <div id="imagens">
@@ -37,7 +37,7 @@
                             <br />
                             <input type="text" name="apelido" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
                             <br />
-                            <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF" onKeyPress="MascaraCPF(areaLogin.login);" maxlength="14">
+                            <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF" onKeyPress="MascaraCPF(areaLogin.login);" maxlength="14"/>
                             <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />
                             <p id="info"></p>
@@ -46,10 +46,10 @@
                         
                     </form>
                     </div>
-                <div class="aguarde" id="aguardarConfirmacao">
+                <!--<div class="aguarde" id="aguardarConfirmacao">
                     <p> Aguarde a confirmação do seu cadastro para logar-se. Um email será enviado!</p></br>
                     <a href="login">Voltar a tela de login</a>
-                </div> 
+                </div>--> 
                     
             </div>
         </div>
