@@ -11,6 +11,41 @@
 			float:left; 
 			width: 40%;
 		}
+
+		#posicao2{
+			display:inline-block;
+			position:relative;
+			float:right;
+			width: 40%;
+			margin-left: 9%;
+		}
+
+		#title{
+			background: #004C98;
+			margin-left: 5%;
+			height: auto;
+			width: 35%;
+			border-radius: 2px;
+			color: #FFFFFF;
+			padding: 3px;
+		}
+
+		p.legendaImagem{
+			font-style:italic;
+			clear:both;
+			font-size:17px;
+			text-align:justify;
+			margin-right:18px;
+			font-weight: bold;
+		}
+
+		.box{
+			width: 33%;
+		}
+
+		img.imgFinal{
+			margin-bottom: 30%;
+		}
 		
 		#img-2 {
 			width:83.75%;	
@@ -20,9 +55,29 @@
 			font-style:italic;
 			margin-left:7%;
 			font-size:17px;
+			margin-top: -4%;
 			text-align:justify;
 			margin-right:18px;
 			font-weight: bold;
+		}
+
+		p.legenda2{
+			font-style:italic;
+			margin-left:7%;
+			font-size:17px;
+			margin-top: 1%;
+			text-align:justify;
+			margin-right:18px;
+			font-weight: bold;
+		}
+
+		div.maior{
+			display: inline-flex;"
+		}
+
+		#imagens{
+			display: inline-flex;
+			width: 100%
 		}
 
 		div.imagemLegenda{
@@ -69,6 +124,7 @@
 				width: 35%;
 				border-radius: 2px;
 				color: #FFFFFF;
+				padding: 3px;
 			}
 			#corpo{
 				text-align:justify;
@@ -107,6 +163,117 @@
 				width:80%;	
 			}
 		}
+
+		@media all and (max-width: 1720px){
+			#title{
+				width: 45%;
+			}
+		}
+
+		@media all and (max-width: 1690px){
+			#title{
+				width: 45%;
+			}
+		}
+
+		@media all and (max-width: 1510px){
+			#title{
+				width: 55%;
+			}
+		}
+
+		@media all and (max-width: 1400px){
+			#corpo{
+				margin-right: -5%;
+			}
+
+			div.imagemLegenda{
+				width: 112%;
+			}
+
+			#img-2{
+				width: 70%;
+			}
+
+			p.legendaImagem{
+				text-align: left;
+			}
+		}
+
+		@media all and (max-width: 1370px){
+			#title{
+				width: 65%;
+			}
+		}
+
+		@media all and (max-width: 1260px){
+			#title{
+				width: 75%;
+				margin-top: 5%;
+			}
+		}
+
+		@media all and (max-width: 1200px){
+			div.imagemLegenda{
+				display: block;
+			}
+
+			#corpo{
+				margin-right: -3%;
+			}
+
+			img#img{
+				margin-left: 5%;
+			}
+
+			div.texto{
+				margin-left: 0;
+				width: 73%;
+			}
+
+			p.legenda{
+				margin-left: 5%;
+			}
+
+			#imagens{
+				display: block;
+			}
+
+			.box{
+				width: 50%;
+				padding-bottom: 20px;
+			}
+
+			img#img2{
+				margin-left: 8%;
+			}
+		}
+
+		@media all and (max-width: 1160px){
+			#title{
+				width: 85%;
+			}
+		}
+
+		@media all and (max-width: 1100px){
+			#title{
+				width: 89%;
+				font-size: 16px;
+			}
+		}
+
+		@media all and (max-width: 1090px){
+			#corpo{
+				margin-right: 0;
+			}
+		}
+
+		@media all and (max-width: 997px){
+			div.texto{
+				width: 79%;
+			}
+		}
+
 		/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
 		@media all and (min-width:918px) and (max-width:997px){
 			body{
@@ -114,6 +281,8 @@
 			}
 			#title{
 				margin-left:5%;
+				font-size: 17px;
+				width: 65%;
 			}
 			#corpo{
 				text-align:justify;
@@ -121,10 +290,10 @@
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
+
 			#img{
-				width:37%;
-				height:37%;
-				margin-left:29.2%;
+				width:90%;
+				height:auto;
 				margin-bottom:3%;
 				float:left;
 				/* Sombra da Imagem */
@@ -141,6 +310,7 @@
 			#conteudoTopico{
 				min-width:65%;
 			}
+
 			#legenda {
 				float:left;
 				margin-left:5%;
@@ -160,6 +330,8 @@
 			}
 			#title{
 				margin-left:5%;
+				width: 70%;
+				font-size: 17px;
 			}
 			#corpo{
 				text-align:justify;
@@ -168,9 +340,7 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:40%;
-				height:40%;
-				margin-left:29.2%;
+				width: 90%;
 				margin-bottom:3%;
 				float:left;
 				/* Sombra da Imagem */
@@ -206,6 +376,8 @@
 			}
 			#title{
 				margin-left:5%;
+				width: 75%;
+				font-size: 17px;
 			}
 			#corpo{
 				text-align:justify;
@@ -214,9 +386,8 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:50%;
-				height:50%;
-				margin-left:29.2%;
+				width:90%;
+				height:auto;
 				margin-bottom:3%;
 				float:left;
 				/* Sombra da Imagem */
@@ -252,6 +423,8 @@
 			}
 			#title{
 				margin-left:5%;
+				width: 80%;
+				font-size: 17px;
 			}
 			#corpo{
 				text-align:justify;
@@ -260,9 +433,8 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:50%;
-				height:50%;
-				margin-left:29.2%;
+				width:90%;
+				height:auto;
 				margin-bottom:3%;
 				float:left;
 				/* Sombra da Imagem */
@@ -298,6 +470,8 @@
 			}
 			#title{
 				margin-left:5%;
+				width: 93%;
+				font-size: 17px;
 			}
 			#corpo{
 				text-align:justify;
@@ -306,8 +480,8 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:50%;
-				height:50%;
+				width:90%;
+				height:auto;
 				margin-left:29.2%;
 				margin-bottom:3%;
 				float:left;
@@ -344,6 +518,8 @@
 			}
 			#title{
 				margin-left:5%;
+				width: 65%;
+				font-size: 17px;
 			}
 			#corpo{
 				text-align:justify;
@@ -352,8 +528,8 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:50%;
-				height:50%;
+				width:90%;
+				height: auto;
 				margin-left:29.2%;
 				margin-bottom:3%;
 				float:left;
@@ -372,6 +548,15 @@
 				min-width:95%;
 				margin-right:5%;
 			}
+
+			div.imagemLegenda{
+				display: inline-flex;
+			}
+
+			div.texto{
+				margin-right: 9%;
+			}
+
 			#legenda {
 				float:left;
 				margin-left:5%;
@@ -387,6 +572,14 @@
 				width:80%;	
 			}
 		}
+
+		@media all and (max-width: 580px){
+			#title{
+				width: 85%;
+				font-size: 17px;
+			}
+		}
+
 		/*Media Queries SCREEN >= 483px AND <= 534px*/
 		@media all and (min-width:483px) and (max-width:534px){
 			body{
@@ -420,6 +613,14 @@
 			}
 			#conteudoTopico{
 				min-width:460px;
+			}
+
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
 			}
 			#legenda {
 				margin-left:5%;
@@ -467,6 +668,14 @@
 			#conteudoTopico{
 				min-width:400px;
 			}
+
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
 			#legenda {
 				margin-left:5%;
 				position:relative;
@@ -478,6 +687,22 @@
 				width:85%;	
 			}
 		}
+
+		@media all and (max-width: 530px){
+			#title{
+				font-size: 17px;
+				width: 95%;
+			}
+
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
+		}
+
 		/*Media Queries SCREEN >= 390px AND <= 423px*/
 		@media all and (min-width:390px) and (max-width:423px){
 			body{
@@ -512,6 +737,14 @@
 			}
 			#conteudoTopico{
 				min-width:376px;
+			}
+
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
 			}
 			#legenda {
 				margin-left:5%;
@@ -557,6 +790,14 @@
 				width:100%;
 				margin-left:5%;
 			}
+
+			#posicao2 {
+				display:block;
+				float:none;
+				width:100%;
+			}
+
+
 			#img-2 {
 				width:84%;
 				/* Sombra da Imagem */				
@@ -567,6 +808,14 @@
 			#conteudoTopico{
 				min-width:98%;
 				margin-right:5%;
+			}
+
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
 			}
 			#legenda {
 				margin-left:5%;
@@ -579,6 +828,21 @@
 				width:85%;	
 			}
 		}
+
+		@media all and (max-width: 370px){
+			#title{
+				font-size: 15px;
+			}
+
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
+		}
+
 		/*Media Queries SCREEN >= 350px AND <= 364px*/
 		@media all and (min-width:350px) and (max-width:364px){
 			body{
@@ -587,6 +851,7 @@
 				}
 			#title{
 				margin-left:3%;
+				width: 93%;
 				margin-top: 20px;
 			}
 			#corpo{
@@ -599,7 +864,7 @@
 			#img{
 				width:85%;
 				height:85%;
-				margin-left:5%;
+				margin-left:3%;
 				margin-bottom:3%;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -612,6 +877,12 @@
 				width:100%;
 				margin-left:5%;
 			}
+
+			#posicao2 {
+				display:block;
+				float:none;
+				width:100%;
+			}
 			#img-2 {
 				width:84%;
 				/* Sombra da Imagem */				
@@ -623,6 +894,15 @@
 				min-width:100%;
 				margin-right:5%;
 			}
+
+			div.imagem{
+				margin-left: 6%;
+			}
+
+			div.texto{
+				margin-left: 5%;
+			}
+
 			#legenda {
 				margin-left:5%;
 				position:relative;
@@ -641,11 +921,13 @@
 				font-family:Arial, Helvetica, sans-serif;
 				overflow-x:hidden;
 			}
+
 			#title{
 				margin-left:3%;
-				font-size:17px;
-				margin-top: 20px;
+				width: 92%;
+				font-size: 14px;
 			}
+
 			#corpo{
 				text-align:justify;
 				margin-left:5%;
@@ -669,6 +951,12 @@
 				width:100%;
 				margin-left:5%;
 			}
+
+			#posicao2 {
+				display:block;
+				float:none;
+				width:100%;
+			}
 			
 			#img-2 {
 				width:84%;
@@ -681,6 +969,14 @@
 				min-width:97%;
 				margin-right:3%;
 			}
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
+
 			#legenda {
 				margin-left:5%;
 				position:relative;
@@ -700,9 +996,9 @@
 				overflow-x:hidden;
 			}
 			#title{
-				margin-left:3%;
-				font-size:17px;
-				margin-top: 20px;
+				margin-left: 4%;
+				width: 92%;
+				font-size: 14px;
 			}
 			#corpo{
 				text-align:justify;
@@ -726,6 +1022,12 @@
 				float:none;
 				width:100%;
 			}
+
+			#posicao2 {
+				display:block;
+				float:none;
+				width:100%;
+			}
 			
 			#img-2 {
 				width:84%;
@@ -738,11 +1040,17 @@
 				min-width:99%;
 				margin-right:1%;
 			}
+			div.texto{
+				margin-left: 11%;
+				width: 70%;
+			}
+
+			div.imagem{
+				margin-left: 11%;
+			}
 		}
     </style>
 </head>
-    
-<>
     <div id="conteudoTopico">
    	    <p id="title"><strong>04 – PRINCÍPIOS DE DESIGN – Alinhamento</strong></p><br>
         <p id="corpo">Os iniciantes em design tendem a  colocar o texto e a imagem em qualquer lugar da pagina que tenha espaço, e o  fazem, geralmente, sem consciencia dos outros intens existentes naquela pagina.  Isso resulta no efeito tao desorganizado que voce já conhece, que é como uma  cozinha desarrumada: uma xícara aqui, um prato lá, um guardanapo no chão, um  pote na pia, água no chão. Não é muito dificel arrumar tudo nessa cozinha um  pouco bagunçada, assim como não é muito dificel arrumar uma pagina confusamente  diagramada, com alinhamentos mal-determinados.</p>
@@ -763,8 +1071,7 @@
     	</div>
 	</div>
 	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-    
+
     <p id="corpo" style="clear:both;font-style:italic;">Decida quais itens devem ser agrupados de acordo com o principio de proximidade e quais devem ficar separados.</p><br><br>
 
 	<div class="imagemLegenda">
@@ -775,11 +1082,12 @@
 		<div class="texto">
 			<p class="legenda"><br>Movendo todos os elementos para a direita e alinhando-os de maneira igual, as informações ficam mais organizadas. (È claro: você deve ter percebido que além disso, eu agrupei elementos interligados em proximidade entre si, o que tambem ajudou.)</p>
 			<p>&nbsp;</p>
-			<p class="legenda">No exemplo (repetido a seguir) que você viu na seção sob proximidade, o texto tambem estava alinhado pela marte central. Mas se ele ficar alinhado pela esquerda ou pela direita, a linha invisível que o conecta ficará mais forte, pois terá um limite vertical a seguir. Isso faz que os textos alinhados à esquerda e à direita fiquem com aspecto mais limpo e mais forte. Compare os dois exemplos a seguir. Falaremos sobre eles nas proximas páginas.<br><br></p>
 		</div>
 	</div>
+
+	<p id="corpo" ">No exemplo (repetido a seguir) que você viu na seção sob proximidade, o texto tambem estava alinhado pela marte central. Mas se ele ficar alinhado pela esquerda ou pela direita, a linha invisível que o conecta ficará mais forte, pois terá um limite vertical a seguir. Isso faz que os textos alinhados à esquerda e à direita fiquem com aspecto mais limpo e mais forte. Compare os dois exemplos a seguir. Falaremos sobre eles nas proximas páginas.<br><br></p>
+
 	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
 
 	<div class="imagemLegenda">
 		<div class="imagem">
@@ -790,7 +1098,6 @@
    		</div>
 	</div>
 
-    <p>&nbsp;</p>
   	<p>&nbsp;</p>
 
 	<div class="imagemLegenda">
@@ -802,123 +1109,129 @@
     	</div>
 	</div>
 	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-     
+
      <p id="corpo" style="clear:both">Você costuma centralizar tudo automaticamente? O alinhamento centralizado é o mais usado pelos iniciantes: é muito seguro e a sensação de usa-lo é de conforto. O alinhamento centralizado cria uma aparencia mais formal, mais comum e sem brilho. Dê uma olhada nas diagramações de que você mais gosta. Aposto que a maioria dos materiais com uma estética sofisticada não esta centralizada. Sei que é difícel para um iniciante libertar-se do alinhamento pelo centro; você precisará forçar-se a fazê-lo uma primeira vez. Mas experimente combinar o alinhamento à esquerda ou à direita com um bom uso da proximidade e ficará surpreso com as mudanças que ocorrerão em seu trabalho.<br><br></p>
     <p>&nbsp;</p>
-  	<p>&nbsp;</p>
-     
-    <div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/5.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Esta é uma tipica capa de relatorio, certo? Este formato padrao tem uma aparencia sem brilho, quase amadora,capaz de influenciar a reaçâo inicial de uma pessoa em relaçâo ao relatorio.</p>
- 	</div>
-    
-    <div id="posicao" style="margin-right:5%; margin-left: 9%;">
-    <img src="imagens/capitulo04/6.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
-    <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>A força do alinhamento à esquerda confere à capa do relatorio uma aparencia mais sofisticada. Mesmo que o nome da autora esteja distante do titulo, a linha invisível criado pelo alinhamento concecta os dois blocos de texto.</p><br><br>
-    </div>
-    <p>&nbsp;</p>
+
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/5.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Esta é uma tipica capa de relatorio, certo? Este formato padrao tem uma aparencia sem brilho, quase amadora,capaz de influenciar a reaçâo inicial de uma pessoa em relaçâo ao relatorio.</p>
+		</div>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/6.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
+		<p class="legendaImagem"><br>A força do alinhamento à esquerda confere à capa do relatorio uma aparencia mais sofisticada. Mesmo que o nome da autora esteja distante do titulo, a linha invisível criado pelo alinhamento concecta os dois blocos de texto.</p><br><br>
+		</div>
+	</div>
   	<p>&nbsp;</p>
     
     <p id="corpo" style="clear:both"><br>Há muitas opções para criar o papel de carta, muitas vezes o layout usado é aquele com alinhamento centralizado. Sinta-se livre para mudar a disposição dos elementos, mas lembre-se do alinhamento.</p><br/>
-    
-    <div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/7.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Esta opçao não é ruim, mas o layout centralizao é um pouco monotono e a moldura cria um espaço muito hermético, confinando os elementos.<br><br><br></p>
- 	</div>
-    
-    <div id="posicao" style="margin-right:5%; margin-left: 9%">
-    <img src="imagens/capitulo04/8.jpg" id="img-2" style=" margin-left:5%; border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; margin-left:5%; font-weight: bold;"><br>Um alinhamento á esquerda deixa a pagina mais sofisticada. A limitação da linha pontilhada à esquerda abre a página e reforça o alinhamento.<br><br><br></p>
-    </div>
-    <p>&nbsp;</p>
-  	<p>&nbsp;</p>
 
-	<div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/9.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Esta opção está com alinhamento à direita, os elementos posicionados do lado esquerdo. Fiz algumas modificações na fonte.<br><br></p>
- 	</div>
-    
-    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
-    <img src="imagens/capitulo04/10.jpg" id="img-2" style="margin-left:5%; border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br>Seja ousado<br><br></p>
-    </div>
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/7.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Esta opçao não é ruim, mas o layout centralizao é um pouco monotono e a moldura cria um espaço muito hermético, confinando os elementos.<br><br><br></p>
+		</div>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/8.jpg" id="img-2" style=" margin-left:5%; border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Um alinhamento á esquerda deixa a pagina mais sofisticada. A limitação da linha pontilhada à esquerda abre a página e reforça o alinhamento.<br><br><br></p>
+		</div>
+	</div>
     <p>&nbsp;</p>
+
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/9.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Esta opção está com alinhamento à direita, os elementos posicionados do lado esquerdo. Fiz algumas modificações na fonte.<br><br></p>
+		</div>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/10.jpg" id="img-2" style="margin-left:5%; border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>SEJA OUSADO<br><br></p>
+		</div>
+	</div>
   	<p>&nbsp;</p>
 	
     <p id="corpo" style="clear:both;"><br><br>Não estou sugerindo que você nunca centralize nada! Bastar estar consciente do efeito do alinhamento pelo centro. Será que é realmente esta a aparencia que você deseja criar? As vezes é. Por exemplo: os casamentos costumam ser eventos formais, portanto, se você quiser centralizar o texto do seu convite de casamento, poderá faze-lo.<br><br></p>
-    
-    <div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/11.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify;  margin-right:18px; font-weight: bold;"><br>Centralizado. <br>Realmente monótono<br><br><br></p>
- 	</div>
-    
-    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
-    <img src="imagens/capitulo04/12.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-left:5%; margin-right:18px; font-weight: bold;"><br>Se você quiser centralizar o texto, pelo menos faça que ele fique centralizado de maneira obvía.<br><br><br></p>
-    </div>
-    <p>&nbsp;</p>
-  	<p>&nbsp;</p>
 
-	<div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/13.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Experimente descentralizar o bloco com o texto centralizado<br><br></p>
- 	</div>
-    
-    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
-    <img src="imagens/capitulo04/14.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
-     <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-left:5%; margin-right:18px; font-weight: bold;"><br>Se você centralizar o texto, tente faze-lo ficar mais expressivo de alguma maneira.<br><br></p>
-    </div>
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/11.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem" "><br>Centralizado. <br>Realmente monótono<br><br><br></p>
+		</div>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/12.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
+		<p class="legendaImagem"><br>Se você quiser centralizar o texto, pelo menos faça que ele fique centralizado de maneira obvía.<br><br><br></p>
+		</div>
+	</div>
+
     <p>&nbsp;</p>
-  	<p>&nbsp;</p>
-	
+
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/13.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Experimente descentralizar o bloco com o texto centralizado<br><br></p>
+		</div>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/14.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
+		 <p class="legendaImagem"><br>Se você centralizar o texto, tente faze-lo ficar mais expressivo de alguma maneira.<br><br></p>
+		</div>
+	</div>
+
+    <p>&nbsp;</p>
+
 	<p id="corpo" style="clear:both;"><br><br>Às vezes é possivel dar uma pitada de graça à opção centralizada, como por exemplo, centralizar o texto e colocar o proprio bloco de texto fora de centro. Outra opção é colocar as letras mais acima da página, para criar mais “tensao”; voce tambem pode usar uma fonte muito casual e engraçada, com um alinhamento muito formal, centralizado. O que você não vai querer fazer: usar a fonte Times 12pontos com retornos de carro duplos!</p><br/>
-    
-    <div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/15.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Este é o tipo de layout que não mostra bons exemplos de planejamento visual: fonte comum, letras muito grandes, emaranhado de texto, duplos retornos de carro, moldura inadequada.<br><br><br></p>
- 	</div>
-    
-    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
-    <img src="imagens/capitulo04/16.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-left:5%; margin-right:18px; font-weight: bold;"><br>O alinhamento centralizado demanda cuidado dobrado para funcionar. Este layout tem uma fonte tradicional, com um tamanho relativamente pequeno, mais espaço entre as linhas, muito espaço em branco ao redor do texto, sem moldura.<br><br><br></p>
-    </div>
-    <p>&nbsp;</p>
-  	<p>&nbsp;</p>
 
-    <div id="posicao" style="margin-left:5%;"> 
-    <img src="imagens/capitulo04/17.jpg" id="img-2" style="border: solid 2px #fff;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; font-weight: bold;"><br>Destaque um layout mais vertical, esguio, centralizado, com um formato vertical, delgado.<br><br></p>
-    </div>
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/15.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Este é o tipo de layout que não mostra bons exemplos de planejamento visual: fonte comum, letras muito grandes, emaranhado de texto, duplos retornos de carro, moldura inadequada.<br><br><br></p>
+		</div>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/16.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
+		<p class="legendaImagem"><br>O alinhamento centralizado demanda cuidado dobrado para funcionar. Este layout tem uma fonte tradicional, com um tamanho relativamente pequeno, mais espaço entre as linhas, muito espaço em branco ao redor do texto, sem moldura.<br><br><br></p>
+		</div>
+	</div>
+
     <p>&nbsp;</p>
-  	<p>&nbsp;</p>
-    
-    <div id="posicao" style="margin-right:-5%; margin-left: 9%">
-    <img src="imagens/capitulo04/18.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
-    <p style="font-style:italic;clear:both; font-size:17px; text-align:justify; margin-right:18px; margin-left:5%; font-weight: bold;"><br>Destaque um layout largo, centrazlizado, com um formato horizontal.Tente fazer seu proximo folheto assim.<br><br></p>
-    </div>
+
+	<div class="maior">
+		<div id="posicao" style="margin-left:5%;">
+		<img src="imagens/capitulo04/17.jpg" id="img-2" style="border: solid 2px #fff;"/>
+		<p class="legendaImagem"><br>Destaque um layout mais vertical, esguio, centralizado, com um formato vertical, delgado.<br><br></p>
+		</div>
+		<p>&nbsp;</p>
+
+		<div id="posicao2">
+		<img src="imagens/capitulo04/18.jpg" id="img-2" style="border: solid 2px #fff; margin-left:5%;"/>
+		<p class="legendaImagem"><br>Destaque um layout largo, centrazlizado, com um formato horizontal.Tente fazer seu proximo folheto assim.<br><br></p>
+		</div>
+	</div>
     <p>&nbsp;</p>
-  	<p>&nbsp;</p>
-    
+
      <p id="corpo" style="clear:both;"><br><br>Você está habituado a trabalhar com alinhamentos texto. Até adquirir mais experiencia, lembre-se de uma regra: utilize apenas um alinhamento de texto por página, ou seja, o texto deve ser todo alinhado à esquerda, à direita ou centralizado.</p><br/>
      
-	<div style="display: inline-flex; width: 100%">
-		<div style="width: 33%; margin-left: 5%;">
+	<div id="imagens">
+		<div class="box" style="margin-left: 5%;">
 		 	<img id="img1" src="imagens/capitulo04/19.jpg" />
 		</div>
 
-		<div style="width: 33%">
+		<div class="box">
 		 	<img id="img2" src="imagens/capitulo04/21.jpg" /><br/>
 		</div>
 
-		<div style="width: 33%; margin-right: 4%;">
+		<div class="box" style="margin-right: 4%;">
 			<img id="img3" src="imagens/capitulo04/20.jpg" />
 		</div>
     </div>
      <p id="corpo" style="clear:both;"><br><br>Este texto está justificado. Algumas pessoas o classificam como alinhado à direita e à esquerda e algumas como blocado. As linhas de texto ficam alinhadas dos dois lados. Só utilize este alinhamento se suas linhas puderem ter uma largura tal que evite a formação de “vazios” horrivéis entre as palavras.</p>
      
      <p id="corpo">Às vezes é possível utilizar os alinhamentos à esquerda na mesma página, mas é importante que você se certifique de alinhar os elementos de alguma maneira.</p><br/>
-	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 
 	<div class="imagemLegenda">
@@ -930,7 +1243,6 @@
 		</div>
 	</div>
 	 <p>&nbsp;</p>
-  	 <p>&nbsp;</p>
 	<div class="imagemLegenda">
 		<div class="imagem">
      		<img src="imagens/capitulo04/23.jpg" id="img" style="border: solid 2px #fff;clear: both;"/>
@@ -940,29 +1252,26 @@
 		</div>
 	</div>
 	 <p>&nbsp;</p>
-  	 <p>&nbsp;</p>
-    
+
       <p id="corpo" style="clear: both;">Quando colocar outros itens na página, é importante que cada um deles tenha um alinhamento visual com outro item da página. Se as linhas de texto estiverem nas horizontais, alinhe suas laterais direita ou esquerdas. Se houver figuras, alinhe suas laterais direitas ou esquerdas. Se houver figuras, alinhe suas laterais com outras laterais existentes na página. Nada deve ser posicionado arbitrariamente na página.<br><br></p>
      <p>&nbsp;</p>
-  	 <p>&nbsp;</p>
 
 	<div class="imagemLegenda">
 		<div class="imagem">
-      		<img src="imagens/capitulo04/24.jpg" id="img" style="border: solid 2px #fff; display: block; position: relative; float: none; margin: auto;"/>
+      		<img src="imagens/capitulo04/24.jpg" id="img" style="border: solid 2px #fff; display: block; position: relative; float: none;"/>
 		</div>
 		<div class="texto">
       		<p class="legenda"><br><br>Nesse caso, há dois problemas, certo? Falta de proximidade e falta de alinhamento. Mesmo que esse seja uma planilha bastante comum e sem atrativos, não há motivos para não fazer que a pagina fique com uma aparência melhor e apresentar as informações com a máxima de clareza possível. Quando as informações são difíceis de entender, é <strong> muito </strong> importante apresenta-las com clareza e organização.<br><br></p>
      	</div>
 	</div>
 	 <p>&nbsp;</p>
-  	 <p>&nbsp;</p>
-    
+
       <p id="corpo" style="clear: both;">Provavelmente a falta de alinhamento seja maior por causa de materiais com uma aparência antiestética. Seus olhos gostam de ver tudo em ordem, pois isso cria uma sensação de calma e segurança.</p>
       <p id="corpo" style="clear: both;">Em qualquer material com um bom design é possível desenhar linhas sobre os objetos alinhados, mesmo que a apresentação do material seja composta por muitos itens diferentes.</p><br/>
 
 	<div class="imagemLegenda">
 		<div class="imagem">
-      		<img src="imagens/capitulo04/25.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+      		<img src="imagens/capitulo04/25.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none;"/>
 		</div>
 		<div class="texto">
       		<p class="legenda"><br><br>Nesse caso, o simples alinhamento dos itens muda tudo. Observe que nenhum item está colocado arbitrariamente na página; todo item possui alguma conexão visual com outro.</p>
@@ -970,7 +1279,6 @@
     	</div>
 	</div>
      <p>&nbsp;</p>
-  	 <p>&nbsp;</p>
 
 	<p id="corpo" style="clear:both;">Um inconveniente com os materiais criados por pessoas que não conhecem design é a sutil falta de alinhamento, como títulos centralizados e subtítulos com paragrafo de endentação. À primeira vista, qual dos exemplos destas duas páginas tem um visual mais limpo e preciso?</p><br><br>
 	<div class="imagemLegenda">
@@ -984,7 +1292,6 @@
      	</div>
 	</div>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
 
 	<p id="corpo" style="clear:both;">Esses pequenos desalinhamentos contribuem para que a pagina fique visualmente desorganizada. Encontre uma linha e guie-se através dela. Mesmo que a diferença seja sutil e seu chefe não consiga dizer qual é diferença entre o exemplo a seguir e o anterior, a estética mais sofisticada é obviamente a melhor.</p><br/>
 	<div class="imagemLegenda">
@@ -992,11 +1299,11 @@
 			<img src="imagens/capitulo04/27.jpg" id="img" style="border: solid 2px #fff;"/>
 		</div>
 		<div class="texto">
-			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><strong>Encontre um alinhamento e use-o como guia.</strong></p>
-			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Se o texto for alinhado à esquerda, deixe os títulos e subtítulos alinhados à esquerda.</p>
-			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Os primeiros parágrafos costumam ser deixados sem endentação. O objetivo de endentar um parágrafo, mas sempre se sabe que o primeiro também é um parágrafo.</p>
-			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Em uma máquina de escrever, a endentação comum é de cinco espaços. No caso das letras proporcionadas utilizadas no computador, a endentação tipográfica padrão e a de um <strong>eme</strong> (um eme é tão largo quanto o tamanho da sua letra), que mais se assemelha a dois espaços.</p>
-			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;">Se houver fotos ou ilustrações, alinhe-as com uma das laterais e/ou com as linhas de base.</p></div><br>
+			<p class="legenda"><br><strong>Encontre um alinhamento e use-o como guia.</strong></p>
+			<p class="legenda2">Se o texto for alinhado à esquerda, deixe os títulos e subtítulos alinhados à esquerda.</p>
+			<p class="legenda2">Os primeiros parágrafos costumam ser deixados sem endentação. O objetivo de endentar um parágrafo, mas sempre se sabe que o primeiro também é um parágrafo.</p>
+			<p class="legenda2">Em uma máquina de escrever, a endentação comum é de cinco espaços. No caso das letras proporcionadas utilizadas no computador, a endentação tipográfica padrão e a de um <strong>eme</strong> (um eme é tão largo quanto o tamanho da sua letra), que mais se assemelha a dois espaços.</p>
+			<p class="legenda2">Se houver fotos ou ilustrações, alinhe-as com uma das laterais e/ou com as linhas de base.</p></div><br>
 		</div>
 	</div>
 
@@ -1004,31 +1311,54 @@
 
 	<div class="imagemLegenda">
 		<div class="imagem">
-			<img src="imagens/capitulo04/28.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
+			<img src="imagens/capitulo04/28.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none;"/>
     	</div>
 		<div class="texto">
-			<p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Você consegue visualizar todos os lugares nos quais os itens poderiam estar alinhados, mas não estão? Se este livro for seu, marque todas as incidências de falta de alinhamentos desta página. Há pelo menos nove!</p><br><br>
+			<p class="legenda"><br><br>Você consegue visualizar todos os lugares nos quais os itens poderiam estar alinhados, mas não estão? Se este livro for seu, marque todas as incidências de falta de alinhamentos desta página. Há pelo menos nove!</p><br><br>
     	</div>
 	</div>
     <p id="corpo" style="clear:both;"><br>Preste atenção no caso de ilustrações que ficarem um pouco desalinhadas para fora da margem, de legendas quando estiverem centralizadas sob as fotos, de títulos que na0 estiverem alinhados com o texto, ou de uma combinação de texto centralizado com texto alinhado à esquerda.</p><br/>
-    
-    <img src="imagens/capitulo04/29.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
-    <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Você consegue ver o que mudou, comparando esse exemplo e o da página anterior? Se este livro for seu, desenhe linhas paralelas ao alinhamento.</p><br><br>
-    
-    <p id="corpo" style="clear:both;"><br>Repito: encontre uma linha-guia e utilize-a. Se você tiver uma foto ou uma margem com uma lateral mais marcante, alinhe essa lateral do texto com a margem reta da foto, como mostra o exemplo abaixo.</p><br>
-    
-    <img src="imagens/capitulo04/30.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
-    <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>Existe uma linha-guia multo boa abaixo do texto. Existe uma linha-guia muito boa na margem da figura. Porém, entre o texto e a figura, existe um espaço em branco distribuído, só que com uma forma estranha. Quando o espaço em branco está com essa forma, ele separa os dois elementos.</p><br><br><br>
-    
-    <img src="imagens/capitulo04/31.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
-    <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; font-weight: bold;"><br><br>“Encontre uma linha-guia e utilize-a”. Agora a linha-guia do lado direito de texto e do lado esquerdo da figura estão próximas entre si, fortalecendo-se. O espaço também foi colocado contra a mesma linha-guia da margem da figura.</p><br><br>
-    
-    <p id="corpo" style="clear:both;"><br>Se os alinhamentos estiverem bem definidos, você poderá interromper conscientemente os alinhamentos e essa interrupção terá uma aparência intencional. O segredo é não ser tímido ao quebrar o alinhamento. Faça com firmeza, ou é melhor não fazer. Não seja tímido.<br><br></p>
-    
-   <img src="imagens/capitulo04/32.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin: auto;"/>
-   <p style="font-style:italic;clear:both; font-size:17px;  margin-left:5%; text-align:justify; margin-right:18px; margin-bottom:160px; font-weight: bold;"><br><br>Mesmo com o texto de interrupção invadindo o bloco de texto, você consegue ver o alinhamento à esquerda? Ás vezes é possível fazer uma quebra completamente livre de alinhamento,<strong> se você não fizer de maneira consciente.</strong>
-   </p>
 
+	<div class="imagemLegenda">
+		<div class="imagem">
+			<img src="imagens/capitulo04/29.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none;"/>
+		</div>
+		<div class="texto">
+			<p class="legenda"><br><br>Você consegue ver o que mudou, comparando esse exemplo e o da página anterior? Se este livro for seu, desenhe linhas paralelas ao alinhamento.</p><br><br>
+    	</div>
+	</div>
+
+    <p id="corpo" style="clear:both;"><br>Repito: encontre uma linha-guia e utilize-a. Se você tiver uma foto ou uma margem com uma lateral mais marcante, alinhe essa lateral do texto com a margem reta da foto, como mostra o exemplo abaixo.</p><br>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+   			 <img src="imagens/capitulo04/30.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none; margin-bottom: 3%;"/>
+		</div>
+		<div class="texto">
+			 <p class="legenda"><br><br>Existe uma linha-guia multo boa abaixo do texto. Existe uma linha-guia muito boa na margem da figura. Porém, entre o texto e a figura, existe um espaço em branco distribuído, só que com uma forma estranha. Quando o espaço em branco está com essa forma, ele separa os dois elementos.</p><br><br><br>
+    	</div>
+	</div>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+    		<img src="imagens/capitulo04/31.jpg" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none;"/>
+		</div>
+		<div class="texto">
+    		<p class="legenda"><br><br>“Encontre uma linha-guia e utilize-a”. Agora a linha-guia do lado direito de texto e do lado esquerdo da figura estão próximas entre si, fortalecendo-se. O espaço também foi colocado contra a mesma linha-guia da margem da figura.</p><br><br>
+    	</div>
+	</div>
+
+    <p id="corpo" style="clear:both;"><br>Se os alinhamentos estiverem bem definidos, você poderá interromper conscientemente os alinhamentos e essa interrupção terá uma aparência intencional. O segredo é não ser tímido ao quebrar o alinhamento. Faça com firmeza, ou é melhor não fazer. Não seja tímido.<br><br></p>
+
+	<div class="imagemLegenda">
+		<div class="imagem">
+   			<img src="imagens/capitulo04/32.jpg" class="imgFinal" id="img" style="border: solid 2px #fff; display:block; position: relative; float: none;"/>
+		</div>
+		<div class="texto">
+   			<p style="margin-bottom: 50%;" class="legenda"><br><br>Mesmo com o texto de interrupção invadindo o bloco de texto, você consegue ver o alinhamento à esquerda? Ás vezes é possível fazer uma quebra completamente livre de alinhamento,<strong> se você não fizer de maneira consciente.</strong>
+  		</p>
+		</div>
+	</div>
 
 
 </body>
