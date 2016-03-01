@@ -6,6 +6,43 @@
         <title>Documento sem título</title>
         <!--Estilização da Página-->
         <style type="text/css">
+			@media all and (max-width:1440px){
+				#img{
+					width: 90% !important;
+				}
+			}
+			
+			@media all and (min-width: 1441px){
+				#p_lado_img{
+					width: 50%;
+				}	
+			}
+			
+			@media all and (min-width: 780px){
+				#img17{
+					margin-left: 15%;
+					border: 2px solid black!important;
+				}
+				#img18{
+					margin-left: 15%;
+					border: 2px solid black!important;
+				}	
+			}
+			
+			@media all and (min-width:0px) and (max-width: 779px){
+				#img17{
+					margin-left: 8%;
+    				width: 85%;
+					clear:both;
+					margin-top: 25px;
+					border: 2px solid black!important;
+				}
+				#img18{
+					margin-left: 8%;
+    				width: 85%;
+					border: 2px solid black!important;
+				}	
+			}
 			
 			@media all and (min-width:1336px){
 				.cl_imgs{
@@ -95,7 +132,6 @@
 				}
 			}
 			
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 			@media all and (min-width:998px) and (max-width:1335px){
 				.cl_imgs{
 					width: 100%;
@@ -118,12 +154,6 @@
                     border-radius: 2px;
                     color: #FFFFFF;
                     padding: 3px;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
 				}
                 .corpo{
                     text-align:justify;
@@ -183,8 +213,8 @@
 					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
-			@media all and (min-width:998px){
+			
+			@media all and (min-width:998px) and (max-width:1335px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
@@ -195,12 +225,6 @@
                     width: 200px;
                     border-radius: 2px;
                     color: #FFFFFF;
-                }
-                .corpo{
-                    text-align:justify;
-                    margin-left:5%;
-                    font-size:17px;
-                    font-family:Arial, Helvetica, sans-serif;
                 }
 				#img{
 					width: 37%;
@@ -218,41 +242,6 @@
 					font-style:italic;
 					clear:both;
 					width:80%;	
-				}
-								#azul_caixa{
-					background:#004C98;
-					color:#FFFFFF;
-					margin-left: 5%;
-					margin-right: 3%;
-				}
-				#ret_azul_title{
-					margin-top: 0px;    
-					height: 16px;
-					width: 16px;
-					background: #004C98;
-					position: absolute;
-				}
-				#ret_azul_title{
-					margin-top: 5px;    
-					height: 16px;
-					width: 16px;
-					background: #004C98;
-					position: absolute;
-					margin-left: -6px;
-				}
-				.p_ret_azul{
-					margin-left: 26px;
-					font-size: 17px;
-					font-family: Arial, Helvetica, sans-serif;
-					margin-top: 4px;
-				}
-				#corpo_par{
-					text-align: justify;
-					margin-right: 25px;
-					margin-left: 5%;
-					width: 75%;
-					font-size: 17px;
-					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
             @media all and (max-width:1175px){
@@ -317,9 +306,9 @@
                     font-family:Arial, Helvetica, sans-serif;
                 }
 				#img{
-					width: 90%;
+					width: 34%;
 					float: left;
-					/* Sombra da Imagem */
+					margin-left: 5%;
 				}
 			}
 			/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
@@ -765,7 +754,7 @@
 				#img{
 					width:50%;
 					height:50%;
-					margin-left:25%;
+					margin-left:5%;
 					margin-bottom:3%;
 					float:left;}#conteudoTopico{
 					min-width:95%;
@@ -1248,9 +1237,9 @@
 					width:100%;
 					margin-left:5%;
 				}
-				
 				#img-2 {
-					width:84%;}
+					width:84%;
+				}
 				#conteudoTopico{
 					min-width:97%;
 					margin-right:3%;
@@ -1399,8 +1388,8 @@
     </div>
 
 <div class="cl_imgs">
-	<img src="imagens/capitulo03/18.jpg" id="img18"  style="border: solid 2px #fff;margin-left: 15%;"/>
-	<img src="imagens/capitulo03/17.jpg" id="img17"  style="border: solid 2px #fff;margin-left: 15%;"/>
+	<img src="imagens/capitulo03/18.jpg" id="img18"  style="border: solid 2px #fff;"/>
+	<img src="imagens/capitulo03/17.jpg" id="img17"  style="border: solid 2px #fff;"/>
 </div>
 
 <br><br>
@@ -1409,7 +1398,7 @@
 	</p>
 <div>
 	<img src="imagens/capitulo03/1.jpg" id="img"  style="border: solid 2px #fff;"/>
-	<p class="corpo" style="font-size:17px;width: 50%;float: right;font-weight: bold;">
+	<p class="corpo" id="p_lado_img" style="font-size:17px;float: right;font-weight: bold;">
 	Por acaso seu olho parou cinco vezes? Lógico: há cinco itens independentes nesse pequeno cartão.<br><br>
 	Por onde você começou a leitura? Provavelmente pela parte central, por que a frase do meio é a quem tem maior evidência (negrito).<br><br>
 	O que você leu a seguir (da esquerda para a direita)?<br><br>
@@ -1426,7 +1415,7 @@
 <br>
 <div>
 	<img src="imagens/capitulo03/2.jpg" id="img"  style="border: solid 2px #fff;"/>
-	<p class="corpo" style="font-size:17px;width: 50%;float: right;font-weight: bold;"><br>
+	<p class="corpo" id="p_lado_img" style="font-size:17px;float: right;font-weight: bold;"><br>
 		Agora que existem duas frases em negrito (bold), por onde começar? Pelo canto superior esquerdo ou pelo meio?<br><br>
 		E após ler esses dois itens, para onde seu olho vai? Talvez você fique indo e vindo entre as duas palavras em negrito, numa tentativa angustiada de “capturar” as outras palavras colocadas nos cantos.<br><br>
 		É fácil determinar o fim da leitura?<br><br>
@@ -1444,7 +1433,7 @@
 <div>    
 	<img src="imagens/capitulo03/3.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-	<p class="corpo" style="position: relative;font-weight: 600;font-size: 14pt;"><br>
+	<p class="corpo" style="position: relative;font-size: 14pt;"><br>
 	  <em>
 	  	Será que ainda existe alguma dúvida sobre por onde começar a ler o cartão?
 		Para onde seu olho vai a seguir? E sobre o final?<br><br>
@@ -1452,7 +1441,7 @@
 	  </em><br>
 	</p>
 </div>
-    <p class="corpo" style="position: relative;margin-top: 3%;font-weight: 600;font-size: 14pt;">A seguir você verá um típico cabeçalho de newsletter (jornal). Quantos elementos separados se encontram nesse material? De acordo com o posicionamento, existe algum item relacionado a outro?<br><br>
+    <p class="corpo" style="position: relative;margin-top: 3%;font-size: 14pt;">A seguir você verá um típico cabeçalho de newsletter (jornal). Quantos elementos separados se encontram nesse material? De acordo com o posicionamento, existe algum item relacionado a outro?<br><br>
 	</p>
  <div>   
 	<img src="imagens/capitulo03/4.jpg" id="img"  style="border: solid 2px #fff;"/>
@@ -1471,8 +1460,8 @@
 <br>
 	<img src="imagens/capitulo03/5.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-	<p class="corpo" style="font-size:17px; margin-left:10%; margin-top: -40px; font-weight: bold;"><br><br>Observe que eu fiz outras coisas:</p>
-    <p class="corpo" style="font-size:17px; margin-left:10%; font-weight: bold;"><br>Mudei tudo de maiúsculas (caixa-alta) para maiúsculas e minúsculas (alta-baixa), o que me deu espaço para fazer que o título ganhasse mais peso; assim, o texto ficou com uma leitura mais fácil. Tireis os cantos arredondados e os substitui os cantos retos, criando uma aparência mais clara e forte.<br><br>
+	<p class="corpo" style="font-size:17px; margin-top: -40px; font-weight: bold;"><br><br>Observe que eu fiz outras coisas:</p>
+    <p class="corpo" style="font-size:17px; font-weight: bold; "><br>Mudei tudo de maiúsculas (caixa-alta) para maiúsculas e minúsculas (alta-baixa), o que me deu espaço para fazer que o título ganhasse mais peso; assim, o texto ficou com uma leitura mais fácil. Tireis os cantos arredondados e os substitui os cantos retos, criando uma aparência mais clara e forte.<br><br>
 <p class="corpo" style="font-weight:bold;">Aumentei o avião e deixei que ele ultrapassasse o contorno, um truque muito utilizado que amplia o espaço.</p><br>
 </p>
     
