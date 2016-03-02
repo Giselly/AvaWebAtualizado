@@ -4,8 +4,25 @@
     <meta charset="utf-8">
     <title></title>
 		<style type="text/css">
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
-			@media all and (min-width:998px){
+			
+			#title{
+					background: #004C98;
+					margin-left: 5%;
+					width: 530px !important;
+					border-radius: 2px;
+					color: #FFFFFF;
+			}
+			@media all and (max-width:1200px){
+				#title{
+					background: #004C98;
+					margin-left: 5%;
+					width: 90% !important;
+					border-radius: 2px;
+					color: #FFFFFF;
+				}
+			}
+			
+			@media all and (min-width:1400px) {
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
@@ -27,11 +44,7 @@
 					margin-right: 25px;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					float:left;					
 				}
 				#img2{
 					border: solid 2px #fff;
@@ -41,11 +54,43 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:left;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}		
+				}	
+			}
+			
+			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+			@media all and (min-width:998px)and (max-width:1399px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				#title{
+					font-size:18px;
+					margin-left:5%;
+				}
+				#corpo{
+					text-align:justify;
+					margin-left:5%;
+					font-size:17px;
+					font-family:Arial, Helvetica, sans-serif;
+					margin-right:2%;
+				}
+				#img{
+					border: solid 2px #fff;
+					width: 90%;
+					height: 90%;
+					margin-right: 25px;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:left;					
+				}
+				#img2{
+					border: solid 2px #fff;
+					width: 90%;
+					height: 90%;
+					margin-right: 25px;
+					margin-left:5%;
+					margin-bottom:3%;
+					float:left;					
+				}	
 			}
 			/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
 			@media all and (min-width:918px) and (max-width:997px){
@@ -67,10 +112,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:40%;
@@ -78,10 +120,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:65%;
@@ -107,10 +146,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:40%;
@@ -118,10 +154,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:61%;
@@ -147,10 +180,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:50%;
@@ -158,10 +188,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:60%;
@@ -187,10 +214,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:50%;
@@ -198,10 +222,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:57%;
@@ -227,10 +248,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:50%;
@@ -238,10 +256,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:54%;
@@ -267,10 +282,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:50%;
@@ -278,10 +290,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:95%;
@@ -308,10 +317,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:50%;
@@ -319,10 +325,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:460px;
@@ -349,10 +352,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:45%;
@@ -360,10 +360,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:400px;
@@ -390,10 +387,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:45%;
@@ -401,10 +395,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					float:right;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:376px;
@@ -430,20 +421,14 @@
 					height:85%;
 					margin-left:8%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:85%;
 					height:85%;
 					margin-left:8%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:98%;
@@ -472,10 +457,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:85%;
@@ -483,10 +465,7 @@
 					margin-left:5%;
 					margin-bottom:3%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:100%;
@@ -515,20 +494,14 @@
 					height:85%;
 					margin-left:5%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:85%;
 					height:85%;
 					margin-left:5%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:97%;
@@ -557,20 +530,14 @@
 					height:85%;
 					margin-left:9%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#img2{
 					width:85%;
 					height:85%;
 					margin-left:9%;
 					margin-bottom:30px;					
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					
 				}
 				#conteudoTopico{
 					min-width:99%;
@@ -591,6 +558,9 @@
      <p>&nbsp;</p>
      <p id="corpo"> O roteiro nada mais é do que uma história, uma narrativa que mostra o caminho crítico do raciocínio em uma estrutura bem definida, com início, meio e fim. Quando coerente e atraente, transforma o apresentador em um verdadeiro contador de histórias, confere à apresentação a dinâmica de um bate-papo e aumenta significativamente as chances de cativar a audiência.<br>
     Um roteiro ruim? Cuidado: ele pode derrubar grandes ideias e apresentadores!</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
      <p>&nbsp;</p>
      <p id="title"><strong>Por que a apresentação deve ser comparável a uma história?</strong></p>
      <p>&nbsp;</p>
