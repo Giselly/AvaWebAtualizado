@@ -49,7 +49,6 @@ if ($url->posicaoExiste(1) && ($url->getURL(1) == 'ativar')) {
     
 /** Include o formulario de cadastro/edição de funcionarios */
 if ($url->posicaoExiste(1) && ($url->getURL(1) == 'novo' || $url->getURL(1) == 'editar')) {
-
     /** Verifica se o form foi enviado */
     if (isset($form['cadastrar'])) {
 

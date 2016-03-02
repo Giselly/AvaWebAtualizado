@@ -8,6 +8,8 @@ $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 if (isset($form)) {
     unset($form['enviar']);
+    unset($form['tipo']);
+    unset($form['cadastrar']);
     /** Executa a atualização de um usuario */
     $usuarioBusiness->editar($form);
     echo "<script>window.location = '" . RAIZ . "treinamento/01/topico/1.1_-_A_folha_de_papel_em_branco';</script>";
