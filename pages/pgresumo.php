@@ -25,7 +25,11 @@
            <!-- </div>-->
             <input type="submit" name="salvar" class="novo" value="Salvar">
         <?php } else {?>
-            <div><img src="imagens/mensagem-enviada.jpg" alt="" title=""></div>
+            <div class="resumoEnviado">
+                <div class="comImagem">
+                    <img id="enviado" src="imagens/mensagem-enviada.jpg">
+                </div>
+            </div>
             <!--<h3>Resumo enviado com sucesso. Aguarde uma notificação para passar para o próximo capítulo.</h3>-->
         <?php } ?>     
     </form>
