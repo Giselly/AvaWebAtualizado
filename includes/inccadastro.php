@@ -10,7 +10,6 @@ foreach($dadosUser as $dados){
     $i++;
 }
 $js_array = json_encode($user);
-
 ?>
 <input id="array" type="hidden" value=<?php echo $js_array;?>>
 <?php
@@ -19,6 +18,7 @@ $js_array = json_encode($user);
     $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 /**
+ * 
  * Verifica se foi enviado via POST o form
  */
 if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
@@ -28,7 +28,7 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
         "nome" => $form['usuario'],
         "email" => $form['email'],
         "login" => $form['login'],
-        "apelido" => $form['apelido'],
+        "apelido" => $form['usuario'],
         "senha" => $senha
     );
     
@@ -36,9 +36,11 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
     
     
     ?>
-    <script>alert('Seu cadastro foi realizado, aguarde a confirmação.');</script>
+    <script>
+        alert('Seu cadastro foi realizado!'/*, aguarde a confirma\u00e7\u00e3o.'*/);</script>
 <?php
-include_once('pages/pglogin.php');
+ echo "<script>window.location = '" . RAIZ . "login';</script>";
+
 } else {
     include_once('pages/pgcadastro.php');
 }

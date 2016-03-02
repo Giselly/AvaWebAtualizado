@@ -5,392 +5,1106 @@
     <title>Documento sem título</title>
 	<!--Estilização da Página-->
     <style type="text/css">
+	
+		@media all and (max-width:917px){
+			#title{
+				margin-top: 10px;
+			}   
+		}
 		/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 		@media all and (min-width:998px){
 			body{
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#title{
-				margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                width: 150px;
+                border-radius: 2px;
+                color: #FFFFFF;
 			}
 			#corpo{
 				text-align:justify;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
+				margin-right: 25px;
 			}
 			#img{
 				width:43%;
 				height:38%;
 				margin-left:29.2%;
 				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			}
+			#azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    
+				height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    
+				height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
 		}
-				/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
-		@media all and (min-width:918px) and (max-width:997px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:43%;
-				height:38%;
-				margin-left:29.2%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:65%;
-			}
-		}
-		/*Media Queries SCREEN >= 851px AND <= 917px*/
-		@media all and (min-width:851px) and (max-width:917px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:60%;
-				height:60%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:61%;
-			}
-		}
-		/*Media Queries SCREEN >= 785px AND <= 850px*/
-		@media all and (min-width:785px) and (max-width:850px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:60%;
-				height:60%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:60%;
-			}
-		}
-		/*Media Queries SCREEN >= 731px AND <= 784px*/
-		@media all and (min-width:731px) and (max-width:784px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:55%;
-			}
-		}
-		/*Media Queries SCREEN >= 710px AND <= 730px*/
-		@media all and (min-width:710px) and (max-width:730px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:55%;
-			}
-		}
-		/*Media Queries SCREEN >= 535px AND <= 709px*/
-		@media all and (min-width:535px) and (max-width:709px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:95%;
-			}
-		}
-		/*Media Queries SCREEN >= 483px AND <= 534px*/
-		@media all and (min-width:483px) and (max-width:534px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:95%;
-			}
-		}
-		/*Media Queries SCREEN >= 424px AND <= 484px*/
-		@media all and (min-width:424px) and (max-width:484px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:95%;
-			}
-		}
-		/*Media Queries SCREEN >= 390px AND <= 423px*/
-		@media all and (min-width:390px) and (max-width:423px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-				margin-top: 20px;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:85%;
-				height:85%;
-				margin-left:10%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:95%;
-			}
-		}
-		/*Media Queries SCREEN >= 365px AND <= 389px*/
-		@media all and (min-width:365px) and (max-width:389px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-				margin-top: 20px;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:85%;
-				height:85%;
-				margin-left:10%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:90%;
-			}
-		}
-		/*Media Queries SCREEN >= 350px AND <= 364px*/
-		@media all and (min-width:350px) and (max-width:364px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:5%;
-				margin-top: 20px;
-			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:85%;
-				height:85%;
-				margin-left:10%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:90%;
-			}
-		}
-		/*Media Queries SCREEN >= 320px AND <= 349px*/
-		@media all and (min-width:320px) and (max-width:349px){
-			 body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:3%;
-				font-size:17px;
-				margin-top: 20px;
-			}
-			#corpo{
-				text-align:justify;
-				margin-right:3%;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:85%;
-				height:75%;
-				margin-left:5%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:97%;
-				margin-right:3%;
-			}
-		}
-		/*Media Queries SCREEN <= 319px*/
-		@media all and (max-width:319px){
-			 body{
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#title{
-				margin-left:3%;
-				font-size:17px;
-				margin-top: 20px;
-			}
-			#corpo{
-				text-align:justify;
-				margin-right:1%;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			#img{
-				width:95%;
-				height:95%;
-				margin-left:4%;
-				margin-bottom:3%;				
-				/* Sombra da Imagem */
-				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:99%;
-				margin-right:1%;
-			}
-		}
+        /*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
+        @media all and (min-width:918px) and (max-width:997px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                width: 45%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 95%;
+                height: 95%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:100%;
+                height:100%;
+                margin-bottom:3%;
+                margin-right: 5%;
+            }
+            #conteudoTopico{
+                min-width:65%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 851px AND <= 917px*/
+        @media all and (min-width:851px) and (max-width:917px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+                margin-right: 5%;
+            }
+            #conteudoTopico{
+                min-width:61%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 785px AND <= 850px*/
+        @media all and (min-width:785px) and (max-width:850px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+                margin-right: 5%;
+            }
+            #conteudoTopico{
+                min-width:60%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 731px AND <= 784px*/
+        @media all and (min-width:731px) and (max-width:784px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+            }
+            #conteudoTopico{
+                min-width:57%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 710px AND <= 730px*/
+        @media all and (min-width:710px) and (max-width:730px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                width: 50%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+            }
+            #conteudoTopico{
+                min-width:54%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+
+        /*Media Queries SCREEN >= 620px AND <= 709px*/
+        @media all and (min-width:620px) and (max-width:709px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                width: 35%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+            }
+            #conteudoTopico{
+                min-width:95%;
+                margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 535px AND <= 619px*/
+        @media all and (min-width:535px) and (max-width:619px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+            }
+            #conteudoTopico{
+                min-width:95%;
+                margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 483px AND <= 534px*/
+        @media all and (min-width:483px) and (max-width:534px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 5%;
+                border-radius: 2px;
+                color: #FFFFFF;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:3%;
+            }
+            #conteudoTopico{
+                min-width:460px;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 424px AND <= 484px*/
+        @media all and (min-width:424px) and (max-width:484px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title {
+                background: #004C98;
+                margin-left: 5%;
+                width: 50%;
+                border-radius: 2px;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width: 94%;
+                height: 94%;
+                margin-bottom:1.5%;
+                margin-left: 5%;
+            }
+            #img2 {
+                width: 90%;
+                height: 90%;
+                margin-left: 6%;
+                margin-bottom: 3%;
+            }
+            #conteudoTopico{
+                min-width:400px;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 390px AND <= 423px*/
+        @media all and (min-width:390px) and (max-width:423px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 3%;
+                border-radius: 2px;
+                width: 53%;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width:90%;
+                height:90%;
+                margin-left:8%;
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:8%;
+                margin-bottom:30px;
+            }
+            #conteudoTopico{
+                min-width:376px;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 365px AND <= 389px*/
+        @media all and (min-width:365px) and (max-width:389px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 3%;
+                border-radius: 2px;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width:90%;
+                height:90%;
+                margin-left:8%;
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
+
+            }
+            #conteudoTopico{
+                min-width:98%;
+                margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 350px AND <= 364px*/
+        @media all and (min-width:350px) and (max-width:364px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                margin-left: 3%;
+                border-radius: 2px;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:3%;
+                margin-right:3%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width:90%;
+                height:90%;
+                margin-left:5%;
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
+            }
+            #conteudoTopico{
+                min-width:100%;
+                margin-right:5%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 3%;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN >= 320px AND <= 349px*/
+        @media all and (min-width:320px) and (max-width:349px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                border-radius: 2px;
+                color: #FFFFFF;
+                margin-left:3%;
+                font-size:17px;
+                margin-top: 20px;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:5%;
+                margin-right:3%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width:90%;
+                height:90%;
+                margin-left:5%;
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
+            }
+            #conteudoTopico{
+                min-width:97%;
+                margin-right:3%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
+        /*Media Queries SCREEN <= 319px*/
+        @media all and (max-width:319px){
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #title{
+                background: #004C98;
+                border-radius: 2px;
+                color: #FFFFFF;
+                margin-left:3%;
+                font-size:17px;
+                margin-top: 20px;
+            }
+            #corpo{
+                text-align:justify;
+                margin-left:3%;
+                margin-right:1%;
+                font-size:17px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #corpo2{
+                text-align:justify;
+                margin-left:7%;
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #img{
+                width:90%;
+                height:90%;
+                margin-left:9%;
+                margin-bottom:30px;
+            }
+            #img2{
+                width:90%;
+                height:90%;
+                margin-left:6%;
+                margin-bottom:30px;
+            }
+            #conteudoTopico{
+                min-width:99%;
+                margin-right:1%;
+            }
+            #azul_caixa{
+                background:#004C98;
+                color:#FFFFFF;
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+            #corpo_par{
+                text-align: justify;
+                /* margin-top: 0.5%; */
+                margin-left: 8%;
+                margin-right: 0px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #ret_azul_title{
+                margin-top: 0px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+            }
+            #ret_azul_title{
+                margin-top: 5px;    height: 16px;
+                width: 16px;
+                background: #004C98;
+                position: absolute;
+                margin-left: -6px;
+            }
+            .p_ret_azul{
+                margin-left: 26px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 4px;
+            }
+        }
 	</style>
 </head>
 
@@ -409,7 +1123,12 @@
 <p>&nbsp;</p>
 <p id="corpo" style="font-size:15px; margin-right:3%; margin-left:5%;"><img src="imagens/capitulo06/1.jpg" name="img" id="img">
 <br><br>
-<p id="corpo" style="font-size:16px; margin-right:3%; margin-left:5%; font-weight: bold;"><em>Esta  opção está boa, mas nada atrai seus olhos para o material. Se os olhos das  pessoas não forem atraídos para o material, elas não irão lê-lo.</em></p>
+    <div id="corpo_par">
+            <div id="m_ret_azul">
+                <div id="ret_azul_title"></div>
+    	<p class="p_ret_azul">Esta  opção está boa, mas nada atrai seus olhos para o material. Se os olhos das  pessoas não forem atraídos para o material, elas não irão lê-lo.</p>
+     </div>
+     </div>
 <p>&nbsp;</p>
 <p style="margin-left:10%; font-size:15px; margin-right:3%; margin-left:5%;">&nbsp;</p>
 <p id="corpo" style="margin-left:5%;">A  fonte do contraste a seguir é óbvia. Utilizei uma fonte mais pesada e com mais  negrito nos títulos e subtítulos. Repeti essa fonte (seguindo o princípio da  repetição; lembra-se dele?) no título do newsletter. Quando mudei o título de  caixa alta para caixa alta e baixa, pude utilizar um tamanho maior e aumentar o  negrito, o que também ajuda a reforçar o contraste. E como agora os títulos têm  peso, foi possível acrescentar uma caixa preta na parte superior, atrás do  título, repetindo novamente a cor escura e reforçando o contraste.</p>

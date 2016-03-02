@@ -6,13 +6,66 @@
         <title>Documento sem título</title>
         <!--Estilização da Página-->
         <style type="text/css">
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
-			@media all and (min-width:998px){
-				body{
-					font-family:Arial, Helvetica, sans-serif;
+			@media all and (max-width:1440px){
+				#img{
+					width: 88% !important;
+				}
+			}
+			
+			@media all and (min-width: 1441px){
+				#p_lado_img{
+					width: 50%;
+				}	
+			}
+			
+			@media all and (min-width: 780px){
+				#img17{
+					margin-left: 12%;
+					border: 2px solid black!important;
+				}
+				#img18{
+					margin-left: 12%;
+					border: 2px solid black!important;
+				}	
+			}
+			
+			@media all and (min-width:0px) and (max-width: 779px){
+				#img17{
+					margin-left: 8%;
+    				width: 85%;
+					clear:both;
+					margin-top: 25px;
+					border: 2px solid black!important;
+				}
+				#img18{
+					margin-left: 8%;
+    				width: 85%;
+					border: 2px solid black!important;
+				}	
+			}
+			
+			@media all and (min-width:1336px){
+				.cl_imgs{
+					width: 100%;
+				}
+				#img17{
+					width: 30%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img18{
+					width: 30%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
 				#title{
-					margin-left:5%;
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                    padding: 3px;
 				}
 				#corpo{
 					text-align:justify;
@@ -20,31 +73,175 @@
 					font-size:17px;
 					font-family:Arial, Helvetica, sans-serif;
 				}
-
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+					margin-right: 25px;
+                }
 				#t1{
 					margin-left:5%;
 					margin-top:-15px;
 					position:relative;
-					}
+				}
 				#t2{
 					margin-left:45%;
 					margin-top:-265px;
 					position:relative;
-					}
+				}
 				#texto{
 					margin-left:50%;
 					margin-top:-535px;
 					position:relative;
-					}
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+			}
+			
+			@media all and (min-width:998px) and (max-width:1335px){
+				.cl_imgs{
+					width: 100%;
+				}
+				#img17{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#img18{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
+				}
+				#title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                    padding: 3px;
+				}
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+					margin-right: 25px;
+                }
+				#t1{
+					margin-left:5%;
+					margin-top:-15px;
+					position:relative;
+				}
+				#t2{
+					margin-left:45%;
+					margin-top:-265px;
+					position:relative;
+				}
+				#texto{
+					margin-left:50%;
+					margin-top:-535px;
+					position:relative;
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+			}
+			
+			@media all and (min-width:998px) and (max-width:1335px){
+				body{
+					font-family:Arial, Helvetica, sans-serif;
+				}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
 				#img{
-					width:37%;
-					height:37%;
-					margin-bottom:3%;
-					margin-left:10%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					width: 37%;
+					height: 37%;
+					margin-left: 5%;
+					float: left;
+				}
+				#legenda {
+					float:left;
+					margin-left:5%;
+					position:relative;
+					width:30%;	
+				}
+				#fonte {
+					font-style:italic;
+					clear:both;
+					width:80%;	
 				}
 			}
             @media all and (max-width:1175px){
@@ -95,67 +292,23 @@
 					font-family:Arial, Helvetica, sans-serif;
 				}
 				#title{
-					margin-left:5%;
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
 				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
-					width:37%;
-					height:37%;
-					margin-left:29.2%;
-					margin-bottom:3%;
-					float:right;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-			}
-			/*Media Queries SCREEN >= 998px - FULL SCREEN*/
-			@media all and (min-width:998px){
-				body{
-					font-family:Arial, Helvetica, sans-serif;
-				}
-				#title{
-					margin-left:5%;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
-				#img{
-					width: 37%;
-					height: 37%;
-					margin-left: 29.2%;
-					margin-bottom: 3%;
+					width: 34%;
 					float: left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#legenda {
-					float:left;
-					margin-left:5%;
-					position:relative;
-					width:30%;	
-				}
-				#fonte {
-					font-style:italic;
-					clear:both;
-					width:80%;	
+					margin-left: 5%;
 				}
 			}
 			/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
@@ -163,31 +316,36 @@
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+				#img17{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
+				#img18{
+					width: 70%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
 				#img{
-					width:40%;
-					height:40%;
-					margin-left:29.2%;
+					width:90%;
+					height:90%;
+					margin-left:5%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				}
 				#conteudoTopico{
 					min-width:65%;
@@ -203,38 +361,78 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 851px AND <= 917px*/
 			@media all and (min-width:851px) and (max-width:917px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+				#img17{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
+				#img18{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
 				#img{
-					width:70%;
-					height:70%;
-					margin-left:22%;
+					width:90%;
+					height:90%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					margin-left: 5%;
 				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#conteudoTopico{
 					min-width:61%;
 				}
@@ -249,37 +447,77 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 785px AND <= 850px*/
 			@media all and (min-width:785px) and (max-width:850px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+				#img17{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
+				#img18{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
 				}
 				#img{
-					width:60%;
-					height:60%;
-					margin-left:22%;
+					width:90%;
+					height:90%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					margin-left: 5%;
 				}
 				#conteudoTopico{
 					min-width:60%;
@@ -295,40 +533,83 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 731px AND <= 784px*/
 			@media all and (min-width:731px) and (max-width:784px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+					margin-right: 25px;
+                }
+				#img17{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+					margin-left: 8% !important;
 				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
+				#img18{
+					width: 80%;
+					border: 2px solid black!important;
+					height: 30%;
+					margin-left: 8% !important;
 				}
 				#img{
-					width:50%;
-					height:50%;
-					margin-left:25%;
+					width:80%;
+					height:80%;
 					margin-bottom:3%;
 					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+					margin-left: 5%;
 				}
 				#conteudoTopico{
-					min-width:57%;
+					min-width:60%;
 				}
 				#legenda {
 					float:left;
@@ -341,39 +622,66 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 710px AND <= 730px*/
 			@media all and (min-width:710px) and (max-width:730px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
-					width:50%;
-					height:50%;
-					margin-left:22%;
+					width:100%;
+					height:100%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:54%;
 				}
 				#legenda {
@@ -387,39 +695,67 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 535px AND <= 709px*/
 			@media all and (min-width:535px) and (max-width:709px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:50%;
 					height:50%;
-					margin-left:25%;
+					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2{
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:95%;
 					margin-right:5%;
 				}
@@ -437,39 +773,67 @@
 					clear:both;
 					width:80%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 483px AND <= 534px*/
 			@media all and (min-width:483px) and (max-width:534px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:80%;
 					height:80%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:460px;
 				}
 				#legenda {
@@ -482,39 +846,67 @@
 					clear:both;
 					width:85%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 424px AND <= 484px*/
 			@media all and (min-width:424px) and (max-width:484px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 				}
-				#title{
-					margin-left:5%;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:85%;
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:400px;
 				}
 				#legenda {
@@ -527,40 +919,67 @@
 					clear:both;
 					width:85%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 390px AND <= 423px*/
 			@media all and (min-width:390px) and (max-width:423px){
 				body{
 					font-family:Arial, Helvetica, sans-serif;
 					}
-				#title{
-					margin-left:3%;
-					margin-top: 20px;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-					}
+                #title{
+                    background: #004C98;
+                    margin-left: 5%;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:85%;
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#img-2 {
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
-				#conteudoTopico{
+					float:left;}#conteudoTopico{
 					min-width:376px;
 				}
 				#legenda {
@@ -573,6 +992,41 @@
 					clear:both;
 					width:85%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 365px AND <= 389px*/
 			@media all and (min-width:365px) and (max-width:389px){
@@ -580,27 +1034,27 @@
 					font-family:Arial, Helvetica, sans-serif;
 					overflow-x:hidden;
 				}
-				#title{
-					margin-left:3%;
-					margin-top: 20px;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title{
+                    background: #004C98;
+                    margin-left:3%;
+                    margin-top: 20px;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:85%;
 					height:85%;
 					margin-left:5%;
 					margin-bottom:3%;
-					float:left;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					float:left;}
 				#posicao {
 					display:block;
 					float:none;
@@ -608,12 +1062,7 @@
 					margin-left:5%;
 				}
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */				
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:98%;
 					margin-right:5%;
@@ -628,6 +1077,41 @@
 					clear:both;
 					width:85%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 350px AND <= 364px*/
 			@media all and (min-width:350px) and (max-width:364px){
@@ -635,27 +1119,26 @@
 					font-family:Arial, Helvetica, sans-serif;
 					overflow-x:hidden;
 					}
-				#title{
-					margin-left:3%;
-					margin-top: 20px;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:3%;
-					margin-right:3%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title {
+                    background: #004C98;
+                    margin-left: 3%;
+                    margin-top: 20px;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:85%;
 					height:85%;
 					margin-left:5%;
-					margin-bottom:3%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					margin-bottom:3%;}
 				#posicao {
 					display:block;
 					float:none;
@@ -663,12 +1146,7 @@
 					margin-left:5%;
 				}
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:100%;
 					margin-right:5%;
@@ -684,6 +1162,41 @@
 					margin-left:5%;
 					width:85%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN >= 320px AND <= 349px*/
 			@media all and (min-width:320px) and (max-width:349px){
@@ -696,36 +1209,35 @@
 					font-size:17px;
 					margin-top: 20px;
 				}
-				#corpo{
-					text-align:justify;
-					margin-left:5%;
-					margin-right:3%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title {
+                    background: #004C98;
+                    margin-left:3%;
+                    font-size:17px;
+                    margin-top: 20px;
+                    height: 25px;
+                    width: 200px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:85%;
 					height:75%;
 					margin-left:5%;
-					margin-bottom:3%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					margin-bottom:3%;}
 				#posicao {
 					display:block;
 					float:none;
 					width:100%;
 					margin-left:5%;
 				}
-				
 				#img-2 {
 					width:84%;
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				}
 				#conteudoTopico{
 					min-width:97%;
@@ -742,6 +1254,41 @@
 					clear:both;
 					width:90%;	
 				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+				}
 			}
 			/*Media Queries SCREEN <= 319px*/
 			@media all and (max-width:319px){
@@ -749,28 +1296,27 @@
 					font-family:Arial, Helvetica, sans-serif;
 					overflow-x:hidden;
 				}
-				#title{
-					margin-left:3%;
-					font-size:17px;
-					margin-top: 20px;
-				}
-				#corpo{
-					text-align:justify;
-					margin-left:3%;
-					margin-right:5%;
-					font-size:17px;
-					font-family:Arial, Helvetica, sans-serif;
-				}
+                #title {
+                    background: #004C98;
+                    margin-left:3%;
+                    font-size:17px;
+                    margin-top: 20px;
+                    height: 25px;
+                    width: 100px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+                .corpo{
+                    text-align:justify;
+                    margin-left:5%;
+                    font-size:17px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
 				#img{
 					width:75%;
 					height:75%;
 					margin-left:9%;
-					margin-bottom:3%;
-					/* Sombra da Imagem */
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					margin-bottom:3%;}
 				#posicao {
 					display:block;
 					float:none;
@@ -778,15 +1324,45 @@
 				}
 				
 				#img-2 {
-					width:84%;
-					/* Sombra da Imagem */					
-					box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-				}
+					width:84%;}
 				#conteudoTopico{
 					min-width:99%;
 					margin-right:1%;
+				}
+				#azul_caixa{
+					background:#004C98;
+					color:#FFFFFF;
+					margin-left: 5%;
+					margin-right: 3%;
+				}
+				#ret_azul_title{
+					margin-top: 0px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+				}
+				#ret_azul_title{
+					margin-top: 5px;    
+					height: 16px;
+					width: 16px;
+					background: #004C98;
+					position: absolute;
+					margin-left: -6px;
+				}
+				.p_ret_azul{
+					margin-left: 26px;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
+					margin-top: 4px;
+				}
+				#corpo_par{
+					text-align: justify;
+					margin-right: 25px;
+					margin-left: 5%;
+					width: 75%;
+					font-size: 17px;
+					font-family: Arial, Helvetica, sans-serif;
 				}
 			}
 		</style>
@@ -795,103 +1371,102 @@
 <body>
     <p id="title"><strong>3.1  - Proximidade</strong></p>
     <p>&nbsp;</p>
-    <p id="corpo">As páginas criadas pelos iniciantes costumam ter palavras, frases e imagens espalhadas, preenchendo cantos e ocupando muito espaço, de maneira que não sobre espaço livre. Parece haver certo medo dos vazios. Quando as partes que compõem uma página são espalhadas, essa página assume uma aparência desorganizada e é possível que as informações não fiquem imediatamente acessíveis para o leitor.<br><br>
-Segundo o princípio da proximidade, <strong>itens relacionados entre si devem ser agrupados</strong> e aproximados uns dos outros, para que sejam vistos como um conjunto coeso e não como um emaranhado de partes sem ligação.<br><br>
-Itens ou conjuntos de informações que não estão relacionados entre si não deveriam estar próximos; isso oferece ao leitor uma pista visual imediata da organização e do conteúdo da página. As páginas a seguir ilustram esse princípio.<br><br>
-O exemplo simples a seguir ilustra esse conceito. Na lista à esquerda, o que fica evidente sobre as flores? Que elas devem ter algo em comum, certo? Na lista à direita, o que se nota? Parece que, de alguma forma, as quatro últimas flores são diferentes das outras. Isso fica imediatamente claro, sem que tenhamos sequer a consciência disso. Sabemos que as quatro últimas flores são diferentes em algo porque elas estão fisicamente separadas do restante da lista. Este é o conceito de proximidade: numa página assim como na vida, a proximidade física implica uma relação.<br><br><br>
-</p>
+    <div>
+        <p class="corpo" style="margin-bottom: 10px;">
+            As páginas criadas pelos iniciantes costumam ter palavras, frases e imagens espalhadas, preenchendo cantos e ocupando muito espaço, de maneira que não sobre espaço livre. Parece haver certo medo dos vazios. Quando as partes que compõem uma página são espalhadas, essa página assume uma aparência desorganizada e é possível que as informações não fiquem imediatamente acessíveis para o leitor.
+        </p>
+        <p class="corpo" style="margin-bottom: 10px;">
+            Segundo o princípio da proximidade, <strong>itens relacionados entre si devem ser agrupados</strong> e aproximados uns dos outros, para que sejam vistos como um conjunto coeso e não como um emaranhado de partes sem ligação.
+        </p>
+        <p class="corpo" style="margin-bottom: 10px;">
+            Itens ou conjuntos de informações que não estão relacionados entre si não deveriam estar próximos; isso oferece ao leitor uma pista visual imediata da organização e do conteúdo da página. As páginas a seguir ilustram esse princípio.
+        </p>
+        <p class="corpo">
+            O exemplo simples a seguir ilustra esse conceito. Na lista à esquerda, o que fica evidente sobre as flores? Que elas devem ter algo em comum, certo? Na lista à direita, o que se nota? Parece que, de alguma forma, as quatro últimas flores são diferentes das outras. Isso fica imediatamente claro, sem que tenhamos sequer a consciência disso. Sabemos que as quatro últimas flores são diferentes em algo porque elas estão fisicamente separadas do restante da lista. Este é o conceito de proximidade: numa página assim como na vida, a proximidade física implica uma relação.<br><br><br>
+        </p>
+    </div>
 
-<div id="t1">
-    	<p style="font-family:'Vladimir Script'; font-size:15pt;"><strong>Minha lista de flores</strong>
-        <p><br>Amor-perfeito</p>
-    	<p>Rosa</p>
-    	<p>Madressilva</p>
-    	<p>Margarida</p>
-    	<p>Prímula</p>
-        <p>Cravo</p>
-        <p>Tic-tac</p>
-	  	<p>Primavera</p>
-    	<p>Violeta</p>
-		<p>Cravina</p>
+<div class="cl_imgs">
+	<img src="imagens/capitulo03/18.jpg" id="img18"  style="border: solid 2px #fff;"/>
+	<img src="imagens/capitulo03/17.jpg" id="img17"  style="border: solid 2px #fff;"/>
+</div>
 
-</div>
-<div id="t2">
-    	<p style="font-family:'Vladimir Script'; font-size:15pt;"><strong>Minha lista de flores</strong>
-        <p><br>Amor-perfeito</p>
-    	<p>Rosa</p>
-    	<p>Madressilva</p>
-    	<p>Margarida</p>
-    	<p>Prímula</p>
-        <p style="margin-left:7%;">Cravo</p>
-        <p style="margin-left:7%;">Tic-tac</p>
-	  	<p style="margin-left:7%;">Primavera</p>
-    	<p style="margin-left:7%;">Violeta</p>
-		<p style="margin-left:7%;">Cravina</p>
-</div>
 <br><br>
-    <p id="corpo">Dê uma olhada no layout deste cartão de visita. Quantos elementos individuais você pode ver nesse pequeno cartão? Quantas vezes olhou para ele com o objetivo de visualizar algo?<br><br>
-</p>
+    <p class="corpo">
+    	Dê uma olhada no layout deste cartão de visita. Quantos elementos individuais você pode ver nesse pequeno cartão? Quantas vezes olhou para ele com o objetivo de visualizar algo?<br><br>
+	</p>
+<div>
+	<img src="imagens/capitulo03/1.jpg" id="img"  style="border: solid 2px #fff;"/>
+	<p class="corpo" id="p_lado_img" style="font-size:17px;float: right;font-weight: bold;">
+	Por acaso seu olho parou cinco vezes? Lógico: há cinco itens independentes nesse pequeno cartão.<br><br>
+	Por onde você começou a leitura? Provavelmente pela parte central, por que a frase do meio é a quem tem maior evidência (negrito).<br><br>
+	O que você leu a seguir (da esquerda para a direita)?<br><br>
+	O que aconteceu quando você alcançou o canto inferior direito; para onde seu olhar se dirigiu?<br><br>
+	Ele ficou vagando para certificar-se de não ter perdido alguma informação espalhada pelos cantos?
+    </p>
+</div>
+<br>
+<br>
+<p>&nbsp;</p>
 
-<p id="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">Por acaso seu olho parou cinco vezes? Lógico: há cinco itens independentes nesse pequeno cartão.<br><br>
-Por onde você começou a leitura? Provavelmente pela parte central, por que a frase do meio é a quem tem maior evidência (negrito).<br><br>
-O que você leu a seguir (da esquerda para a direita)?<br><br>
-O que aconteceu quando você alcançou o canto inferior direito; para onde seu olhar se dirigiu?<br><br>
-Ele ficou vagando para certificar-se de não ter perdido alguma informação espalhada pelos cantos?<br><br></p>
-
-    <img src="imagens/capitulo03/1.jpg" id="img"  style="border: solid 2px #fff;"/>
-    
-<p id="corpo" style="font-size:15pt; margin-left:10%; clear:both;"><br>
-<em>E se confundir ainda mais as coisas?</em><br><br><br></p>
-
+<p class="corpo" style="font-size:14pt;clear:both;"><br>E se confundir ainda mais as coisas?</p>
+<br>
+<br>
+<div>
 	<img src="imagens/capitulo03/2.jpg" id="img"  style="border: solid 2px #fff;"/>
-    
-<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>
-  <em>Agora que existem duas frases em negrito (bold), por onde começar? Pelo canto superior esquerdo ou pelo meio?<br><br>
-E após ler esses dois itens, para onde seu olho vai? Talvez você fique indo e vindo entre as duas palavras em negrito, numa tentativa angustiada de “capturar” as outras palavras colocadas nos cantos.<br><br>
-É fácil determinar o fim da leitura?<br><br>
-Seu amigo fez a leitura da mesma maneira que você?
-  </em><br><br><br>
-</p>
-
-    <p id="corpo">Quando vários itens estão próximos entre si, eles se tornam uma unidade visual, e não várias unidades separadas. Assim como na vida, a proximidade implica uma relação.<br><br>
-Várias coisas acontecem quando elementos similares são agrupados em uma unidade. A página fica mais organizada. É possível saber por onde começar a leitura e onde terminá-la. Além disso, o espaço em branco (o espaço ao redor das letras) também fica mais organizado.<br><br>
-
-	<p id="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">Um problema do cartão anterior é que nenhum dos itens parece estar relacionado a nenhum outro. Não está claro por onde a leitura deve começar ou terminar.<br><br>
-Se eu fizer uma coisa neste cartão de visita – agrupar os elementos relacionados -, veja o que acontece:<br><br>
-</p>
-    
+	<p class="corpo" id="p_lado_img" style="font-size:17px;float: right;font-weight: bold;"><br>
+		Agora que existem duas frases em negrito (bold), por onde começar? Pelo canto superior esquerdo ou pelo meio?<br><br>
+		E após ler esses dois itens, para onde seu olho vai? Talvez você fique indo e vindo entre as duas palavras em negrito, numa tentativa angustiada de “capturar” as outras palavras colocadas nos cantos.<br><br>
+		É fácil determinar o fim da leitura?<br><br>
+		Seu amigo fez a leitura da mesma maneira que você?
+	 <br><br><br>
+	</p>
+</div> 
+<br>
+<br>
+    <p class="corpo" style="clear:both; position: relative;font-weight: 500;font-size: 16pt;">
+    	Quando vários itens estão próximos entre si, eles se tornam uma unidade visual, e não várias unidades separadas. Assim como na vida, a proximidade implica uma relação.
+    	<br><br>
+		Várias coisas acontecem quando elementos similares são agrupados em uma unidade. A página fica mais organizada. É possível saber por onde começar a leitura e onde terminá-la. Além disso, o espaço em branco (o espaço ao redor das letras) também fica mais organizado.<br><br>
+	</p>
+<div>    
 	<img src="imagens/capitulo03/3.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-	<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>
-	  <em>Será que ainda existe alguma dúvida sobre por onde começar a ler o cartão?
-Para onde seu olho vai a seguir? E sobre o final?<br><br>
-Veja, observando esse conceito muito simples, que está organizado tanto lógico quanto visualmente, transmitindo a mensagem com mais clareza.<br><br>
+	<p class="corpo" style="position: relative;font-size: 14pt;"><br>
+	  <em>
+	  	Será que ainda existe alguma dúvida sobre por onde começar a ler o cartão?
+		Para onde seu olho vai a seguir? E sobre o final?<br><br>
+		Veja, observando esse conceito muito simples, que está organizado tanto lógico quanto visualmente, transmitindo a mensagem com mais clareza.<br><br>
 	  </em><br>
 	</p>
-    <p id="corpo">A seguir você verá um típico cabeçalho de newsletter (jornal). Quantos elementos separados se encontram nesse material? De acordo com o posicionamento, existe algum item relacionado a outro?<br><br>
-</p>
-    
-    <p id="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">Pense um pouco para decidir quais são os itens que deveriam ser agrupados e quais deveriam ficar separados.
-	<br><br></p>
-    
+</div>
+    <p class="corpo" style="position: relative;margin-top: 3%;font-size: 14pt;">A seguir você verá um típico cabeçalho de newsletter (jornal). Quantos elementos separados se encontram nesse material? De acordo com o posicionamento, existe algum item relacionado a outro?<br><br>
+	</p>
+ <div>   
 	<img src="imagens/capitulo03/4.jpg" id="img"  style="border: solid 2px #fff;"/>
-    
-    <p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>
-      <em>Os dois itens da parte superior esquerda estão próximos entre si, o que implica uma relação. Mas deveria haver uma relação entre eles?<br><br>
-E a data e as informações sobre publicação? Deveriam estar próximos, pois ambas identificam especificamente esta edição.</em><br><br><br>
-No exemplo a seguir, foram estabelecidas as devidas relações.<br><br>
-</p>
-
+	    <p class="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;position: relative;">
+    		Pense um pouco para decidir quais são os itens que deveriam ser agrupados e quais deveriam ficar separados.
+    	</p>
+	    <p class="corpo" style="font-size: 17px;margin-left: 5%;font-weight: bold; position: relative;"><br>
+      		<em>
+				E a data e as informações sobre publicação? Deveriam estar próximos, pois ambas identificam especificamente esta edição.
+			</em>
+		</p>
+</div>
+<br>
+<br>
+<p class="corpo">No exemplo a seguir, foram estabelecidas as devidas relações.</p>
+<br>
 	<img src="imagens/capitulo03/5.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-	<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br><br>Observe que eu fiz outras coisas:</p>
-    <p id="corpo" style="font-size:17px; margin-left:10%; font-weight: bold;"><br>Mudei tudo de maiúsculas (caixa-alta) para maiúsculas e minúsculas (alta-baixa), o que me deu espaço para fazer que o título ganhasse mais peso; assim, o texto ficou com uma leitura mais fácil. Tireis os cantos arredondados e os substitui os cantos retos, criando uma aparência mais clara e forte.<br><br>
-Aumentei o avião e deixei que ele ultrapassasse o contorno, um truque muito utilizado que amplia o espaço.<br><br><br>
+	<p class="corpo" style="font-size:17px; margin-top: -40px; font-weight: bold;"><br><br>Observe que eu fiz outras coisas:</p>
+    <p class="corpo" style="font-size:17px; font-weight: bold; "><br>Mudei tudo de maiúsculas (caixa-alta) para maiúsculas e minúsculas (alta-baixa), o que me deu espaço para fazer que o título ganhasse mais peso; assim, o texto ficou com uma leitura mais fácil. Tireis os cantos arredondados e os substitui os cantos retos, criando uma aparência mais clara e forte.<br><br>
+<p class="corpo" style="font-weight:bold;">Aumentei o avião e deixei que ele ultrapassasse o contorno, um truque muito utilizado que amplia o espaço.</p><br>
 </p>
     
-    <p id="corpo">Na criação de um anúncio, folheto, newsletter ou de outro material, já se sabe desde o início, pela lógica, quais informações estão conectadas, quais informações devem ser enfatizadas e o que pode ser abrandado. Expresse as informações graficamente, agrupando-as.
+    <p class="corpo">Na criação de um anúncio, folheto, newsletter ou de outro material, já se sabe desde o início, pela lógica, quais informações estão conectadas, quais informações devem ser enfatizadas e o que pode ser abrandado. Expresse as informações graficamente, agrupando-as.
 	</p><br>
-<p id="corpo"> CDs<br>
+<p class="corpo"> CDs<br>
 			   CDs para crianças<br>
                CDs educacionais<br>
                CDs de lazer<br>
@@ -913,7 +1488,7 @@ Aumentei o avião e deixei que ele ultrapassasse o contorno, um truque muito uti
                Impressoras e acessórios<br>
                Vídeo e som<br>
 </p><br>
-<p id="corpo" style="font-size:17px; font-weight: bold;">É claro que esta lista precisa de uma<br> informação para ficar inteligível.<br> Porém, o maior problema é que tudo<br> está próximo de tudo, não sendo<br> possível descobrir a relação ou a<br> organização.
+<p class="corpo" style="font-size:17px; font-weight: bold;">É claro que esta lista precisa de uma informação para ficar inteligível. Porém, o maior problema é que tudo está próximo de tudo, não sendo possível descobrir a relação ou a organização.
 <br><br></p>
 		   	<p style="margin-left:5%;"><strong>CDs</strong></p><br>
 			   <p style="margin-left:5%;">CDs para crianças<br>
@@ -937,108 +1512,115 @@ Aumentei o avião e deixei que ele ultrapassasse o contorno, um truque muito uti
                Impressoras e acessórios<br>
                Vídeo e som<br></p><br>
                
-<p id="corpo" style="font-size:17px; margin-left:5%; text-align:justify; font-weight:bold; "><em>A mesma lista foi criada através de<br> grupos visuais. Tenho certeza de<br> que você já trabalha assim<br> automaticamente; estou apenas<br> sugerindo que você, agora, proceda<br> dessa forma conscientemente e<br> com mais força.<br><br>
-Observe que eu acrescentei<br> contraste aos títulos e repeti esse<br> contraste.
+<p class="corpo" style="font-size:17px; margin-left:5%; text-align:justify; font-weight:bold; "><em>A mesma lista foi criada através de grupos visuais. Tenho certeza de que você já trabalha assim automaticamente; estou apenas sugerindo que você, agora, proceda dessa forma conscientemente e com mais força.<br>
+Observe que eu acrescentei contraste aos títulos e repeti esse contraste.
 </em></p>
 </div><br><br>
 
-<p id="corpo">Às vezes, ao agrupar itens relacionados, torna-se necessário fazer algumas alterações, como de tamanho, peso, posicionamento de texto ou de figuras. O texto não precisa estar com 12 pontos, e as informações subordinadas à mensagem principal, como o número do volume e o ano do newsletter, podem ser pequenas, com 7 ou 8 pontos.
+<p class="corpo">Às vezes, ao agrupar itens relacionados, torna-se necessário fazer algumas alterações, como de tamanho, peso, posicionamento de texto ou de figuras. O texto não precisa estar com 12 pontos, e as informações subordinadas à mensagem principal, como o número do volume e o ano do newsletter, podem ser pequenas, com 7 ou 8 pontos.
 </p><br>
 
 	<img src="imagens/capitulo03/6.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>
-  <em>Além de ser extremamente entediante, é difícil encontrar as informações: os eventos, onde eles acontecem, o horário etc. Por exemplo, quantos concertos constam aqui?</em><br><br>
+<p class="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>
+  <em>Além de ser extremamente entediante, é difícil encontrar as informações: os eventos, onde eles acontecem, o horário etc. Por exemplo, quantos concertos constam aqui?</em>
 </p><br>
     
-<p id="corpo">O conceito de proximidade não significa que tudo precise estar próximo; significa que os elementos logicamente conectados, com algum tipo de ligação, também deveriam estar visualmente conectados. Outros elementos separados ou conjuntos de elementos não deveriam estar juntos. A proximidade ou a falta de proximidade indica a relação.
+<p class="corpo">O conceito de proximidade não significa que tudo precise estar próximo; significa que os elementos logicamente conectados, com algum tipo de ligação, também deveriam estar visualmente conectados. Outros elementos separados ou conjuntos de elementos não deveriam estar juntos. A proximidade ou a falta de proximidade indica a relação.
 </p><br>
 
 	<img src="imagens/capitulo03/7.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>
+<p class="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>
   <em>Quantos concertos constam aqui?</em><br><br>
 Primeiro, as informações foram agrupadas por assunto (mentalmente ou em um rascunho); depois, foram agrupadas no texto. Observe que o espaço entre as três apresentações é o mesmo, o que indica que esses três grupos estão ligados de alguma forma.<br>
 As informações subordinadas estão mais distanciadas; fica óbvio que não são performances.
-</p><br><br><br>
+</p><br>
 
-<p id="corpo">O exemplo a seguir é o mesmo da página anterior. Dê uma rápida olhada nele: o que você conclui sobre os três concertos?<br>
+<p class="corpo">O exemplo a seguir é o mesmo da página anterior. Dê uma rápida olhada nele: o que você conclui sobre os três concertos?<br>
 E por que você supõe que um concerto seja diferente dos outros? Porque um está separado dos outros. Fica imediatamente claro que o concerto é diferente pelas relações especiais.
 </p><br>
 
 	<img src="imagens/capitulo03/8.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>É impressionante a quantidade de informações que podemos obter dando uma rápida olhada em uma página. Portanto, é importante garantir que o leitor obtenha as informações corretas.<br><br>
+<p class="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>É impressionante a quantidade de informações que podemos obter dando uma rápida olhada em uma página. Portanto, é importante garantir que o leitor obtenha as informações corretas.
 </p><br>
 
-<p id="corpo">A intenção do designer neste folheto deve ter sido criar algo engraçado e cheio de energia, mas você consegue dizer, dando uma rápida olhada, quando e onde a venda acontece?
+<p class="corpo">A intenção do designer neste folheto deve ter sido criar algo engraçado e cheio de energia, mas você consegue dizer, dando uma rápida olhada, quando e onde a venda acontece?
 </p><br>
 
 	<img src="imagens/capitulo03/9.jpg" id="img"  style="border: solid 2px #fff;"/>
 	<img src="imagens/capitulo03/10.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>Usando o princípio da proximidade para organizar as informações, é possível informar imediatamente quem, o que e onde. Com a nova disposição, os prováveis clientes não desistirão de ler o material, pois não precisam mais procurar nos inúmeros blocos de texto inclinados.
-</p><br><br>
+<p class="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>Usando o princípio da proximidade para organizar as informações, é possível informar imediatamente quem, o que e onde. Com a nova disposição, os prováveis clientes não desistirão de ler o material, pois não precisam mais procurar nos inúmeros blocos de texto inclinados.
+</p><br>
 
-<p id="corpo">É provável que você esteja utilizando o princípio da proximidade em seu trabalho, mas talvez não esteja fazendo tudo o que poderia para que ele seja totalmente bem-aproveitado. Olhe atentamente para estas páginas e estes elementos e veja quais itens poderiam ser agrupados.
+<p class="corpo">É provável que você esteja utilizando o princípio da proximidade em seu trabalho, mas talvez não esteja fazendo tudo o que poderia para que ele seja totalmente bem-aproveitado. Olhe atentamente para estas páginas e estes elementos e veja quais itens poderiam ser agrupados.
 </p><br>
 
 	<img src="imagens/capitulo03/11.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>A pessoa que criou este minipôster inseriu dois retornos de carro (pressionando a tecla que Return) após cada subtítulo e parágrafo do texto corrido. Portanto, os subtítulos estão a uma distância igual acima e abaixo do texto corrido, o que faz que eles pareçam ser itens separados e desconexos. Não é possível diferenciar se o título se refere ao texto acima ou abaixo dele, pois as distâncias são iguais.<br><br>
+<p class="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>A pessoa que criou este minipôster inseriu dois retornos de carro (pressionando a tecla que Return) após cada subtítulo e parágrafo do texto corrido. Portanto, os subtítulos estão a uma distância igual acima e abaixo do texto corrido, o que faz que eles pareçam ser itens separados e desconexos. Não é possível diferenciar se o título se refere ao texto acima ou abaixo dele, pois as distâncias são iguais.<br><br>
 Há muito espaço em branco nesse anúncio, mas completamente fragmentado. Além disso, também há espaço em branco onde não deveria haver, como entre os subtítulos e os textos pertencentes a eles. Quando o espaço em branco está distribuído, como nesse caso, a tendência é de separar visualmente os elementos.
-</p><br><br><br>
+</p><br>
 
-<p id="corpo">Se houver muitos itens separados, agrupe os que estão relacionados entre si. Se houver áreas da página nas quais a organização não está perfeitamente clara, veja se existem itens que não deveriam estar próximos mas estão. Utilize o espaço como ferramenta para deixar a página mais organizada e com uma aparência mais agradável.
+<p class="corpo">Se houver muitos itens separados, agrupe os que estão relacionados entre si. Se houver áreas da página nas quais a organização não está perfeitamente clara, veja se existem itens que não deveriam estar próximos mas estão. Utilize o espaço como ferramenta para deixar a página mais organizada e com uma aparência mais agradável.
 </p><br>
 
 	<img src="imagens/capitulo03/12.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-size:17px; margin-top:10%; margin-left:5%; clear:both; font-weight: bold;"><br>Se nós apenas aproximarmos os subtítulos de seus respectivos parágrafos de texto muitas coisas acontecerão:<br><br>
-	<p style="margin-left:13%; font-size:17px; font-weight: bold;">A organização ficará mais nítida.</p>
-	<p style="margin-left:13%; font-size:17px; font-weight: bold;">O espaço em branco não ficará preso entre os elementos.</p>
-    <p style="margin-left:13%; font-size:17px; font-weight: bold;">Haverá mais espaço na página, assim o minipôster não ficará tão poluído</p><br>
-<p id="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">O telefone e o e-mail estão em linhas separadas - mas estão agrupados e isolados do restante -, para serem visualizados como informações importantes. </p>
+<p class="corpo" style="font-size:17px;margin-left:5%; clear:both; font-weight: bold;"><br>Se nós apenas aproximarmos os subtítulos de seus respectivos parágrafos de texto muitas coisas acontecerão:<br><br>
 
-<p id="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">O telefone não está mais centralizado, mas alinhado à esquerda (é o princípio do alinhamento, que será estudado no próximo capítulo), o que liberou mais espaço para ilustração do vaqueiro.</p>
-</p><br><br>
+	<div id="corpo_par">
+        <div id="m_ret_azul">
+            <div id="ret_azul_title"></div>
+            <p class="p_ret_azul">A organização ficará mais nítida.</p>
+            <div id="ret_azul_title"></div>
+            <p class="p_ret_azul">O espaço em branco não ficará preso entre os elementos.</p>
+            <div id="ret_azul_title"></div>
+            <p class="p_ret_azul">Haverá mais espaço na página, assim o minipôster não ficará tão poluído</p><br>
+         </div>
+    </div>
+    
+    <p class="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">O telefone e o e-mail estão em linhas separadas - mas estão agrupados e isolados do restante -, para serem visualizados como informações importantes. </p>
+	</div>
+<p class="corpo" style="font-size:17px; margin-left:5%; font-weight: bold;">O telefone não está mais centralizado, mas alinhado à esquerda (é o princípio do alinhamento, que será estudado no próximo capítulo), o que liberou mais espaço para ilustração do vaqueiro.</p>
+</p><br>
 
-<p id="corpo">Realmente, a proximidade é apenas uma questão de conscientizarmo-nos e fazermos o que já se faz naturalmente, mas com mais profundidade na aplicação do conceito. Uma vez consciente da importância das relações entre as linhas de texto, você começará a notar esse efeito. Quando começar a notar esse efeito, você o dominará, terá poder sobre ele: você comandará tudo.
+<p class="corpo">Realmente, a proximidade é apenas uma questão de conscientizarmo-nos e fazermos o que já se faz naturalmente, mas com mais profundidade na aplicação do conceito. Uma vez consciente da importância das relações entre as linhas de texto, você começará a notar esse efeito. Quando começar a notar esse efeito, você o dominará, terá poder sobre ele: você comandará tudo.
 </p><br>
 
 	<img src="imagens/capitulo03/13.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>Tirei esse anúncio assim do jornal. Juro que sim. Um dos maiores problemas (além das letras estarem todas em caixa-alta, ou maiúsculas) é que todas as informações estão em um único bloco.<br><br>
+<p class="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>Tirei esse anúncio assim do jornal. Juro que sim. Um dos maiores problemas (além das letras estarem todas em caixa-alta, ou maiúsculas) é que todas as informações estão em um único bloco.<br><br>
 Antes de tentar trabalhar o design com essas informações, escreva separadamente aquelas que devem ficar agrupadas: agrupe os elementos. Você sabe como fazê-lo: basta raciocinar.<br><br>
-Quando os conjuntos de informações estiverem formados, você poderá trabalhar com eles na página. Com seu computador, você pode experimentar muitas opções.<br><br>
+Quando os conjuntos de informações estiverem formados, você poderá trabalhar com eles na página. Com seu computador, você pode experimentar muitas opções.
 </p><br>
 
-<p id="corpo">É muito raro que o uso do princípio da proximidade seja a única solução para uma página problemática. Os outros três principais são intrínsecos ao processo de design e, em geral, você perceberá que está aplicando os quatro. Mas aprenda um de cada vez; comece pelo da proximidade. No exemplo a seguir, escolhi os elementos que deveriam ficar agrupados e trabalhei com os outros princípios (e fontes).
-</p><br>
+<p class="corpo" style="font-size:17px; margin-left:5%; clear:both; font-weight: bold;">É muito raro que o uso do princípio da proximidade seja a única solução para uma página problemática. Os outros três principais são intrínsecos ao processo de design e, em geral, você perceberá que está aplicando os quatro. Mas aprenda um de cada vez; comece pelo da proximidade. No exemplo a seguir, escolhi os elementos que deveriam ficar agrupados e trabalhei com os outros princípios (e fontes).
+</p>
 
 	<img src="imagens/capitulo03/14.jpg" id="img"  style="border: solid 2px #fff;"/>
 
-<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>Esta é apenas uma dentre as inúmeras possibilidades para organizar os conjuntos de informações. Também utilizei os princípios de alinhamento e contraste, que você conhecerá em breve.<br><br>
+<p class="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; clear:both; font-weight: bold;"><br>Esta é apenas uma dentre as inúmeras possibilidades para organizar os conjuntos de informações. Também utilizei os princípios de alinhamento e contraste, que você conhecerá em breve.<br><br>
 O maior inconveniente do anúncio original, porém, é o de que não existe uma separação de informações. A colocação do texto inteiro em caixa-alta, em um único bloco, também ocupou todo o espaço, de maneira que não sobraram espaços adicionais (ou em branco) para que seus olhos descansassem. É possível deixar o tamanho das letras (também conhecido como “corpo”) menor do que 12 ou 14. Verdade!
-<br>
-</p><br><br>
+</p><br>
 
-<p id="corpo">O simples princípio da proximidade pode facilitar a navegação pelas páginas de um site, se unirmos as informações em grupos lógicos. Dê uma olhada em qualquer site que ache você fácil de navegar: as informações estarão posicionadas em blocos lógicos.
+<p class="corpo">O simples princípio da proximidade pode facilitar a navegação pelas páginas de um site, se unirmos as informações em grupos lógicos. Dê uma olhada em qualquer site que ache você fácil de navegar: as informações estarão posicionadas em blocos lógicos.
 </p><br>
 
 
 	<img src="imagens/capitulo03/15.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:8%; clear:both; font-weight: bold;"><br>As informações desta página estão confusas. Olhe os links do site sob o título. Eles são iguais? Parecem, mas não são.
-<br><br>
+<p class="corpo" style="font-size:17px; margin-left:5%; margin-top:8%; clear:both; font-weight: bold;"><br>As informações desta página estão confusas. Olhe os links do site sob o título. Eles são iguais? Parecem, mas não são.
 </p><br>
 
-<p id="corpo">É importante repetir: teoricamente, você já sabe como aplicar o conceito de proximidade. Já sabe como agrupar as informações adequadamente. Agora você só precisa transferir essa habilidade para a página impressa.
+<p class="corpo">É importante repetir: teoricamente, você já sabe como aplicar o conceito de proximidade. Já sabe como agrupar as informações adequadamente. Agora você só precisa transferir essa habilidade para a página impressa.
 </p><br>
 
 	<img src="imagens/capitulo03/16.jpg" id="img"  style="border: solid 2px #fff;"/>
     
-<p id="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; margin-bottom:150px; clear:both; font-weight: bold;"><br>Os links do site estão todos em uma coluna, para mostrar sua relação (e a ilustração foi para o outro lado).<br>
+<p class="corpo" style="font-size:17px; margin-left:5%; margin-top:10%; margin-bottom:150px; clear:both; font-weight: bold;"><br>Os links do site estão todos em uma coluna, para mostrar sua relação (e a ilustração foi para o outro lado).<br>
 A citação ficou mais afastada do principal bloco de texto já que não está diretamente relacionada a ele.<br>
 Também utilizei o princípio do alinhamento (abordado no capítulo 4): o texto está alinhado à esquerda e cada um dos elementos foi alinhado com algo.
 

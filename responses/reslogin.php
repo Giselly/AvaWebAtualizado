@@ -15,10 +15,11 @@ $usuario = $login->consultar();
 
 /** Verifica se o login é válido e cria uma nova sessão */
 
-if(count($usuario) > 0 && $usuario[0]['primeiroLogin'] == '0') {
+//
+/*if(count($usuario) > 0 && $usuario[0]['primeiroLogin'] == '0') {
     echo '-1';
     exit;
-} else if(count($usuario) > 0){
+} else*/ if(count($usuario) > 0){
     session_start();
     $_SESSION['login'] = $usuario[0]['login'];
     $_SESSION['senha'] = $usuario[0]['senha'];
