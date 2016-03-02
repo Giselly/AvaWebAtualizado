@@ -19,9 +19,8 @@ if(isset($form['salvar'])){
     
     /** cadastra os dados no banco*/
     $resumoBusiness->cadastrar($dados);
-    
-     
-    echo'<h3>Resumo enviado com sucesso. Aguarde uma notificação para passar para o próximo capítulo.</h3>';
+    echo "<script>window.location = '" . RAIZ . "treinamento/{$url->getURL(1)}/resumo';</script>";
+    //echo'<img src="../imagens/mensagem-enviada.jpg" alt="" title=""><h3>Resumo enviado com sucesso. Aguarde uma notificação para passar para o próximo capítulo.</h3>';
 
     /*$destinatario = "jlarteedesign@gmail.com";
     $destinatario = "giselly.reboucas@iteva.org.br";

@@ -40,18 +40,6 @@ $(document).ready(function () {
                             .addClass('logado');
                 }  
             });
-            
-
-            /*if(!(validarCPF(login))){
-                $('#info').html("Login inválido!")
-                        .removeClass('logado')
-                        .addClass('erro'); 
-            } else {
-                $('#info').html("Login válido.")
-                        .removeClass('erro')
-                        .addClass('logado');
-             
-            }*/
        
         });
         

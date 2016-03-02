@@ -7,7 +7,7 @@
         <base href="<?php echo RAIZ; ?>">
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/login.js"></script>
-        <script src="js/cadastro.js"></script>
+        <script src="js/cadastro.js" ></script>
         <script src="js/mascaras.js"></script>
         <script src="js/jquery.mask.js"></script>
         <link rel="stylesheet" type="text/css" href="css/login.css">
@@ -34,9 +34,7 @@
                             <input type="text" name="usuario" class="id" id="id" required="required" placeholder="Nome Completo" >
                             <br />
                             <input type="email" name="email" class="log" id="pass" required="required" placeholder="Email">
-                            <br />
-                            <input type="text" name="apelido" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
-                            <br />
+                            <input type="hidden" class="log" id="pass" required="required" placeholder="Nome de visualização no sistema">
                             <input type="text" name="login" class="pass cpf" id="log" required="required" placeholder="CPF" onKeyPress="MascaraCPF(areaLogin.login);" maxlength="14"/>
                             <input type="password" name="senha" class="pass" id="log" required="required" placeholder="Senha">
                             <br />
@@ -49,8 +47,7 @@
                 <!--<div class="aguarde" id="aguardarConfirmacao">
                     <p> Aguarde a confirmação do seu cadastro para logar-se. Um email será enviado!</p></br>
                     <a href="login">Voltar a tela de login</a>
-                </div>--> 
-                    
+                </div>-->                    
             </div>
         </div>
     </body>

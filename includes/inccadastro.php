@@ -10,7 +10,6 @@ foreach($dadosUser as $dados){
     $i++;
 }
 $js_array = json_encode($user);
-include 'functions/validaCpf.php';
 ?>
 <input id="array" type="hidden" value=<?php echo $js_array;?>>
 <?php
@@ -29,7 +28,7 @@ if (isset($_POST['enviar']) && is_string($_POST['enviar'])) {
         "nome" => $form['usuario'],
         "email" => $form['email'],
         "login" => $form['login'],
-        "apelido" => $form['apelido'],
+        "apelido" => $form['usuario'],
         "senha" => $senha
     );
     
