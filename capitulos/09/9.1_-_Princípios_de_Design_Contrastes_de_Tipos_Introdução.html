@@ -9,7 +9,12 @@
             font-family:Arial, Helvetica, sans-serif;
         }
         #title{
-            margin-left:5%;
+            background: #004C98;
+            margin-left: 5%;
+            height: auto;
+            width: 25%;
+            border-radius: 2px;
+            color: #FFFFFF;
         }
         #corpo{
             text-align:justify;
@@ -17,13 +22,31 @@
             font-size:17px;
             font-family:Arial, Helvetica, sans-serif;
         }
+        #ret_azul_title{
+            margin-top: 6px;
+            height: 16px;
+            width: 16px;
+            background: #004C98;
+            position: absolute;
+        }
+        .p_ret_azul{
+            margin-left: 26px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 4px;
+        }
         /*Media Queries SCREEN >= 998px - FULL SCREEN*/
         @media all and (min-width:998px){
             body{
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                background: #004C98;
+                margin-left: 5%;
+                height: auto;
+                width: 25%;
+                border-radius: 2px;
+                color: #FFFFFF;
             }
             #corpo{
                 text-align:justify;
@@ -33,7 +56,7 @@
             }
             #corpo2{
 				text-align:justify;
-				margin-left:10%;
+				margin-left:8%;
 				font-size:16px;
 				font-family:Arial, Helvetica, sans-serif;
             }
@@ -59,13 +82,39 @@
                 -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
             }
         }
+
+        @media all and (max-width: 1580px){
+            #title{
+                width: 35%;
+            }
+        }
+
+        @media all and (max-width: 1325px) {
+            #title {
+                width: 45%;
+            }
+        }
+
+        @media all and (max-width: 1155px) {
+            #title {
+                width: 55%;
+            }
+        }
+
+
+        @media all and (max-width: 1045px) {
+            #title {
+                width: 65%;
+                margin-top: 5%;
+            }
+        }
         /*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
         @media all and (min-width:918px) and (max-width:997px){
             body{
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                width: 45%;
             }
             #corpo{
                 text-align:justify;
@@ -75,7 +124,7 @@
             }
             #corpo2{
 				text-align:justify;
-				margin-left:10%;
+				margin-left:8%;
 				font-size:16px;
 				font-family:Arial, Helvetica, sans-serif;
             }
@@ -110,7 +159,7 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                width: 50%;
             }
             #corpo{
                 text-align:justify;
@@ -120,7 +169,7 @@
             }
             #corpo2{
 				text-align:justify;
-				margin-left:10%;
+				margin-left:8%;
 				font-size:16px;
 				font-family:Arial, Helvetica, sans-serif;
             }
@@ -165,7 +214,7 @@
             }
             #corpo2{
             text-align:justify;
-            margin-left:10%;
+            margin-left:8%;
             font-size:16px;
             font-family:Arial, Helvetica, sans-serif;
             }
@@ -291,7 +340,7 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+                width: 45%;
             }
             #corpo{
                 text-align:justify;
@@ -337,7 +386,7 @@
                 font-family:Arial, Helvetica, sans-serif;
             }
             #title{
-                margin-left:5%;
+               width: 45%;
             }
             #corpo{
                 text-align:justify;
@@ -566,7 +615,7 @@
                 }
             #title{
                 margin-left:3%;
-                margin-top: 20px;
+                margin-top: 50px;
             }
             #corpo{
                 text-align:justify;
@@ -614,7 +663,7 @@
             #title{
                 margin-left:3%;
                 font-size:17px;
-                margin-top: 20px;
+                margin-top: 50px;
             }
             #corpo{
                 text-align:justify;
@@ -662,7 +711,8 @@
             #title{
                 margin-left:3%;
                 font-size:17px;
-                margin-top: 20px;
+                margin-top: 50px;
+                width: 92%;
             }
             #corpo{
                 text-align:justify;
@@ -712,14 +762,20 @@
 Um leitor nunca deveria tentar descobrir o que está acontecendo na página; o foco, a organização do material, o propósito, o fluxo de informações deveria ser reconhecido instantaneamente, por um único olhar. E, além desses fatores de suma importância, não custa nada fazer que o material fique bonito!<br><br>
 Estes são os contrastes que abordaremos:<br><br>
 
-    <ul id="corpo2" style="margin-bottom:160px;">
-      <li>Tamanho</li>
-      <li>Peso</li>
-      <li>Estrutura</li>
-      <li>Forma</li>
-      <li>Direção</li>
-      <li>Cor</li>
-</ul>
+    <div id="corpo2" style="margin-bottom:160px;">
+     <div id="ret_azul_title"></div>
+        <p class="p_ret_azul">Tamanho</p>
+     <div id="ret_azul_title"></div>
+        <p class="p_ret_azul">Peso</p>
+     <div id="ret_azul_title"></div>
+        <p class="p_ret_azul">Estrutura</p>
+     <div id="ret_azul_title"></div>
+         <p class="p_ret_azul">Forma</p>
+     <div id="ret_azul_title"></div>
+        <p class="p_ret_azul">Direção</p>
+     <div id="ret_azul_title"></div>
+        <p class="p_ret_azul">Cor</p>
+</div>
 </p>
 </body>
 </html>
