@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title>Documento sem título</title>
     <!--Estilização da Página-->
-    <style type="text/css">
+	<style type="text/css">
 		body{
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#title{
-			margin-left:5%;
+			background: #004C98;
+			margin-left: 5%;
+			height: auto;
+			width: 25%;
+			border-radius: 2px;
+			color: #FFFFFF;
+			padding: 3px;
 		}
 		#corpo{
 			text-align:justify;
@@ -18,14 +24,135 @@
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#img{
-			width:43%;
-			height:38%;
-			margin-left:27%;
-			margin-bottom:3%;
+			width: 80%;
+			margin-left: 10%;
+			margin-bottom: 3%;
+			float: left;
 			/* Sombra da Imagem */
 			box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+		}
+		p.legenda{
+			font-style:italic;
+			margin-left:7%;
+			font-size:17px;
+			margin-top: -6%;
+			text-align:justify;
+			font-weight: bold;
+		}
+		div.imagemLegenda{
+			display: inline-flex;
+		}
+
+		div.legenda{
+			display: block;
+			width: 40%;
+		}
+
+		div.imagem{
+			width: 80%;
+		}
+
+		div.texto{
+			display: block;
+			width: 70%;
+			margin-left: -4%;
+			margin-top: 2%;
+			margin-bottom: 4%;
+		}
+		div.imagemFinal{
+			width: 55%;
+		}
+		@media all and(max-width: 1700px){
+			#corpo{
+				margin-right: -4%;
+			}
+			p.legenda{
+				margin-right:-7%;
+			}
+			div.texto{
+				margin-right: 1%;
+			}
+		}
+		@media all and (max-width: 1400px){
+			div.imagemLegenda{
+				width: 100%;
+			}
+
+			#corpo{
+				margin-right: -8%;
+			}
+			div.texto{
+				margin-right: -2%;
+			}
+
+			p.legenda{
+				margin-right:-11%;
+			}
+
+		}
+
+		@media all and (max-width: 1200px){
+			#title{
+				width: 35%;
+			}
+			div.imagemLegenda{
+				display: block;
+			}
+
+			img#img{
+				margin-left: 5%;
+			}
+
+			div.texto{
+				margin-left: 0;
+				width: 73%;
+			}
+
+			div.imagem{
+				width: 93%;
+			}
+
+			p.legenda{
+				margin-left: 5%;
+			}
+			div.imagemFinal{
+				width: 95%;
+			}
+		}
+
+		@media all and (max-width: 1130px){
+			#corpo{
+				margin-right: -2%;
+			}
+		}
+
+		@media all and (max-width: 1010px){
+			#title{
+				width: 45%;
+			}
+			div.imagemLegenda{
+				display: block;
+			}
+
+			#corpo{
+				margin-right: -3%;
+			}
+
+			img#img{
+				margin-left: 5%;
+			}
+
+			div.texto{
+				margin-left: 0;
+				width: 80%;
+			}
+
+			p.legenda{
+				margin-left: 5%;
+			}
+
 		}
 		/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 		@media all and (min-width:998px){
@@ -41,17 +168,17 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:43%;
-				height:38%;
-				margin-left:27%;
-				margin-bottom:3%;			
+				width: 80%;
+				margin-left: 10%;
+				margin-bottom: 3%;
+				float: left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			}
 		}
-				/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
+		/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
 		@media all and (min-width:918px) and (max-width:997px){
 			body{
 				font-family:Arial, Helvetica, sans-serif;
@@ -61,20 +188,22 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
+
 			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;			
+				width:90%;
+				height:auto;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			}
-		#conteudoTopico{
+			#conteudoTopico{
 				min-width:65%;
 			}
 		}
@@ -88,20 +217,20 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;			
+				width: 90%;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			}
-		#conteudoTopico{
+			#conteudoTopico{
 				min-width:61%;
 			}
 		}
@@ -115,14 +244,15 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:60%;
-				height:60%;
-				margin-left:20%;
-				margin-bottom:3%;			
+				width:90%;
+				height:auto;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -142,18 +272,22 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;			
+				width:90%;
+				height:auto;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.texto{
+				width: 80%;
 			}
 			#conteudoTopico{
 				min-width:55%;
@@ -176,7 +310,24 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%;			
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			#corpo{
+				text-align:justify;
+				margin-left:5%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:90%;
+				height:auto;
+				margin-left:29.2%;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -184,6 +335,9 @@
 			}
 			#conteudoTopico{
 				min-width:55%;
+			}
+			div.texto{
+				width: 80%;
 			}
 		}
 		/*Media Queries SCREEN >= 535px AND <= 709px*/
@@ -203,7 +357,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%;			
+				margin-bottom:3%;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -211,6 +365,36 @@
 			}
 			#conteudoTopico{
 				min-width:95%;
+			}
+			#corpo{
+				text-align:justify;
+				margin-left:5%;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#img{
+				width:90%;
+				height: auto;
+				margin-left:29.2%;
+				margin-bottom:3%;
+				float:left;
+				/* Sombra da Imagem */
+				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.imagemLegenda{
+				display: inline-flex;
+			}
+
+			div.texto{
+				margin-right: 3%;
+			}
+			div.imagem{
+				margin-left: 2%;
+			}
+			div.imagemFinal{
+				width: 55%;
 			}
 		}
 		/*Media Queries SCREEN >= 483px AND <= 534px*/
@@ -223,14 +407,16 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;			
+				width:80%;
+				height:80%;
+				margin-left:15%;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -238,6 +424,18 @@
 			}
 			#conteudoTopico{
 				min-width:95%;
+			}
+			div.texto{
+				margin-left: 8%;
+				width: 72%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
+
+			div.imagemFinal{
+				margin-left: 7%;
 			}
 		}
 		/*Media Queries SCREEN >= 424px AND <= 484px*/
@@ -250,14 +448,16 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:70%;
-				height:70%;
-				margin-left:20%;
-				margin-bottom:3%;			
+				width:85%;
+				height:85%;
+				margin-left:15%;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -265,6 +465,26 @@
 			}
 			#conteudoTopico{
 				min-width:95%;
+			}
+			div.texto{
+				margin-left: 8%;
+				width: 76%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
+		}
+		@media all and (max-width: 530px){
+			div.texto{
+				margin-left: 8%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+			}
+			div.imagemFinal{
+				margin-left: 7%;
 			}
 		}
 		/*Media Queries SCREEN >= 390px AND <= 423px*/
@@ -278,18 +498,28 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
 				width:85%;
 				height:85%;
-				margin-left:10%;
-				margin-bottom:3%;			
+				margin-left:5%;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.texto{
+				margin-left: 8%;
+				width: 76%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
 			}
 			#conteudoTopico{
 				min-width:95%;
@@ -306,14 +536,17 @@
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				font-size:17px;
+				margin-right: -7%;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
 				width:85%;
 				height:85%;
-				margin-left:10%;
-				margin-bottom:3%;			
+				margin-left:5%;
+				margin-bottom:3%;
+				float:left;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -321,6 +554,15 @@
 			}
 			#conteudoTopico{
 				min-width:90%;
+			}
+			div.texto{
+				margin-left: 9%;
+
+			}
+
+			div.imagem{
+				margin-left: 8%;
+				width: 100%;
 			}
 		}
 		/*Media Queries SCREEN >= 350px AND <= 364px*/
@@ -331,21 +573,31 @@
 			#title{
 				margin-left:5%;
 				margin-top: 20px;
+				width: 100%;
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:3%;
 				font-size:17px;
+				margin-right: -7%;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
 				width:85%;
 				height:85%;
-				margin-left:10%;
-				margin-bottom:3%;			
+				margin-left:3%;
+				margin-bottom:3%;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.imagem{
+				margin-left: 12%;
+			}
+
+			div.texto{
+				margin-left: 10%;
 			}
 			#conteudoTopico{
 				min-width:90%;
@@ -353,16 +605,18 @@
 		}
 		/*Media Queries SCREEN >= 320px AND <= 349px*/
 		@media all and (min-width:320px) and (max-width:349px){
-			 body{
+			body{
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#title{
-				margin-left:3%;
+				margin-left:5%;
 				font-size:17px;
 				margin-top: 20px;
+				width: 90%;
 			}
 			#corpo{
 				text-align:justify;
+				margin-left:5%;
 				margin-right:3%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
@@ -370,12 +624,19 @@
 			#img{
 				width:85%;
 				height:75%;
-				margin-left:5%;
-				margin-bottom:3%;			
+				margin-left:8%;
+				margin-bottom:3%;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.texto{
+				margin-left: 6%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
 			}
 			#conteudoTopico{
 				min-width:97%;
@@ -384,29 +645,40 @@
 		}
 		/*Media Queries SCREEN <= 319px*/
 		@media all and (max-width:319px){
-			 body{
+			body{
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#title{
 				margin-left:3%;
 				font-size:17px;
 				margin-top: 20px;
+				width: 90%;
 			}
 			#corpo{
 				text-align:justify;
-				margin-right:5%;
+				margin-left:3%;
+				margin-right:2%;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:95%;
-				height:95%;
-				margin-left:4%;
-				margin-bottom:3%;			
+				width:75%;
+				height:75%;
+				margin-left:8%;
+				margin-bottom:3%;
 				/* Sombra da Imagem */
 				box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 				-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.texto{
+				margin-left: 8%;
+				width: 72%;
+			}
+
+			div.imagem{
+				margin-left: 8%;
+				width: 100%;
 			}
 			#conteudoTopico{
 				min-width:99%;
@@ -422,42 +694,67 @@
 <p id="corpo">Uma interpretação óbvia da direção do tipo é sua inclinação. Já que é tão óbvio, a única coisa que eu gostaria de dizer é: não o faça. Bem, às vezes você pode querer fazê-lo, mas só o faça se puder explicar em palavras por que um determinado tipo deve estar inclinado, por que ele melhora a estética ou a comunicação do material. Talvez você possa dizer: “ Este título anunciando a corrida de barco deveria realmente ficar com um ângulo mais à direita, pois esse ângulo criaria uma energia positiva na página”; ou “A repetição desse tipo inclinado cria um efeito de separação de notas que enfatiza a energia da composição de Bartok que estamos anunciando”. E – “por favor” – nunca coloque um tipo inclinado nos cantos do seu material.
 <br><br>
 
-  <img src="imagens/capitulo09/pag160_1.jpg" id="img"  style="border: solid 2px #fff;"/>
-  
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>O tipo inclinado para cima cria uma energia positiva. Já que o inclinado para baixo cria uma energia negativa. Você pode utilizar essa conotação ocasionalmente, para tirar vantagem dela em seus materiais.<br><br>
- </p>
- 
-<img src="imagens/capitulo09/pag160.jpg" id="img"  style="border: solid 2px #fff;"/>
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Às vezes um redirecionamento marcante do tipo cria um impacto dramático ou um formato único, o que justifica plenamente seu uso.<br><br><br>
-</p>
+<div class="imagemLegenda">
+	<div class="imagem">
+		<img src="imagens/capitulo09/pag160_1.jpg" id="img"  style="border: solid 2px #fff;"/>
+  	</div>
+	<div class="texto">
+		<p class="legenda"><br>O tipo inclinado para cima cria uma energia positiva. Já que o inclinado para baixo cria uma energia negativa. Você pode utilizar essa conotação ocasionalmente, para tirar vantagem dela em seus materiais.</p>
+ 	</div>
+</div>
 
+<div class="imagemLegenda">
+	<div class="imagem">
+		<img src="imagens/capitulo09/pag160.jpg" id="img"  style="border: solid 2px #fff;"/>
+	</div>
+	<div class="texto">
+		<p class="legenda"><br>Às vezes um redirecionamento marcante do tipo cria um impacto dramático ou um formato único, o que justifica plenamente seu uso.</p>
+	</div>
+</div>
 <p id="corpo">Mas existe outra interpretação de direção. Cada elemento do tipo tem uma direção, mesmo que ela seja reta na página. Uma linha do tipo tem uma direção horizontal. Uma coluna alta e fina tem uma direção vertical. Esses movimentos direcionais do tipo são curiosos e interessantes na criação de contrastes. Por exemplo, uma página dupla com um título em bold ocupando as duas páginas e o texto corrido distribuído em uma série de colunas finas cria um contraste direcional interessante.
 <br><br>
 
-<img src="imagens/capitulo09/pag161.jpg" id="img"  style="border: solid 2px #fff;"/>
-
-  <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Se você tiver um layout com potencial para criação de contrastes de direcionamentos, enfatize esse potencial. Você pode usar fonte expandida na direção horizontal e uma fonte mais alta na direção vertical. Enfatize o espaço vertical aumentando a entrelinha, se for apropriado, e coloque as colunas mais estreitas do que as que você tiver planejado inicialmente.<br><br>
-</p>
+<div class="imagemLegenda">
+	<div class="imagem">
+		<img src="imagens/capitulo09/pag161.jpg" id="img"  style="border: solid 2px #fff;"/>
+	</div>
+	<div class="texto">
+		<p class="legenda"><br>Se você tiver um layout com potencial para criação de contrastes de direcionamentos, enfatize esse potencial. Você pode usar fonte expandida na direção horizontal e uma fonte mais alta na direção vertical. Enfatize o espaço vertical aumentando a entrelinha, se for apropriado, e coloque as colunas mais estreitas do que as que você tiver planejado inicialmente.</p>
+	</div>
+</div>
 
 <p id="corpo">Você pode envolver outras partes do seu layout no contraste de direção do tipo, como figuras ou linhas, para enfatizar ou contrastar a direção.<br><br >
 
-  <img src="imagens/capitulo09/pag162.jpg" id="img"  style="border: solid 2px #fff;"/>
-  
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Elementos horizontais e colunas altas e finas podem ser combinadas em infinitas variedades de layout elegantes. O alinhamento é um fator-chave nesse caso; alinhamentos visuais fortes enfatizarão e reforçarão os contrastes de direção.</p><br><br>
+<div class="imagemLegenda">
+	<div class="imagem">
+  		<img src="imagens/capitulo09/pag162.jpg" id="img"  style="border: solid 2px #fff;"/>
+  	</div>
+	<div class="texto">
+		<p class="legenda"><br>Elementos horizontais e colunas altas e finas podem ser combinadas em infinitas variedades de layout elegantes. O alinhamento é um fator-chave nesse caso; alinhamentos visuais fortes enfatizarão e reforçarão os contrastes de direção.</p><br><br>
+	</div>
+</div>
 
-  <img src="imagens/capitulo09/pag162_2.jpg" id="img"  style="border: solid 2px #fff;"/>
-
- <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Neste exemplo, a direção do texto cria um equilíbrio com a imagem horizontal, apesar de o texto em si ser leve demais para cria um equilíbrio sozinho.</p><br><br><br>
-
+<div class="imagemLegenda">
+	<div class="imagem">
+		<img src="imagens/capitulo09/pag162_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+	</div>
+	<div class="texto">
+		<p class="legenda"><br>Neste exemplo, a direção do texto cria um equilíbrio com a imagem horizontal, apesar de o texto em si ser leve demais para cria um equilíbrio sozinho.</p>
+	</div>
+</div>
 <p id="corpo">No exemplo a seguir há um contraste de direção simpático e forte. Mas quais foram os outros contrastes também utilizados para fortalecer o material? Foram aplicadas três fontes diferentes na diagramação. Por que elas ficaram interessantes quando colocadas juntas?<br /><br />
 Observe também a textura criada a partir das estruturas das várias fontes, o espaço entre as letras, o tamanho, a forma. Se as letras estivessem em alto relevo e se você pudesse passar os dedos sobre elas, cada contraste de tipo também criaria um contraste de textura (você poderia “sentir” essa textura visualmente. Essa é uma parte sutil – mas importante – do tipo. Diversas texturas aparecerão automaticamente quando forem utilizados outros contrastes, mas é importante conhecê-las e saber quais os resultados de sua utilização no material.
 <br><br>
+<div class="imagemLegenda">
+	<div class="imagem">
+		<img src="imagens/capitulo09/pag163_1.jpg" id="img"  style="border: solid 2px #fff;"/>
+  	</div>
+	<div class="texto">
+		 <p class="legenda" style="margin-bottom: 70%;"><br>Dedique alguns minutos para colocar em palavras por que essas três fontes combinam quando colocadas juntas.<br />
+		Se você escolher uma fonte moderna em caixa-alta no título, qual seria a opção mais lógica para o texto corrido?<br>
+		Se você tivesse optado por uma fonte moderna no subtítulo, qual seria a opção lógica para o título?</p>
+	</div>
+</div>
 
-  <img src="imagens/capitulo09/pag163_1.jpg" id="img"  style="border: solid 2px #fff;"/>
-  
- <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:3%; margin-bottom:160px; font-weight: bold;"><br>Dedique alguns minutos para colocar em palavras por que essas três fontes combinam quando colocadas juntas.<br />
-Se você escolher uma fonte moderna em caixa-alta no título, qual seria a opção mais lógica para o texto corrido?<br>
-Se você tivesse optado por uma fonte moderna no subtítulo, qual seria a opção lógica para o título?<br>
-</p>
 </body>
 </html>
