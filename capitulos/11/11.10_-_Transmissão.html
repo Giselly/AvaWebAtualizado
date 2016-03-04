@@ -9,61 +9,78 @@
                 body{
                     font-family:Arial, Helvetica, sans-serif;
                     }
-                #title{
-                    margin-left:5%;
-                }
+               #title{
+					background: #004C98;
+					margin-left: 5%;
+					width: 180px !important;
+					border-radius: 2px;
+					color: #FFFFFF;
+				}
                 #corpo{
                     text-align:justify;
                     margin-left:5%;
                     font-size:17px;
                     font-family:Arial, Helvetica, sans-serif;
-                    }
-                #img{
-                    width:30%;
-                    height:30%;
-                    margin-left:5%;
-                    margin-bottom:3%;
-                    float:right;
-                    /* Sombra da Imagem */
-                    box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 }
-                #imagem{
-                    width:50%;
-                    height:50%;
-                    margin-left:5%;
-                    float:left;
-                    margin-right:3%;
-                    /* Sombra da Imagem */
-                    box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                }
-				  /*Media Queries SCREEN >= 998px - FULL SCREEN*/
-				  @media all and (min-width:998px){
-					  body{
-						  font-family:Arial, Helvetica, sans-serif;
-					  }
-					  #title{
-						  margin-left:5%;
-					  }
-					  #corpo{
-						  text-align:justify;
-						  font-size:17px;
-						  font-family:Arial, Helvetica, sans-serif;
-					  }
-					  #img{
-						  width:40%;
-						  height:40%;
-						  margin-left:5%;
-						  margin-bottom:3%;
-						  /* Sombra da Imagem */
-						  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-					  }
-			 	}
+				
+				@media all and (min:1815px){
+					#corpo{
+						margin-bottom:100px;
+					}
+				}
+				@media all and (min-width:1755px) and (max-width:1815px){
+					#corpo{
+						margin-bottom:40px;
+					}
+				}
+				@media all and (min-width:1690px) and (max-width:1754){
+					#corpo{
+						margin-bottom:5px;
+					}
+				}
+				@media all and (min-width:1400px){
+					#img{
+						width: 30%;
+						height: 30%;
+						margin-left: 1.5%;
+						margin-bottom: 1.5%;
+						float:right;
+					}
+					#imagem{
+						width: 30%;
+						height: 30%;
+						margin-left: 1.5%;
+						margin-bottom: 1.5%;
+						float:right;
+					}
+				}
+				/*Media Queries SCREEN >= 998px - FULL SCREEN*/
+				@media all and (min-width:998px) and (max-width:1399px){
+					body{
+						font-family:Arial, Helvetica, sans-serif;
+					}
+					#title{
+						margin-left:5%;
+					}
+					#corpo{
+						text-align:justify;
+						margin-left:5%;
+						font-size:17px;
+						font-family:Arial, Helvetica, sans-serif;
+					}
+					#img{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;              
+					}
+					#imagem{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;  
+					}
+				}
 				/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
 				@media all and (min-width:918px) and (max-width:997px){
 					body{
@@ -78,14 +95,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:40%;
-						height:40%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
+					}
+					#imagem{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:65%;
@@ -105,14 +124,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:60%;
-						height:60%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
+					}
+					#imagem{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:61%;
@@ -132,15 +153,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:60%;
-						height:60%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						clear:both;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
+					}
+					#imagem{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:60%;
@@ -161,24 +183,16 @@
 						clear:both;
 					}
 					#img{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
 					}
 					#imagem{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:55%;
@@ -199,24 +213,16 @@
 						clear:both;
 					}
 					#img{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
 					}
 					#imagem{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:55%;
@@ -237,14 +243,16 @@
 						clear:both;
 					}
 					#img{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
+					}
+					#imagem{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:95%;
@@ -265,14 +273,16 @@
 						clear:both;
 					}
 					#img{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
+					}
+					#imagem{
+						width:95%;
+						height:95%;
+						margin-left:5%;
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:95%;
@@ -293,24 +303,16 @@
 						clear:both;
 					}
 					#img{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
 					}
 					#imagem{
-						width:70%;
-						height:70%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:95%;
@@ -331,24 +333,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:85%;
-						height:85%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
 					}
 					#imagem{
-						width:85%;
-						height:85%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:95%;
@@ -369,24 +363,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:85%;
-						height:85%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;              
 					}
 					#imagem{
-						width:85%;
-						height:85%;
+						width:95%;
+						height:95%;
 						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:90%;
@@ -407,24 +393,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:85%;
-						height:85%;
-						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						width:95%;
+						height:95%;
+						margin-left:3%;
+						margin-bottom:1.5%;              
 					}
 					#imagem{
-						width:85%;
-						height:85%;
-						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						width:95%;
+						height:95%;
+						margin-left:3%;
+						margin-bottom:1.5%;  
 					}
 					#conteudoTopico{
 						min-width:90%;
@@ -447,24 +425,16 @@
 						font-family:Arial, Helvetica, sans-serif;
 					}
 					#img{
-						width:85%;
-						height:75%;
-						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						width:95%;
+						height:95%;
+						margin-left:2%;
+						margin-bottom:3%;              
 					}
 					#imagem{
-						width:85%;
-						height:85%;
-						margin-left:5%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						width:95%;
+						height:95%;
+						margin-left:2%;
+						margin-bottom:3%;  
 					}
 					#conteudoTopico{
 						min-width:97%;
@@ -490,22 +460,14 @@
 					#img{
 						width:95%;
 						height:95%;
-						margin-left:3%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-left:2%;
+						margin-bottom:3%;              
 					}
 					#imagem{
 						width:95%;
 						height:95%;
-						margin-left:3%;
-						margin-bottom:3%;
-						/* Sombra da Imagem */
-						box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-						-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+						margin-left:2%;
+						margin-bottom:3%;  
 					}
 					#conteudoTopico{
 						min-width:99%;
@@ -518,9 +480,9 @@
     <body>
     <p id="title"><strong>11.10  - Trasmissão</strong></p>
     <p>&nbsp;</p>
-    <img src="imagens/capitulo11/10.jpg" id="img"  style="border: solid 2px #fff; margin-bottom:30px; width: 30%; height: 25%; margin-right: 25px;"/>
+    <img src="imagens/capitulo11/10.jpg" id="img"/>
     
-    <p id="corpo" style="margin-bottom: 130px;">As mensagens sempre são transmitidas através de um meio, a que chamamos canal. O canal carrega a mensagem do emissor até o receptor, e pode ser:<br><br>
+    <p id="corpo">As mensagens sempre são transmitidas através de um meio, a que chamamos canal. O canal carrega a mensagem do emissor até o receptor, e pode ser:<br><br>
 
 <strong>Apresentativo:</strong><br> Por meio da voz, do rosto (ou de partes da face como a boca ou os olhos), ou do corpo (ou partes do corpo, como as mãos).<br><br><br>
 
@@ -533,7 +495,7 @@ A mensagem da Mona Lisa é transmitida por todos os três meios. Ela usa o meio 
 A expressão enigmática da Mona Lisa é geralmente muito comentada. Para perceber como essa expressão é transmitida, considere os seguintes desenhos:<br><br> 
 </p>
 	<br>
-	<img src="imagens/capitulo11/10.1.jpg" id="imagem"  style=" border: solid 2px #fff; float: right; width: 35%; height: 30%; margin-left: 50px; margin-right: 25px;"/>
+	<img src="imagens/capitulo11/10.1.jpg" id="imagem"/>
 
 	<p id="corpo">Em ambos os desenhos os olhos são idênticos em termos de forma, modulação e posição. O que faz os olhos da primeira pintura parecerem mais felizes e os olhos da segunda imagem parecem mais tristes é a boca. A boca é o transmissor da emoção; os olhos em si mesmos são inexpressivos.<br><br>
 
