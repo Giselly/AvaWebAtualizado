@@ -9,7 +9,13 @@
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#title{
-			margin-left:5%;
+			background: #004C98;
+			margin-left: 5%;
+			height: auto;
+			width: 25%;
+			border-radius: 2px;
+			color: #FFFFFF;
+			padding: 3px;
 		}
 		#corpo{
 			text-align:justify;
@@ -18,49 +24,144 @@
 			font-family:Arial, Helvetica, sans-serif;
 		}
 		#img{
-			width:37%;
-			margin-left:29.2%;
+			width: 80%;
+			margin-left:5%;
 			margin-bottom:3%; 
 			/* Sombra da Imagem */
 			box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 		}
+		img#imgJunta{
+			width: 50%;
+			margin-left:5%;
+			margin-bottom:3%;
+			/* Sombra da Imagem */
+			box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+		}
 		#img1{
-			margin-left: 10%;
+			margin-left: 2%;
 			width:65%;
 			position:relative;
+			margin-top: 3%;
 			}
 		#img2{
 			width:65%;
 			position:relative;
-			margin-left:33%;
-			margin-top:-33%;
+			margin-left: 30%;
+			margin-top:-40%;
 		}
 		#img3{
-			margin-left: 10%;
+			margin-left: 2%;
 			width:65%;
 			position:relative;
 		}
 		#img4{
 			width:65%;
 			position:relative;
-			margin-left:33%;
-			margin-top:-30%;
+			margin-left: 30%;
+			margin-top:-38%;
 		}
 		#img5{
-			margin-left: 10%;
+			margin-left: 2%;
 			width:65%;
 			position:relative;
 		}
 		#img6{
 			width:65%;
 			position:relative;
-			margin-left:33%;
-			margin-top:-30%;
+			margin-left: 30%;
+			margin-top:-38%;
 		}
 		#img7{
 			margin-left:13%;
+		}
+		div.imagemLegenda{
+			display: inline-flex;
+		}
+
+		div.legenda{
+			display: block;
+			width: 40%;
+		}
+
+		div.imagem{
+			width: 80%;
+		}
+
+		div.texto{
+			display: block;
+			width: 70%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		div.imagens{
+			width: 70%;
+			margin-left: 2%;
+		}
+
+		@media all and (max-width: 1400px){
+			div.texto{
+				margin-right: -9%;
+			}
+			p#corpo{
+				margin-right: -8%;
+			}
+
+			div.imagens{
+				width: 80%;
+			}
+		}
+
+		@media all and (max-width: 1200px){
+			div.imagemLegenda{
+				display: block;
+			}
+
+			img#img{
+				margin-left: 5%;
+			}
+
+			div.texto{
+				margin-left: 0;
+				width: 73%;
+			}
+
+			p.legenda{
+				margin-left: 5%;
+			}
+
+			div.imagens{
+				width: 100%;
+			}
+
+		}
+
+		@media all and (max-width: 1140px){
+			p#corpo{
+				margin-right: -3%;
+			}
+
+			img#img{
+				width: 95%;
+			}
+
+			div.texto{
+				width: 83%;
+			}
+			div.imagens{
+				width: 110%;
+			}
+		}
+
+		@media all and (max-width: 1050px){
+			p#corpo{
+				margin-right: 1%;
+			}
+
 		}
 		/*Media Queries SCREEN >= 998px - FULL SCREEN*/
 		@media all and (min-width:998px){
@@ -76,15 +177,15 @@
 				font-family:Arial, Helvetica, sans-serif;
 			}
 			#img{
-				width:37%;
-				height:37%;
-				margin-left:29.2%;
-				margin-bottom:3%; 
+				width: 80%;
+				margin-left:10%;
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
 			}
+
 		}
 				/*Media Queries SCREEN >= 918px AND <= 997px - MEDIUM SCREEN*/
 		@media all and (min-width:918px) and (max-width:997px){
@@ -103,7 +204,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -130,7 +231,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -157,7 +258,7 @@
 				width:60%;
 				height:60%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -184,7 +285,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -211,7 +312,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -238,7 +339,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -265,7 +366,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -292,7 +393,7 @@
 				width:70%;
 				height:70%;
 				margin-left:20%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -310,17 +411,19 @@
 			#title{
 				margin-left:5%;
 				margin-top: 20px;
+				width: 35%;
 			}
-			#corpo{
+			p#corpo{
 				text-align:justify;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
+				margin-right: -1%;
 			}
 			#img{
 				width:85%;
 				height:85%;
 				margin-left:10%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -329,6 +432,23 @@
 			#conteudoTopico{
 				min-width:95%;
 			}
+			div.imagemLegenda{
+				margin-left: 9%;
+			}
+
+			div.imagem{
+				width: 90%;
+			}
+
+			div.texto{
+				width: 90%;
+			}
+
+			div.imagens{
+				width: 120%;
+				margin-left: 10%;
+			}
+
 		}
 		/*Media Queries SCREEN >= 365px AND <= 389px*/
 		@media all and (min-width:365px) and (max-width:389px){
@@ -338,11 +458,58 @@
 			#title{
 				margin-left:5%;
 				margin-top: 20px;
+				width: 45%;
 			}
-			#corpo{
+			p#corpo{
 				text-align:justify;
 				font-size:17px;
 				font-family:Arial, Helvetica, sans-serif;
+				margin-right: -7%;
+			}
+			#img{
+				width:85%;
+				height:85%;
+				margin-left:10%;
+				margin-bottom:3%;
+				/* Sombra da Imagem */
+                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+			}
+			div.imagemLegenda{
+				margin-left: 10%;
+			}
+
+			div.imagem{
+				width: 95%;
+			}
+
+			div.texto{
+				width: 95%;
+			}
+			div.imagens{
+				width: 120%;
+				margin-left: 10%;
+			}
+			#conteudoTopico{
+				min-width:90%;
+			}
+		}
+		/*Media Queries SCREEN >= 350px AND <= 364px*/
+		@media all and (min-width:350px) and (max-width:364px){
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			#title{
+				margin-left:5%;
+				margin-top: 20px;
+				width: 45%;
+			}
+			p#corpo{
+				text-align:justify;
+				font-size:17px;
+				font-family:Arial, Helvetica, sans-serif;
+				margin-right: -4%;
 			}
 			#img{
 				width:85%;
@@ -357,33 +524,20 @@
 			#conteudoTopico{
 				min-width:90%;
 			}
-		}
-		/*Media Queries SCREEN >= 350px AND <= 364px*/
-		@media all and (min-width:350px) and (max-width:364px){
-			body{
-				font-family:Arial, Helvetica, sans-serif;
+			div.imagemLegenda{
+				margin-left: 10%;
 			}
-			#title{
-				margin-left:5%;
-				margin-top: 20px;
+
+			div.imagem{
+				width: 95%;
 			}
-			#corpo{
-				text-align:justify;
-				font-size:17px;
-				font-family:Arial, Helvetica, sans-serif;
+
+			div.texto{
+				width: 95%;
 			}
-			#img{
-				width:85%;
-				height:85%;
-				margin-left:10%;
-				margin-bottom:3%; 
-				/* Sombra da Imagem */
-                box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-                -webkit-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
-			}
-			#conteudoTopico{
-				min-width:90%;
+			div.imagens{
+				width: 120%;
+				margin-left: 12%;
 			}
 		}
 		/*Media Queries SCREEN >= 320px AND <= 349px*/
@@ -395,8 +549,9 @@
 				margin-left:3%;
 				font-size:17px;
 				margin-top: 20px;
+				width: 92%;
 			}
-			#corpo{
+			p#corpo{
 				text-align:justify;
 				margin-right:3%;
 				font-size:17px;
@@ -406,7 +561,7 @@
 				width:85%;
 				height:75%;
 				margin-left:5%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -415,6 +570,21 @@
 			#conteudoTopico{
 				min-width:97%;
 				margin-right:3%;
+			}
+			div.imagemLegenda{
+				margin-left: 5%;
+			}
+
+			div.imagem{
+				width: 95%;
+			}
+
+			div.texto{
+				width: 95%;
+			}
+			div.imagens{
+				width: 120%;
+				margin-left: 10%;
 			}
 		}
 		/*Media Queries SCREEN <= 319px*/
@@ -426,8 +596,9 @@
 				margin-left:3%;
 				font-size:17px;
 				margin-top: 20px;
+				width: 92%;
 			}
-			#corpo{
+			p#corpo{
 				text-align:justify;
 				margin-right:5%;
 				font-size:17px;
@@ -437,7 +608,7 @@
 				width:95%;
 				height:95%;
 				margin-left:4%;
-				margin-bottom:3%; 
+				margin-bottom:3%;
 				/* Sombra da Imagem */
                 box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
                 -moz-box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
@@ -446,6 +617,21 @@
 			#conteudoTopico{
 				min-width:99%;
 				margin-right:1%;
+			}
+			div.imagemLegenda{
+				margin-left: 3%;
+			}
+
+			div.imagem{
+				width: 95%;
+			}
+
+			div.texto{
+				width: 95%;
+			}
+			div.imagens{
+				width: 120%;
+				margin-left: 9%;
 			}
 		}
 	</style>
@@ -458,52 +644,63 @@
 Nenhuma das fontes-padrão que vieram em seu computador tem um estilo muito bold em sua família. Eu o aconselharia a investir em pelo menos uma fonte mais forte. Dê uma olhada nos catálogos de tipos para encontrar uma que o agrade. O contraste de pesos é uma das melhores maneiras de aumentar a estética visual de uma página sem redesenhar algo, mas você nunca poderá alcançar o contraste belo e forte se não tiver uma fonte com traços grandes e fortes.
 <br /><br /><br />
 
-  <img src="imagens/capitulo09/pag148_1.jpg" id="img"  style="border: solid 2px #fff;"/>
-    
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Estes são exemplos dos vários pesos que costumam existir em uma família. Observe que não há muito contraste de peso entre o peso light e o próximo (que costuma ser classificado como regular, médium ou book).<br /><br />
-Também não há um contraste marcante entre os pesos semibold e bold. Se você quiser criar contrastes através do peso das fontes, não tenha medo. Se o contraste não for marcante, parecerá um erro.
- </p><br /><br /><br />
- 
-<div id="img1">
-    <img src="imagens/capitulo09/pag149.jpg" id="img"  style="border: solid 2px #fff;"/>
+<div class="imagemLegenda">
+	<div class="imagem">
+		<img src="imagens/capitulo09/pag148_1.jpg" id="img"  style="border: solid 2px #fff;"/>
 	</div>
-    
-<div id="img2">
-    <img src="imagens/capitulo09/pag149_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+	<div class="texto">
+		<p class="legenda"><br>Estes são exemplos dos vários pesos que costumam existir em uma família. Observe que não há muito contraste de peso entre o peso light e o próximo (que costuma ser classificado como regular, médium ou book).<br /><br />
+		Também não há um contraste marcante entre os pesos semibold e bold. Se você quiser criar contrastes através do peso das fontes, não tenha medo. Se o contraste não for marcante, parecerá um erro.
+		</p>
 	</div>
-    <br><br><br>
-    <div id="img7">
-    <img src="imagens/capitulo09/pag149_3.jpg" id="img"  style="border: solid 2px #fff;"/>
-	</div>
-<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Você se lembra desse exemplo na página anterior? Colocando o nome da empresa em caixa-alta e baixa no lugar de caixa-alta, pude aumentar o tamanho do tipo e ampliar o peso, acrescentando mais contraste e interesse visual ao cartão. O peso mais marcante também faz que o cartão tenha um foco mais forte.<br><br><br>
-</p>
+</div>
 
+<div class="imagens">
+	<div id="img1">
+		<img src="imagens/capitulo09/pag149.jpg" id="imgJunta"  style="border: solid 2px #fff;"/>
+	</div>
+
+	<div id="img2">
+		<img src="imagens/capitulo09/pag149_2.jpg" id="imgJunta"  style="border: solid 2px #fff;"/>
+	</div>
+</div>
+
+<div class="imagemLegenda">
+	<div class="imagem">
+    	<img src="imagens/capitulo09/pag149_3.jpg" id="img"  style="border: solid 2px #fff;"/>
+	</div>
+	<div class="texto">
+		<p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;"><br>Você se lembra desse exemplo na página anterior? Colocando o nome da empresa em caixa-alta e baixa no lugar de caixa-alta, pude aumentar o tamanho do tipo e ampliar o peso, acrescentando mais contraste e interesse visual ao cartão. O peso mais marcante também faz que o cartão tenha um foco mais forte.<br><br><br></p>
+	</div>
+</div>
 <p id="corpo">Além de fazer que a página fique mais interessante aos olhos, o contraste de peso, é uma das melhores maneiras de organizar as informações. Você já faz isso automaticamente quando coloca os títulos e subtítulos de seu newsletter em bold. Então, continue assim e vá mais adiante. Dê uma olhada no sumário a seguir; observe como você compreende instantaneamente a hierarquia de informações quando os títulos-chave ou as frases são colocadas em bold bem forte. Essa técnica também é útil no índice remissivo, pois possibilita que o leitor diferencie num piscar de olhos se uma entrada de índice é de primeiro (item) ou de segundo nível (subitem), eliminando assim a dúvida que costuma seguir quando procuramos alfabeticamente por um item. Observe o índice remissivo deste livro (ou qualquer um dos meus).
 <br><br><br>
 
-<div id="img3">
-    <img src="imagens/capitulo09/pag150.jpg" id="img"  style="border: solid 2px #fff;"/>
+<div class="imagens">
+	<div id="img3">
+    	<img src="imagens/capitulo09/pag150.jpg" id="imgJunta"  style="border: solid 2px #fff;"/>
 	</div>
     
  	<div id="img4">
-    <img src="imagens/capitulo09/pag150_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+		<img src="imagens/capitulo09/pag150_2.jpg" id="imgJunta"  style="border: solid 2px #fff;"/>
 	</div>
-    <br><br>
-    
+</div>
+
 <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; font-weight: bold;">Colocando os títulos dos capítulos em fontes mais bold, as informações importantes ficam disponíveis em um piscar de olhos, além de haver uma forte atração que move seus olhos. Outra vantagem é que esse recurso cria uma repetição (um dos quatros princípios do design, lembra?). Também inseri um espaço acima de cada título em bold, de maneira que os títulos poderiam ser agrupados com seus respectivos subtítulos com maior nitidez (este é o princípio de proximidade, lembra?)<br><br><br>
 </p>
 
 <p id="corpo">Se você tiver uma página muito cinza (só de texto colorido), sem espaço para a inserção de figuras ou para criar destaques com aspas, (colocando-as com o mesmo peso de imagens), experimente colocar as frases mais importantes em um bold forte. Elas atrairão o leitor para a página. (Se você utilizar um bold sem serifa com o texto corrido serifado, provavelmente precisará deixar a fonte em bold sem serifa um ponto menos, para que ela pareça estar do mesmo tamanho do texto corrido).
 <br><br>
 
-<div id="img5">
-    <img src="imagens/capitulo09/pag151.jpg" id="img"  style="border: solid 2px #fff;"/>
+<div class="imagens">
+	<div id="img5">
+    	<img src="imagens/capitulo09/pag151.jpg" id="imgJunta"  style="border: solid 2px #fff;"/>
 	</div>
     
  	<div id="img6">
-    <img src="imagens/capitulo09/pag151_2.jpg" id="img"  style="border: solid 2px #fff;"/>
+    	<img src="imagens/capitulo09/pag151_2.jpg" id="imgJunta"  style="border: solid 2px #fff;"/>
 	</div>
-    <br><br>
+</div>
 
 <p id="corpo" style="font-style:italic;clear:both;margin-left:5%; font-size:17px; margin-right:18px; margin-bottom:160px; font-weight: bold;">Uma página só com texto corrido desencoraja um leitor a prosseguir na leitura. Com o contraste criado pelo tipo em bold, o leitor pode localizar os pontos-chave e estará mais interessado em buscar as informações.
 </p>
