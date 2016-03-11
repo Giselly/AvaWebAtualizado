@@ -4,15 +4,14 @@
     <div class="camposSection">
         <?php //echo $erroExcluir; ?>
         <table class="listagem">
-            <form method="post" name="frmPesquisa" id="frmPesquisa">
-            <input type="text" placeholder="Pesquisa" class="pesquisa" id="filtro" name="filtro" value="<?php echo (isset($form['filtro']) ? $form['filtro'] : ""); ?>"/>
-            </form>
+            <thead>
             <tr>
                 <th>Data</th>
                 <th>Assunto</th>
                 <th>Notificação</th>
                 <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
+            </thead>
             <?php
             if(isset($dadosResumo)){
                 if (count($dadosResumo)) {

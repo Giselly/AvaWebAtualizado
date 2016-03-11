@@ -8,15 +8,12 @@
         <link rel='stylesheet' type='text/css' href='css/style.css'>
         <link rel='stylesheet' type='text/css' href='css/topo.css'>
         <link rel='stylesheet' type='text/css' href='css/lightBox.css'>
-        <link rel='stylesheet' type='text/css' href='css/tooltip.css'>       
+        <link rel='stylesheet' type='text/css' href='css/tooltip.css'>
+        <link rel="stylesheet" type="text/css" href="DataTable/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="DataTable/dataTables.bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
          <?php echo $arqCSS; ?>
-        <script>
-            $LAB
-            .script("framework.js").wait()
-            .script("plugin.framework.js")
-            .script("myplugin.framework.js").wait()
-            .script("init.js").wait();
-        </script>
+        
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/jquery.mask.js" type="text/javascript"></script>
         <script src="js/mascaras.js" type="text/javascript"></script>
@@ -28,6 +25,8 @@
         <script type="text/javascript" src="js/cadastroDeUsuarios.js"></script>
         <script src="js/easyTooltip.js" type="text/javascript"></script>        
         <script type="text/javascript" src="js/datepicker-pt-br.js"></script>
+        <script type="text/javascript" src="DataTable/datatables.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <?php echo $arqJS; ?>
         <link rel="shortcut icon" href="imagens/icon.ico" type="image/gif">
     </head>

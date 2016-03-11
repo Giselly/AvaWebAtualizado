@@ -4,10 +4,8 @@
 <section class="listagemCadastro">
     <div class="camposSection">
         <?php //echo $erroExcluir; ?>
-        <table class="listagem">
-            <form method="post" name="frmPesquisa" id="frmPesquisa">
-            <input type="text" placeholder="Pesquisa" class="pesquisa" id="filtro" name="filtro" value="<?php echo (isset($form['filtro']) ? $form['filtro'] : ""); ?>"/>
-            </form>
+        <table id="example" class="listagem table table-striped table-bordered" cellspacing="0" width="100%"> 
+            <thead>
             <tr>
                 <th><span>Nome Completo</span><span id="nome">Nome</span></th>
                 <th id="data"><span>Data</span><img src="imagens/data-b.png" title="Data" /></th>
@@ -17,6 +15,8 @@
                 <th id="aprovacao"><span>Aprovação</span><img src="imagens/aprovacao.png" title="Aprovação" /></th>
                 <th id="excluir"><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
+            </thead>
+            <tbody>
             <?php
             if(isset($dadosResumo)){
                 if (count($dadosResumo)) {
@@ -64,6 +64,7 @@
                 }
             }
             ?>
+            </tbody>
         </table>
     </div>
 </section>
