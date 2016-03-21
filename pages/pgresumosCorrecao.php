@@ -1,6 +1,10 @@
 <link rel='stylesheet' type='text/css' href='css/cadastroDeUsuarios.css'>
 <link rel='stylesheet' type='text/css' href='css/lightBox.css'>
-
+<link rel="stylesheet" type="text/css" href="DataTable/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="DataTable/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="DataTable/datatables.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <section class="listagemCadastro">
     <div class="camposSection">
         <?php //echo $erroExcluir; ?>

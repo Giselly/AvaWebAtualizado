@@ -1,13 +1,16 @@
 <link rel='stylesheet' type='text/css' href='css/cadastroDeUsuarios.css'>
+<link rel="stylesheet" type="text/css" href="DataTable/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="DataTable/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="DataTable/datatables.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <section class="listagemCadastro" style="margin-bottom: 100px;">
     <div class="camposSection">
         <?php echo $erroExcluir; ?>
-        <table class="listagem">
+        <table id="example" class="listagem table table-striped table-bordered" cellspacing="0" width="100%">
             <input name="enviar" class="novo" type="submit" value="Novo Usuário" onclick="window.location = '<?php echo $url->getURL(0); ?>/novo';"/>
-            <form method="post" name="frmPesquisa" id="frmPesquisa">
-                <input type="text" placeholder="Pesquisa" class="pesquisa" id="filtro" name="filtro" value="<?php echo (isset($form['filtro']) ? $form['filtro'] : ""); ?>"/>
-            </form>
+            <thead>
             <tr>
                 <th><span>Nome Completo</span><span id="nome">Nome</span></th>
                 <th id="email"><span>E-mail</span><img src="imagens/email-icon.png" title="E-mail" /></th>
@@ -15,6 +18,8 @@
                 <th id="editar"><span>Editar</span><img src="imagens/editar-b.png" title="Editar" /></th>
                 <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
+            </thead>
+            <tbody>
             <?php
             if (count($dadosUsuarios)) {
                 foreach ($dadosUsuarios as $usuario) {
@@ -34,8 +39,9 @@
                 echo "<tr><td colspan='6'>Nenhum usuário encontrado.</td></tr>";
             }
             ?>
-            
+            </tbody>
         </table>
+        
     </div>
     <a href='#frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'></a>
 </section>
