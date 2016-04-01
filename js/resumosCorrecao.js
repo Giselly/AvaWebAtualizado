@@ -5,15 +5,20 @@ $(document).ready(function () {
     /** Exbibição da mensagem de exclusão */
     $('a.exluirFuncionario').click(function (e) {
         e.preventDefault();
-        $('#hrefExcluir').href($(this).attr('href'));
-        $('#idUsuarioExcluido').val($(this).attr('href'));        
+        $('#idResumoExcluido').val($(this).attr('href'));        
         $('#btnExcluir').click();
-        //alert($('#idUsuarioExcluido').val());
+        $('#hrefExcluir').attr('href','resumosCorrecao/excluir/'+$('#idResumoExcluido').val());
+        
+        
+        /*$('#hrefExcluir').href($(this).attr('href'));
+        $('#idResumoExcluido').val($(this).attr('href'));        
+        $('#btnExcluir').click();
+        alert($('#idUsuarioExcluido').val());*/
     });
     
     /** Redireciona para a pagina de exclusão */
     $('#confirmarExcluir').click(function () {
-        window.location = $('#raiz').val() + 'cadastroDeUsuarios/excluir/' + $('#idUsuarioExcluido').val();
+        window.location = $('#raiz').val() + 'resumosCorrecao/excluir/' + $('#idResumoExcluido').val();
     });
 
 });

@@ -27,7 +27,7 @@ if($url->posicaoExiste(1) && $url->getURL(1) == 'lerResumos'){
         /** Include notificacao */   
         include_once("pages/pg{$url->getURL(1)}.php");
         
-}else if($url->posicaoExiste(1) && $url->getURL(1) == 'Excluir') {
+}else if($url->posicaoExiste(1) && $url->getURL(1) == 'excluir') {
     $dados = array (
         "id" => $url->getURL(2),
         "excluidoResumo" => 1    

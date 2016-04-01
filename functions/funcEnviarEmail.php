@@ -1,7 +1,8 @@
 <?php
 
 /* Inclui a classe do phpmailer */				
-require("Classes/mail/PHPMailerAutoload.php");
+//require("Classes/mail/PHPMailerAutoload.php");
+require("../Classes/mail/PHPMailerAutoload.php");
 
 
 
