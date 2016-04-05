@@ -1,23 +1,14 @@
 <link rel='stylesheet' type='text/css' href='css/cadastroDeUsuarios.css'>
-<link rel="stylesheet" type="text/css" href="DataTable/datatables.min.css"/>
-<link rel="stylesheet" type="text/css" href="DataTable/dataTables.bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-<script type="text/javascript" src="DataTable/datatables.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 <section class="listagemCadastro">
     <div class="camposSection">
         <?php //echo $erroExcluir; ?>
-        <table id="example" class="listagem table table-striped table-bordered" cellspacing="0" width="100%">
-            <thead>
+        <table id="" class="listagem" cellspacing="0" width="100%">
             <tr>
                 <th>Data</th>
                 <th>Assunto</th>
                 <th>Notificação</th>
                 <th><span>Excluir</span><img src="imagens/lixeira-b.png" title="Excluir" /></th>
             </tr>
-            </thead>
-            <tbody>
             <?php
             if(isset($dadosResumo)){
                 if (count($dadosResumo)) {
@@ -54,8 +45,6 @@
                 }
             }
             ?>
-
-            </tbody>
         </table>
     </div>
     <a href='#frmExcluir' name='frmExcluir' rel='leanModal' id='btnExcluir'></a>
