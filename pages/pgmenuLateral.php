@@ -24,7 +24,8 @@
 
                 <li><a <?php if ($url->getURL(0) == "cadastroDeUsuarios") echo "class='selecionado'"; ?>href="cadastroDeUsuarios"><img src="imagens/icons_navSlider/cadastro_usuario.png"><p class="l_menu">Cadastro de usuários</p></a></li>
                 <li><a <?php  if($url->getURL(0) == "resumosCorrecao") echo 'class="selecionado"';?> href="resumosCorrecao"  id="menu_slider" class="resumos"><img src="imagens/icons_navSlider/resumos.png"><p class="l_menu">Resumos</p></a></li>
-		<?php
+		<li><a <?php if ($url->getURL(0) == "dadosDeAcesso") echo "class='selecionado'"; ?>href="dadosDeAcesso"><img src="imagens/icons_navSlider/resumos.png"><p class="l_menu">Dados de Acesso</p></a></li>
+                <?php
 		} ?>
         </ul>
     </nav>

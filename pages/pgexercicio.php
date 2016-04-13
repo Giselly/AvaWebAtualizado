@@ -6,7 +6,7 @@
     <?php
     $dataBanco = date('Y-m-d H:i:s', strtotime('+1 days',strtotime($exercicios[0]['data'])));
     $data = date('Y-m-d H:i:s');
-    if ((!$exercicios[0]['maiorNota']) || ($exercicios[0]['maiorNota'] < 7 && $dataBanco == $data)) {
+    if ((!$exercicios[0]['maiorNota']) || ($exercicios[0]['maiorNota'] < 7 && $dataBanco <= $data)) {
         ?>
 
         <section id="iniciarExercicio">

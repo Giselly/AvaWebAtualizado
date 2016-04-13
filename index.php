@@ -66,7 +66,7 @@ if ($url->getURL(0) == 'recuperaSenha') {
              * @var int
              */
             $capituloAtual = $dadosUsuario[0]['capituloAtual'];
-            
+          
             
             
             
