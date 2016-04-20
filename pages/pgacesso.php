@@ -18,8 +18,14 @@
 </a>
 
 
-<a href="dadosDeAcesso/download">
+<a href="responses/aluno.xls">
 <button class="btn btn-primary" type="button">
-  Download
+  Download Acesso Alunos
+</button>
+</a>
+
+<a href="responses/professor.xls">
+<button class="btn btn-primary" type="button">
+  Download Acesso Professores
 </button>
 </a>
